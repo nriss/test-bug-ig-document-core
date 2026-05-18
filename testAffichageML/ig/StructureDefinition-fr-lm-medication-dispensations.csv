@@ -17,7 +17,7 @@
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
 "fr-lm-medication-dispensations.informant","fr-lm-medication-dispensations.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-medication-dispensations.subSection","fr-lm-medication-dispensations.subSection","","","",0,0,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
+"fr-lm-medication-dispensations.subSection","fr-lm-medication-dispensations.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-medication-dispensations.entry","fr-lm-medication-dispensations.entry","","","",1,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""

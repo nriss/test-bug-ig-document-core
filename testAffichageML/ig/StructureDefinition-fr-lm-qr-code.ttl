@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "FRLMQRCode"] ; # 
   fhir:title [ fhir:v "Logical model - FR LM QR Code"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-05-18T09:34:46+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-05-18T13:21:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -254,8 +254,8 @@
        ] ;
        fhir:type ( [
          fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section>
+           fhir:v "Base"^^xsd:anyURI ;
+           fhir:l fhir:Base
          ]
        ] )
      ] [

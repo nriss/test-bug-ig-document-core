@@ -17,7 +17,7 @@
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
 "fr-lm-problems.informant","fr-lm-problems.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-problems.subSection","fr-lm-problems.subSection","","","",0,0,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
+"fr-lm-problems.subSection","fr-lm-problems.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-problems.entry","fr-lm-problems.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""

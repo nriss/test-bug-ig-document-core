@@ -17,7 +17,7 @@
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
 "fr-lm-medical-devices-and-implants.informant","fr-lm-medical-devices-and-implants.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-medical-devices-and-implants.subSection","fr-lm-medical-devices-and-implants.subSection","","","",0,0,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
+"fr-lm-medical-devices-and-implants.subSection","fr-lm-medical-devices-and-implants.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-medical-devices-and-implants.entry","fr-lm-medical-devices-and-implants.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""

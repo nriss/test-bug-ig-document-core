@@ -17,28 +17,8 @@
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
 "fr-lm-exposure-information.informant","fr-lm-exposure-information.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-exposure-information.subSection","fr-lm-exposure-information.subSection","","","",0,0,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
+"fr-lm-exposure-information.subSection","fr-lm-exposure-information.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
-"fr-lm-exposure-information.subSection.codeSection","fr-lm-exposure-information.subSection.codeSection","","","",1,1,"","","","CodeableConcept {[]} {[]}
-","Code de la section","Code de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.codeSection",1,1,"",""
-"fr-lm-exposure-information.subSection.titleSection","fr-lm-exposure-information.subSection.titleSection","","","",0,1,"","","","string {[]} {[]}
-","Titre de la section","Titre de la section","","","","","","","","","",,,,,"",,,,"fr-lm-section.titleSection",0,1,"",""
-"fr-lm-exposure-information.subSection.description","fr-lm-exposure-information.subSection.description","","","",1,1,"","","","string {[]} {[]}
-","Bloc narratif","Bloc narratif","","","","","","","","","",,,,,"",,,,"fr-lm-section.description",1,1,"",""
-"fr-lm-exposure-information.subSection.author[x]","fr-lm-exposure-information.subSection.author[x]","","","",0,*,"","","","Base {[]} {[]}
-","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x]",0,*,"",""
-"fr-lm-exposure-information.subSection.author[x].authorProfessional","fr-lm-exposure-information.subSection.author[x].authorProfessional","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
-","L'auteur est un professionnel de santé","L'auteur est un professionnel de santé","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorProfessional",0,*,"",""
-"fr-lm-exposure-information.subSection.author[x].authorOrganisation","fr-lm-exposure-information.subSection.author[x].authorOrganisation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
-","L'auteur est une organisation","L'auteur est une organisation","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorOrganisation",0,*,"",""
-"fr-lm-exposure-information.subSection.author[x].authorDevice","fr-lm-exposure-information.subSection.author[x].authorDevice","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}
-","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
-"fr-lm-exposure-information.subSection.informant","fr-lm-exposure-information.subSection.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
-","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-exposure-information.subSection.subSection","fr-lm-exposure-information.subSection.subSection","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
-","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
-"fr-lm-exposure-information.subSection.entry","fr-lm-exposure-information.subSection.entry","","","",0,*,"","","","Base {[]} {[]}
-","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-exposure-information.entry","fr-lm-exposure-information.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
 "fr-lm-exposure-information.subSection.quantityExposure","fr-lm-exposure-information.subSection.quantityExposure","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-quantity-exposure {[]} {[]}

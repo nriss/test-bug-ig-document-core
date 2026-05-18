@@ -17,7 +17,7 @@
 ","L'auteur est un système","L'auteur est un système","","","","","","","","","",,,,,"",,,,"fr-lm-section.author[x].authorDevice",0,*,"",""
 "fr-lm-immunisations.informant","fr-lm-immunisations.informant","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur","Informateur","","","","","","","","","",,,,,"",,,,"fr-lm-section.informant",0,*,"",""
-"fr-lm-immunisations.subSection","fr-lm-immunisations.subSection","","","",0,0,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section {[]} {[]}
+"fr-lm-immunisations.subSection","fr-lm-immunisations.subSection","","","",0,0,"","","","Base {[]} {[]}
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-immunisations.entry","fr-lm-immunisations.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
