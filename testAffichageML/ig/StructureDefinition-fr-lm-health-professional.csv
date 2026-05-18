@@ -1,0 +1,37 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-health-professional","fr-lm-health-professional","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Health Professional","Une personne (professionnel ou patient ou autre)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-health-professional.personne","fr-lm-health-professional.personne","","","",0,1,"","","","Base {[]} {[]}
+","Personne","Personne","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne",0,1,"",""
+"fr-lm-health-professional.personne.identifiantPersonne","fr-lm-health-professional.personne.identifiantPersonne","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant de la personne.
+- obligatoire pour les professionnels et les patients.","Identifiant de la personne.
+- obligatoire pour les professionnels et les patients.","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.identifiantPersonne",0,1,"",""
+"fr-lm-health-professional.personne.roleFonctionnel","fr-lm-health-professional.personne.roleFonctionnel","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Rôle fonctionnel","Rôle fonctionnel","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.roleFonctionnel",0,1,"",""
+"fr-lm-health-professional.personne.dateExecution","fr-lm-health-professional.personne.dateExecution","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de l’exécution","Date de l’exécution","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.dateExecution",1,1,"",""
+"fr-lm-health-professional.personne.professionRole","fr-lm-health-professional.personne.professionRole","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","
+- Profession pour les professionnels.
+- Rôle pour les non professionnels.","
+- Profession pour les professionnels.
+- Rôle pour les non professionnels.","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.professionRole",0,1,"",""
+"fr-lm-health-professional.personne.lien","fr-lm-health-professional.personne.lien","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Lien de la personne avec le patient/usager","Lien de la personne avec le patient/usager","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.lien",0,1,"",""
+"fr-lm-health-professional.personne.adresse","fr-lm-health-professional.personne.adresse","","","",0,*,"","","","Address {[]} {[]}
+","Adresse géopostale","Adresse géopostale","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.adresse",0,*,"",""
+"fr-lm-health-professional.personne.coordonneesTelecom","fr-lm-health-professional.personne.coordonneesTelecom","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Coordonnées télécom","Coordonnées télécom","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.coordonneesTelecom",0,*,"",""
+"fr-lm-health-professional.personne.IdentitePersonne","fr-lm-health-professional.personne.IdentitePersonne","","","",0,1,"","","","Base {[]} {[]}
+","Identité de la personne","Identité de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.IdentitePersonne",0,1,"",""
+"fr-lm-health-professional.personne.IdentitePersonne.nomPersonne","fr-lm-health-professional.personne.IdentitePersonne.nomPersonne","","","",1,*,"","","","Base {[]} {[]}
+","Nom de la personne","Nom de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.IdentitePersonne.nomPersonne",1,*,"",""
+"fr-lm-health-professional.personne.IdentitePersonne.prenomPersonne","fr-lm-health-professional.personne.IdentitePersonne.prenomPersonne","","","",0,*,"","","","string {[]} {[]}
+","Prénom de la personne","Prénom de la personne","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.IdentitePersonne.prenomPersonne",0,*,"",""
+"fr-lm-health-professional.personne.IdentitePersonne.civilite","fr-lm-health-professional.personne.IdentitePersonne.civilite","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Civilité","Civilité","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.IdentitePersonne.civilite",0,1,"",""
+"fr-lm-health-professional.personne.IdentitePersonne.titre","fr-lm-health-professional.personne.IdentitePersonne.titre","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Titre","Titre","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.IdentitePersonne.titre",0,1,"",""
+"fr-lm-health-professional.personne.structure","fr-lm-health-professional.personne.structure","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}
+","Structure","Structure","","","","","","","","","",,,,,"",,,,"fr-lm-health-professional.personne.structure",0,1,"",""
