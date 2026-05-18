@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-destinataire-prevu | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*:FRLMDestinatairePrevu |
+| Draft as of 2026-05-18 | *Computable Name*:FRLMDestinatairePrevu |
 
  
 Personne déclarée comme destinataire prévu du document. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-destinataire-p
   "name" : "FRLMDestinatairePrevu",
   "title" : "Modèle logique métier - FR LM Destinataire prévu",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -78,14 +78,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-destinataire-p
       "definition" : "Personne déclarée comme destinataire prévu du document.\n- Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s).\n Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l'envoyer à d'autres destinataires."
     },
     {
-      "id" : "fr-lm-destinataire-prevu.destinataire",
-      "path" : "fr-lm-destinataire-prevu.destinataire",
+      "id" : "fr-lm-destinataire-prevu.destinataire[x]",
+      "path" : "fr-lm-destinataire-prevu.destinataire[x]",
       "short" : "Destinataire prévu du document.",
       "definition" : "Destinataire prévu du document.",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-related-person"
       }]
     }]
   }

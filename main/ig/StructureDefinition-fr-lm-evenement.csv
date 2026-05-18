@@ -62,7 +62,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Rôle fonctionnel.","Rôle fonctionnel.","","","","","","","","","",,,,,"",,,,"fr-lm-evenement.executantEvenement.roleFonctionnel",0,1,"",""
 "fr-lm-evenement.executantEvenement.dateHeureParticipation","fr-lm-evenement.executantEvenement.dateHeureParticipation","","","",0,1,"","","","dateTime {[]} {[]}
 ","Date et heure de participation.","Date et heure de participation.","","","","","","","","","",,,,,"",,,,"fr-lm-evenement.executantEvenement.dateHeureParticipation",0,1,"",""
-"fr-lm-evenement.executantEvenement.executant","fr-lm-evenement.executantEvenement.executant","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Exécutant. 
+"fr-lm-evenement.executantEvenement.executant[x]","fr-lm-evenement.executantEvenement.executant[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}","Exécutant. 
   Le cadre d'exercice est obligatoire pour l'évènement documenté principal.","Exécutant. 
-  Le cadre d'exercice est obligatoire pour l'évènement documenté principal.","","","","","","","","","",,,,,"",,,,"fr-lm-evenement.executantEvenement.executant",1,1,"",""
+  Le cadre d'exercice est obligatoire pour l'évènement documenté principal.","","","","","","","","","",,,,,"",,,,"fr-lm-evenement.executantEvenement.executant[x]",1,1,"",""

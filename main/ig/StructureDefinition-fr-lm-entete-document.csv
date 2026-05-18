@@ -21,13 +21,13 @@
 ","Numéro de version du document.","Numéro de version du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.versionDocument",1,1,"",""
 "fr-lm-entete-document.statutDocument","fr-lm-entete-document.statutDocument","","","",1,1,"","","","code {[]} {[]}
 ","Statut du document.","Statut du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.statutDocument",1,1,"",""
-"fr-lm-entete-document.patient","fr-lm-entete-document.patient","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager {[]} {[]}
+"fr-lm-entete-document.patient","fr-lm-entete-document.patient","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}
 ","Patient / Usager.","Patient / Usager.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.patient",1,1,"",""
-"fr-lm-entete-document.auteur","fr-lm-entete-document.auteur","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur {[]} {[]}
-","Auteur du document.","Auteur du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.auteur",1,*,"",""
+"fr-lm-entete-document.auteur[x]","fr-lm-entete-document.auteur[x]","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}","Auteur du document.","Auteur du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.auteur[x]",1,*,"",""
 "fr-lm-entete-document.operateurSaisie","fr-lm-entete-document.operateurSaisie","","","",0,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-operateur-saisie {[]} {[]}
 ","Opérateur de saisie.","Opérateur de saisie.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.operateurSaisie",0,1,"",""
-"fr-lm-entete-document.informateur","fr-lm-entete-document.informateur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur {[]} {[]}
+"fr-lm-entete-document.informateur","fr-lm-entete-document.informateur","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant {[]} {[]}
 ","Informateur ayant fourni des informations utiles à la production du document.","Informateur ayant fourni des informations utiles à la production du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.informateur",0,*,"",""
 "fr-lm-entete-document.structureConservation","fr-lm-entete-document.structureConservation","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-structure-conservation {[]} {[]}
 ","Structure chargée de la conservation du document.","Structure chargée de la conservation du document.","","","","","","","","","",,,,,"",,,,"fr-lm-entete-document.structureConservation",1,1,"",""

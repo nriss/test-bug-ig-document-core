@@ -592,13 +592,8 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "fr-lm-image-illustrative",
-      "fr-lm-notes-dispensateur",
-      "fr-lm-probleme.reference.externalDocument",
-      "fr-lm-reference-item-prescription",
-      "fr-lm-reference-item-prescription.reference.externalDocument",
-      "fr-lm-references-externes.reference.externalDocument",
-      "fr-lm-traitement-dispense"
+      "fr-lm-medication-dispense",
+      "fr-lm-reference-item-prescription.reference.externalDocument"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
@@ -623,7 +618,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization",
-      "fr-lm-traitement-prescrit"
+      "fr-lm-allergy-intolerance",
+      "fr-lm-allergy-intolerance.reaction",
+      "fr-lm-condition",
+      "fr-lm-device-use",
+      "fr-lm-immunisation",
+      "fr-lm-procedure"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"

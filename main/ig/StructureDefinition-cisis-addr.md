@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-addr | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*:CISISAddr |
+| Draft as of 2026-05-18 | *Computable Name*:CISISAddr |
 
  
 Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d’adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d’Interopérabilité (RGI). Les partenaires de l’échange doivent s’accorder sur la structure de addr à échanger. En effet, addr peut convoyer une adresse géopostale formée : 
@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-cisis-addr.csv), [Ex
   "name" : "CISISAddr",
   "title" : "CDA - FR CISIS Addr",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

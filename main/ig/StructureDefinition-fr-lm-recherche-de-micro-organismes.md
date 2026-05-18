@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Recherche de micro organismes - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Recherche de micro organismes - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Recherche de micro organismes**
+* **Logical model - FR LM Recherche de micro organismes**
 
-## Logical Model: Modèle logique métier - FR LM Recherche de micro organismes 
+## Logical Model: Logical model - FR LM Recherche de micro organismes 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recherche-de-micro-organismes | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*:FRLMRechercheDeMicroOrganismes |
+| Draft as of 2026-05-18 | *Computable Name*:FRLMRechercheDeMicroOrganismes |
 
  
 Recherche de micro organismes 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-recherche-de-m
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recherche-de-micro-organismes",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMRechercheDeMicroOrganismes",
-  "title" : "Modèle logique métier - FR LM Recherche de micro organismes",
+  "title" : "Logical model - FR LM Recherche de micro organismes",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-recherche-de-m
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recherche-de-micro-organismes",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-recherche-de-micro-organismes",
       "path" : "fr-lm-recherche-de-micro-organismes",
-      "short" : "Modèle logique métier - FR LM Recherche de micro organismes",
+      "short" : "Logical model - FR LM Recherche de micro organismes",
       "definition" : "Recherche de micro organismes"
-    },
-    {
-      "id" : "fr-lm-recherche-de-micro-organismes.identifiant",
-      "path" : "fr-lm-recherche-de-micro-organismes.identifiant",
-      "short" : "Identifiant de l’observation",
-      "definition" : "Identifiant de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
     },
     {
       "id" : "fr-lm-recherche-de-micro-organismes.code",
@@ -98,39 +87,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-recherche-de-m
       }]
     },
     {
-      "id" : "fr-lm-recherche-de-micro-organismes.description",
-      "path" : "fr-lm-recherche-de-micro-organismes.description",
-      "short" : "Description narrative de l’observation",
-      "definition" : "Description narrative de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-recherche-de-micro-organismes.statut",
-      "path" : "fr-lm-recherche-de-micro-organismes.statut",
-      "short" : "Statut de l’observation. Fixé à la valeur 'completed'",
-      "definition" : "Statut de l’observation. Fixé à la valeur 'completed'",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-recherche-de-micro-organismes.date",
-      "path" : "fr-lm-recherche-de-micro-organismes.date",
-      "short" : "Date de l’observation",
-      "definition" : "Date de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "fr-lm-recherche-de-micro-organismes.valeur",
       "path" : "fr-lm-recherche-de-micro-organismes.valeur",
       "short" : "Valeur de l’observation",
@@ -139,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-recherche-de-m
       "max" : "1",
       "type" : [{
         "code" : "boolean"
-      }]
-    },
-    {
-      "id" : "fr-lm-recherche-de-micro-organismes.auteur",
-      "path" : "fr-lm-recherche-de-micro-organismes.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
       }]
     }]
   }

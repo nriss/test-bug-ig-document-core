@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionCarePlanLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*: |
+| Draft as of 2026-05-18 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMPlanSoins vers la section CDA FRCDAPlanDeSoins, puis vers la section FHIR FRCompositionDocument.section:planOfCare. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMPlanSoins vers la section CDA FRCD
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Plan de soins\"",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

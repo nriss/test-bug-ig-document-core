@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-document-pdf-copie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*:FRCDASectionDocumentPDFCopie |
+| Draft as of 2026-05-18 | *Computable Name*:FRCDASectionDocumentPDFCopie |
 
  
 Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-document-pdf-
   "name" : "FRCDASectionDocumentPDFCopie",
   "title" : "CDA - FR Document PDF copie",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

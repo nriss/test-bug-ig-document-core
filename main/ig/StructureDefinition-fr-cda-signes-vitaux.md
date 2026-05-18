@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-signes-vitaux | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-15 | *Computable Name*:FRCDASignesVitaux |
+| Draft as of 2026-05-18 | *Computable Name*:FRCDASignesVitaux |
 
  
 Entrée FR-Signes-vitaux: IHE-PCC - Vital signs organizer. L’entrée Signes vitaux est une entrée de type ‘organizer’ qui permet de regrouper des informations relatives aux mesures cliniques du patient. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-signes-vitaux
   "name" : "FRCDASignesVitaux",
   "title" : "CDA - FR Signes vitaux",
   "status" : "draft",
-  "date" : "2026-05-15T08:08:15+00:00",
+  "date" : "2026-05-18T14:11:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
