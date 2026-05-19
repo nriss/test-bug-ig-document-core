@@ -1,13 +1,9 @@
 Logical: FRLMResultatsEntry
 Id: fr-lm-resultats-entree
-Title: "Modèle logique métier - FR LM Resultats"
+Parent: FRLMEntry
+Title: "Logical model - FR LM Resultats"
 Description: """Resultats"""
 Characteristics: #can-be-target
 
-* identifiant 1..1 Identifier "Identifiant de l'entrée"
 * code 1..1 CodeableConcept "Code de l'entrée. Élément observé"
-* statut 1..1 code "Statut de l'entrée" 
-* date 0..1 dateTime "Date de l'entrée"
-* executant 0..* FRLMLaboratoireExecutant "Exécutant"
-* auteur 0..* FRLMAuteur "Auteur"
 * resultat 1..* FRLMObservationResult "Resultat"

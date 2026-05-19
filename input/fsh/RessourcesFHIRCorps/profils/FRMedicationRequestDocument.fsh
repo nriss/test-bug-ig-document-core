@@ -54,17 +54,12 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference(FRMedicationDocument)
   * ^short = "Produit de santé"
-
-// --- Prescripteur ---
+* subject only Reference(FRPatientDocument or FRPatientINSDocument)
+* encounter only Reference(FREncounterCareDocument)
+// --- Prescripteur : Auteur du document Prescription ---
 * requester MS
 * requester ^short = "Prescripteur"
-* requester only Reference(FRPractitionerRoleDocument)
-
-// Auteur du document Prescription
-* extension contains FRActorExtension named author 0..1 MS
-* extension[author] ^short = "Auteur du document Prescription"
-* extension[author].extension[type].valueCode = #AUT
-* extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* requester only Reference(FRPractitionerRoleDocument or FRPractitionerDocument)
 
 * authoredOn MS
 // Motif du traitement
@@ -104,13 +99,15 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
   * quantity MS
     * ^short = "Quantité à dispenser" 
   * validityPeriod MS
-    * ^short = "Période de renouvellement"
+    * ^short = "Période de validité"
   * numberOfRepeatsAllowed MS 
     * ^short = "Nombre de renouvellement(s) possible(s)"
 * substitution 1..1 MS
   * allowed[x] MS
   * ^short = "Autorisation de substitution" 
   * allowedCodeableConcept from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis
+  * reason MS
+  * reason.text ^short = "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)."
 
 * reasonReference ^slicing.discriminator.type = #pattern
 * reasonReference ^slicing.discriminator.path = "display"
@@ -131,8 +128,8 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 * reasonReference[prevention] only Reference(FRConditionDocument)
 * reasonReference[prevention] ^short = "En rapport avec la prévention"
 
-* extension contains FRMedicationRequestOutOfNomenclatureExtension named horsAMM 1..1
+* extension contains $ihe-ext-offLabel named horsAMM 0..* MS
 * extension[horsAMM] ^short = "Hors Autorisation de mise sur le marché"
 
 * extension contains FRNotCoveredExtension named notCovered 0..1
-* extension[notCovered] ^short = "Traitement prescrit n'est remboursable / remboursable"
+* extension[notCovered] ^short = "Traitement non remboursable"

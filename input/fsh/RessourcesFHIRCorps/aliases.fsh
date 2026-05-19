@@ -8,7 +8,7 @@ Alias: $event-performerFunction = http://hl7.org/fhir/StructureDefinition/event-
 Alias: $workflow-supportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
 Alias: $procedure-method = http://hl7.org/fhir/StructureDefinition/procedure-method
-
+Alias: $ihe-ext-offLabel = https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel
 // Code Systems
 Alias: $LNC = http://loinc.org
 Alias: $SCT = http://snomed.info/sct

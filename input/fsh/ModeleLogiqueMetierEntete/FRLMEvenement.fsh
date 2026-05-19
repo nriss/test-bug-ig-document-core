@@ -30,5 +30,5 @@ Characteristics: #can-be-target
   Obligatoire pour l'évènement documenté principal." 
   * roleFonctionnel 0..1 CodeableConcept "Rôle fonctionnel."
   * dateHeureParticipation 0..1 dateTime "Date et heure de participation."
-  * executant 1..1 FRLMPersonneStructure "Exécutant. 
+  * executant[x] 1..1 FRLMHealthProfessional or FRLMPatient "Exécutant. 
   Le cadre d'exercice est obligatoire pour l'évènement documenté principal."
