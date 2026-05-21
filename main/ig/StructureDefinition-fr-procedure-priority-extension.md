@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-priority-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRProcedurePriorityExtension |
+| Draft as of 2026-05-21 | *Computable Name*:FRProcedurePriorityExtension |
 
 Extension permettant d’indiquer d’indique la priorité clinique de l’observation.
 
@@ -48,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-priorit
   "name" : "FRProcedurePriorityExtension",
   "title" : "FR Procedure Priority Extension",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

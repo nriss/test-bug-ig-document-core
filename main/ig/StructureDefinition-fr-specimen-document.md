@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRSpecimenDocument |
+| Draft as of 2026-05-21 | *Computable Name*:FRSpecimenDocument |
 
  
 FRSpecimenDocument est un profil utilisé pour décrire le prélèvement et l’échantillon biologique (le matériel). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-specimen-document
   "name" : "FRSpecimenDocument",
   "title" : "Specimen - FR Specimen Document",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -3,7 +3,7 @@ FRDocumentCore : Validation Results
 
 err = 1768, warn = 6560, info = 1142
 IG Publisher Version: 2.1.2 Out of date - current version is 2.2.7
-Generated Mon May 18 14:33:14 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
+Generated Thu May 21 09:43:38 UTC 2026. FHIR version 4.0.1 for ans.document.fr.core#0.1.0-snapshot (canonical = https://interop.esante.gouv.fr/ig/document/core)
  Build Errors : 14 / 8 / 0
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/AllergyIntolerance-example-allergy-intolerance-data-absent-reason : 4 / 0 / 2
  /home/runner/work/interop-IG-document-core/interop-IG-document-core/igSource/fsh-generated/resources/ConceptMap-FRActSubstitutionLMCDAFHIR : 1 / 7 / 1
@@ -2060,229 +2060,229 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[255].example.ofType(canonical): A definition could not be found for Canonical URL 'https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-core-clinical-document'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[256].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[258].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[260].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[260].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[261].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[262].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[262].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[263].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[264].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[264].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[265].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[266].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[267].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[268].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[266].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[267].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[268].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[270].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[271].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[272].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[273].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[274].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[275].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[272].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[273].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[274].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[275].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[276].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[277].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[278].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[277].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[278].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[279].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[280].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[281].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[282].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[283].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[283].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[284].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[285].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[286].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[287].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[286].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[287].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[288].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[289].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[290].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[289].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[290].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[291].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[293].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[294].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[293].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[294].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[295].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[296].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[297].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[298].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[298].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[299].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[300].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[301].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[302].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[303].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[303].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[304].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[305].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[306].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[307].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[308].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[306].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[307].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[308].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[309].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[310].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[311].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[310].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[311].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[312].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[313].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[314].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[315].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[316].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[316].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[317].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[318].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[319].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[318].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[319].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[320].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[321].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[322].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[323].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[321].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[322].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[323].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[324].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[325].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[326].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[327].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[329].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[330].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[331].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[325].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[326].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[327].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[329].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[330].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[331].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[332].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[333].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[334].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[335].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[336].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[336].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[337].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[339].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[339].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[340].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[341].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[341].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[342].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[343].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[344].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[345].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[346].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[346].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[347].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[348].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[348].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[349].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[350].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[351].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[352].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[353].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[351].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[352].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[353].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[354].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[355].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[356].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[357].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[355].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[356].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[357].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[358].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[359].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[360].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[359].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[360].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[361].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[362].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[363].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[364].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[362].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[363].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[364].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[365].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[366].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[367].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[368].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[369].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[367].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[368].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[369].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[370].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[371].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[372].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[371].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[372].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[373].groupingId: id value 'Modèles logiques métier des sections d'un document' is not valid
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[374].name: value should not start or finish with whitespace 'Logical model- FR LM Medication Administration\t'
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[374].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[375].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[376].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[377].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[378].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[379].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[380].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[381].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[382].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[383].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[384].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[374].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[375].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[376].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[377].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[378].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[379].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[380].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[381].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[382].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[383].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[384].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[385].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[386].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[387].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[388].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[389].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[390].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[391].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[392].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[393].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[394].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[395].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[386].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[387].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[388].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[389].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[390].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[391].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[392].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[393].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[394].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[395].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[396].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[397].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[398].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[399].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[399].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[400].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[401].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[402].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[402].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[403].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[404].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[405].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[404].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[405].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[406].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[407].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[408].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[409].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[408].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[409].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[410].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[411].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[411].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[412].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[413].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[414].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[415].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[416].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[417].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[418].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[419].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[420].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[421].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[416].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[417].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[418].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[419].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[420].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[421].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[422].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[423].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[424].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[425].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[426].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[426].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[427].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[428].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[428].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[429].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[430].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[431].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[432].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[433].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[434].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[431].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[432].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[433].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[434].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[435].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[436].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[437].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[436].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[437].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[438].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[439].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[440].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[441].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[442].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[443].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[439].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[440].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[441].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[442].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[443].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[444].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[445].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[446].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[446].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[447].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[448].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[449].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[450].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[450].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[451].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[452].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[453].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[454].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[455].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[456].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[453].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[454].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[455].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[456].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[457].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[458].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[459].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[458].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[459].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[460].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[461].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[461].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[462].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[463].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[464].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[464].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[465].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[466].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[467].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[466].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[467].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[468].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[469].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[470].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[471].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[472].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[473].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[474].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[475].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[477].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[470].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[471].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[472].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[473].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[474].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[475].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[476].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[477].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[478].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[479].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[480].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[483].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[481].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[482].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[483].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[484].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[485].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[485].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[486].groupingId: id value 'Mapping ML-CDA-FHIR entête' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[487].groupingId: id value 'Mapping ML-CDA-FHIR entête' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[488].groupingId: id value 'Mapping ML-CDA-FHIR entête' is not valid
@@ -2308,7 +2308,7 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[508].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[509].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[510].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[511].groupingId: id value 'Mapping ML-CDA-FHIR des composants élémentaires d'un document' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[511].groupingId: id value 'Mapping ML-CDA-FHIR des composants communs d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[512].groupingId: id value 'Mapping ML-CDA-FHIR des sections d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[513].groupingId: id value 'Ressources FHIR corps' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[514].groupingId: id value 'Ressources FHIR corps' is not valid
@@ -2318,19 +2318,19 @@ ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[517].groupingId: id value 'Ressources FHIR corps' is not valid
 WARNING: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[518].description: value should not start or finish with whitespace '\n - FRMedicationStatementDocument permet de décrire les modalités d'administration d'un médicament au patient.\n - Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.\n - Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement.'
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[518].groupingId: id value 'Ressources FHIR corps' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[519].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[519].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[520].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[521].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[522].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[523].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[524].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[525].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[524].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[525].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[526].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[527].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[528].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[529].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[530].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
-ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[531].groupingId: id value 'Modèles logiques métier des composants élémentaires' is not valid
+ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[531].groupingId: id value 'Modèles logiques métier des composants communs' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[532].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[533].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
 ERROR: ImplementationGuide/ans.document.fr.core: ImplementationGuide.definition.resource[534].groupingId: id value 'Modèles logiques métier de l'entête d'un document' is not valid
@@ -9160,8 +9160,8 @@ WARNING: ValueSet/fr-valueset-reference-externe: ValueSet: Published value sets 
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 ERROR: ValueSet/fr-valueset-status-code: ValueSet.compose.include[0]: The system 'https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis' is actually a value set, which itself refers to the system 'http://terminology.hl7.org/CodeSystem/v3-ActStatus|4.0.0' so that may be what is intended here
 WARNING: ValueSet/fr-valueset-status-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
-WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [3bb046a5-7378-4281-86eb-d74cba56509e]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
-Information: X-Request-Id: a7997b26-e6f9-4e35-ab87-1c0dbf049e3f
+WARNING: ValueSet.where(id = 'fr-valueset-status-code'): Error from https://smt.esante.gouv.fr/fhir: Error: [bf3b248f-6fca-485e-a8ba-4d4afb275f9a]: A usable code system with URL https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActStatus-cisis could not be resolved.
+Information: X-Request-Id: 0bd78517-e710-4b1f-8f8d-e12633bd4c06
 == fsh-generated/resources/ValueSet-fr-valueset-statut-du-probleme.json ==
 ERROR: ValueSet/fr-valueset-statut-du-probleme: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-valueset-statut-du-probleme: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
@@ -9197,8 +9197,8 @@ ERROR: ValueSet/fr-vs-medication-translation-document: ValueSet.jurisdiction[0].
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[1].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-cip_ucd'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[3].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-medicabase'
 WARNING: ValueSet/fr-vs-medication-translation-document: ValueSet.compose.include[4].system: No definition could be found for URL value 'https://smt.esante.gouv.fr/terminologie-nuva/'
-WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [a9fb6631-7ff5-458d-b86e-741625802884]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-05
-Information: X-Request-Id: 4d8b2537-3bcf-4943-876b-42ed1ebc3f0f
+WARNING: ValueSet.where(id = 'fr-vs-medication-translation-document'): Error from https://smt.esante.gouv.fr/fhir: Error: [668fd7d8-c26a-40a5-82e8-866b6829f024]: Could not find the code system https://smt.esante.gouv.fr/terminologie-cip_ucd|2026-05
+Information: X-Request-Id: 452c2557-b6a7-4cea-b512-887c47258b7f
 == fsh-generated/resources/ValueSet-fr-vs-procedure-code.json ==
 ERROR: ValueSet/fr-vs-procedure-code: ValueSet.jurisdiction[0].coding[0].display: Wrong Display Name 'FRANCE' for urn:iso:std:iso:3166#FR. Valid display is 'France (la)' (fr) (for the language(s) 'fr-FR')
 WARNING: ValueSet/fr-vs-procedure-code: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present

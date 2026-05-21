@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evaluation-composant-n2 | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRCDAEvaluationComposantN2 |
+| Draft as of 2026-05-21 | *Computable Name*:FRCDAEvaluationComposantN2 |
 
  
 Entrée FR-Evaluation-Composant-N2: Cette entrée permet de porter un résultat élémentaire (ex : score unitaire) répondant à une question faisant partie d’une évaluation. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evaluation-co
   "name" : "FRCDAEvaluationComposantN2",
   "title" : "CDA - FR Evaluation Composant N2",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

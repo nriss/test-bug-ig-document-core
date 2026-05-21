@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-type-document-attache | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRCDATypeDocumentAttache |
+| Draft as of 2026-05-21 | *Computable Name*:FRCDATypeDocumentAttache |
 
  
 Entrée FR-Type-document-attache: Élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant le type de document attaché. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-type-document
   "name" : "FRCDATypeDocumentAttache",
   "title" : "CDA - FR Type document attache",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

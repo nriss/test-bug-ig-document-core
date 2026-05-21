@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRDocumentCore |
+| Draft as of 2026-05-21 | *Computable Name*:FRDocumentCore |
 
  **Guide de mise en œuvre des documents dématérialisés produits en France dans le domaine sanitaire et le domaine médico-social.**
  Implementation guides of dematerialized health and medico-social documents produced in France. 
@@ -159,7 +159,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -844,13 +844,13 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Modèles logiques métier des sections d'un document"
     },
     {
-      "id" : "Modèles logiques métier des composants élémentaires",
-      "name" : "Modèles logiques métier des composants élémentaires",
-      "description" : "Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR."
+      "id" : "Modèles logiques métier des composants communs",
+      "name" : "Modèles logiques métier des composants communs",
+      "description" : "Modèles de données métier représentant les concepts communs, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR."
     },
     {
       "id" : "Ressources CDA entête",
-      "name" : "Eléments CDA"
+      "name" : "Eléments CDA de l'entête"
     },
     {
       "id" : "Ressources CDA corps des sections",
@@ -889,8 +889,8 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Concept Maps des sections d'un document"
     },
     {
-      "id" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document",
-      "name" : "Concept Maps des composants élémentaires d'un Document"
+      "id" : "Mapping ML-CDA-FHIR des composants communs d'un document",
+      "name" : "Concept Maps des composants communs d'un Document"
     }],
     "resource" : [{
       "extension" : [{
@@ -4265,7 +4265,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - Device",
       "description" : "Entrée Dispositif médical",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4291,7 +4291,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Administration of Blood Derivatives",
       "description" : "Entrée Administration de dérivés du sang",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4317,7 +4317,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Advance Directive",
       "description" : "Entree Directive anticipee",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4343,7 +4343,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Adverse Event",
       "description" : "Entrée Effet indésirable",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4356,7 +4356,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Adverse Events During Hospitalization",
       "description" : "Entrée Evènements indésirables pendant l'hospitalisation",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4369,7 +4369,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Adverse Events Following Administration of Blood Derivatives",
       "description" : "Entrée Evènements indésirables suite à l'administration de dérivés du sang",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4420,7 +4420,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Allergy Intolerance",
       "description" : "Entrée Allergie ou Hypersensibilité",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4433,7 +4433,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Assessment",
       "description" : "Entrée Evaluation",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4446,7 +4446,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Assessments",
       "description" : "Entrée Groupe de questionnaires d'évalutation",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4459,7 +4459,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Attachment",
       "description" : "Entrée Document attaché",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4485,7 +4485,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Body Structure",
       "description" : "Localisation anatomique",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4498,7 +4498,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Care Plan",
       "description" : "Entrée Plan de soins",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4563,7 +4563,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Condition",
       "description" : "Entrée Problème",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4602,7 +4602,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Device use",
       "description" : "Entrée Dispositif médical usage",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4615,7 +4615,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM DICOM Medication Administration",
       "description" : "Entrée Administration de produit de santé",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4641,7 +4641,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Dose Number",
       "description" : "Entrée Rang de la vaccination",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4654,7 +4654,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Encounter",
       "description" : "Entrée Rencontre",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4692,7 +4692,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Entry",
       "description" : "Modèle logique représentant l'entrée",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4705,7 +4705,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Evolution Adverse Event",
       "description" : "Entrée Evolution effet indesirable",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4757,7 +4757,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Family Member History",
       "description" : "Entrée Antécédent familial",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4822,7 +4822,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Hors AMM",
       "description" : "Entrée Hors Autorisation de Mise sur le Marché (AMM)",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4861,7 +4861,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Identification de micro-organismes multirésistants",
       "description" : "Entrée Identification de micro-organismes multirésistants",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4874,7 +4874,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Imaging Study",
       "description" : "Entrée DICOM Examen Imagerie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4887,7 +4887,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Immunisation",
       "description" : "Entrée Vaccination",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4913,7 +4913,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Immunization Recommendation",
       "description" : "Entrée Vaccin recommandé",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4926,7 +4926,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "logical model - FR LM Imputabilite effet indesirable",
       "description" : "Entrée Imputabilite effet indesirable",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -4991,7 +4991,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Medication",
       "description" : "Entrée Produit de santé",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5017,7 +5017,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Medication Dispense",
       "description" : "Entrée Traitement dispense",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5030,7 +5030,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Medication Prescription",
       "description" : "Entrée Traitement prescrit",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5056,7 +5056,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "logical model - FR LM Modalité d'entrée",
       "description" : "Entrée Modalité d'entrée",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5069,7 +5069,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Modalité de sortie",
       "description" : "Entrée Modalité de sortie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5082,7 +5082,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Non remboursable",
       "description" : "Entrée Non remboursable",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5108,7 +5108,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Observation",
       "description" : "observation",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5121,7 +5121,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Observation Long Term Condition",
       "description" : "Entrée Observation en rapport avec une Affection Longue Durée (ALD)",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5134,7 +5134,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Observation Related to Prevention",
       "description" : "Entrée Observation en rapport avec la prevention",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5159,7 +5159,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Observation Vital Sign",
       "description" : "Signe vital observé",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5172,7 +5172,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Observation Work Related Accident",
       "description" : "Entrée Observation en rapport avec un accident travail",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5185,7 +5185,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM ObservationMedia",
       "description" : "Entrée Image illustrative.",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5250,7 +5250,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Patient avec sujet non humain",
       "description" : "Patient avec sujet non humain",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5288,7 +5288,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Patient Transfer.",
       "description" : "Entrée Transfert du patient",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5314,7 +5314,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Prescription",
       "description" : "Prescription",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5379,7 +5379,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Quantity Exposure",
       "description" : "Quantité exposition",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5405,7 +5405,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Recherche de micro organismes",
       "description" : "Recherche de micro organismes",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5444,7 +5444,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Resultats",
       "description" : "Resultats",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5457,7 +5457,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Resultats d'examens de biologie medicale",
       "description" : "Resultats d'examens de biologie medicale",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5470,7 +5470,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Référence item prescription",
       "description" : "Référence item prescription",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5496,7 +5496,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Series",
       "description" : "Séries d'actes d'imagerie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5509,7 +5509,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Service Request",
       "description" : "Entrée Demande d'examen ou de suivi / Objectif à atteindre",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5522,7 +5522,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Severity Adverse Event",
       "description" : "Entrée Gravité effet indésirable",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5548,7 +5548,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM SOP Instance",
       "description" : "SOP Instance",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5561,7 +5561,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Specimen",
       "description" : "Entrée Prélèvement",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5587,7 +5587,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Statut",
       "description" : "Statut",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5600,7 +5600,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Statut du document",
       "description" : "Entrée Statut du document",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5613,7 +5613,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Sujet non humain",
       "description" : "Sujet non humain",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5652,7 +5652,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Transfusion accidents",
       "description" : "Entrée Accidents transfusionnels",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5665,7 +5665,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM Transfusion de produits sanguins",
       "description" : "Transfusion de produits sanguins",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5678,7 +5678,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - FR LM TravelHistory",
       "description" : "Historique des voyages.",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5704,7 +5704,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model - Laboratory Observation",
       "description" : "Entrée Résultat d'examen de laboratoire",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5717,7 +5717,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Dosage Instructions",
       "description" : "Posologie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5743,7 +5743,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Medication Administration\t",
       "description" : "Entrée Traitement",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5756,7 +5756,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Observation Social History",
       "description" : "Entrée Habitus Mode de vie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5769,7 +5769,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Pregnancy History",
       "description" : "Entrée Historique de la grossesse",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5782,7 +5782,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Pregnancy Observation",
       "description" : "Observation sur la grossesse",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5795,7 +5795,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Pregnancy Status",
       "description" : "Statut de grossesse",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5808,7 +5808,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Procedure",
       "description" : "Entrée Acte",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5821,7 +5821,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Synthese medicale sejour",
       "description" : "Synthese medicale sejour",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5834,7 +5834,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Logical model- FR LM Technique imagerie",
       "description" : "Entrée Technique imagerie",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -5847,7 +5847,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAccidentsTransfusionnels → FRCDAAccidentsTransfusionnels → FRObservationTransfusionAccidentsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMAccidentsTransfusionnels vers le profil CDA FRCDAAccidentsTransfusionnels, puis vers le profil FHIR FRObservationTransfusionAccidentsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5860,7 +5860,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMActe → FRCDAActe → FRProcedureDocument",
       "description" : "Mapping des éléments du modèle métier FRLMActe vers le profil CDA FRCDAActe, puis vers le profil FHIR FRProcedureDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5873,7 +5873,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMActeSubstitution → FRCDAActeSubstitution → FRMedicationDispenseDocument",
       "description" : "Mapping des éléments du modèle métier FRLMActeSubstitution vers le profil CDA FRCDAActeSubstitution, puis vers le profil FHIR FRMedicationDispenseDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5899,7 +5899,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAdministrationDeDerivesDuSang → FRCDAAdministrationDeDerivesDuSang → FRObservationAdministrationBloodDerivativesDocument",
       "description" : "Mapping des éléments du modèle métier FRLMAdministrationDeDerivesDuSang vers le profil CDA FRCDAAdministrationDeDerivesDuSang, puis vers le profil FHIR FRObservationAdministrationBloodDerivativesDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5912,7 +5912,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAdministrationProduitDeSante -> FRCDADICOMAdministrationProduitDeSante -> FRMedicationAdministrationDocument",
       "description" : "Mapping des éléments du modele metier FRLMAdministrationProduitDeSante vers le profil CDA FRCDADICOMAdministrationProduitDeSante, puis vers le profil FHIR FRMedicationAdministrationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5925,7 +5925,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAllergieOuHypersensibilite / FRCDAAllergieOuHypersensibilite -> FRAllergyIntoleranceDocument",
       "description" : "Mapping des éléments du modèle métier FRLMAllergieOuHypersensibilite vers le profil CDA FRCDAAllergieOuHypersensibilite,puis vers le profil FHIR FRAllergyIntoleranceDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5938,7 +5938,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAntecedentFamilialObserve → FRCDAAntecedentFamilialObserve → FRFamilyMemberHistoryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMAntecedentFamilialObserve vers le profil CDA FRCDAAntecedentFamilialObserve, puis vers le profil FHIR FRFamilyMemberHistoryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5951,7 +5951,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAntecedentsFamiliauxEntree → FRCDAAntecedentsFamiliaux → FRFamilyMemberHistoryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMAntecedentsFamiliauxEntree vers le profil CDA FRCDAAntecedentsFamiliaux, puis vers le profil FHIR FRFamilyMemberHistoryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5964,7 +5964,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAutorisationExposition → FRCDADICOMExpositionPatient → FRObservationRadiationExposureDocument.performer:professionnelAutorisantExposition",
       "description" : "Mapping des éléments du modèle métier FRLMAutorisationExposition vers le profil CDA FRCDADICOMExpositionPatient, puis vers le profil FHIR FRObservationRadiationExposureDocument.performer:professionnelAutorisantExposition.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5977,7 +5977,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMAutorisationSubstitution → FRCDAAutorisationSubstitution → FRMedicationRequestDocument.substitution.allowedCodeableConcept",
       "description" : "Mapping des éléments du modèle métier FRLMAutorisationSubstitution vers le profil CDA FRCDAAutorisationSubstitution, puis vers l'élément substitution.allowedCodeableConcept du profil FHIR FRMedicationRequestDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -5990,7 +5990,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMBatterieExamensBiologieMedicale → FRCDABatterieExamensDeBiologieMedicale → FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMBatterieExamensBiologieMedicale vers le profil CDA FRCDABatterieExamensDeBiologieMedicale, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6003,7 +6003,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMCertitude → FRCDACertitude → FRConditionDocument.verificationStatus et FRAllergyIntoleranceDocument.verificationStatus",
       "description" : "Mapping des éléments du modèle métier FRLMCertitude vers le profil CDA FRCDACertitude, puis vers les profils FHIR FRConditionDocument.verificationStatus et FRAllergyIntoleranceDocument.verificationStatus.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6016,7 +6016,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMCommentaireER -> FRCDACommentaireER -> Annotation",
       "description" : "Mapping des éléments du modele metier FRLMCommentaireER vers l'element CDA FRCDACommentaireER, puis vers l'element FHIR Annotation.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6068,7 +6068,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMCondition → FRCDACondition → FRConditionDocument",
       "description" : "Mapping des éléments du modèle métier FRLMProbleme vers le profil CDA FRCDAProbleme, puis vers le profil FHIR FRConditionDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6107,7 +6107,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMCriticite -> FRCDACriticite -> FRAllergyIntoleranceDocument.criticality",
       "description" : "Mapping des éléments du modele metier FRLMCriticite vers le profil CDA FRCDACriticite, puis vers le profil FHIR FRAllergyIntoleranceDocument.criticality.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6133,7 +6133,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMDemandeExamenOuSuivi → FRCDADemandeDExamenOuDeSuivi → FRServiceRequestDocument",
       "description" : "Mapping des éléments du modèle métier FRLMDemandeExamenOuSuivi vers le profil CDA FRCDADemandeDExamenOuDeSuivi, puis vers le profil FHIR FRServiceRequestDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6146,7 +6146,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMDirectiveAnticipee → FRCDADirectiveAnticipee → FRAdvanceDirectiveDocument",
       "description" : "Mapping des éléments du modèle métier FRLMDirectiveAnticipee vers le profil CDA FRCDADirectiveAnticipee, puis vers le profil FHIR FRAdvanceDirectiveDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6185,7 +6185,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMDispositifMedicalEntree → FRCDADispositifMedical → FRDeviceRequestDocument",
       "description" : "Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceRequestDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6198,7 +6198,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMDispositifMedicalEntree → FRCDADispositifMedical → FRDeviceUseStatement",
       "description" : "Mapping des éléments du modèle métier FRLMDispositifMedicalEntree vers le\nprofil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatementDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6224,7 +6224,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMDocumentAttache → FRCDADocumentAttache → FRDocumentReferenceDocument",
       "description" : "Mapping des éléments du modèle métier FRLMDocumentAttache vers le profil CDA FRCDADocumentAttache, puis vers le profil FHIR FRDocumentReferenceDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6289,7 +6289,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMEnRapportAvecAccidentTravail → FRCDAEnRapportAvecAccidentTravail → FRObservationWorkRelatedAccidentDocument",
       "description" : "Mapping des éléments du modèle métier FRLMEnRapportAvecAccidentTravail vers le profil CDA FRCDAEnRapportAvecAccidentTravail, puis vers le profil FHIR FRObservationWorkRelatedAccidentDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6302,7 +6302,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMEvaluation → FRCDAEvaluation → FRObservationSurveyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMEvaluation vers le profil CDA FRCDAEvaluation, puis vers le profil FHIR FRObservationSurveyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6315,7 +6315,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMEvaluationComposant → FRCDAEvaluationComposant → FRObservationSurveyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMEvaluationComposant vers le profil CDA FRCDAEvaluationComposant, puis vers le profil FHIR FRObservationSurveyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6328,7 +6328,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMEvaluationComposantN2 → FRCDAEvaluationComposantN2 → FRObservationSurveyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMEvaluationComposantN2 vers le profil CDA FRCDAEvaluationComposantN2, puis vers le profil FHIR FRObservationSurveyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6341,7 +6341,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMEvenementIndesirable → FRCDAEvenementIndesirable → FRAdverseEventDocument",
       "description" : "Mapping des éléments du modèle métier FRLMEvenementIndesirable vers le profil CDA FRCDAEvenementIndesirable, puis vers le profil FHIR FRAdverseEvent.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6354,7 +6354,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMExamenImagerie → FRCDADICOMExamenImagerie → FRImagingStudyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMExamenImagerie vers le profil CDA FRCDADICOMExamenImagerie, puis vers le profil FHIR FRImagingStudyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6419,7 +6419,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMGroupDeQuestionnairesDevaluation → FRCDAGroupeDeQuestionnairesDEvaluation → FRObservationSurveyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMGroupDeQuestionnairesDevaluation vers le profil CDA FRCDAGroupeDeQuestionnairesDEvaluation, puis vers le profil FHIR FRObservationSurveyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6445,7 +6445,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMHabitusModeDeVieEntree → FRCDAHabitusModeDeVie → FRObservationSocialHistoryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMHabitusModeDeVieEntree vers le profil CDA FRCDAHabitusModeDeVie, puis vers le profil FHIR FRObservationSocialHistoryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6484,7 +6484,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRObservationPregnancyHistoryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRObservationPregnancyHistoryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6497,7 +6497,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMHistoriqueGrossesse → FRCDAHistoriqueDeLaGrossesse → FRPregnancyHistoryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMHistoriqueGrossesse vers le profil CDA FRCDAHistoriqueDeLaGrossesse, puis vers le profil FHIR FRPregnancyHistoryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6510,7 +6510,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMIdentificationDeMicroOrganismesMultiresistants → FRCDAIdentificationMicroOrganismesMultiresistants → FRObservationMultiresistantMicroorganismsIdentificationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMIdentificationDeMicroOrganismesMultiresistants vers le profil CDA FRCDAIdentificationMicroOrganismesMultiresistants, puis vers le profil FHIR FRObservationMultiresistantMicroorganismsIdentificationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6523,7 +6523,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMImageIllustrative → FRCDAImageIllustrative → FRMediaDocument",
       "description" : "Mapping des éléments du modèle métier FRLMImageIllustrative vers le profil CDA FRCDAImageIllustrative, puis vers le profil FHIR FRMediaDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6549,7 +6549,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMIsolatMicrobiologique → FRCDAIsolatMicrobiologique → FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMIsolatMicrobiologique vers le profil CDA FRCDAIsolatMicrobiologique, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6562,7 +6562,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMNaissance → FRCDANaissance → FRObservationBirthEventDocument",
       "description" : "Mapping des éléments du modèle métier FRLMNaissance vers le profil CDA FRCDANaissance, puis vers le profil FHIR FRObservationBirthEventDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6588,7 +6588,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMObservation -> FRCDASimpleObservation -> Observation",
       "description" : "Mapping des éléments du modele metier FRLMObservation vers le profil CDA FRCDASimpleObservation, puis vers le profil FHIR Observation.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6601,7 +6601,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMObservationGrossesse → FRCDAObservationSurLaGrossesse → FRObservationPregnancyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMObservationGrossesse vers le profil CDA FRCDAObservationSurLaGrossesse, puis vers le profil FHIR FRObservationPregnancyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6614,7 +6614,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMObservationResult → FRCDAResultat → FRObservationResultDocument",
       "description" : "Mapping des éléments du modèle métier FRLMObservationResult vers le profil CDA FRCDAResultat, puis vers le profil FHIR FRObservationResultDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6627,7 +6627,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMParticipantCorps -> FRCDAParticipant -> FRActorExtension",
       "description" : "Mapping des éléments du modele metier FRLMParticipantCorps vers le profil CDA FRCDAParticipant, puis vers l'extension FHIR FRActorExtension.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6640,7 +6640,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMPatientSujetNonHumain -> FRCDAPatientAvecSujetNonHumain -> FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modele metier FRLMPatientSujetNonHumain vers l'element CDA FRCDAPatientAvecSujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance et Observation/subject.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6679,7 +6679,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMPrelevement → FRCDAPrelevement → FRSpecimenDocument",
       "description" : "Mapping des éléments du modèle métier FRLMPrelevement vers le profil CDA FRCDAPrelevement, puis vers le profil FHIR FRSpecimenDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6731,7 +6731,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMProduitSante → FRCDAProduitDeSante → FRMedicationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMProduitSante vers le profil CDA FRCDAProduitDeSante, puis vers le profil FHIR FRMedicationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6770,7 +6770,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMRechercheDeMicroOrganismes → FRCDARechercheDeMicroOrganismes → FRObservationMicroorganismDetectionDocument",
       "description" : "Mapping des éléments du modèle métier FRLMRechercheDeMicroOrganismes vers le profil CDA FRCDARechercheDeMicroOrganismes, puis vers le profil FHIR FRObservationMicroorganismDetectionDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6783,7 +6783,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMReferenceItemPlanTraitement → FRCDAReferenceItemPlanTraitement → FRCarePlanDocument",
       "description" : "Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers le profil CDA FRCDAReferenceItemPlanTraitement, puis vers le profil FHIR FRCarePlanDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6796,7 +6796,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMRencontre → FRCDARencontre → FREncounterDocument",
       "description" : "Mapping des éléments du modèle métier FRLMRencontre vers le profil CDA FRCDARencontre, puis vers le profil FHIR FREncounterDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6809,7 +6809,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMResultatExamensBiologieElementCliniquePertinent → Profile: FRCDAResultatExamensDeBiologieElementCliniquePertinent\n → FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMResultatExamensBiologieElementCliniquePertinent vers le profil CDA FRCDAResultatExamensDeBiologieElementCliniquePertinent, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6835,7 +6835,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument",
       "description" : "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6848,7 +6848,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument",
       "description" : "Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6874,7 +6874,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale vers le profil CDA FRCDAResultatExamensDeBiologie, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6913,7 +6913,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument",
       "description" : "Mapping des éléments du modèle métier FRLMSerieImagerie vers le profil CDA FRCDADICOMSerieImagerie, puis vers le profil FHIR FRImagingStudyDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6939,7 +6939,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument",
       "description" : "Mapping des éléments du modèle métier FRLMSigneVital vers le profil CDA FRCDASignesVitaux, puis vers le profil FHIR FRObservationVitalSignsPanelDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6952,7 +6952,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument",
       "description" : "Mapping des éléments du modèle métier FRLMSigneVitalObserve vers le profil CDA FRCDASigneVitalObserve, puis vers le profil FHIR FRObservationVitalSignsDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -6991,7 +6991,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMSujetNonHumain -> FRCDASujetNonHumain -> FRObservationLaboratoryReportResultsDocument",
       "description" : "Mapping des éléments du modele metier FRLMSujetNonHumain vers l'element CDA FRCDASujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7004,7 +7004,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMSyntheseMedicaleSejour → FRCDASyntheseMedicaleSejour → FRObservationMedicalSummaryDocument",
       "description" : "Mapping des éléments du modèle métier FRLMSyntheseMedicaleSejour vers la sous-entrée CDA FRCDASyntheseMedicaleSejour puis vers le profil FHIR FRObservationMedicalSummaryDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7017,7 +7017,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTechniqueImagerie vers le profil CDA FRCDADICOMTechniqueImagerie, puis vers le profil FHIR FRProcedureImagingDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7030,7 +7030,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitement vers le profil CDA FRCDATraitement, puis vers le profil FHIR FRMedicationAdministrationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7043,7 +7043,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitement vers la sous-entrée CDA FRCDATraitement puis vers le profil FHIR FRMedicationStatementDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7056,7 +7056,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitementDispense vers le profil CDA FRCDATraitementDispense, puis vers le profil FHIR FRMedicationDispenseDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7069,7 +7069,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescrit vers l'entrée CDA FRCDATraitementPrescrit, puis vers le profil FHIR FRMedicationRequestDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7082,7 +7082,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitementPrescritSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7134,7 +7134,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-entrée CDA FRCDATraitementSubordonne puis vers le profil FHIR FRMedicationsCombinaisonDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7147,7 +7147,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMTransfusionDeProduitsSanguins → FRCDATransfusionDeProduitsSanguins → FRObservationBloodProductTransfusionDocument",
       "description" : "Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers la sous-entrée CDA FRCDATransfusionDeProduitsSanguins puis vers le profil FHIR FRObservationBloodProductTransfusionDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7160,7 +7160,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMVaccination vers le profil CDA FRCDAVaccination, puis vers le profil FHIR FRImmunizationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7186,7 +7186,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument",
       "description" : "Mapping des éléments du modèle métier FRLMVaccinRecommande vers le profil CDA FRCDAVaccinRecommande, puis vers le profil FHIR FRImmunizationRecommendationDocument.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7524,7 +7524,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations",
       "description" : "Mapping des éléments du modèle métier FRLMQuantiteExposition vers l'entrée CDA FRCDADICOMQuantite puis vers le composant FHIR FRObservationRadiationExposureDocument.component.",
       "exampleBoolean" : false,
-      "groupingId" : "Mapping ML-CDA-FHIR des composants élémentaires d'un document"
+      "groupingId" : "Mapping ML-CDA-FHIR des composants communs d'un document"
     },
     {
       "extension" : [{
@@ -7628,7 +7628,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
       "description" : "Entrée Batterie d'examens de biologie médicale",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -7693,7 +7693,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Modèle logique métier - FR LM Isolat microbiologique",
       "description" : "Isolat microbiologique",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -7706,7 +7706,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Modèle logique métier - FR LM Laboratoire exécutant",
       "description" : "Laboratoire exécutant",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{
@@ -7784,7 +7784,7 @@ Pour les terminologies qui ne sont pas publiées dans le SMT, se renseigner aupr
       "name" : "Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent",
       "description" : "Résultat d'examens de biologie / élement clinique pertinent",
       "exampleBoolean" : false,
-      "groupingId" : "Modèles logiques métier des composants élémentaires"
+      "groupingId" : "Modèles logiques métier des composants communs"
     },
     {
       "extension" : [{

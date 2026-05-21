@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-du-probleme | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-18 | *Computable Name*:FRCDAStatutDuProbleme |
+| Draft as of 2026-05-21 | *Computable Name*:FRCDAStatutDuProbleme |
 
  
 Entrée FR-Statut-du-probleme: IHE-PCC - Problem-Status-Observation. L’élément ‘Statut du problème’ est un élément de type ‘observation’ qui permet de fournir le statut du problème ou de l’allergie. Il est utilisé exclusivement dans un lien ‘entryRelationship’ grâce auquel il est lié à l’élément qu’il qualifie. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-du-pro
   "name" : "FRCDAStatutDuProbleme",
   "title" : "CDA - FR Statut du probleme",
   "status" : "draft",
-  "date" : "2026-05-18T14:11:29+00:00",
+  "date" : "2026-05-21T09:18:21+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

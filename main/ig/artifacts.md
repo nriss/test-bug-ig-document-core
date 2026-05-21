@@ -92,9 +92,9 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 | [Logical model - FR LM Vital Signs](StructureDefinition-fr-lm-vital-signs.md) | Section Signes vitaux |
 | [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md) | Section Statut fonctionnel |
 
-### Modèles logiques métier des composants élémentaires 
+### Modèles logiques métier des composants communs 
 
-Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
+Modèles de données métier représentant les concepts communs, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
 
 | | |
 | :--- | :--- |
@@ -170,7 +170,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md) | Laboratoire exécutant |
 | [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) | Résultat d’examens de biologie / élement clinique pertinent |
 
-### Eléments CDA 
+### Eléments CDA de l'entête 
 
 | | |
 | :--- | :--- |
@@ -679,7 +679,7 @@ Modèles de données métier représentant les concepts élémentaires, modélis
 | [Mapping Métier/CDA/FHIR : Commentaire ER](ConceptMap-FRSectionNoteLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMCommentaireNonCode vers la section CDA FRCDACommentaireNonCode, puis vers le profil FHIR FRCompositionDocument.section:note. |
 | [Mapping Métier/CDA/FHIR : Résultats d'imagerie](ConceptMap-FRSectionImagingResultsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMResultatsExamenImagerie vers la section CDA FRCDADICOMResultats puis vers le profil FHIR FRCompositionDocument.section:Findings. |
 
-### Concept Maps des composants élémentaires d'un Document 
+### Concept Maps des composants communs d'un Document 
 
 | | |
 | :--- | :--- |
