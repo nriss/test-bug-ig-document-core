@@ -175,9 +175,9 @@ groups:
       - StructureDefinition/fr-lm-encounter-information
 
   #Entrées et éléments transversaux
-  Modèles logiques métier des composants élémentaires: 
-    name: Modèles logiques métier des composants élémentaires
-    description: Modèles de données métier représentant les concepts élémentaires, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
+  Modèles logiques métier des composants communs: 
+    name: Modèles logiques métier des composants communs
+    description: Modèles de données métier représentant les concepts communs, modélisés indépendamment de la syntaxe et de façon plus accessible pour le métier que les éléments techniques CDA et FHIR.
     resources:
       - StructureDefinition/fr-lm-entry
       - StructureDefinition/fr-lm-procedure
@@ -251,7 +251,7 @@ groups:
       - StructureDefinition/fr-lm-body-structure
       - StructureDefinition/fr-lm-travel-history
   Ressources CDA entête:
-    name: Eléments CDA
+    name: Eléments CDA de l'entête
     #description: Profils CDA
     resources:
       - StructureDefinition/fr-cda-clinical-document
@@ -632,8 +632,8 @@ groups:
       - FRSectionImmunizationsLMCDAFHIR
       - FRSectionMedicationDispenseLMCDAFHIR
 
-  Mapping ML-CDA-FHIR des composants élémentaires d'un document:
-    name: Concept Maps des composants élémentaires d'un Document
+  Mapping ML-CDA-FHIR des composants communs d'un document:
+    name: Concept Maps des composants communs d'un Document
     resources:
       - FRProcedureLMCDAFHIR
       - FRAdvanceDirectiveLMCDAFHIR
