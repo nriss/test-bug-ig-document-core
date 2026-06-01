@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entete-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMEnteteDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMEnteteDocument |
 
  
 Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
   "name" : "FRLMEnteteDocument",
   "title" : "Modèle logique métier - FR LM En-tête document",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -191,18 +191,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-usager"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient"
       }]
     },
     {
-      "id" : "fr-lm-entete-document.auteur",
-      "path" : "fr-lm-entete-document.auteur",
+      "id" : "fr-lm-entete-document.auteur[x]",
+      "path" : "fr-lm-entete-document.auteur[x]",
       "short" : "Auteur du document.",
       "definition" : "Auteur du document.",
       "min" : 1,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      },
+      {
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
       }]
     },
     {
@@ -224,7 +230,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-entete-documen
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informateur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"
       }]
     },
     {

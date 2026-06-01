@@ -8,5 +8,5 @@
  - Soit le Dossier Pharmaceutique (DP) responsable des documents qu'il produit","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-responsable.dateHeurePriseResponsabilite","fr-lm-responsable.dateHeurePriseResponsabilite","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date/Heure de la prise de responsabilité.","Date/Heure de la prise de responsabilité.","","","","","","","","","",,,,,"",,,,"fr-lm-responsable.dateHeurePriseResponsabilite",1,1,"",""
-"fr-lm-responsable.responsable","fr-lm-responsable.responsable","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Responsable du document.","Responsable du document.","","","","","","","","","",,,,,"",,,,"fr-lm-responsable.responsable",1,1,"",""
+"fr-lm-responsable.responsable[x]","fr-lm-responsable.responsable[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device {[]} {[]}https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}","Responsable du document.","Responsable du document.","","","","","","","","","",,,,,"",,,,"fr-lm-responsable.responsable[x]",1,1,"",""

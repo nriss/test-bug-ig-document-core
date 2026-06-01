@@ -30,7 +30,7 @@ Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md
 
 **category**: Clinical note
 
-**encounter**: [Encounter : identifier = Visit Number: 801234534765; status = finished; class = ambulatoire (hors établissement) (ActCode#AMB); period = (?) --> (en cours)](Bundle-example-bundle-Prescription.md#urn-uuid-encounter-Prescription-001)
+**encounter**: [Encounter : identifier = Visit Number: 801234534765; status = finished; class = ambulatoire (hors établissement) (ActCode#AMB); period = (?) --> (en cours)](Bundle-example-bundle-Prescription-PosoNonStruct.md#urn-uuid-encounter-Prescription-001)
 
 **date**: 2026-04-28 09:30:00+0200
 
@@ -44,7 +44,7 @@ Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md
 
 > **attester****mode**: Professional**time**: 2026-04-28 09:30:00+0200**party**: [PractitionerRole ](Bundle-example-bundle-Prescription.md#PractitionerRole_practitionerRolePrescription-01)
 
-**custodian**: [Organization Centre de soins le Belvédère](Bundle-example-bundle-Prescription.md#urn-uuid-organization-Prescription-001)
+**custodian**: [Organization Centre de soins le Belvédère](Bundle-example-bundle-Prescription-PosoNonStruct.md#urn-uuid-organization-Prescription-001)
 
 ### RelatesTos
 
@@ -54,6 +54,8 @@ Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md
 | * | Appends | Placer Identifier/123456789 |
 
 > **event****FR Performer Event Extension**: [PractitionerRole ](Bundle-example-bundle-Prescription.md#PractitionerRole_practitionerRolePrescription-01)**code**: Prescription de produits de sante**period**: 2026-04-28 09:00:00+0200 --> 2026-04-28 09:30:00+0200
+
+> **event****code**: Prescription bizone
 
 > **event****code**: Prescription médicaments d'exception
 
@@ -216,6 +218,15 @@ Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md
       "start" : "2026-04-28T09:00:00+02:00",
       "end" : "2026-04-28T09:30:00+02:00"
     }
+  },
+  {
+    "code" : [{
+      "coding" : [{
+        "system" : "urn:oid:1.2.250.1.213.1.1.4.322",
+        "code" : "MED-1096",
+        "display" : "Prescription bizone"
+      }]
+    }]
   },
   {
     "code" : [{

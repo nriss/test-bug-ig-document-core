@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRCDAPrelevement |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAPrelevement |
 
  
 Entrée FR-Prelevement: IHE-PCC - Specimen collection. L’élément ‘Prélèvement’ est un élément de type ‘procedure’ qui permet de décrire le prélèvement et l’échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée ‘Résultats d’examens de biologie médicale’ (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-prelevement.c
   "name" : "FRCDAPrelevement",
   "title" : "CDA - FR Prelevement",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

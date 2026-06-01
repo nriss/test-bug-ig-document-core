@@ -1,18 +1,18 @@
-# Modèle logique métier - FR LM Modalité de sortie - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Modalité de sortie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Modalité de sortie**
+* **Logical model - FR LM Modalité de sortie**
 
-## Logical Model: Modèle logique métier - FR LM Modalité de sortie 
+## Logical Model: Logical model - FR LM Modalité de sortie 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-sortie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMModaliteSortie |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMModaliteSortie |
 
  
-Modalité de sortie 
+Entrée Modalité de sortie 
 
 **Utilisations:**
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-sorti
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-sortie",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMModaliteSortie",
-  "title" : "Modèle logique métier - FR LM Modalité de sortie",
+  "title" : "Logical model - FR LM Modalité de sortie",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-sorti
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Modalité de sortie",
+  "description" : "Entrée Modalité de sortie",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-sorti
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-modalite-sortie",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-modalite-sortie",
       "path" : "fr-lm-modalite-sortie",
-      "short" : "Modèle logique métier - FR LM Modalité de sortie",
-      "definition" : "Modalité de sortie"
-    },
-    {
-      "id" : "fr-lm-modalite-sortie.identifiant",
-      "path" : "fr-lm-modalite-sortie.identifiant",
-      "short" : "Identifiant de l’observation",
-      "definition" : "Identifiant de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "short" : "Logical model - FR LM Modalité de sortie",
+      "definition" : "Entrée Modalité de sortie"
     },
     {
       "id" : "fr-lm-modalite-sortie.code",
@@ -95,39 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-sorti
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-modalite-sortie.description",
-      "path" : "fr-lm-modalite-sortie.description",
-      "short" : "Description narrative de l’observation",
-      "definition" : "Description narrative de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-modalite-sortie.statut",
-      "path" : "fr-lm-modalite-sortie.statut",
-      "short" : "Statut de l’observation. Fixé à la valeur 'completed'",
-      "definition" : "Statut de l’observation. Fixé à la valeur 'completed'",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-modalite-sortie.date",
-      "path" : "fr-lm-modalite-sortie.date",
-      "short" : "Date de l’observation",
-      "definition" : "Date de l’observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -143,17 +99,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-modalite-sorti
       "binding" : {
         "description" : "jdv-modalite-sortie-CISIS (1.2.250.1.213.1.1.5.74) ou autre JDV spécifique à un volet"
       }
-    },
-    {
-      "id" : "fr-lm-modalite-sortie.auteur",
-      "path" : "fr-lm-modalite-sortie.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
     }]
   }
 }

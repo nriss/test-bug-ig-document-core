@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-bundle-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRBundleDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRBundleDocument |
 
  
 Ce profil permet d’assembler les éléments de l’en-tête et du corps d’un document. 
 
 **Utilisations:**
 
-* Exemples pour ce/t/te Profil: [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md)
+* Exemples pour ce/t/te Profil: [Bundle/example-bundle-Prescription-PosoNonStruct](Bundle-example-bundle-Prescription-PosoNonStruct.md) and [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-bundle-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-bundle-document.c
   "name" : "FRBundleDocument",
   "title" : "FR Bundle Document",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

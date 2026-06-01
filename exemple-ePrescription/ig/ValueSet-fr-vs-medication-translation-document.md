@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-medication-translation-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRValueSetMedicationTranslationDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRValueSetMedicationTranslationDocument |
 
  
 Systèmes autorisés pour les autres codifications. 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "ValueSet - FR ValueSet Medication Translation Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,6 +84,9 @@ No Expansion for this valueset (Unknown Code System)
     },
     {
       "system" : "https://smt.esante.gouv.fr/terminologie-medicabase"
+    },
+    {
+      "system" : "https://smt.esante.gouv.fr/terminologie-nuva/"
     }]
   }
 }

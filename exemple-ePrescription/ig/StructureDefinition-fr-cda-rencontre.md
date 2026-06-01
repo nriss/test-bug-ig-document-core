@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-rencontre | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRCDARencontre |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDARencontre |
 
  
 Entrée FR-Rencontre: IHE-PCC - Encounter. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-rencontre.csv
   "name" : "FRCDARencontre",
   "title" : "CDA - FR Rencontre",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-informant-apsr | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRCDAInformantAPSR |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAInformantAPSR |
 
  
 FR-Informant-APSR : IHE-PCC Informant. Il permet de fournir le nom et les coordonnées : d’une personne ayant fourni des informations concernant le document (rôle d’informateur); ce peut être un PS/un ES/le patient lui-même/une autre personne non PS ; d’une personne de confiance désignée par le patient ; d’une personne à prévenir en cas d’urgence ; du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s) 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-informant-aps
   "name" : "FRCDAInformantAPSR",
   "title" : "CDA - FR Informant APSR",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

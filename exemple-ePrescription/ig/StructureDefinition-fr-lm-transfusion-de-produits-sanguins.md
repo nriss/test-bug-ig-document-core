@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Transfusion de produits sanguins - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Transfusion de produits sanguins - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Transfusion de produits sanguins**
+* **Logical model - FR LM Transfusion de produits sanguins**
 
-## Logical Model: Modèle logique métier - FR LM Transfusion de produits sanguins 
+## Logical Model: Logical model - FR LM Transfusion de produits sanguins 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMTransfusionDeProduitsSanguins |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMTransfusionDeProduitsSanguins |
 
  
 Transfusion de produits sanguins 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-transfusion-de
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMTransfusionDeProduitsSanguins",
-  "title" : "Modèle logique métier - FR LM Transfusion de produits sanguins",
+  "title" : "Logical model - FR LM Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-transfusion-de
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-transfusion-de-produits-sanguins",
       "path" : "fr-lm-transfusion-de-produits-sanguins",
-      "short" : "Modèle logique métier - FR LM Transfusion de produits sanguins",
+      "short" : "Logical model - FR LM Transfusion de produits sanguins",
       "definition" : "Transfusion de produits sanguins"
-    },
-    {
-      "id" : "fr-lm-transfusion-de-produits-sanguins.identifiant",
-      "path" : "fr-lm-transfusion-de-produits-sanguins.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
     },
     {
       "id" : "fr-lm-transfusion-de-produits-sanguins.code",
@@ -98,39 +87,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-transfusion-de
       }]
     },
     {
-      "id" : "fr-lm-transfusion-de-produits-sanguins.description",
-      "path" : "fr-lm-transfusion-de-produits-sanguins.description",
-      "short" : "Description narrative de l'entrée",
-      "definition" : "Description narrative de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-transfusion-de-produits-sanguins.statut",
-      "path" : "fr-lm-transfusion-de-produits-sanguins.statut",
-      "short" : "Statut de l'entrée. Fixé à la valeur 'completed'",
-      "definition" : "Statut de l'entrée. Fixé à la valeur 'completed'",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-transfusion-de-produits-sanguins.date",
-      "path" : "fr-lm-transfusion-de-produits-sanguins.date",
-      "short" : "Date de l'entrée",
-      "definition" : "Date de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "fr-lm-transfusion-de-produits-sanguins.transfusionProduitSanguin",
       "path" : "fr-lm-transfusion-de-produits-sanguins.transfusionProduitSanguin",
       "short" : "Transfusion de produit sanguin",
@@ -139,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-transfusion-de
       "max" : "1",
       "type" : [{
         "code" : "boolean"
-      }]
-    },
-    {
-      "id" : "fr-lm-transfusion-de-produits-sanguins.auteur",
-      "path" : "fr-lm-transfusion-de-produits-sanguins.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
       }]
     }]
   }

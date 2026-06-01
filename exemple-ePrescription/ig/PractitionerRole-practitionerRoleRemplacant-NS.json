@@ -1,0 +1,32 @@
+{
+  "resourceType" : "PractitionerRole",
+  "id" : "practitionerRoleRemplacant-NS",
+  "meta" : {
+    "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRoleRemplacant-NS</b></p><a name=\"practitionerRoleRemplacant-NS\"> </a><a name=\"hcpractitionerRoleRemplacant-NS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner/practitionerRemplacant-NS\">Practitioner/practitionerRemplacant-NS</a></p><p><b>organization</b>: <a href=\"Organization/organizationPrescription-02-NS\">Organization/organizationPrescription-02-NS</a></p><p><b>code</b>: <span title=\"Codes :\"/>, <span title=\"Codes :\">PROV</span>, <span title=\"Codes :\">CORRE</span></p></div>"
+  },
+  "practitioner" : {
+    "reference" : "Practitioner/practitionerRemplacant-NS"
+  },
+  "organization" : {
+    "reference" : "Organization/organizationPrescription-02-NS"
+  },
+  "code" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/practitioner-role"
+    }]
+  },
+  {
+    "coding" : [{
+      "code" : "PROV"
+    }]
+  },
+  {
+    "coding" : [{
+      "code" : "CORRE"
+    }]
+  }]
+}

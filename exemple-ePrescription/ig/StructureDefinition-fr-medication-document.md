@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRMedicationDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRMedicationDocument |
 
  
 FRMedicationDocument permet de décrire un médicament ou un vaccin. 
 
 **Utilisations:**
 
-* Référence ce Profil: [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md), [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationDispense - FR Medication Dispense Document](StructureDefinition-fr-medication-dispense-document.md), [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md) and [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md)
+* Référence ce Profil: [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md), [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md), [MedicationDispense - FR Medication Dispense Document](StructureDefinition-fr-medication-dispense-document.md), [Medication - FR Medication Document](StructureDefinition-fr-medication-document.md)... Show 2 more, [MedicationRequest - FR Medication Request Document](StructureDefinition-fr-medication-request-document.md) and [MedicationStatement - FR Medication Statement Document](StructureDefinition-fr-medication-statement-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-medication-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
   "name" : "FRMedicationDocument",
   "title" : "Medication - FR Medication Document",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
       "id" : "Medication.extension:classification",
       "path" : "Medication.extension",
       "sliceName" : "classification",
-      "short" : "Équivalent générique (Code de regroupement ATC) et le Conditionnement (Code du produit de santé conditionné (CIP)).",
+      "short" : "Classification ATC.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -150,7 +150,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
     {
       "id" : "Medication.code.coding",
       "path" : "Medication.code.coding",
-      "short" : "Autres codifications (CIP, UCD, ATC, MV)",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-medication-translation-document"
@@ -166,45 +165,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
       }
     },
     {
-      "id" : "Medication.ingredient",
-      "path" : "Medication.ingredient",
+      "id" : "Medication.ingredient.item[x]",
+      "path" : "Medication.ingredient.item[x]",
       "slicing" : {
         "discriminator" : [{
-          "type" : "value",
+          "type" : "type",
           "path" : "$this"
         }],
+        "ordered" : false,
         "rules" : "open"
-      },
-      "min" : 1
+      }
     },
     {
-      "id" : "Medication.ingredient:doseAntigene",
-      "path" : "Medication.ingredient",
-      "sliceName" : "doseAntigene",
-      "short" : "Dose antigène",
-      "min" : 0,
-      "max" : "*",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Medication.ingredient:doseAntigene.strength",
-      "path" : "Medication.ingredient.strength",
-      "short" : "Quantité de la dose antigène",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Medication.ingredient:substanceActive",
-      "path" : "Medication.ingredient",
-      "sliceName" : "substanceActive",
-      "short" : "Substance active",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Medication.ingredient:substanceActive.item[x]",
+      "id" : "Medication.ingredient.item[x]:itemCodeableConcept",
       "path" : "Medication.ingredient.item[x]",
+      "sliceName" : "itemCodeableConcept",
       "short" : "Code SMS de la substance active",
+      "min" : 0,
+      "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
       }],
@@ -215,25 +193,37 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-docume
       }
     },
     {
-      "id" : "Medication.ingredient:substanceActive.item[x].text",
+      "id" : "Medication.ingredient.item[x]:itemCodeableConcept.text",
       "path" : "Medication.ingredient.item[x].text",
       "short" : "Nom de la substance",
       "mustSupport" : true
     },
     {
-      "id" : "Medication.ingredient:substanceActive.strength",
-      "path" : "Medication.ingredient.strength",
-      "short" : "Dosage",
+      "id" : "Medication.ingredient.item[x]:itemReference",
+      "path" : "Medication.ingredient.item[x]",
+      "sliceName" : "itemReference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document"]
+      }],
       "mustSupport" : true
     },
     {
-      "id" : "Medication.ingredient:substanceActive.strength.numerator",
+      "id" : "Medication.ingredient.strength",
+      "path" : "Medication.ingredient.strength",
+      "short" : "Quantité de substance présente dans le médicament",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Medication.ingredient.strength.numerator",
       "path" : "Medication.ingredient.strength.numerator",
       "min" : 1,
       "mustSupport" : true
     },
     {
-      "id" : "Medication.ingredient:substanceActive.strength.denominator",
+      "id" : "Medication.ingredient.strength.denominator",
       "path" : "Medication.ingredient.strength.denominator",
       "min" : 1,
       "mustSupport" : true

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organizationPrescription-03-NS"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Organisation organizationPrescription-03-NS</b></p><a name="organizationPrescription-03-NS"> </a><a name="hcorganizationPrescription-03-NS"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-organization-document.html">FR Organization Document</a></p></div><p><b>identifier</b>: <code>urn:oid:1.2.250.1.71.4.2.2</code>/1750512302</p><p><b>name</b>: Pharmacie SAMPAIX</p><p><b>telecom</b>: ph: 0158410697(Work)</p><p><b>address</b>: 12 Rue des produits de santé PARIS 75005 </p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.250.1.71.4.2.2"/>
+    <value value="1750512302"/>
+  </identifier>
+  <name value="Pharmacie SAMPAIX"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="0158410697"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="12 Rue des produits de santé"/>
+    <city value="PARIS"/>
+    <postalCode value="75005"/>
+  </address>
+</Organization>

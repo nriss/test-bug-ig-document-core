@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="medreq-NS-01"/>
+  <meta>
+    <profile value="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : PrescriptionMédicamenteuseTODO medreq-NS-01</b></p><a name="medreq-NS-01"> </a><a name="hcmedreq-NS-01"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="StructureDefinition-fr-medication-request-document.html">MedicationRequest - FR Medication Request Document</a></p></div><p><b>identifier</b>: <code>urn:uuid:1.2.250.1.213.1.1.1.39.2024.2.1</code>/?ngen-9?</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>medication</b>: <a href="Bundle-example-bundle-Prescription-PosoNonStruct.html#Medication_medicationPrescription-01-NS">Medication PARACETAMOL MYLAN 500 mg, comprime</a></p><p><b>subject</b>: <a href="Bundle-example-bundle-Prescription-PosoNonStruct.html#Patient_ba499de3-aeae-43c3-82cb-0ba2718cfa41">DOMINIQUE MARIE-LOUISE PAT-TROIS  Female, Date de Naissance :1979-03-28 ( NIR définitif (use: official, ))</a></p><p><b>authoredOn</b>: 2026-04-28 09:35:00+0200</p><p><b>requester</b>: <a href="Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePrescription-02-NS">PractitionerRole </a></p><h3>DosageInstructions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>AdditionalInstruction</b></td></tr><tr><td style="display: none">*</td><td>Du 01/05/2026 au 05/05/2026 : 1 comprimé (500 mg) par voie orale, matin et soir.</td><td><span title="Codes :{http://terminology.hl7.org/CodeSystem/v3-ActCode PINSTRUCT}">Prendre de préférence après les repas.</span></td></tr></table><h3>DispenseRequests</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ValidityPeriod</b></td><td><b>NumberOfRepeatsAllowed</b></td><td><b>Quantity</b></td></tr><tr><td style="display: none">*</td><td>2026-05-01 --&gt; 2026-05-05</td><td>3</td><td>30 comprimé</td></tr></table><h3>Substitutions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Allowed[x]</b></td><td><b>Reason</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes :{https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis N}">Aucune substitution permise</span></td><td><span title="Codes :">Marge thérapeutique étroite</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="urn:uuid:1.2.250.1.213.1.1.1.39.2024.2.1"/>
+  </identifier>
+  <status value="completed"/>
+  <intent value="order"/>
+  <medicationReference>
+    <reference value="Medication/medicationPrescription-01-NS"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41"/>
+  </subject>
+  <authoredOn value="2026-04-28T09:35:00+02:00"/>
+  <requester>
+    <reference value="PractitionerRole/practitionerRolePrescription-02-NS"/>
+  </requester>
+  <dosageInstruction>
+    <text value="Du 01/05/2026 au 05/05/2026 : 1 comprimé (500 mg) par voie orale, matin et soir."/>
+    <additionalInstruction>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+        <code value="PINSTRUCT"/>
+      </coding>
+      <text value="Prendre de préférence après les repas."/>
+    </additionalInstruction>
+  </dosageInstruction>
+  <dispenseRequest>
+    <validityPeriod>
+      <start value="2026-05-01"/>
+      <end value="2026-05-05"/>
+    </validityPeriod>
+    <numberOfRepeatsAllowed value="3"/>
+    <quantity>
+      <value value="30"/>
+      <unit value="comprimé"/>
+    </quantity>
+  </dispenseRequest>
+  <substitution>
+    <allowedCodeableConcept>
+      <coding>
+        <system value="https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis"/>
+        <code value="N"/>
+        <display value="Aucune substitution permise"/>
+      </coding>
+    </allowedCodeableConcept>
+    <reason>
+      <text value="Marge thérapeutique étroite"/>
+    </reason>
+  </substitution>
+</MedicationRequest>

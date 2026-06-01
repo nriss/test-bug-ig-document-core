@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prise-en-charge | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMPriseEncharge |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMPriseEncharge |
 
  
 Association du document à une prise en charge du patient/usager par un professionnel ou par une structure. 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prise-en-charg
   "name" : "FRLMPriseEncharge",
   "title" : "Modèle logique métier - FR LM Prise en charge",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -131,7 +131,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prise-en-charg
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
       }]
     },
     {
@@ -175,7 +175,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-prise-en-charg
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
       }]
     },
     {

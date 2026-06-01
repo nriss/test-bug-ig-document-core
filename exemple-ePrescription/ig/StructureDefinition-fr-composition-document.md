@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRCompositionDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRCompositionDocument |
 
  
 Ce profil est utilisé pour représenter un document médical. 
@@ -18,7 +18,7 @@ Ce profil est utilisé pour représenter un document médical.
 
 * Utilise ce/t/te Profil: [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
 * Référence ce Profil: [FR Composition Document](StructureDefinition-fr-composition-document.md)
-* Exemples pour ce/t/te Profil: [Composition/compositionPrescription](Composition-compositionPrescription.md)
+* Exemples pour ce/t/te Profil: [Composition/compositionPrescription-NS](Composition-compositionPrescription-NS.md) and [Composition/compositionPrescription](Composition-compositionPrescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-composition-document)
 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-composition-docum
   "name" : "FRCompositionDocument",
   "title" : "FR Composition Document",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

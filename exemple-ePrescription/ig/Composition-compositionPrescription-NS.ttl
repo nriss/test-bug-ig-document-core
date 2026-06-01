@@ -1,0 +1,423 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/core/Composition/compositionPrescription-NS> a fhir:Composition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "compositionPrescription-NS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-composition-document>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "fr-FR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"fr-FR\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : Composition compositionPrescription-NS</b></p><a name=\"compositionPrescription-NS\"> </a><a name=\"hccompositionPrescription-NS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-composition-document.html\">FR Composition Document</a></p></div><p><b>R5: An explicitly assigned identifer of a variation of the content in the Composition (new)</b>: 1</p><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">REF</span></li><li>time: ?? --&gt; (en cours)</li><li>party: <a href=\"PractitionerRole-practitionerRoleRemplacant-NS.html\">PractitionerRole null</a></li></ul></blockquote><blockquote><p><b>Participant Extension</b></p><ul><li>type: <span title=\"Codes :\">PRF</span></li><li>time: ?? --&gt; 2023-12-02 09:30:00+0100</li><li>party: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePharmacien-NS\">PractitionerRole Pharmacist</a></li></ul></blockquote><p><b>identifier</b>: <code>urn:oid:1.2.250.1.213.1.1.1.39.2024.2</code>/urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001</p><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>category</b>: <span title=\"Codes :{http://loinc.org 107903-7}\">Clinical note</span></p><p><b>encounter</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#urn-uuid-encounter-Prescription-001\">Encounter : identifier = Visit Number: 801234534765; status = finished; class = ambulatoire (hors établissement) (ActCode#AMB); period = (?) --&gt; (en cours)</a></p><p><b>date</b>: 2026-04-28 09:30:00+0200</p><p><b>author</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePrescription-02-NS\">PractitionerRole </a></p><p><b>title</b>: Prescription de médicaments et/ou de dispositifs médicaux</p><p><b>confidentiality</b>: normal</p><blockquote><p><b>attester</b></p><p><b>mode</b>: Legal</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePrescription-01-NS\">PractitionerRole </a></p></blockquote><blockquote><p><b>attester</b></p><p><b>mode</b>: Professional</p><p><b>time</b>: 2026-04-28 09:30:00+0200</p><p><b>party</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePrescription-01-NS\">PractitionerRole </a></p></blockquote><p><b>custodian</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#urn-uuid-organization-Prescription-001\">Organization Centre de soins le Belvédère</a></p><h3>RelatesTos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Target[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>Appends</td><td>Placer Identifier/123456789</td></tr></table><blockquote><p><b>event</b></p><p><b>FR Performer Event Extension</b>: <a href=\"Bundle-example-bundle-Prescription-PosoNonStruct.html#PractitionerRole_practitionerRolePrescription-01-NS\">PractitionerRole </a></p><p><b>code</b>: <span title=\"Codes :{http://loinc.org 57833-6}\">Prescription de produits de sante</span></p><p><b>period</b>: 2026-04-28 09:00:00+0200 --&gt; 2026-04-28 09:30:00+0200</p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1097}\">Prescription médicaments d'exception</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1098}\">Ordonnance sécurisée</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1132}\">Prescription grand appareillage</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1094}\">Exécution à domicile</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1095}\">Exécution en urgence</span></p></blockquote><blockquote><p><b>event</b></p><p><b>code</b>: <span title=\"Codes :{urn:oid:1.2.250.1.213.1.1.4.322 MED-1159}\">Affection militaire</span></p></blockquote></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Composition.version>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "1"
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "type"^^xsd:anyURI ;
+         fhir:l fhir:type
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "REF" ]
+         ] )
+       ]
+     ] [
+       fhir:url [
+         fhir:v "time"^^xsd:anyURI ;
+         fhir:l fhir:time
+       ] ;
+       fhir:value [
+         a fhir:Period ;
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+           ] ;
+           fhir:value [
+             a fhir:Code ;
+             fhir:v "unknown"
+           ]
+         ] )
+       ]
+     ] [
+       fhir:url [
+         fhir:v "party"^^xsd:anyURI ;
+         fhir:l fhir:party
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRoleRemplacant-NS> ;
+         fhir:reference [ fhir:v "PractitionerRole/practitionerRoleRemplacant-NS" ]
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "type"^^xsd:anyURI ;
+         fhir:l fhir:type
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "PRF" ]
+         ] )
+       ]
+     ] [
+       fhir:url [
+         fhir:v "time"^^xsd:anyURI ;
+         fhir:l fhir:time
+       ] ;
+       fhir:value [
+         a fhir:Period ;
+         fhir:end [ fhir:v "2023-12-02T09:30:00+01:00"^^xsd:dateTime ]
+       ]
+     ] [
+       fhir:url [
+         fhir:v "party"^^xsd:anyURI ;
+         fhir:l fhir:party
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRolePharmacien-NS> ;
+         fhir:reference [ fhir:v "PractitionerRole/practitionerRolePharmacien-NS" ]
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/fhir-clinical-document/StructureDefinition/ParticipantExtension>
+     ]
+  ] ) ; # 
+  fhir:identifier [
+     fhir:system [
+       fhir:v "urn:oid:1.2.250.1.213.1.1.1.39.2024.2"^^xsd:anyURI ;
+       fhir:l <urn:oid:1.2.250.1.213.1.1.1.39.2024.2>
+     ] ;
+     fhir:value [ fhir:v "urn:uuid:4d4f5b7c-7b14-4d4d-9ad0-4d979f6f1001" ]
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:57833-6 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "57833-6" ] ;
+       fhir:display [ fhir:v "Prescription de produits de sante" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a loinc:107903-7 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "107903-7" ] ;
+       fhir:display [ fhir:v "Clinical note" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41> ;
+     fhir:reference [ fhir:v "Patient/ba499de3-aeae-43c3-82cb-0ba2718cfa41" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <urn:uuid:encounter-Prescription-001> ;
+     fhir:reference [ fhir:v "urn:uuid:encounter-Prescription-001" ]
+  ] ; # 
+  fhir:date [ fhir:v "2026-04-28T09:30:00+02:00"^^xsd:dateTime] ; # 
+  fhir:author ( [
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRolePrescription-02-NS> ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension>
+       ] ;
+       fhir:value [
+         a fhir:DateTime ;
+         fhir:v "2026-04-28T09:25:00+02:00"^^xsd:dateTime
+       ]
+     ] ) ;
+     fhir:reference [ fhir:v "PractitionerRole/practitionerRolePrescription-02-NS" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "Prescription de médicaments et/ou de dispositifs médicaux"] ; # 
+  fhir:confidentiality [ fhir:v "N"] ; # 
+  fhir:attester ( [
+     fhir:mode [ fhir:v "legal" ] ;
+     fhir:time [ fhir:v "2026-04-28T09:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRolePrescription-01-NS> ;
+       fhir:reference [ fhir:v "PractitionerRole/practitionerRolePrescription-01-NS" ]
+     ]
+  ] [
+     fhir:mode [ fhir:v "professional" ] ;
+     fhir:time [ fhir:v "2026-04-28T09:30:00+02:00"^^xsd:dateTime ] ;
+     fhir:party [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRolePrescription-01-NS> ;
+       fhir:reference [ fhir:v "PractitionerRole/practitionerRolePrescription-01-NS" ]
+     ]
+  ] ) ; # 
+  fhir:custodian [
+     fhir:l <urn:uuid:organization-Prescription-001> ;
+     fhir:reference [ fhir:v "urn:uuid:organization-Prescription-001" ]
+  ] ; # 
+  fhir:relatesTo ( [
+     fhir:code [ fhir:v "appends" ] ;
+     fhir:target [
+       a fhir:Identifier ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+           ] ;
+           fhir:code [ fhir:v "PLAC" ] ;
+           fhir:display [ fhir:v "Placer Identifier" ]
+         ] )
+       ] ;
+       fhir:system [
+         fhir:v "urn:oid:1.2.250.1.213.1.1.1.39.2024.2"^^xsd:anyURI ;
+         fhir:l <urn:oid:1.2.250.1.213.1.1.1.39.2024.2>
+       ] ;
+       fhir:value [ fhir:v "123456789" ]
+     ]
+  ] ) ; # 
+  fhir:event ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event-extension"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-performer-event-extension>
+       ] ;
+       fhir:value [
+         a fhir:Reference ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRolePrescription-01-NS> ;
+         fhir:reference [ fhir:v "PractitionerRole/practitionerRolePrescription-01-NS" ]
+       ]
+     ] ) ;
+     fhir:code ( [
+       fhir:coding ( [
+         a loinc:57833-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "57833-6" ] ;
+         fhir:display [ fhir:v "Prescription de produits de sante" ]
+       ] )
+     ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2026-04-28T09:00:00+02:00"^^xsd:dateTime ] ;
+       fhir:end [ fhir:v "2026-04-28T09:30:00+02:00"^^xsd:dateTime ]
+     ]
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1097" ] ;
+         fhir:display [ fhir:v "Prescription médicaments d'exception" ]
+       ] )
+     ] )
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1098" ] ;
+         fhir:display [ fhir:v "Ordonnance sécurisée" ]
+       ] )
+     ] )
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1132" ] ;
+         fhir:display [ fhir:v "Prescription grand appareillage" ]
+       ] )
+     ] )
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1094" ] ;
+         fhir:display [ fhir:v "Exécution à domicile" ]
+       ] )
+     ] )
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1095" ] ;
+         fhir:display [ fhir:v "Exécution en urgence" ]
+       ] )
+     ] )
+  ] [
+     fhir:code ( [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:oid:1.2.250.1.213.1.1.4.322"^^xsd:anyURI ;
+           fhir:l <urn:oid:1.2.250.1.213.1.1.4.322>
+         ] ;
+         fhir:code [ fhir:v "MED-1159" ] ;
+         fhir:display [ fhir:v "Affection militaire" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:section ( [
+     fhir:id [ fhir:v "4A402640-1CF6-4153-B5BA-D56B623004C8" ] ;
+     fhir:title [ fhir:v "Prescription de medicaments" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57828-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "57828-6" ] ;
+         fhir:display [ fhir:v "Prescriptions" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Prescription de medicaments en mode non structuré</p><ul><li>Paracetamol Mylan 500 mg comprime : du 01/05/2026 au 05/05/2026, voie orale, renouvelable 3 fois.</li><li>Preparation magistrale : Diprosone 30 g et Cerat Frais de Galien 70 g, du 01/05/2026 au 07/05/2026, voie cutanee, sans renouvellement.</li></ul></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/MedicationRequest/medreq-NS-01> ;
+       fhir:reference [ fhir:v "MedicationRequest/medreq-NS-01" ]
+     ] [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/MedicationRequest/medreq-NS-02> ;
+       fhir:reference [ fhir:v "MedicationRequest/medreq-NS-02" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "362B214A-8414-4547-8B56-EABDCAB587AA" ] ;
+     fhir:title [ fhir:v "Signes vitaux" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:8716-3 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "8716-3" ] ;
+         fhir:display [ fhir:v "Signes vitaux" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Signe vital</th><th>Valeur</th></tr></thead><tbody><tr><td>01/05/2026</td><td>Poids</td><td>55 kg</td></tr><tr><td>01/05/2026</td><td>Taille</td><td>1,70 m</td></tr></tbody></table></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/Observation/vitalSignWeightPrescription-NS> ;
+       fhir:reference [ fhir:v "Observation/vitalSignWeightPrescription-NS" ]
+     ] [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/Observation/vitalSignHeightPrescription-NS> ;
+       fhir:reference [ fhir:v "Observation/vitalSignHeightPrescription-NS" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "573B13F5-2C78-47E0-BE1F-55C02B6F40B2" ] ;
+     fhir:title [ fhir:v "Historique des grossesses" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:10162-6 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "10162-6" ] ;
+         fhir:display [ fhir:v "Historique des grossesses" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Statut</th></tr></thead><tbody><tr><td>Enceinte</td></tr></tbody></table></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/Observation/pregnancyObservationPrescription-NS> ;
+       fhir:reference [ fhir:v "Observation/pregnancyObservationPrescription-NS" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "770B0DC2-A6B8-468E-8432-632B18D35F68" ] ;
+     fhir:title [ fhir:v "Copie du document" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:55108-5 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "55108-5" ] ;
+         fhir:display [ fhir:v "Copie du document" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tbody><tr><td>Copie PDF du document</td></tr><tr><td>Document PDF joint</td></tr></tbody></table></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/DocumentReference/pdfCopyDocumentReferencePrescription-NS> ;
+       fhir:reference [ fhir:v "DocumentReference/pdfCopyDocumentReferencePrescription-NS" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "F28128CA-1D38-11EC-9621-0242AC130002" ] ;
+     fhir:title [ fhir:v "Code 2D de la prescription" ] ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:57723-9 ;
+         fhir:system [
+           fhir:v "http://loinc.org"^^xsd:anyURI ;
+           fhir:l <http://loinc.org>
+         ] ;
+         fhir:code [ fhir:v "57723-9" ] ;
+         fhir:display [ fhir:v "Numero de code a barres unique" ]
+       ] )
+     ] ;
+     fhir:text [
+       fhir:status [ fhir:v "generated" ] ;
+       fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Code 2D de la prescription</p><img src=\"data:image/jpeg;base64,iVBORw0KGgoAAAANSUh\" alt=\"Code 2D\"/></div>"^^rdf:XMLLiteral ]
+     ] ;
+     fhir:entry ( [
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/Media/barcodeMediaPrescription-NS> ;
+       fhir:reference [ fhir:v "Media/barcodeMediaPrescription-NS" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

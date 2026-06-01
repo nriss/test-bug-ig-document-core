@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM) - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Hors AMM - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)**
+* **Logical model - FR LM Hors AMM**
 
-## Logical Model: Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM) 
+## Logical Model: Logical model - FR LM Hors AMM 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMHorsAMM |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMHorsAMM |
 
  
-Hors Autorisation de Mise sur le Marché (AMM) 
+Entrée Hors Autorisation de Mise sur le Marché (AMM) 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-hors-amm)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMHorsAMM",
-  "title" : "Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)",
+  "title" : "Logical model - FR LM Hors AMM",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Hors Autorisation de Mise sur le Marché (AMM)",
+  "description" : "Entrée Hors Autorisation de Mise sur le Marché (AMM)",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hors-amm",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-hors-amm",
       "path" : "fr-lm-hors-amm",
-      "short" : "Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)",
-      "definition" : "Hors Autorisation de Mise sur le Marché (AMM)"
-    },
-    {
-      "id" : "fr-lm-hors-amm.identifiant",
-      "path" : "fr-lm-hors-amm.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "short" : "Logical model - FR LM Hors AMM",
+      "definition" : "Entrée Hors Autorisation de Mise sur le Marché (AMM)"
     },
     {
       "id" : "fr-lm-hors-amm.code",
@@ -98,40 +87,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
       }]
     },
     {
-      "id" : "fr-lm-hors-amm.description",
-      "path" : "fr-lm-hors-amm.description",
-      "short" : "Description narrative",
-      "definition" : "Description narrative",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-hors-amm.statut",
-      "path" : "fr-lm-hors-amm.statut",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }],
-      "patternCode" : "completed"
-    },
-    {
-      "id" : "fr-lm-hors-amm.horodatage",
-      "path" : "fr-lm-hors-amm.horodatage",
-      "short" : "Horodatage de l'entrée",
-      "definition" : "Horodatage de l'entrée",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
       "id" : "fr-lm-hors-amm.resultat",
       "path" : "fr-lm-hors-amm.resultat",
       "short" : "Résultat de l'observation",
@@ -140,17 +95,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-hors-amm.csv),
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-hors-amm.auteur",
-      "path" : "fr-lm-hors-amm.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
       }]
     }]
   }

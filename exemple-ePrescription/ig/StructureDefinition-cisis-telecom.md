@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/cisis-telecom | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:CISISTelecom |
+| Draft as of 2026-06-01 | *Computable Name*:CISISTelecom |
 
  
 Coordonnées télécom : 
@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-cisis-telecom.csv), 
   "name" : "CISISTelecom",
   "title" : "CDA - FR CISIS Telecom",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

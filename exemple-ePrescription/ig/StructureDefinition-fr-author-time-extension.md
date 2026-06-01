@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-author-time-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRAuthorTimeExtension |
+| Draft as of 2026-06-01 | *Computable Name*:FRAuthorTimeExtension |
 
 Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition.
 
@@ -20,7 +20,7 @@ Extension permettant d’ajouter un horodatage (TS) à l’élément author d’
 **Utilisations:**
 
 * Utilise ce/t/te Extension: [FR Composition Document](StructureDefinition-fr-composition-document.md)
-* Exemples pour ce/t/te Extension: [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md) and [Composition/compositionPrescription](Composition-compositionPrescription.md)
+* Exemples pour ce/t/te Extension: [Bundle/example-bundle-Prescription-PosoNonStruct](Bundle-example-bundle-Prescription-PosoNonStruct.md), [Bundle/example-bundle-Prescription](Bundle-example-bundle-Prescription.md), [Composition/compositionPrescription-NS](Composition-compositionPrescription-NS.md) and [Composition/compositionPrescription](Composition-compositionPrescription.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-author-time-extension)
 
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-author-time-exten
   "name" : "FRAuthorTimeExtension",
   "title" : "FR Author Time Extension",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

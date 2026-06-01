@@ -124,14 +124,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
-      "title": "FR Medication Request Out Of Nomenclature Extension",
-      "types": [
-        "boolean",
-        "boolean"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
       "title": "FR Method Extension",
       "types": [
@@ -602,13 +594,8 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "fr-lm-image-illustrative",
-      "fr-lm-notes-dispensateur",
-      "fr-lm-probleme.reference.externalDocument",
-      "fr-lm-reference-item-prescription",
-      "fr-lm-reference-item-prescription.reference.externalDocument",
-      "fr-lm-references-externes.reference.externalDocument",
-      "fr-lm-traitement-dispense"
+      "fr-lm-medication-dispense",
+      "fr-lm-reference-item-prescription.reference.externalDocument"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
@@ -633,7 +620,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization",
-      "fr-lm-traitement-prescrit"
+      "fr-lm-allergy-intolerance",
+      "fr-lm-allergy-intolerance.reaction",
+      "fr-lm-condition",
+      "fr-lm-device-use",
+      "fr-lm-immunisation",
+      "fr-lm-procedure"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Bundle.entry.resource",
@@ -783,7 +775,6 @@
       "Location"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension": [
-      "Bundle.entry.resource",
       "Bundle.entry.resource.operator",
       "Bundle.entry.resource.performer",
       "Condition.recorder",
@@ -795,7 +786,6 @@
       "FamilyMemberHistory.condition",
       "Immunization.performer.actor",
       "Media.operator",
-      "MedicationRequest",
       "Observation.performer",
       "Procedure.performer.actor",
       "Procedure.recorder",
@@ -820,10 +810,6 @@
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-sequence-extension": [
       "MedicationAdministration.dosage"
-    ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension": [
-      "Bundle.entry.resource",
-      "MedicationRequest"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension": [
       "FamilyMemberHistory.condition",
@@ -912,6 +898,10 @@
       "Bundle.entry.resource",
       "Immunization",
       "Medication"
+    ],
+    "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel": [
+      "Bundle.entry.resource",
+      "MedicationRequest"
     ]
   }
 }

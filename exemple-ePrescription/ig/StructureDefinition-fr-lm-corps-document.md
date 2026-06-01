@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Corps document - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Corps document - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Corps document**
+* **Logical model - FR LM Corps document**
 
-## Logical Model: Modèle logique métier - FR LM Corps document 
+## Logical Model: Logical model - FR LM Corps document 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-corps-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMCorpsDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMCorpsDocument |
 
  
 Eléments métier du corps d’un document contenant les sections du document. 
@@ -39,9 +39,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-corps-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMCorpsDocument",
-  "title" : "Modèle logique métier - FR LM Corps document",
+  "title" : "Logical model - FR LM Corps document",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -68,95 +68,282 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
     "element" : [{
       "id" : "fr-lm-corps-document",
       "path" : "fr-lm-corps-document",
-      "short" : "Modèle logique métier - FR LM Corps document",
+      "short" : "Logical model - FR LM Corps document",
       "definition" : "Eléments métier du corps d'un document contenant les sections du document."
     },
     {
-      "id" : "fr-lm-corps-document.allergiesEtHypersensibilites",
-      "path" : "fr-lm-corps-document.allergiesEtHypersensibilites",
+      "id" : "fr-lm-corps-document.alerts",
+      "path" : "fr-lm-corps-document.alerts",
+      "short" : "Section Points de vigilance",
+      "definition" : "Section Points de vigilance",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-alerts"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.allergiesAndIntolerances",
+      "path" : "fr-lm-corps-document.allergiesAndIntolerances",
       "short" : "Section Allergies et hypersensibilités",
       "definition" : "Section Allergies et hypersensibilités",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergies-et-hypersensibilites"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-allergies-and-intolerances"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.antecedentsFamiliaux",
-      "path" : "fr-lm-corps-document.antecedentsFamiliaux",
+      "id" : "fr-lm-corps-document.problems",
+      "path" : "fr-lm-corps-document.problems",
+      "short" : "Section Problemès Actifs",
+      "definition" : "Section Problemès Actifs",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problems"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.medicationSummary",
+      "path" : "fr-lm-corps-document.medicationSummary",
+      "short" : "Section Traitement",
+      "definition" : "Section Traitement",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-summary"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.medicalDevicesAndImplants",
+      "path" : "fr-lm-corps-document.medicalDevicesAndImplants",
+      "short" : "Section Dispositifs medicaux",
+      "definition" : "Section Dispositifs medicaux",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medical-devices-and-implants"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.procedures",
+      "path" : "fr-lm-corps-document.procedures",
+      "short" : "Section Historique des actes",
+      "definition" : "Section Historique des actes",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-procedures"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.immunisations",
+      "path" : "fr-lm-corps-document.immunisations",
+      "short" : "Section Vaccinations",
+      "definition" : "Section Vaccinations",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-immunisations"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.functionalStatus",
+      "path" : "fr-lm-corps-document.functionalStatus",
+      "short" : "Section Statut fonctionnel",
+      "definition" : "Section Statut fonctionnel",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-functional-status"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.socialHistory",
+      "path" : "fr-lm-corps-document.socialHistory",
+      "short" : "Section Habitus et modes de vie",
+      "definition" : "Section Habitus et modes de vie",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-social-history"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.pregnancyHistory",
+      "path" : "fr-lm-corps-document.pregnancyHistory",
+      "short" : "Section Historique des grossesses",
+      "definition" : "Section Historique des grossesses",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section-pregnancy-history"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.advanceDirectives",
+      "path" : "fr-lm-corps-document.advanceDirectives",
+      "short" : "Section Directives anticipées",
+      "definition" : "Section Directives anticipées",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-advance-directives"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.observationResults",
+      "path" : "fr-lm-corps-document.observationResults",
+      "short" : "Section Résultats",
+      "definition" : "Section Résultats",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-results"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.carePlans",
+      "path" : "fr-lm-corps-document.carePlans",
+      "short" : "Section Plan de Soins",
+      "definition" : "Section Plan de Soins",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plans"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.familyMedicalHistory",
+      "path" : "fr-lm-corps-document.familyMedicalHistory",
       "short" : "Section Antécédents familiaux",
       "definition" : "Section Antécédents familiaux",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-familiaux"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-family-medical-history"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.antecedentsMedicaux",
-      "path" : "fr-lm-corps-document.antecedentsMedicaux",
+      "id" : "fr-lm-corps-document.historyOfPastIllness",
+      "path" : "fr-lm-corps-document.historyOfPastIllness",
       "short" : "Section Antécédents médicaux",
       "definition" : "Section Antécédents médicaux",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-antecedents-medicaux"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-history-of-past-illness"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.codesAbarres",
-      "path" : "fr-lm-corps-document.codesAbarres",
+      "id" : "fr-lm-corps-document.predictableAdverseDrugReactions",
+      "path" : "fr-lm-corps-document.predictableAdverseDrugReactions",
+      "short" : "Section Effets indesirables",
+      "definition" : "Section Effets indesirables",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-predictable-adverse-drug-reaction"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.hazardousWorkingConditions",
+      "path" : "fr-lm-corps-document.hazardousWorkingConditions",
+      "short" : "Section Facteurs de risque professionnels non Codé",
+      "definition" : "Section Facteurs de risque professionnels non Codé",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hazardous-working-conditions"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.qrCode",
+      "path" : "fr-lm-corps-document.qrCode",
       "short" : "Section Codes à barres",
       "definition" : "Section Codes à barres",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-codes-a-barres"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-qr-code"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.commentaireNonCode",
-      "path" : "fr-lm-corps-document.commentaireNonCode",
+      "id" : "fr-lm-corps-document.note",
+      "path" : "fr-lm-corps-document.note",
       "short" : "Section Commentaire (Non-Codé)",
       "definition" : "Section Commentaire (Non-Codé)",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-non-code"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-note"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.cRBIOChapitre",
-      "path" : "fr-lm-corps-document.cRBIOChapitre",
-      "short" : "section Compte rendu de biologie de 1er niveau",
-      "definition" : "section Compte rendu de biologie de 1er niveau",
+      "id" : "fr-lm-corps-document.medicationPrescriptions",
+      "path" : "fr-lm-corps-document.medicationPrescriptions",
+      "short" : "Section Prescription médicaments",
+      "definition" : "Section Prescription médicaments",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-cr-bio-chapitre"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.cRBIOSousChapitre",
-      "path" : "fr-lm-corps-document.cRBIOSousChapitre",
-      "short" : "Section Sous-chapitre du compte rendu d'examens de biologie  (section de 2nd niveau)",
-      "definition" : "Section Sous-chapitre du compte rendu d'examens de biologie  (section de 2nd niveau)",
+      "id" : "fr-lm-corps-document.medicalDevicePrescriptions",
+      "path" : "fr-lm-corps-document.medicalDevicePrescriptions",
+      "short" : "Section Prescription de dispositifs médicaux",
+      "definition" : "Section Prescription de dispositifs médicaux",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-cr-bio-sous-chapitre"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medical-device-prescriptions"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.acteImagerie",
-      "path" : "fr-lm-corps-document.acteImagerie",
-      "short" : "Section Acte d'imagerie",
-      "definition" : "Section Acte d'imagerie",
+      "id" : "fr-lm-corps-document.presentedForm",
+      "path" : "fr-lm-corps-document.presentedForm",
+      "short" : "Section Document PDF-copie",
+      "definition" : "Section Document PDF-copie",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-acte-imagerie"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-presented-form"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.attachments",
+      "path" : "fr-lm-corps-document.attachments",
+      "short" : "Section Documents ajoutés",
+      "definition" : "Section Documents ajoutés",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-attachments"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.travelHistory",
+      "path" : "fr-lm-corps-document.travelHistory",
+      "short" : "Section Historique des voyages",
+      "definition" : "Section Historique des voyages",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section-travel-history"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.patientStory",
+      "path" : "fr-lm-corps-document.patientStory",
+      "short" : "Section Récit du patient",
+      "definition" : "Section Récit du patient",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-story"
       }]
     },
     {
@@ -171,388 +358,179 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
       }]
     },
     {
-      "id" : "fr-lm-corps-document.conclusions",
-      "path" : "fr-lm-corps-document.conclusions",
-      "short" : "Section Conclusions",
-      "definition" : "Section Conclusions",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion-examen-imagerie"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.demandeExamenImagerie",
-      "path" : "fr-lm-corps-document.demandeExamenImagerie",
-      "short" : "Section Demande d'examen",
-      "definition" : "Section Demande d'examen",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-demande-examen-imagerie"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.comparaisonExamensImagerie",
-      "path" : "fr-lm-corps-document.comparaisonExamensImagerie",
-      "short" : "Section Examen comparatif",
-      "definition" : "Section Examen comparatif",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-comparaison-examens-imagerie"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.expositionRadiations",
-      "path" : "fr-lm-corps-document.expositionRadiations",
-      "short" : "Section Exposition aux radiations",
-      "definition" : "Section Exposition aux radiations",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-exposition-radiations"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.informationsCliniques",
-      "path" : "fr-lm-corps-document.informationsCliniques",
-      "short" : "Section Informations cliniques",
-      "definition" : "Section Informations cliniques",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informations-cliniques"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.objectCatalog",
-      "path" : "fr-lm-corps-document.objectCatalog",
-      "short" : "Section  Object catalog",
-      "definition" : "Section  Object catalog",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-object-catalog"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.directivesAnticipees",
-      "path" : "fr-lm-corps-document.directivesAnticipees",
-      "short" : "Section Directives anticipées",
-      "definition" : "Section Directives anticipées",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-directives-anticipees"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.dispensationMedicaments",
-      "path" : "fr-lm-corps-document.dispensationMedicaments",
-      "short" : "Section Dispensation médicaments",
-      "definition" : "Section Dispensation médicaments",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispensation-medicaments"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.dispositifsMedicaux",
-      "path" : "fr-lm-corps-document.dispositifsMedicaux",
-      "short" : "Section Dispositifs medicaux",
-      "definition" : "Section Dispositifs medicaux",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dispositifs-medicaux"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.documentPDFCopie",
-      "path" : "fr-lm-corps-document.documentPDFCopie",
-      "short" : "Section Document PDF Copie",
-      "definition" : "Section Document PDF Copie",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-pdf-copie"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.documentsAjoutes",
-      "path" : "fr-lm-corps-document.documentsAjoutes",
-      "short" : "Section Documents ajoutés",
-      "definition" : "Section Documents ajoutés",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-documents-ajoutes"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.educationPatient",
-      "path" : "fr-lm-corps-document.educationPatient",
-      "short" : "Section Education du patient",
-      "definition" : "Section Education du patient",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-education-patient"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.effetsIndesirables",
-      "path" : "fr-lm-corps-document.effetsIndesirables",
-      "short" : "Section Effets indesirables",
-      "definition" : "Section Effets indesirables",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-effets-indesirables"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.facteursDeRisqueProfessionnelsNonCode",
-      "path" : "fr-lm-corps-document.facteursDeRisqueProfessionnelsNonCode",
-      "short" : "Section Facteurs de risque professionnels non Codé",
-      "definition" : "Section Facteurs de risque professionnels non Codé",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.fonctionsPhysiques",
-      "path" : "fr-lm-corps-document.fonctionsPhysiques",
-      "short" : "Section Fonctions physiques",
-      "definition" : "Section Fonctions physiques",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-fonctions-physiques"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.habitusModeDeVie",
-      "path" : "fr-lm-corps-document.habitusModeDeVie",
-      "short" : "Section Habitus et modes de vie",
-      "definition" : "Section Habitus et modes de vie",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-habitus-mode-de-vie"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.historiqueDesActes",
-      "path" : "fr-lm-corps-document.historiqueDesActes",
-      "short" : "Section Historique des actes",
-      "definition" : "Section Historique des actes",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-des-actes"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.historiqueDesGrossesses",
-      "path" : "fr-lm-corps-document.historiqueDesGrossesses",
-      "short" : "Section Historique des grossesses",
-      "definition" : "Section Historique des grossesses",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-historique-des-grossesses"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.planSoins",
-      "path" : "fr-lm-corps-document.planSoins",
-      "short" : "Section Plan de Soins",
-      "definition" : "Section Plan de Soins",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-plan-soins"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.pointsDeVigilancesNonCode",
-      "path" : "fr-lm-corps-document.pointsDeVigilancesNonCode",
-      "short" : "Section Points de Vigilances non code",
-      "definition" : "Section Points de Vigilances non code",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-points-de-vigilances-non-code"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.prescriptionDispositifsMedicaux",
-      "path" : "fr-lm-corps-document.prescriptionDispositifsMedicaux",
-      "short" : "Section Prescription de dispositifs médicaux",
-      "definition" : "Section Prescription de dispositifs médicaux",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-dispositifs-medicaux"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.prescriptionMedicaments",
-      "path" : "fr-lm-corps-document.prescriptionMedicaments",
-      "short" : "Section Prescription médicaments",
-      "definition" : "Section Prescription médicaments",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prescription-medicaments"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.problemesActifs",
-      "path" : "fr-lm-corps-document.problemesActifs",
-      "short" : "Section Problemès Actifs",
-      "definition" : "Section Problemès Actifs",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-problemes-actifs"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.raisonRecommandationNonCode",
-      "path" : "fr-lm-corps-document.raisonRecommandationNonCode",
-      "short" : "Section Raison de la recommandation (non Codé)",
-      "definition" : "Section Raison de la recommandation (non Codé)",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-raison-recommandation-non-code"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.raisonRecommandation",
-      "path" : "fr-lm-corps-document.raisonRecommandation",
-      "short" : "Section Raison de la recommandation",
-      "definition" : "Section Raison de la recommandation",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-raison-recommandation"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultatsLaboratoireBiologieSecondeIntention",
-      "path" : "fr-lm-corps-document.resultatsLaboratoireBiologieSecondeIntention",
-      "short" : "Section Résultats de laboratoire de biologie de seconde intention",
-      "definition" : "Section Résultats de laboratoire de biologie de seconde intention",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-laboratoire-biologie-seconde-intention"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultatsEvenements",
-      "path" : "fr-lm-corps-document.resultatsEvenements",
-      "short" : "Section Resultats d'évenements",
-      "definition" : "Section Resultats d'évenements",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-evenements"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultatsExamensNonCode",
-      "path" : "fr-lm-corps-document.resultatsExamensNonCode",
-      "short" : "Section Resultats d'xamens (non Codée)",
-      "definition" : "Section Resultats d'xamens (non Codée)",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examens-non-code"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultatsExamens",
-      "path" : "fr-lm-corps-document.resultatsExamens",
-      "short" : "Section Résultats d'examens",
-      "definition" : "Section Résultats d'examens",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examens"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultats",
-      "path" : "fr-lm-corps-document.resultats",
-      "short" : "Section Resultats",
-      "definition" : "Section Resultats",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.signesVitaux",
-      "path" : "fr-lm-corps-document.signesVitaux",
+      "id" : "fr-lm-corps-document.vitalSigns",
+      "path" : "fr-lm-corps-document.vitalSigns",
       "short" : "Section Signes vitaux",
       "definition" : "Section Signes vitaux",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-signes-vitaux"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vital-signs"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.statutDocument",
-      "path" : "fr-lm-corps-document.statutDocument",
-      "short" : "Section Statut du document",
-      "definition" : "Section Statut du document",
+      "id" : "fr-lm-corps-document.resultData",
+      "path" : "fr-lm-corps-document.resultData",
+      "short" : "section Compte rendu de biologie de 1er niveau",
+      "definition" : "section Compte rendu de biologie de 1er niveau",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-document"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-result-data"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.statutFonctionnel",
-      "path" : "fr-lm-corps-document.statutFonctionnel",
-      "short" : "Section Statut fonctionnel",
-      "definition" : "Section Statut fonctionnel",
+      "id" : "fr-lm-corps-document.examinationReport",
+      "path" : "fr-lm-corps-document.examinationReport",
+      "short" : "Section Acte d'imagerie",
+      "definition" : "Section Acte d'imagerie",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-statut-fonctionnel"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-examination-report"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.traitements",
-      "path" : "fr-lm-corps-document.traitements",
-      "short" : "Section Traitement",
-      "definition" : "Section Traitement",
+      "id" : "fr-lm-corps-document.orderInformation",
+      "path" : "fr-lm-corps-document.orderInformation",
+      "short" : "Section Demande d'examen",
+      "definition" : "Section Demande d'examen",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-order-information"
       }]
     },
     {
-      "id" : "fr-lm-corps-document.traitementSortie",
-      "path" : "fr-lm-corps-document.traitementSortie",
+      "id" : "fr-lm-corps-document.comparisonStudy",
+      "path" : "fr-lm-corps-document.comparisonStudy",
+      "short" : "Section Examen comparatif",
+      "definition" : "Section Examen comparatif",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-comparison-study"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.exposureInformation",
+      "path" : "fr-lm-corps-document.exposureInformation",
+      "short" : "Section Exposition aux radiations",
+      "definition" : "Section Exposition aux radiations",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-exposure-information"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.supportingInformation",
+      "path" : "fr-lm-corps-document.supportingInformation",
+      "short" : "Section Informations cliniques",
+      "definition" : "Section Informations cliniques",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-supporting-information"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.dicomStudyMetadata",
+      "path" : "fr-lm-corps-document.dicomStudyMetadata",
+      "short" : "Section object catalog",
+      "definition" : "Section object catalog",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-study-metadata"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.recommendation",
+      "path" : "fr-lm-corps-document.recommendation",
+      "short" : "Section Recommandation",
+      "definition" : "Section Recommandation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-recommendation"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.conclusion",
+      "path" : "fr-lm-corps-document.conclusion",
+      "short" : "Section Conclusion",
+      "definition" : "Section Conclusion",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-conclusion"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.medicationDispensations",
+      "path" : "fr-lm-corps-document.medicationDispensations",
+      "short" : "Section Dispensation médicaments",
+      "definition" : "Section Dispensation médicaments",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-dispensations"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.patientEducation",
+      "path" : "fr-lm-corps-document.patientEducation",
+      "short" : "Section Education du patient",
+      "definition" : "Section Education du patient",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-education"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.patientHistory",
+      "path" : "fr-lm-corps-document.patientHistory",
+      "short" : "Section Historique du patient",
+      "definition" : "Section Historique du patient",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-history"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.reasonForReferral",
+      "path" : "fr-lm-corps-document.reasonForReferral",
+      "short" : "Section Raison de la recommandation",
+      "definition" : "Section Raison de la recommandation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reason-for-referral"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.courseOfEncounter",
+      "path" : "fr-lm-corps-document.courseOfEncounter",
+      "short" : "Section Résultats d'événements",
+      "definition" : "Section Résultats d'événements",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-course-of-encounter"
+      }]
+    },
+    {
+      "id" : "fr-lm-corps-document.hospitalDischargeMedications",
+      "path" : "fr-lm-corps-document.hospitalDischargeMedications",
       "short" : "Section Traitement à la sortie",
       "definition" : "Section Traitement à la sortie",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-sortie"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-hospital-discharge-medications"
       }]
     },
     {
@@ -564,28 +542,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-corps-document
       "max" : "*",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitements-administres"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.vaccinations",
-      "path" : "fr-lm-corps-document.vaccinations",
-      "short" : "Section Vaccinations",
-      "definition" : "Section Vaccinations",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-vaccinations"
-      }]
-    },
-    {
-      "id" : "fr-lm-corps-document.resultatsExamenImagerie",
-      "path" : "fr-lm-corps-document.resultatsExamenImagerie",
-      "short" : "Section Résultats d'examen d'imagerie",
-      "definition" : "Section Résultats d'examen d'imagerie",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-resultats-examen-imagerie"
       }]
     }]
   }

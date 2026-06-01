@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Addendum - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Addendum - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Addendum**
+* **Logical model - FR LM Addendum**
 
-## Logical Model: Modèle logique métier - FR LM Addendum 
+## Logical Model: Logical model - FR LM Addendum 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-addendum | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRLMAddendum |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMAddendum |
 
  
 Section Addendum 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-addendum)
 
@@ -47,9 +47,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-addendum.csv),
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-addendum",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMAddendum",
-  "title" : "Modèle logique métier - FR LM Addendum",
+  "title" : "Logical model - FR LM Addendum",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,34 +76,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-addendum.csv),
     "element" : [{
       "id" : "fr-lm-addendum",
       "path" : "fr-lm-addendum",
-      "short" : "Modèle logique métier - FR LM Addendum",
+      "short" : "Logical model - FR LM Addendum",
       "definition" : "Section Addendum"
     },
     {
-      "id" : "fr-lm-addendum.titreSection",
-      "path" : "fr-lm-addendum.titreSection",
+      "id" : "fr-lm-addendum.titleSection",
+      "path" : "fr-lm-addendum.titleSection",
       "min" : 1
     },
     {
-      "id" : "fr-lm-addendum.sousSection",
-      "path" : "fr-lm-addendum.sousSection",
+      "id" : "fr-lm-addendum.subSection",
+      "path" : "fr-lm-addendum.subSection",
       "max" : "0"
     },
     {
-      "id" : "fr-lm-addendum.entree",
-      "path" : "fr-lm-addendum.entree",
+      "id" : "fr-lm-addendum.entry",
+      "path" : "fr-lm-addendum.entry",
       "max" : "0"
-    },
-    {
-      "id" : "fr-lm-addendum.auteur",
-      "path" : "fr-lm-addendum.auteur",
-      "short" : "auteur du document",
-      "definition" : "auteur du document",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
     }]
   }
 }

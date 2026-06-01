@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/core/PractitionerRole/practitionerRoleRemplacant-NS> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitionerRoleRemplacant-NS"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : PractitionerRole practitionerRoleRemplacant-NS</b></p><a name=\"practitionerRoleRemplacant-NS\"> </a><a name=\"hcpractitionerRoleRemplacant-NS\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-practitionerRole-document.html\">FR PractitionerRole Document</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner/practitionerRemplacant-NS\">Practitioner/practitionerRemplacant-NS</a></p><p><b>organization</b>: <a href=\"Organization/organizationPrescription-02-NS\">Organization/organizationPrescription-02-NS</a></p><p><b>code</b>: <span title=\"Codes :\"/>, <span title=\"Codes :\">PROV</span>, <span title=\"Codes :\">CORRE</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:practitioner [
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/Practitioner/practitionerRemplacant-NS> ;
+     fhir:reference [ fhir:v "Practitioner/practitionerRemplacant-NS" ]
+  ] ; # 
+  fhir:organization [
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/Organization/organizationPrescription-02-NS> ;
+     fhir:reference [ fhir:v "Organization/organizationPrescription-02-NS" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/practitioner-role"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/practitioner-role>
+       ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:code [ fhir:v "PROV" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:code [ fhir:v "CORRE" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

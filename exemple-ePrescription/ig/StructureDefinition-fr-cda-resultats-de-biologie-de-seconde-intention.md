@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRCDASectionResultatsDeBiologieDeSecondeIntention |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDASectionResultatsDeBiologieDeSecondeIntention |
 
  
 Cette section, optionnelle, est utilisée uniquement dans le cas d’usage particulier des résultats d’examen de laboratoire de biologie de seconde intention, lorsqu’ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d’encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique ‘Résultats de laboratoire de biologie de seconde intention’.Attention : cette solution n’est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-de-
   "name" : "FRCDASectionResultatsDeBiologieDeSecondeIntention",
   "title" : "CDA - FR Resultats de biologie de seconde intention",
   "status" : "draft",
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,10 +9,10 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-06 | *Computable Name*:FRValueSetEDQMDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRValueSetEDQMDocument |
 
  
-ValueSet basé sur le CodeSystem EDQM fourni par SMT 
+ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique). 
 
  **References** 
 
@@ -55,7 +55,7 @@ ValueSet basé sur le CodeSystem EDQM fourni par SMT
   "title" : "ValueSet - FR ValueSet EDQM Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-06T11:50:30+00:00",
+  "date" : "2026-06-01T14:06:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -64,7 +64,7 @@ ValueSet basé sur le CodeSystem EDQM fourni par SMT
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "ValueSet basé sur le CodeSystem EDQM fourni par SMT",
+  "description" : "ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -74,7 +74,12 @@ ValueSet basé sur le CodeSystem EDQM fourni par SMT
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://smt.esante.gouv.fr/terminologie-standardterms"
+      "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "PDF"
+      }]
     }]
   }
 }

@@ -3,5 +3,5 @@
 ","Modèle logique métier - FR LM Laboratoire exécutant","Laboratoire exécutant","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-laboratoire-executant.dateExecution","fr-lm-laboratoire-executant.dateExecution","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date de l’exécution","Date de l’exécution","","","","","","","","","",,,,,"",,,,"fr-lm-laboratoire-executant.dateExecution",1,1,"",""
-"fr-lm-laboratoire-executant.executant","fr-lm-laboratoire-executant.executant","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Directeur du laboratoire","Directeur du laboratoire","","","","","","","","","",,,,,"",,,,"fr-lm-laboratoire-executant.executant",1,1,"",""
+"fr-lm-laboratoire-executant.executant[x]","fr-lm-laboratoire-executant.executant[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation {[]} {[]}","Directeur du laboratoire","Directeur du laboratoire","","","","","","","","","",,,,,"",,,,"fr-lm-laboratoire-executant.executant[x]",1,1,"",""
