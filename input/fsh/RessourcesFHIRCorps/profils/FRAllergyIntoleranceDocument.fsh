@@ -40,8 +40,6 @@ Description: "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire u
 * reaction.substance MS
 * reaction.substance ^short = "Substance responsable de la réaction"
 * reaction.substance from FRValueSetAllergySubstanceDocument (required)
-* reaction.substance ^short = "Substance responsable de la réaction"
-* reaction.substance from FRValueSetAllergySubstanceDocument (required)
 
 * reaction.manifestation MS
 * reaction.manifestation ^short = "Symptômes/signes cliniques associés à l’événement"
