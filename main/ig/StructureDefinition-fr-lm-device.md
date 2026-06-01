@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-21 | *Computable Name*:FRLMDevice |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMDevice |
 
  
 Entrée Dispositif médical 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-device.csv), [
   "name" : "FRLMDevice",
   "title" : "Logical model - Device",
   "status" : "draft",
-  "date" : "2026-05-21T09:18:21+00:00",
+  "date" : "2026-06-01T14:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

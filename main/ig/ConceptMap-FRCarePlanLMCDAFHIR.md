@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRCarePlanLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Active as of 2026-05-21 | *Computable Name*: |
+| Active as of 2026-06-01 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers le profil CDA FRCDAReferenceItemPlanTraitement, puis vers le profil FHIR FRCarePlanDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMReferenceItemPlanTraitement vers l
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Référence Item Plan Traitement\"",
   "status" : "active",
-  "date" : "2026-05-21T09:18:21+00:00",
+  "date" : "2026-06-01T14:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

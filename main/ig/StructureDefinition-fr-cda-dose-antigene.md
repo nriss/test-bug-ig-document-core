@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dose-antigene | *Version*:0.1.0-snapshot |
-| Draft as of 2026-05-21 | *Computable Name*:FRCDADoseAntigene |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDADoseAntigene |
 
  
 Entrée FR-Dose-antigene: IHE-PCC – Antigene-Dose. L’entrée Dose d’antigène permet de décrire des informations complémentaires sur la vaccination, et plus précisément, la dose spécifique d’un antigène. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dose-antigene
   "name" : "FRCDADoseAntigene",
   "title" : "CDA - FR Dose antigene",
   "status" : "draft",
-  "date" : "2026-05-21T09:18:21+00:00",
+  "date" : "2026-06-01T14:41:15+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
