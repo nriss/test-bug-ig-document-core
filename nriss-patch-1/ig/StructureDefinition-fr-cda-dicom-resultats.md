@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-resulta
   "name" : "FRCDASectionDICOMResultats",
   "title" : "CDA - FR DICOM Resultats",
   "status" : "draft",
-  "date" : "2026-06-01T14:28:18+00:00",
+  "date" : "2026-06-01T15:28:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
