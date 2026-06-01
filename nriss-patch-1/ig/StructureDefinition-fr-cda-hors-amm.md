@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-hors-amm | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAHorsAMM |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAHorsAMM |
 
  
 Entrée FR-Hors-AMM: IHE-PCC - Simple-Observation. Cette observation permet d’indiquer si le traitement auquel elle est associée est hors AMM. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
   "name" : "FRCDAHorsAMM",
   "title" : "CDA - FR Hors AMM",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Observation",
-      "path" : "Observation"
-    },
-    {
       "id" : "Observation.templateId",
       "path" : "Observation.templateId",
       "slicing" : {
@@ -175,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -187,12 +184,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "GEN-179"
+      "min" : 1,
+      "patternCode" : "GEN-179",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -202,7 +203,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Hors Autorisation de Mise sur le Marché (AMM)"
+      "patternString" : "Hors Autorisation de Mise sur le Marché (AMM)",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

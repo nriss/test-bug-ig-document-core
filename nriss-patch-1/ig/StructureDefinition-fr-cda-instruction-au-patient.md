@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-instruction-au-patient | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAInstructionAuPatient |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAInstructionAuPatient |
 
  
 Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. Cette entrée permet d’enregistrer une instruction au patient sous forme codée (c’est notamment le cas pour les prescriptions d’examens de biologie médicale). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instruction-a
   "name" : "FRCDAInstructionAuPatient",
   "title" : "CDA - FR Instruction au patient",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -171,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instruction-a
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -183,12 +184,21 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instruction-a
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "PINSTRUCT"
+      "min" : 1,
+      "patternCode" : "PINSTRUCT",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.3.6.1.4.1.19376.1.5.3.2"
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.5.3.2",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

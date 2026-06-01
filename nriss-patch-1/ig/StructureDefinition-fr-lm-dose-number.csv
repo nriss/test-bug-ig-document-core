@@ -1,0 +1,23 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"fr-lm-dose-number","fr-lm-dose-number","","","",0,*,"","","","null {[]} {[]}
+","Logical model - FR LM Dose Number","Entrée Rang de la vaccination","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"fr-lm-dose-number.identifiantRangVaccination","fr-lm-dose-number.identifiantRangVaccination","","","",0,*,"","","","Identifier {[]} {[]}
+","Identifiant de l’entrée","Identifiant de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.identifiantRangVaccination",0,*,"",""
+"fr-lm-dose-number.codeRangVaccination","fr-lm-dose-number.codeRangVaccination","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Code de l'entrée","Code de l'entrée","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.codeRangVaccination",1,1,"",""
+"fr-lm-dose-number.derivationRangVaccination","fr-lm-dose-number.derivationRangVaccination","","","",0,1,"","","","string {[]} {[]}
+","derivation.","derivation.","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.derivationRangVaccination",0,1,"",""
+"fr-lm-dose-number.descriptionRangVaccination","fr-lm-dose-number.descriptionRangVaccination","","","",0,1,"","","","Narrative {[]} {[]}
+","Partie narrative de l’entrée","Partie narrative de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.descriptionRangVaccination",0,1,"",""
+"fr-lm-dose-number.statutRangVaccination","fr-lm-dose-number.statutRangVaccination","","","",1,1,"","","","code {[]} {[]}
+","Statut de l’entrée","Statut de l’entrée","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.statutRangVaccination",1,1,"",""
+"fr-lm-dose-number.dateRangVaccination","fr-lm-dose-number.dateRangVaccination","","","",0,1,"","","","dateTime {[]} {[]}
+","Date de l’observation","Date de l’observation","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.dateRangVaccination",0,1,"",""
+"fr-lm-dose-number.prioriteRangVaccination","fr-lm-dose-number.prioriteRangVaccination","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Priorité","Priorité","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.prioriteRangVaccination",0,1,"",""
+"fr-lm-dose-number.nombreRenouvellements","fr-lm-dose-number.nombreRenouvellements","","","",0,1,"","","","Range {[]} {[]}
+","Nombre de renouvellements possibles","Nombre de renouvellements possibles","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.nombreRenouvellements",0,1,"",""
+"fr-lm-dose-number.languageRangVaccination","fr-lm-dose-number.languageRangVaccination","","","",0,1,"","","","code {[]} {[]}
+","Language","Language","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.languageRangVaccination",0,1,"",""
+"fr-lm-dose-number.rangVaccination","fr-lm-dose-number.rangVaccination","","","",1,1,"","","","integer {[]} {[]}
+","Rang de la vaccination","Rang de la vaccination","","","","","","","","","",,,,,"",,,,"fr-lm-dose-number.rangVaccination",1,1,"",""

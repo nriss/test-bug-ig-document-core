@@ -467,6 +467,283 @@ Pour en savoir plus, voir <a href="https://hl7.org/fhir/R4/index.html">https://h
 <p>Chaque entrée d’un document peut avoir un <strong>subject</strong>. Si l’entrée ne contient pas de subject, l’entrée concerne la personne indiquée dans l’élément <strong>Composition.section.focus</strong> de la section. Si la section ne contient pas d’élément <strong>Composition.section.focus</strong>, la section concerne la personne indiquée dans l’élément <strong>subject</strong> du document.
 C’est le principe de propagation du contexte et qui part du document vers les sections, sous-sections, entrées et sous-entrées emboitées.</p>
 
+<h4 id="gestion-des-sections-vides-pas-dinformation-">Gestion des sections vides (pas d’information) :</h4>
+
+<p>En FHIR, l’élément <strong>section.emptyReason</strong> permet d’indiquer la raison pour laquelle une section est vide, c’est-à-dire qu’elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.</p>
+
+<h5 id="sections-obligatoires">Sections obligatoires</h5>
+
+<p>Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu’aucune entrée structurée n’est fournie, l’élément <strong>section.emptyReason</strong> <strong>DOIT</strong> être renseigné avec une valeur issue du JDV <a href="http://hl7.org/fhir/ValueSet/list-empty-reason">list-empty-reason</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Libellé</th>
+      <th>Définition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nilknown</code></td>
+      <td>Pas d’élément connu</td>
+      <td>Constatation clinique d’un professionnel de santé concluant, après investigation, à l’absence d’éléments connus pour cette donnée. <strong>Cette valeur ne peut pas être fournie par défaut par un SIS en l’absence d’informations.</strong> <br/><br/>Exemples :<br/>- <em>Allergies</em> : le patient ou son représentant a déclaré n’avoir connaissance d’aucune allergie.<br/>- <em>Médicaments</em> : le patient déclare ne prendre aucun médicament.<br/>- <em>Diagnostics / problèmes</em> : le patient déclare qu’aucun événement connu ne doit être enregistré.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">notasked</code></td>
+      <td>Non demandé</td>
+      <td>Aucune investigation n’a été menée pour déterminer s’il existe des éléments pour cette liste.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">withheld</code></td>
+      <td>Non divulgué</td>
+      <td>Aucune information n’est fournie pour des raisons de confidentialité. Cela ne signifie pas nécessairement que le contenu est sensible ; il peut s’agir d’une décision personnelle du patient.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">unavailable</code></td>
+      <td>Indisponible</td>
+      <td>L’information est indisponible au moment de la production du document (ex : patient inconscient).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">notstarted</code></td>
+      <td>Non démarré</td>
+      <td>Les actions permettant d’obtenir cette information n’ont pas encore démarré.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">closed</code></td>
+      <td>Fermé</td>
+      <td>Cette liste est désormais fermée ou n’est plus pertinente ni utile.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="sections-facultatives">Sections facultatives</h5>
+
+<p>Lorsqu’aucune donnée n’est disponible pour une section facultative, <strong>le producteur ne doit pas créer la section</strong>. L’élément <strong>section.emptyReason</strong> ne s’applique pas aux sections facultatives absentes.</p>
+
+<blockquote>
+  <p><strong>En résumé</strong> : <em>section.emptyReason</em> s’applique uniquement aux <strong>sections obligatoires vides</strong>. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.</p>
+</blockquote>
+
+<h4 id="gestion-de-labsence-de-données-au-niveau-des-éléments-données-manquantes">Gestion de l’absence de données au niveau des éléments (données manquantes)</h4>
+
+<p>En FHIR, l’absence d’une valeur dans un élément doit être gérée de manière explicite lorsque cela est <strong>requis</strong>. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.</p>
+
+<h5 id="données-optionnelles">Données optionnelles</h5>
+
+<p><em>(cardinalité <code class="language-plaintext highlighter-rouge">0..1</code> ou <code class="language-plaintext highlighter-rouge">0..*</code>)</em></p>
+
+<p>Si l’information n’est pas disponible, quelle que soit la raison, <strong>ne pas créer l’élément</strong>. L’absence de l’élément dans la ressource est suffisante pour exprimer l’indisponibilité.</p>
+
+<h5 id="données-obligatoires">Données obligatoires</h5>
+
+<p><em>(cardinalité <code class="language-plaintext highlighter-rouge">1..1</code> ou <code class="language-plaintext highlighter-rouge">1..*</code>)</em></p>
+
+<p>Si l’information n’est pas disponible, <strong>le motif de l’absence DOIT être précisé</strong> via les mécanismes décrits ci-dessous.</p>
+
+<h6 id="données-obligatoires-non-codées">Données obligatoires non codées</h6>
+
+<p>Utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><strong>Data Absent Reason</strong></a> avec :</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">"url"</code> : <code class="language-plaintext highlighter-rouge">"http://hl7.org/fhir/StructureDefinition/data-absent-reason"</code></li>
+  <li><code class="language-plaintext highlighter-rouge">"valueCode"</code> : valeur issue du ValueSet <a href="https://hl7.org/fhir/R4/valueset-data-absent-reason.html">data-absent-reason</a></li>
+</ul>
+
+<p>Le ValueSet <a href="https://hl7.org/fhir/R4/valueset-data-absent-reason.html">data-absent-reason</a> contient les valeurs suivantes :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lvl</th>
+      <th>Code</th>
+      <th>Libellé</th>
+      <th>Définition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">unknown</code></td>
+      <td>Inconnu</td>
+      <td>Valeur inconnue.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">asked-unknown</code></td>
+      <td>Demandé - inconnu</td>
+      <td>Valeur demandée mais non connue.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">temp-unknown</code></td>
+      <td>Temporairement indisponible</td>
+      <td>Temporairement indisponible (mais pourrait ultérieurement être connue).</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">not-asked</code></td>
+      <td>Non demandé</td>
+      <td>Valeur non demandée.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">asked-declined</code></td>
+      <td>Demandé - refus de réponse</td>
+      <td>Valeur demandée / refus de réponse.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">masked</code></td>
+      <td>Masqué</td>
+      <td>Valeur non disponible pour des raisons de sécurité, de confidentialité ou autres.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">not-applicable</code></td>
+      <td>Non applicable</td>
+      <td>Pas de valeur appropriée pour cet élément (par exemple, la date des dernières règles pour un homme).</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">unsupported</code></td>
+      <td>Non supporté</td>
+      <td>Le système source ne gère pas cet élément.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">as-text</code></td>
+      <td>Voir narratif</td>
+      <td>Valeur fournie dans la partie narrative.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">error</code></td>
+      <td>Erreur</td>
+      <td>Valeur indisponible due à une erreur système ou de processus.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">not-a-number</code></td>
+      <td>Non numérique</td>
+      <td>La valeur numérique est indéfinie ou non représentable en raison d’une erreur de traitement des nombres à virgule flottante.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">negative-infinity</code></td>
+      <td>Borne inférieure infinie</td>
+      <td>La valeur numérique est excessivement basse et non représentable.</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><code class="language-plaintext highlighter-rouge">positive-infinity</code></td>
+      <td>Borne supérieure infinie</td>
+      <td>La valeur numérique est excessivement élevée et non représentable.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">not-performed</code></td>
+      <td>Non effectué</td>
+      <td>La valeur n’est pas disponible car la procédure d’observation n’a pas été effectuée.</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td><code class="language-plaintext highlighter-rouge">not-permitted</code></td>
+      <td>Non autorisé</td>
+      <td>Cette valeur n’est pas autorisée dans ce contexte (par exemple, en raison des profils ou des types de données de base).</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Exemple</strong> : dans une ressource <code class="language-plaintext highlighter-rouge">Procedure</code>, lorsque la date d’exécution (<code class="language-plaintext highlighter-rouge">performed[x]</code>) est inconnue :</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Procedure"</span><span class="p">,</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+  </span><span class="nl">"_performedDateTime"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/StructureDefinition/data-absent-reason"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h6 id="données-obligatoires-codées">Données obligatoires codées</h6>
+
+<ol>
+  <li><strong>Données codées à partir d’un codeSystem/valueSet non obligatoire</strong> (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>)</li>
+</ol>
+
+<p>Si l’information n’est pas connue et qu’il existe dans la terminologie ou le ValueSet associé <strong>un code d’exception spécifique</strong>, utiliser ce code en priorité.</p>
+
+<blockquote>
+  <p>Exemple : code SNOMED CT <code class="language-plaintext highlighter-rouge">1287211007</code> — <em>“No information available”</em>.</p>
+</blockquote>
+
+<p>Dans les autres cas, utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason"><strong>Data Absent Reason</strong></a> avec la syntaxe suivante :</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Observation"</span><span class="p">,</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+  </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/data-absent-reason"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"masked"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ol>
+  <li><strong>Données codées à partir d’un codeSystem/valueSet obligatoire</strong> (<code class="language-plaintext highlighter-rouge">required</code>)</li>
+</ol>
+
+<blockquote>
+  <p><strong>Règle</strong> : lorsqu’une donnée est absente, <strong>utiliser le code d’exception du ValueSet ou de la terminologie associée</strong>. C’est la règle de référence pour une liaison <code class="language-plaintext highlighter-rouge">required</code>.</p>
+</blockquote>
+
+<p>En pratique, de nombreux ValueSets ou terminologies ne prévoient pas de code d’exception. Dans ce cas, faute de code applicable, <strong>utiliser l’extension <a href="http://hl7.org/fhir/StructureDefinition/data-absent-reason">Data Absent Reason</a></strong> comme mécanisme de repli.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Situation</th>
+      <th>Traitement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Le VS/terminologie contient un code d’exception (ex : <code class="language-plaintext highlighter-rouge">unknown</code> dans <code class="language-plaintext highlighter-rouge">event-status</code>)</td>
+      <td>Utiliser ce code d’exception</td>
+    </tr>
+    <tr>
+      <td>Le VS/terminologie ne contient <strong>aucun</strong> code d’exception</td>
+      <td>Utiliser l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Exemples d’instances : Allergies et Procédures</strong> :</p>
+
+  <ul>
+    <li>L’instance <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html">example-allergy-intolerance-data-absent-reason</a> illustre l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments obligatoires du profil <a href="StructureDefinition-fr-allergie-intolerance-document.html">FRAllergyIntoleranceDocument</a> lorsque la valeur est inconnue ou temporairement indisponible.</li>
+    <li>L’instance <a href="Procedure-example-procedure-data-absent-reason.html">example-procedure-data-absent-reason</a> illustre les deux cas de figure sur le profil <a href="StructureDefinition-fr-procedure-document.html">FRProcedureDocument</a> :
+      <ul>
+        <li><strong><code class="language-plaintext highlighter-rouge">extension data-absent-reason</code></strong> pour les données codées à partir d’un codeSystem/valueSet non obligatoire (<code class="language-plaintext highlighter-rouge">example</code>, <code class="language-plaintext highlighter-rouge">preferred</code> ou <code class="language-plaintext highlighter-rouge">extensible</code>) : éléments <code class="language-plaintext highlighter-rouge">code</code>, <code class="language-plaintext highlighter-rouge">performedDateTime</code></li>
+        <li><strong><code class="language-plaintext highlighter-rouge">code d'exception natif</code></strong>  du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>(<code class="language-plaintext highlighter-rouge">unknown</code>) pour les données codées à partir d’un codeSystem/valueSet obligatoire (<code class="language-plaintext highlighter-rouge">required</code>) : élément <code class="language-plaintext highlighter-rouge">status</code></li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+
 <h3 id="conformité-des-documents-fhir">Conformité des documents FHIR</h3>
 
 <p>Les documents au format FHIR définis dans le CI-SIS doivent être conformes :</p>
@@ -638,7 +915,7 @@ Voir <a href="https://interop.esante.gouv.fr/ig/documentation/tests.html">https:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 20, 2026 11:58+0000">2026-04-20</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 1, 2026 14:28+0000">2026-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

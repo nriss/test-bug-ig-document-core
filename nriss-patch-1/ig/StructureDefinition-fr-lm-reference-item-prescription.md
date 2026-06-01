@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Référence item prescription - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Référence item prescription - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Référence item prescription**
+* **Logical model - FR LM Référence item prescription**
 
-## Logical Model: Modèle logique métier - FR LM Référence item prescription 
+## Logical Model: Logical model - FR LM Référence item prescription 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMReferenceItemPrescription |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMReferenceItemPrescription |
 
  
 Référence item prescription 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-reference-item-prescription)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMReferenceItemPrescription",
-  "title" : "Modèle logique métier - FR LM Référence item prescription",
+  "title" : "Logical model - FR LM Référence item prescription",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,26 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-reference-item-prescription",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-reference-item-prescription",
       "path" : "fr-lm-reference-item-prescription",
-      "short" : "Modèle logique métier - FR LM Référence item prescription",
+      "short" : "Logical model - FR LM Référence item prescription",
       "definition" : "Référence item prescription"
-    },
-    {
-      "id" : "fr-lm-reference-item-prescription.identifiant",
-      "path" : "fr-lm-reference-item-prescription.identifiant",
-      "short" : "Identifiant de la ligne de prescription",
-      "definition" : "Identifiant de la ligne de prescription",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier"]
-      }]
     },
     {
       "id" : "fr-lm-reference-item-prescription.code",
@@ -106,18 +94,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-produit-sante"
-      }]
-    },
-    {
-      "id" : "fr-lm-reference-item-prescription.auteur",
-      "path" : "fr-lm-reference-item-prescription.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication"
       }]
     },
     {
@@ -128,7 +105,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-reference-item
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-traitement-prescrit"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medication-prescription"
       }]
     },
     {

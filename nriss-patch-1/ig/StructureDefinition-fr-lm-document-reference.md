@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-document-reference | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMDocumentDeReference |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMDocumentDeReference |
 
  
 Référence un document existant (à remplacer ou transformé). 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-document-refer
   "name" : "FRLMDocumentDeReference",
   "title" : "Modèle logique métier - FR LM Document de référence",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

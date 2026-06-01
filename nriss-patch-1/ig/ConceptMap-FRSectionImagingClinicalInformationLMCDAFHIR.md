@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionImagingClinicalInformationLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*: |
+| Draft as of 2026-06-01 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMInformationsCliniques vers la section CDA FRCDADICOMHistoriqueMedical puis vers les profils FHIR Observation, FRConditionDocument, FRObservationPregnancyDocument, FRObservationContraIndicationsImagingDocument, FRDeviceAuteurDocument et FRMedicationAdministrationDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMInformationsCliniques vers la sect
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : Informations cliniques d'imagerie",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

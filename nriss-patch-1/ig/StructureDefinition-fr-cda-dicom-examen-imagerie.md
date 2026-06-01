@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-examen-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMExamenImagerie |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDADICOMExamenImagerie |
 
  
 Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cette entrée contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d’une ou de plusieurs séries d’images médicales. 
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Object Catalog](StructureDefinition-fr-cda-dicom-object-catalog.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-examen-imagerie)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
   "name" : "FRCDADICOMExamenImagerie",
   "title" : "CDA - FR DICOM Examen imagerie",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {
@@ -157,7 +153,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
       "path" : "Act.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -169,12 +166,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
     {
       "id" : "Act.code.code",
       "path" : "Act.code.code",
-      "patternCode" : "113014"
+      "min" : 1,
+      "patternCode" : "113014",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystemName",
@@ -184,7 +185,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-examen-
     {
       "id" : "Act.code.displayName",
       "path" : "Act.code.displayName",
-      "patternString" : "Examen"
+      "patternString" : "Examen",
+      "mustSupport" : true
     },
     {
       "id" : "Act.text",

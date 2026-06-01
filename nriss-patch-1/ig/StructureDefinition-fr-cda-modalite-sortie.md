@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-modalite-sortie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAModaliteSortie |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAModaliteSortie |
 
  
 Entrée FR-Modalite-sortie: Cette entrée permet de préciser la modalité de sortie du patient d’un ES (retour à domicile, EHPAD, HAD, etc…). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-modalite-sort
   "name" : "FRCDAModaliteSortie",
   "title" : "CDA - FR Modalite sortie",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -146,7 +146,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-modalite-sort
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -158,12 +159,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-modalite-sort
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "ORG-074"
+      "min" : 1,
+      "patternCode" : "ORG-074",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -173,7 +178,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-modalite-sort
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Modalité de sortie"
+      "patternString" : "Modalité de sortie",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

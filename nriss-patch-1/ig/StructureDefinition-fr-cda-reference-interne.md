@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-reference-interne | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAReferenceInterne |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAReferenceInterne |
 
  
 Entrée FR-Reference-interne: IHE-PCC - Internal-Reference. L’élément Référence interne est un élément de type ‘act’ à l’intérieur d’un ‘entryRelationship’ qui permet de relier un élément à un autre élément du même document par l’intermédiaire son identifiant ‘id’. Tous les types d’éléments du document (act, procedure, observation, substanceAdministration, etc) peuvent être pointés par un élément ‘Référence interne’. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-int
   "name" : "FRCDAReferenceInterne",
   "title" : "CDA - FR Reference interne",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -154,7 +154,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-int
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",

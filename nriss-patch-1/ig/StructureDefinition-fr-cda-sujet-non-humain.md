@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-sujet-non-humain | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDASujetNonHumain |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDASujetNonHumain |
 
  
 Entrée FR-Sujet-non-humain: IHE-PCC - Non-Human Subject 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet-non-hum
   "name" : "FRCDASujetNonHumain",
   "title" : "CDA - FR Sujet non humain",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -151,6 +151,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-sujet-non-hum
       "short" : "Sujet (ex. poulet, poisson, œuf, salade, eau, terre, air, peinture, etc.).",
       "definition" : "Sujet",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.code",
+      "path" : "Subject.relatedSubject.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.codeSystem",
+      "path" : "Subject.relatedSubject.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Subject.relatedSubject.code.displayName",
+      "path" : "Subject.relatedSubject.code.displayName",
       "mustSupport" : true
     },
     {

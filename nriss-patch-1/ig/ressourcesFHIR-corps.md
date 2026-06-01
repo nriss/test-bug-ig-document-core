@@ -13,7 +13,6 @@ Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Do
 | | |
 | :--- | :--- |
 | Titre du profil | Description |
-| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
 | [Consent - FR Advance directive Document](StructureDefinition-fr-advance-directive-document.md) | FRAdvanceDirectiveDocument permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.» |
 | [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md) | FRAdverseEventDocument permet de décrire un effet indésirable prévisible lié à un médicament |
 | [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md) | FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. |
@@ -48,7 +47,6 @@ Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Do
 * Il permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.
 * Si le traitement a déjà été administré ou si information rapporté par le patient ou si aucun traitement.
  |
-| [Medication - FR Medications Combinaison Document](StructureDefinition-fr-medications-combinaison-document.md) | FRMedicationsCombinaisonDocument permet de décrire une combinaison de médicaments ou de vaccins. |
 | [Observation - FR Observation Administration Blood Derivatives Document](StructureDefinition-fr-observation-administration-blood-derivatives-document.md) | FRObservationAdministrationBloodDerivativesDocument est un profil utilisé pour indiquer s'il y a eu ou pas une administration de dérivés du sang. |
 | [Observation - FR Observation Antenatal Testing And Surveillance Battery Document](StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.md) | FRObservationAntenatalTestingAndSurveillanceBattery permet de lister les examens et surveillances prénataux. |
 | [Observation - FR Observation Birth Event Document](StructureDefinition-fr-observation-birth-event-document.md) | FRObservationBirthEventDocument est un profil qui permet de rassembler les observations relatives à une naissance. |
@@ -70,6 +68,7 @@ Cette page contient la liste des profils FHIR définis dans le guide **ANS IG Do
 | [Observation - FR Observation Vital Signs Document](StructureDefinition-fr-observation-vital-signs-document.md) | * FRObservationVitalSignsDocument permet d'indiquer les informations détaillées relatives à une mesure clinique spécifique.
 * Il est basée sur la ressource Observation qu'elle spécialise en portant des contraintes sur les vocabulaires des éléments 'code' et 'value'.
  |
+| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
 | [Observation - FR Observation Work Related Accident Document](StructureDefinition-fr-observation-work-related-accident-document.md) | FRObservationWorkRelatedAccidentDocument permet d'indiquer si l'élément auquel elle est associée est en rapport avec un accident du travail / une maladie professionnelle. |
 | [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md) | FRPregnancyHistoryDocument est une liste contenant soit un événement de naissance, soit une observation sur la grossesse, mais pas les deux. |
 | [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) | FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. |

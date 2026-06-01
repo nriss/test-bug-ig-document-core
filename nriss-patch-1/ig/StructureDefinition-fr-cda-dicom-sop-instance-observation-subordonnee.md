@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-sop-instance-observation-subordonnee | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMSOPInstanceObservationSubordonnee |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDADICOMSOPInstanceObservationSubordonnee |
 
  
 Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d’enregistrer l’url permettant d’accéder aux images sur la Drim box source. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-sop-ins
   "name" : "FRCDADICOMSOPInstanceObservationSubordonnee",
   "title" : "CDA - FR DICOM SOP instance observation subordonnee",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -158,7 +158,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-sop-ins
       "path" : "Observation.id",
       "short" : "Identifiant de l'observation",
       "definition" : "Identifiant de l'observation",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -170,6 +171,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-sop-ins
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-sop-class-cisis"
       }
+    },
+    {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

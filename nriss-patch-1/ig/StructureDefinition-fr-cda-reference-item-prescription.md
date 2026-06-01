@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-reference-item-prescription | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAReferenceItemPrescription |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAReferenceItemPrescription |
 
  
 Entrée FR-Reference-item-prescription: IHE-PRE - Reference-Prescription-Item. Cette entrée permet d’enregistrer la référence à un item de prescription. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
   "name" : "FRCDAReferenceItemPrescription",
   "title" : "CDA - FR Reference item prescription",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -96,10 +96,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "SubstanceAdministration",
-      "path" : "SubstanceAdministration"
-    },
-    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -159,7 +155,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -172,12 +169,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
     {
       "id" : "SubstanceAdministration.code.code",
       "path" : "SubstanceAdministration.code.code",
-      "patternCode" : "PREItem"
+      "min" : 1,
+      "patternCode" : "PREItem",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystem",
       "path" : "SubstanceAdministration.code.codeSystem",
-      "patternString" : "1.3.6.1.4.1.19376.1.9.2.2"
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.9.2.2",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystemName",
@@ -187,7 +188,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-reference-ite
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "patternString" : "Prescription Item"
+      "patternString" : "Prescription Item",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.consumable",

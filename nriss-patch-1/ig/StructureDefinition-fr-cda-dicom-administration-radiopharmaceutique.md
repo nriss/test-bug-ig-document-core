@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMAdministrationRadiopharmaceutique |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDADICOMAdministrationRadiopharmaceutique |
 
  
 Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d’enregistrer l’administration de produits radiopharmaceutiques : 
@@ -22,7 +22,7 @@ Entrée FR-DICOM-Administration-radiopharmaceutique: Cette entrée permet d’en
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-dicom-administration-radiopharmaceutique)
 
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
   "name" : "FRCDADICOMAdministrationRadiopharmaceutique",
   "title" : "CDA - FR DICOM Administration radiopharmaceutique",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -102,10 +102,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "SubstanceAdministration",
-      "path" : "SubstanceAdministration"
-    },
-    {
       "id" : "SubstanceAdministration.templateId",
       "path" : "SubstanceAdministration.templateId",
       "slicing" : {
@@ -156,12 +152,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
     {
       "id" : "SubstanceAdministration.code.code",
       "path" : "SubstanceAdministration.code.code",
-      "patternCode" : "440252007"
+      "min" : 1,
+      "patternCode" : "440252007",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystem",
       "path" : "SubstanceAdministration.code.codeSystem",
-      "patternString" : "2.16.840.1.113883.6.96"
+      "min" : 1,
+      "patternString" : "2.16.840.1.113883.6.96",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code.codeSystemName",
@@ -171,7 +171,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-adminis
     {
       "id" : "SubstanceAdministration.code.displayName",
       "path" : "SubstanceAdministration.code.displayName",
-      "patternString" : "administration de produits radiopharmaceutiques"
+      "patternString" : "administration de produits radiopharmaceutiques",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.routeCode",

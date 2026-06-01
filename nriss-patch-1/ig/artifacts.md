@@ -11,19 +11,20 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 | | |
 | :--- | :--- |
-| [Modèle logique métier - FR LM Auteur](StructureDefinition-fr-lm-auteur.md) | Auteur du document : ce peut être un professionnel, un patient/usager ou un système.* Pour un professionnel ou un système, la structure de rattachement doit être précisée.
- |
+| [Logical model - FR LM Health Professional](StructureDefinition-fr-lm-health-professional.md) | Une personne (professionnel ou patient ou autre) |
+| [Logical model - FR LM Human Name](StructureDefinition-fr-lm-human-name.md) | Modele logique metier - FR LM Human Name |
+| [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md) | Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. |
+| [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) | Lieu |
+| [Logical model - FR LM Organisation](StructureDefinition-fr-lm-organisation.md) | Une structure (organisation) pour les professionnels de santé. |
+| [Logical model - FR LM Patient](StructureDefinition-fr-lm-patient.md) | Patient/Usager concerné par le document. |
+| [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) | Related Person |
 | [Modèle logique métier - FR LM Consentement](StructureDefinition-fr-lm-consentement.md) | Permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. |
 | [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md) | Personne déclarée comme destinataire prévu du document.* Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s). Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l’envoyer à d’autres destinataires.
  |
 | [Modèle logique métier - FR LM Document de référence](StructureDefinition-fr-lm-document-reference.md) | Référence un document existant (à remplacer ou transformé). |
 | [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md) | Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). |
-| [Modèle logique métier - FR LM Informateur](StructureDefinition-fr-lm-informateur.md) | Informateur (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. |
 | [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md) | Opérateur de saisie de la totalité ou d’une partie du contenu du document. |
 | [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md) | Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. |
-| [Modèle logique métier - FR LM Patient Usager](StructureDefinition-fr-lm-patient-usager.md) | Patient/Usager concerné par le document. |
-| [Modèle logique métier - FR LM Personne et/ou Structure](StructureDefinition-fr-lm-personne-structure.md) | Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels). |
-| [Modèle logique métier - FR LM Personne et/ou Structure Auteur](StructureDefinition-fr-lm-personne-structure-auteur.md) | Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels). |
 | [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription.md) | Association à une prescription à l’origine de l’acte dont résulte le document. |
 | [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md) | Association du document à une prise en charge du patient/usager par un professionnel ou par une structure.* Exemples : 
 * Dans une structure hospitalière, cette prise en charge est une hospitalisation complète ou partielle, des actes et soins externes, une consultation, etc.
@@ -38,7 +39,6 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 * Soit le Dossier Pharmaceutique (DP) responsable des documents qu’il produit
  |
 | [Modèle logique métier - FR LM Structure conservation](StructureDefinition-fr-lm-structure-conservation.md) | Structure chargée de la conservation du document, c’est-à-dire de garder physiquement le document qui lui est confié tout en garantissant son cycle de vie. |
-| [Modèle logique métier - FR LM Système / Structure](StructureDefinition-fr-lm-systeme-structure-auteur.md) | Système auteur du document |
 | [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md) | Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N’est pas utilisé dans un document d’expression personnelle du patient/usager et un document produit par un système. |
 | [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md) | Évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l’évènement principal avec obligatoirement une date de début et un exécutant. |
 
@@ -46,56 +46,51 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 | | |
 | :--- | :--- |
-| [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md) | Section Historique des actes |
-| [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md) | Section Acte d’imagerie |
-| [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
-| [Modèle logique métier - FR LM Allergies et hypersensibilités](StructureDefinition-fr-lm-allergies-et-hypersensibilites.md) | Section Allergies et hypersensibilités |
-| [Modèle logique métier - FR LM Antécédents familiaux](StructureDefinition-fr-lm-antecedents-familiaux.md) | Section Antécédents familiaux |
-| [Modèle logique métier - FR LM Antécédents médicaux](StructureDefinition-fr-lm-antecedents-medicaux.md) | Section Antécédents médicaux |
-| [Modèle logique métier - FR LM Antécédents obstétricaux](StructureDefinition-fr-lm-historique-des-grossesses.md) | Section Historique des grossesses |
-| [Modèle logique métier - FR LM Codes à barres](StructureDefinition-fr-lm-codes-a-barres.md) | Section Codes à barres |
-| [Modèle logique métier - FR LM Commentaire (non-codé)](StructureDefinition-fr-lm-commentaire-non-code.md) | Section Commentaire (non-codé) |
-| [Modèle logique métier - FR LM Comparaison d'examens d'imagerie](StructureDefinition-fr-lm-comparaison-examens-imagerie.md) | Section Comparaison d’examens d’imagerie |
-| [Modèle logique métier - FR LM Complications Acte](StructureDefinition-fr-lm-complications-acte.md) | Section Complications au cours de l’acte |
-| [Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-cr-bio-chapitre.md) | Section Compte rendu de biologie de 1er niveau |
-| [Modèle logique métier - FR LM Conclusion examen d'imagerie](StructureDefinition-fr-lm-conclusion-examen-imagerie.md) | Section Conclusion examen d’imagerie |
-| [Modèle logique métier - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) | Eléments métier du corps d’un document contenant les sections du document. |
-| [Modèle logique métier - FR LM Demande d'examen d'imagerie](StructureDefinition-fr-lm-demande-examen-imagerie.md) | Section Demande d’examen d’imagerie |
-| [Modèle logique métier - FR LM Directives-anticipées](StructureDefinition-fr-lm-directives-anticipees.md) | Section Directives anticipées |
-| [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md) | Section Dispensation médicaments |
-| [Modèle logique métier - FR LM Dispositifs medicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md) | Section Dispositifs medicaux |
-| [Modèle logique métier - FR LM Document PDF copie](StructureDefinition-fr-lm-document-pdf-copie.md) | Section Document PDF-copie |
-| [Modèle logique métier - FR LM Documents ajoutés](StructureDefinition-fr-lm-documents-ajoutes.md) | Section Documents ajoutés |
-| [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md) | Section Education du patient |
-| [Modèle logique métier - FR LM Effets indesirables](StructureDefinition-fr-lm-effets-indesirables.md) | Section Effets indesirables |
-| [Modèle logique métier - FR LM Exposition aux radiations](StructureDefinition-fr-lm-exposition-radiations.md) | Section Exposition aux radiations |
-| [Modèle logique métier - FR LM Facteurs de risque professionnels non code](StructureDefinition-fr-lm-facteurs-de-risque-professionnels-non-code.md) | Section Facteurs de risque professionnels non code |
-| [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md) | Section Fonctions physiques |
-| [Modèle logique métier - FR LM Habitus et modes de vie](StructureDefinition-fr-lm-habitus-mode-de-vie.md) | Section Habitus et modes de vie |
-| [Modèle logique métier - FR LM Informations Cliniques](StructureDefinition-fr-lm-informations-cliniques.md) | Section Informations Cliniques |
-| [Modèle logique métier - FR LM Object Catalog](StructureDefinition-fr-lm-object-catalog.md) | Section Object Catalog |
-| [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md) | Section Plan de soins |
-| [Modèle logique métier - FR LM Points de vigilance (non-codés)](StructureDefinition-fr-lm-points-de-vigilances-non-code.md) | Section Points de vigilance (non-codés) |
-| [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md) | Section Prescription de dispositifs médicaux |
-| [Modèle logique métier - FR LM Prescription de médicaments](StructureDefinition-fr-lm-prescription-medicaments.md) | Section Prescription de médicaments |
-| [Modèle logique métier - FR LM Problèmes actifs](StructureDefinition-fr-lm-problemes-actifs.md) | Section Problèmes actifs |
-| [Modèle logique métier - FR LM Raison de la recommandation](StructureDefinition-fr-lm-raison-recommandation.md) | Section Raison de la recommandation |
-| [Modèle logique métier - FR LM Raison de la recommandation (non codée)](StructureDefinition-fr-lm-raison-recommandation-non-code.md) | Section Raison de la recommandation (non codée) |
-| [Modèle logique métier - FR LM Résultats](StructureDefinition-fr-lm-resultats.md) | Section Résultats |
-| [Modèle logique métier - FR LM Résultats d'examen d'imagerie](StructureDefinition-fr-lm-resultats-examen-imagerie.md) | Section Résultats d’examen d’imagerie |
-| [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md) | Section Résultats d’examens |
-| [Modèle logique métier - FR LM Résultats d'examens (non codée)](StructureDefinition-fr-lm-resultats-examens-non-code.md) | Section Résultats d’examens (non codée) |
-| [Modèle logique métier - FR LM Résultats d'événements](StructureDefinition-fr-lm-resultats-evenements.md) | Section Résultats d’événements |
-| [Modèle logique métier - FR LM Résultats de laboratoire de biologie de seconde intention](StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.md) | Section Résultats de laboratoire de biologie de seconde intention |
-| [Modèle logique métier - FR LM Section](StructureDefinition-fr-lm-section.md) | Section |
-| [Modèle logique métier - FR LM Signes vitaux](StructureDefinition-fr-lm-signes-vitaux.md) | Section Signes vitaux |
-| [Modèle logique métier - FR LM Sous-chapitre du compte rendu d'examens de biologie](StructureDefinition-fr-lm-cr-bio-sous-chapitre.md) | Modèle logique métier de la section Sous-chapitre du compte rendu d’examens de biologie (section de 2nd niveau) |
-| [Modèle logique métier - FR LM Statut du document](StructureDefinition-fr-lm-statut-document.md) | Section Statut du document |
-| [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md) | Section Statut fonctionnel |
-| [Modèle logique métier - FR LM Traitements](StructureDefinition-fr-lm-traitements.md) | Section Traitements |
-| [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) | Section Traitements administrés |
-| [Modèle logique métier - FR LM Traitements à la sortie](StructureDefinition-fr-lm-traitement-sortie.md) | Section Traitements à la sortie |
-| [Modèle logique métier - FR LM Vaccinations](StructureDefinition-fr-lm-vaccinations.md) | Section Vaccinations |
+| [Logical model - FR LM Pregnancy History](StructureDefinition-fr-lm-section-pregnancy-history.md) | Section Historique des grossesses |
+| [Logical model - FR LM Addendum](StructureDefinition-fr-lm-addendum.md) | Section Addendum |
+| [Logical model - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md) | Section Évaluation à l’admission |
+| [Logical model - FR LM Advance Directives](StructureDefinition-fr-lm-advance-directives.md) | Section Directives anticipées |
+| [Logical model - FR LM Alerts](StructureDefinition-fr-lm-alerts.md) | Section Points de vigilance |
+| [Logical model - FR LM Allergies And Intolerances](StructureDefinition-fr-lm-allergies-and-intolerances.md) | Section Allergies et hypersensibilités |
+| [Logical model - FR LM Attachments](StructureDefinition-fr-lm-attachments.md) | Section Documents ajoutés |
+| [Logical model - FR LM CarePlans](StructureDefinition-fr-lm-care-plans.md) | Section Plan de soins |
+| [Logical model - FR LM Comparison Study](StructureDefinition-fr-lm-comparison-study.md) | Section Comparaison d’examens d’imagerie |
+| [Logical model - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-result-data.md) | Section Compte rendu de biologie de 1er niveau |
+| [Logical model - FR LM Conclusion](StructureDefinition-fr-lm-conclusion.md) | Section Conclusion |
+| [Logical model - FR LM Corps document](StructureDefinition-fr-lm-corps-document.md) | Eléments métier du corps d’un document contenant les sections du document. |
+| [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md) | Section Résultats d’événements |
+| [Logical model - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md) | Section Object Catalog |
+| [Logical model - FR LM Encounter Information](StructureDefinition-fr-lm-encounter-information.md) | Section Informations sur la rencontre |
+| [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md) | Section Acte d’imagerie |
+| [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md) | Section Exposition aux radiations |
+| [Logical model - FR LM Family Medical History](StructureDefinition-fr-lm-family-medical-history.md) | Section Antécédents familiaux |
+| [Logical model - FR LM FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md) | Section Prescription de médicaments |
+| [Logical model - FR LM FRLM History Of Past Illness](StructureDefinition-fr-lm-history-of-past-illness.md) | Section Antécédents médicaux |
+| [Logical model - FR LM Hazardous Working Conditions](StructureDefinition-fr-lm-hazardous-working-conditions.md) | Section Facteurs de risque professionnels non codés |
+| [Logical model - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md) | Section Traitements à la sortie |
+| [Logical model - FR LM Immunisations](StructureDefinition-fr-lm-immunisations.md) | Section Vaccinations |
+| [Logical Model - FR LM Medical Device Prescriptions](StructureDefinition-fr-lm-medical-device-prescriptions.md) | Section Prescription de dispositifs médicaux |
+| [Logical Model - FR LM Medical Devices and Implants](StructureDefinition-fr-lm-medical-devices-and-implants.md) | Section Dispositifs Medicaux |
+| [Logical model - FR LM Medication Dispensations](StructureDefinition-fr-lm-medication-dispensations.md) | Section Dispensation médicaments |
+| [Logical model - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md) | Section Traitements |
+| [Logical model - FR LM Note](StructureDefinition-fr-lm-note.md) | Section Commentaire (non-codé) |
+| [Logical model - FR LM ObservationResults](StructureDefinition-fr-lm-observation-results.md) | Section Résultats |
+| [Logical model - FR LM Order Information](StructureDefinition-fr-lm-order-information.md) | Section Demande d’examen d’imagerie |
+| [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md) | Section Education du patient |
+| [Logical model - FR LM Predictable Adverse Drug Reaction](StructureDefinition-fr-lm-predictable-adverse-drug-reaction.md) | Section Effets indesirables |
+| [Logical model - FR LM Presented Form](StructureDefinition-fr-lm-presented-form.md) | Section Document PDF-copie |
+| [Logical model - FR LM Problems](StructureDefinition-fr-lm-problems.md) | Section Problems |
+| [logical model - FR LM Procedures](StructureDefinition-fr-lm-procedures.md) | Section Historique des actes |
+| [Logical model - FR LM QR Code](StructureDefinition-fr-lm-qr-code.md) | Section Codes à barres |
+| [Logical model - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md) | Section Raison de la recommandation |
+| [Logical model - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md) | Section Recommandation |
+| [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md) | Section |
+| [Logical model - FR LM SocialHistory](StructureDefinition-fr-lm-social-history.md) | Section Habitus et modes de vie |
+| [Logical model - FR LM Status Document](StructureDefinition-fr-lm-status-document.md) | Section Statut du Document |
+| [Logical model - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md) | Section Informations Cliniques |
+| [Logical model - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) | Section Traitements administrés |
+| [Logical model - FR LM Vital Signs](StructureDefinition-fr-lm-vital-signs.md) | Section Signes vitaux |
+| [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md) | Section Statut fonctionnel |
 
 ### Modèles logiques métier des composants communs 
 
@@ -103,93 +98,77 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 
 | | |
 | :--- | :--- |
-| [Modèle logique métier - Dispositif médical](StructureDefinition-fr-lm-dispositif-medical.md) | Dispositif médical |
-| [Modèle logique métier - FR LM Accident transfusionnel](StructureDefinition-fr-lm-accidents-transfusionnels.md) | Accident transfusionnel |
-| [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md) | Acte |
-| [Modèle logique métier - FR LM Acte substitution](StructureDefinition-fr-lm-acte-substitution.md) | Acte substitution |
-| [Modèle logique métier - FR LM Administration de dérivés du sang](StructureDefinition-fr-lm-administration-de-derives-du-sang.md) | Administration de dérivés du sang |
-| [Modèle logique métier - FR LM Administration produit de sante](StructureDefinition-fr-lm-administration-produit-de-sante.md) | Administration produit de sante |
-| [Modèle logique métier - FR LM Allergie ou Hypersensibilité](StructureDefinition-fr-lm-allergie-ou-hypersensibilite.md) | Allergie ou hypersensibilite |
-| [Modèle logique métier - FR LM Antécédent familial observé](StructureDefinition-fr-lm-antecedent-familial-observe.md) | Antécédent familial |
-| [Modèle logique métier - FR LM Auteur APSR](StructureDefinition-fr-lm-auteur-apsr.md) | Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur |
-| [Modèle logique métier - FR LM Autorisation exposition](StructureDefinition-fr-lm-autorisation-exposition.md) | Autorisation exposition |
-| [Modèle logique métier - FR LM Autorisation substitution](StructureDefinition-fr-lm-autorisation-substitution.md) | Autorisation substitution |
-| [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) | Batterie d’examens de biologie médicale |
-| [Modèle logique métier - FR LM Certitude](StructureDefinition-fr-lm-certitude.md) | Certitude |
-| [Modèle logique métier - FR LM Commentaire](StructureDefinition-fr-lm-commentaire-er.md) | Commentaire |
-| [Modèle logique métier - FR LM Criticite](StructureDefinition-fr-lm-criticite.md) | Criticite |
-| [Modèle logique métier - FR LM Demande d'examen ou de suivi](StructureDefinition-fr-lm-demande-examen-ou-suivi.md) | Demande d’examen ou de suivi / Objectif à atteindre |
-| [Modèle logique métier - FR LM Directive anticipée](StructureDefinition-fr-lm-directive-anticipee.md) | Directive anticipée |
-| [Modèle logique métier - FR LM Dispositif médical](StructureDefinition-fr-lm-dispositif-medical-entree.md) | Dispositif médical |
-| [Modèle logique métier - FR LM Document attaché](StructureDefinition-fr-lm-document-attache.md) | Document attaché |
-| [Modèle logique métier - FR LM Dose d'antigène](StructureDefinition-fr-lm-dose-antigene.md) | Dose d’antigène |
-| [Modèle logique métier - FR LM Effet indesirable](StructureDefinition-fr-lm-effet-indesirable.md) | Effet indesirable |
-| [Modèle logique métier - FR LM En rapport avec la prevention](StructureDefinition-fr-lm-en-rapport-avec-la-prevention.md) | En rapport avec la prevention |
-| [Modèle logique métier - FR LM En rapport avec un accident travail](StructureDefinition-fr-lm-en-rapport-avec-accident-travail.md) | En rapport avec un accident travail |
-| [Modèle logique métier - FR LM En rapport avec une Affection Longue Durée (ALD)](StructureDefinition-fr-lm-en-rapport-avec-ald.md) | En rapport avec une Affection Longue Durée (ALD) |
-| [Modèle logique métier - FR LM Evaluation](StructureDefinition-fr-lm-evaluation.md) | Evaluation |
-| [Modèle logique métier - FR LM Evaluation Composant](StructureDefinition-fr-lm-evaluation-composant.md) | Evaluation Composant |
-| [Modèle logique métier - FR LM Evaluation Composant N2](StructureDefinition-fr-lm-evaluation-composant-n2.md) | Evaluation Composant N2 |
-| [Modèle logique métier - FR LM Evolution effet indesirable](StructureDefinition-fr-lm-evolution-effet-indesirable.md) | Evolution effet indesirable |
-| [Modèle logique métier - FR LM Evènements indésirables pendant l'hospitalisation](StructureDefinition-fr-lm-evenement-indesirable-pendant-hospitalisation.md) | Evènements indésirables pendant l’hospitalisation |
-| [Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang](StructureDefinition-fr-lm-evenements-indesirables-suite-administration-derives-sang.md) | Evènements indésirables suite à l’administration de dérivés du sang |
-| [Modèle logique métier - FR LM Examen Imagerie](StructureDefinition-fr-lm-examen-imagerie.md) | DICOM Examen Imagerie |
-| [Modèle logique métier - FR LM Gravite effet indesirable](StructureDefinition-fr-lm-gravite-effet-indesirable.md) | Gravite effet indesirable |
-| [Modèle logique métier - FR LM Groupe de questionnaires d'évalutation](StructureDefinition-fr-lm-group-de-questionnaires-devaluation.md) | Groupe de questionnaires d’évalutation |
-| [Modèle logique métier - FR LM Habitus Mode de vie](StructureDefinition-fr-lm-habitus-mode-de-vie-entree.md) | Habitus Mode de vie |
-| [Modèle logique métier - FR LM Historique de la grossesse](StructureDefinition-fr-lm-historique-grossesse.md) | Historique de la grossesse |
-| [Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)](StructureDefinition-fr-lm-hors-amm.md) | Hors Autorisation de Mise sur le Marché (AMM) |
-| [Modèle logique métier - FR LM Identification de micro-organismes multirésistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md) | Identification de micro-organismes multirésistants |
-| [Modèle logique métier - FR LM Image illustrative](StructureDefinition-fr-lm-image-illustrative.md) | Image illustrative. |
-| [Modèle logique métier - FR LM Imputabilite effet indesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md) | Imputabilite effet indesirable |
-| [Modèle logique métier - FR LM Informant APSR](StructureDefinition-fr-lm-informant-apsr.md) | Informant APSR(Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Informateur |
+| [Logical model - Device](StructureDefinition-fr-lm-device.md) | Entrée Dispositif médical |
+| [Logical model - FR LM Administration of Blood Derivatives](StructureDefinition-fr-lm-administration-blood-derivatives.md) | Entrée Administration de dérivés du sang |
+| [Logical model - FR LM Advance Directive](StructureDefinition-fr-lm-advance-directive.md) | Entree Directive anticipee |
+| [Logical model - FR LM Adverse Event](StructureDefinition-fr-lm-adverse-event.md) | Entrée Effet indésirable |
+| [Logical model - FR LM Adverse Events During Hospitalization](StructureDefinition-fr-lm-adverse-event-during-hospitalization.md) | Entrée Evènements indésirables pendant l’hospitalisation |
+| [Logical model - FR LM Adverse Events Following Administration of Blood Derivatives](StructureDefinition-fr-lm-adverse-event-following-administration-blood-derivatives.md) | Entrée Evènements indésirables suite à l’administration de dérivés du sang |
+| [Logical model - FR LM Allergy Intolerance](StructureDefinition-fr-lm-allergy-intolerance.md) | Entrée Allergie ou Hypersensibilité |
+| [Logical model - FR LM Assessment](StructureDefinition-fr-lm-observation-assessment.md) | Entrée Evaluation |
+| [Logical model - FR LM Assessments](StructureDefinition-fr-lm-assessments.md) | Entrée Groupe de questionnaires d’évalutation |
+| [Logical model - FR LM Attachment](StructureDefinition-fr-lm-attachment.md) | Entrée Document attaché |
+| [Logical model - FR LM Body Structure](StructureDefinition-fr-lm-body-structure.md) | Localisation anatomique |
+| [Logical model - FR LM Care Plan](StructureDefinition-fr-lm-care-plan.md) | Entrée Plan de soins |
+| [Logical model - FR LM Condition](StructureDefinition-fr-lm-condition.md) | Entrée Problème |
+| [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md) | Entrée Dispositif médical usage |
+| [Logical model - FR LM DICOM Medication Administration](StructureDefinition-fr-lm-dicom-medication-administration.md) | Entrée Administration de produit de santé |
+| [Logical model - FR LM Dose Number](StructureDefinition-fr-lm-dose-number.md) | Entrée Rang de la vaccination |
+| [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md) | Entrée Rencontre |
+| [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md) | Modèle logique représentant l’entrée |
+| [Logical model - FR LM Evolution Adverse Event](StructureDefinition-fr-lm-evolution-adverse-event.md) | Entrée Evolution effet indesirable |
+| [Logical model - FR LM Family Member History](StructureDefinition-fr-lm-family-member-history.md) | Entrée Antécédent familial |
+| [Logical model - FR LM Hors AMM](StructureDefinition-fr-lm-hors-amm.md) | Entrée Hors Autorisation de Mise sur le Marché (AMM) |
+| [Logical model - FR LM Identification de micro-organismes multirésistants](StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.md) | Entrée Identification de micro-organismes multirésistants |
+| [Logical model - FR LM Imaging Study](StructureDefinition-fr-lm-imaging-study.md) | Entrée DICOM Examen Imagerie |
+| [Logical model - FR LM Immunisation](StructureDefinition-fr-lm-immunisation.md) | Entrée Vaccination |
+| [Logical model - FR LM Immunization Recommendation](StructureDefinition-fr-lm-immunization-recommendation.md) | Entrée Vaccin recommandé |
+| [logical model - FR LM Imputabilite effet indesirable](StructureDefinition-fr-lm-imputabilite-effet-indesirable.md) | Entrée Imputabilite effet indesirable |
+| [Logical model - FR LM Medication](StructureDefinition-fr-lm-medication.md) | Entrée Produit de santé |
+| [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md) | Entrée Traitement dispense |
+| [Logical model - FR LM Medication Prescription](StructureDefinition-fr-lm-prescription-item.md) | Entrée Traitement prescrit |
+| [logical model - FR LM Modalité d'entrée](StructureDefinition-fr-lm-modalite-entree.md) | Entrée Modalité d’entrée |
+| [Logical model - FR LM Modalité de sortie](StructureDefinition-fr-lm-modalite-sortie.md) | Entrée Modalité de sortie |
+| [Logical model - FR LM Non remboursable](StructureDefinition-fr-lm-non-remboursable.md) | Entrée Non remboursable |
+| [Logical model - FR LM Observation](StructureDefinition-fr-lm-observation.md) | observation |
+| [Logical model - FR LM Observation Long Term Condition](StructureDefinition-fr-lm-observation-long-term-condition.md) | Entrée Observation en rapport avec une Affection Longue Durée (ALD) |
+| [Logical model - FR LM Observation Related to Prevention](StructureDefinition-fr-lm-observation-related-to-prevention.md) | Entrée Observation en rapport avec la prevention |
+| [Logical model - FR LM Observation Vital Sign](StructureDefinition-fr-lm-observation-vital-sign.md) | Signe vital observé |
+| [Logical model - FR LM Observation Work Related Accident](StructureDefinition-fr-lm-observation-work-related-accident.md) | Entrée Observation en rapport avec un accident travail |
+| [Logical model - FR LM ObservationMedia](StructureDefinition-fr-lm-observation-media.md) | Entrée Image illustrative. |
+| [Logical model - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
+| [Logical model - FR LM Patient Transfer.](StructureDefinition-fr-lm-patient-transfer.md) | Entrée Transfert du patient |
+| [Logical model - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
+| [Logical model - FR LM Quantity Exposure](StructureDefinition-fr-lm-quantity-exposure.md) | Quantité exposition |
+| [Logical model - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
+| [Logical model - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
+| [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md) | Resultats d’examens de biologie medicale |
+| [Logical model - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) | Référence item prescription |
+| [Logical model - FR LM Series](StructureDefinition-fr-lm-series.md) | Séries d’actes d’imagerie |
+| [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) | Entrée Demande d’examen ou de suivi / Objectif à atteindre |
+| [Logical model - FR LM Severity Adverse Event](StructureDefinition-fr-lm-severity-adverse-event.md) | Entrée Gravité effet indésirable |
+| [Logical model - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
+| [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) | Entrée Prélèvement |
+| [Logical model - FR LM Statut](StructureDefinition-fr-lm-status.md) | Statut |
+| [Logical model - FR LM Statut du document](StructureDefinition-fr-lm-status-document-entry.md) | Entrée Statut du document |
+| [Logical model - FR LM Sujet non humain](StructureDefinition-fr-lm-sujet-non-humain.md) | Sujet non humain |
+| [Logical model - FR LM Transfusion accidents](StructureDefinition-fr-lm-transfusion-accidents.md) | Entrée Accidents transfusionnels |
+| [Logical model - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
+| [Logical model - FR LM TravelHistory](StructureDefinition-fr-lm-travel-history.md) | Historique des voyages. |
+| [Logical model - Laboratory Observation](StructureDefinition-fr-lm-laboratory-observation.md) | Entrée Résultat d’examen de laboratoire |
+| [Logical model- FR LM Dosage Instructions](StructureDefinition-fr-lm-dosageInstructions.md) | Posologie |
+| [Logical model- FR LM Medication Administration ](StructureDefinition-fr-lm-medication-administration.md) | Entrée Traitement |
+| [Logical model- FR LM Observation Social History](StructureDefinition-fr-lm-observation-social-history.md) | Entrée Habitus Mode de vie |
+| [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md) | Entrée Historique de la grossesse |
+| [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md) | Observation sur la grossesse |
+| [Logical model- FR LM Pregnancy Status](StructureDefinition-fr-lm-pregnancy-status.md) | Statut de grossesse |
+| [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md) | Entrée Acte |
+| [Logical model- FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
+| [Logical model- FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Entrée Technique imagerie |
+| [Modèle logique métier - FR LM Batterie d'examens de biologie médicale](StructureDefinition-fr-lm-batterie-examens-biologie-medicale.md) | Entrée Batterie d’examens de biologie médicale |
 | [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) | Isolat microbiologique |
 | [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md) | Laboratoire exécutant |
-| [Modèle logique métier - FR LM Modalité d'entrée](StructureDefinition-fr-lm-modalite-entree.md) | Modalité d’entrée |
-| [Modèle logique métier - FR LM Modalité de sortie](StructureDefinition-fr-lm-modalite-sortie.md) | Modalité de sortie |
-| [Modèle logique métier - FR LM Naissance](StructureDefinition-fr-lm-naissance.md) | Naissance |
-| [Modèle logique métier - FR LM Non remboursable](StructureDefinition-fr-lm-non-remboursable.md) | Non remboursable |
-| [Modèle logique métier - FR LM Observation](StructureDefinition-fr-lm-observation.md) | observation |
-| [Modèle logique métier - FR LM Observation sur la grossesse](StructureDefinition-fr-lm-observation-grossesse.md) | Observation sur la grossesse |
-| [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant-corps.md) | Participant |
-| [Modèle logique métier - FR LM Participant APSR](StructureDefinition-fr-lm-participant-apsr.md) | Participant APSR(Anatomic Pathology Structured Report) |
-| [Modèle logique métier - FR LM Patient avec sujet non humain](StructureDefinition-fr-lm-patient-sujet-non-humain.md) | Patient avec sujet non humain |
-| [Modèle logique métier - FR LM Performer](StructureDefinition-fr-lm-performer.md) | Performer |
-| [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription-entree.md) | Prescription |
-| [Modèle logique métier - FR LM Problème](StructureDefinition-fr-lm-probleme.md) | Problème |
-| [Modèle logique métier - FR LM Produit de santé](StructureDefinition-fr-lm-produit-sante.md) | Produit de santé |
-| [Modèle logique métier - FR LM Prélèvement](StructureDefinition-fr-lm-prelevement.md) | Prélèvement |
-| [Modèle logique métier - FR LM Quantité de produit](StructureDefinition-fr-lm-quantite-produit.md) | Quantité de produit |
-| [Modèle logique métier - FR LM Quantité exposition](StructureDefinition-fr-lm-quantite-exposition.md) | Quantité exposition |
-| [Modèle logique métier - FR LM Rang de la vaccination](StructureDefinition-fr-lm-rang-vaccination.md) | Rang de la vaccination |
-| [Modèle logique métier - FR LM Recherche de micro organismes](StructureDefinition-fr-lm-recherche-de-micro-organismes.md) | Recherche de micro organismes |
-| [Modèle logique métier - FR LM Rencontre](StructureDefinition-fr-lm-rencontre.md) | Rencontre |
-| [Modèle logique métier - FR LM Resultats](StructureDefinition-fr-lm-resultats-entree.md) | Resultats |
-| [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md) | Resultats d’examens de biologie medicale |
-| [Modèle logique métier - FR LM Référence interne](StructureDefinition-fr-lm-reference-interne.md) | Référence interne |
-| [Modèle logique métier - FR LM Référence item prescription](StructureDefinition-fr-lm-reference-item-prescription.md) | Référence item prescription |
-| [Modèle logique métier - FR LM Références externes](StructureDefinition-fr-lm-references-externes.md) | Références externes |
 | [Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent](StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.md) | Résultat d’examens de biologie / élement clinique pertinent |
-| [Modèle logique métier - FR LM Serie imagerie](StructureDefinition-fr-lm-serie-imagerie.md) | Serie imagerie |
-| [Modèle logique métier - FR LM Signe vital observé](StructureDefinition-fr-lm-signe-vital-observe.md) | Signe vital observé |
-| [Modèle logique métier - FR LM SOP Instance](StructureDefinition-fr-lm-sop-instance.md) | SOP Instance |
-| [Modèle logique métier - FR LM Statut](StructureDefinition-fr-lm-statut.md) | Statut |
-| [Modèle logique métier - FR LM Statut clinique du patient](StructureDefinition-fr-lm-statut-clinique-patient.md) | Statut clinique du patient |
-| [Modèle logique métier - FR LM Statut du document](StructureDefinition-fr-lm-statut-document-entree.md) | Statut du document |
-| [Modèle logique métier - FR LM Statut du problème](StructureDefinition-fr-lm-statut-probleme.md) | Statut du problème. |
-| [Modèle logique métier - FR LM Sujet](StructureDefinition-fr-lm-sujet.md) | Sujet |
-| [Modèle logique métier - FR LM Sujet non humain](StructureDefinition-fr-lm-sujet-non-humain.md) | Sujet non humain |
-| [Modèle logique métier - FR LM Synthese medicale sejour](StructureDefinition-fr-lm-synthese-medicale-sejour.md) | Synthese medicale sejour |
-| [Modèle logique métier - FR LM Sévérité](StructureDefinition-fr-lm-severite.md) | Sévérité. |
-| [Modèle logique métier - FR LM Technique imagerie](StructureDefinition-fr-lm-technique-imagerie.md) | Technique imagerie |
-| [Modèle logique métier - FR LM Traitement](StructureDefinition-fr-lm-traitement.md) | Traitement |
-| [Modèle logique métier - FR LM Traitement dispensé](StructureDefinition-fr-lm-traitement-dispense.md) | Traitement dispense |
-| [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md) | Traitement prescrit |
-| [Modèle logique métier - FR LM Transfert du patient](StructureDefinition-fr-lm-transfert-du-patient.md) | Transfert du patient |
-| [Modèle logique métier - FR LM Transfusion de produits sanguins](StructureDefinition-fr-lm-transfusion-de-produits-sanguins.md) | Transfusion de produits sanguins |
-| [Modèle logique métier - FR LM Vaccin recommandé](StructureDefinition-fr-lm-vaccin-recommande.md) | Vaccin recommandé |
-| [Modèle logique métier - FR LM Vaccination](StructureDefinition-fr-lm-vaccination.md) | Vaccination |
-| [Modèle logique métier - FR LM Échantillon prélevé](StructureDefinition-fr-lm-echantillon-preleve.md) | Échantillon prélevé |
 
 ### Eléments CDA de l'entête 
 
@@ -231,7 +210,85 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [CDA - representedOrganization](StructureDefinition-fr-cda-represented-organization.md) | L’élément de l’en-tête du CDA representedOrganization permet de représenter la structure pour le compte de laquelle intervient le professionnel. |
 | [CDA - serviceEvent](StructureDefinition-fr-cda-service-event.md) | L’élément de l’en-tête du CDA serviceEvent permet de représenter un évènement (acte, traitement, diagnostic, etc…) décrit dans le document. L’occurrence de documentationOf/serviceEvent contenant les données de l’évènement documenté principal doit inclure un élément effectiveTime et un élément performer renseignés, sans recours à l’attribut nullFlavor. |
 
-### Eléments CDA du corps 
+### Eléments CDA du corps des sections 
+
+| | |
+| :--- | :--- |
+| [CDA - FR Allergies et hypersensibilites](StructureDefinition-fr-cda-allergies-et-hypersensibilites.md) | IHE-PCC - Allergies-And-Other-Adverse-Reactions* La section ‘Allergies et hypersensibilités’ permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l’agent et les réactions observées.
+ |
+| [CDA - FR Antecedents familiaux](StructureDefinition-fr-cda-section-antecedents-familiaux.md) | IHE-PCC Coded-Family-Medical-History* Liste codée des antécédents familiaux
+ |
+| [CDA - FR Antecedents medicaux](StructureDefinition-fr-cda-antecedents-medicaux.md) | IHE-PCC - History-Of-Past-Illness* La section ‘Antécédents médicaux’ doit contenir une liste codée des antécédents médicaux du patient. Il s’agit d’épisodes résolus, c’est à dire de maladies que l’on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.
+ |
+| [CDA - FR Code a barres](StructureDefinition-fr-cda-code-a-barres.md) | Cette section permet d’enregistrer des codes à barres |
+| [CDA - FR Commentaire non code](StructureDefinition-fr-cda-commentaire-non-code.md) | IHE-PCC - Document-Summary* Cette section permet d’indiquer un commentaire sous forme textuelle.
+ |
+| [CDA - FR CR BIO Chapitre](StructureDefinition-fr-cda-cr-bio-chapitre.md) | IHE-PaLM - Laboratory Specialty Section* Une section de premier niveau est appelée ‘Chapitre’ et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :
+* soit directement la présentation des résultats d’examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément <text> (présentation du contenu pour le lecteur) et un unique élément <entry> (données codées pour les SIS dont procède le contenu de l’élément <text>)
+* soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d’éléments <component> dont chacun introduit une <section> de second niveau présentant un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale.Remarque : L’arborescence du corps du compte rendu d’examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.
+ |
+| [CDA - FR CR BIO Sous Chapitre](StructureDefinition-fr-cda-cr-bio-sous-chapitre.md) | IHE-PaLM - Laboratory Report Item Section* Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale. Elle est comporte un élément ‘text’ qui porte les résultats présentés et interprétés pour le lecteur et d’une entrée contenant les données codées dont procède le contenu de l’élément ‘text’.
+ |
+| [CDA - FR DICOM Acte imagerie](StructureDefinition-fr-cda-dicom-acte-imagerie.md) | DICOM Part 20 - Imaging Procedure Description Section* Cette section permet d’enregistrer les informations sur les détails techniques de l’acte d’imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.
+ |
+| [CDA - FR DICOM Addendum](StructureDefinition-fr-cda-dicom-addendum.md) | DICOM Part 20 - Addendum Section* La section Addendum permet d’enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.
+ |
+| [CDA - FR DICOM Complications](StructureDefinition-fr-cda-dicom-complications.md) | DICOM Part 20 - Complications* Cette sous-section permet d’enregistrer les complications survenues au cours de l’acte sous forme textuelle.
+ |
+| [CDA - FR DICOM Conclusion](StructureDefinition-fr-cda-dicom-conclusion.md) | DICOM Part 20 - Impression Section* Cette section permet d’enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.
+ |
+| [CDA - FR DICOM Demande examen](StructureDefinition-fr-cda-dicom-demande-examen.md) | DICOM Part 20 - Request Section* Justification de la demande d’examen / Finalité de l’examen.
+ |
+| [CDA - FR DICOM Examen comparatif](StructureDefinition-fr-cda-dicom-examen-comparatif.md) | DICOM Part 20 - Comparison Study Section* Cette section textuelle permet d’enregistrer une comparaison de l’acte actuel avec un acte antérieur.
+ |
+| [CDA - FR DICOM Exposition aux radiations](StructureDefinition-fr-cda-dicom-exposition-aux-radiations.md) | DICOM Part 20 - Radiation Exposure and Protection Information * Cette sous-section permet d’enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.
+ |
+| [CDA - FR DICOM Historique medical](StructureDefinition-fr-cda-dicom-historique-medical.md) | DICOM Part 20 - Medical (General) History Section* Cette sous-section permet d’enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.
+ |
+| [CDA - FR DICOM Informations cliniques](StructureDefinition-fr-cda-dicom-informations-cliniques.md) | DICOM Part 20 - Clinical Information Section. Cette section permet d’enregistrer les détails cliniques liés au patient, tels que :* Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]
+* Finalité de l’examen dans la même sous-section FR-DICOM-demande-examen [0..1]
+* Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]
+* Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]
+* Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]
+ |
+| [CDA - FR DICOM Object Catalog](StructureDefinition-fr-cda-dicom-object-catalog.md) | DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l’organisation suivante :* [0..*] Examen
+* [1..*] Série (avec la modalité d’acquisition)
+* [1..*] Objet référencé (avec la classe d’objet)
+ |
+| [CDA - FR DICOM Resultats](StructureDefinition-fr-cda-dicom-resultats.md) | DICOM Part 20 - Findings* Cette section permet d’enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).
+ |
+| [CDA - FR Dispensation medicaments](StructureDefinition-fr-cda-dispensation-medicaments.md) | IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient. |
+| [CDA - FR Document PDF copie](StructureDefinition-fr-cda-document-pdf-copie.md) | Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA. |
+| [CDA - FR Documents ajoutes](StructureDefinition-fr-cda-documents-ajoutes.md) | Liste de documents ajoutés |
+| [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md) | IHE-PCC - Patient Education Section* Liste des éléments se rapportant à l’éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.
+ |
+| [CDA - FR Effets indesirables](StructureDefinition-fr-cda-effets-indesirables.md) | Liste des effets indésirables prévisibles liés aux médicaments. |
+| [CDA - FR Facteurs de risque professionnels non code](StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.md) | IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e). |
+| [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) | IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient. |
+| [CDA - FR Habitus mode de vie](StructureDefinition-fr-cda-section-habitus-mode-de-vie.md) | IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient. |
+| [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md) | IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes. |
+| [CDA - FR Historique des grossesses](StructureDefinition-fr-cda-historique-des-grossesses.md) | IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l’historique des grossesses de la patiente. |
+| [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) | IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient. |
+| [CDA - FR Points de vigilances non code](StructureDefinition-fr-cda-points-de-vigilances-non-code.md) | Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée). |
+| [CDA - FR Prescription dispositifs medicaux](StructureDefinition-fr-cda-prescription-dispositifs-medicaux.md) | IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux. |
+| [CDA - FR Prescription medicaments](StructureDefinition-fr-cda-prescription-medicaments.md) | IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses. |
+| [CDA - FR Problemes actifs](StructureDefinition-fr-cda-problemes-actifs.md) | IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient. |
+| [CDA - FR Raison de la recommandation](StructureDefinition-fr-cda-raison-de-la-recommandation.md) | IHE-PCC - Coded Reason for Referral Section. Cette section permet d’indiquer la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l’aide d’une entrée Simple observation et d’une entrée Problème. |
+| [CDA - FR Raison de la recommandation non code](StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.md) | IHE-PCC Reason-For-Referral. Cette section permet d’indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. |
+| [CDA - FR Resultats](StructureDefinition-fr-cda-section-resultats.md) | Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…) |
+| [CDA - FR Resultats de biologie de seconde intention](StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.md) | Cette section, optionnelle, est utilisée uniquement dans le cas d’usage particulier des résultats d’examen de laboratoire de biologie de seconde intention, lorsqu’ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d’encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique ‘Résultats de laboratoire de biologie de seconde intention’.Attention : cette solution n’est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé. |
+| [CDA - FR Resultats evenements](StructureDefinition-fr-cda-resultats-evenements.md) | IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d’un acte ou d’un problème. |
+| [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md) | IHE-PCC - Coded Results Section. Résultats d’examens réalisés par le patient et éventuellement références à d’autres documents du dossier du patient. |
+| [CDA - FR Resultats examens non code](StructureDefinition-fr-cda-resultats-examens-non-code.md) | IHE-PCC - Results. Résultats d’examens sous forme narrative non codée. |
+| [CDA - FR Signes vitaux](StructureDefinition-fr-cda-section-signes-vitaux.md) | IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux. |
+| [CDA - FR Statut du document](StructureDefinition-fr-cda-statut-du-document.md) | Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu’à sa validation définitive par son responsable légal. |
+| [CDA - FR Statut fonctionnel](StructureDefinition-fr-cda-statut-fonctionnel.md) | Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d’évaluation du statut fonctionnel du patient. |
+| [CDA - FR Traitements](StructureDefinition-fr-cda-traitements.md) | IHE-PCC - Medications. Liste des principales prises médicamenteuses. |
+| [CDA - FR Traitements administres](StructureDefinition-fr-cda-traitements-administres.md) | IHE-PCC - Medications-Administered. La section ‘Traitements administrés’ contient une description narrative des médicaments administrés au patient et doit inclure des entrées ‘Traitement’. |
+| [CDA - FR Traitements à la sortie](StructureDefinition-fr-cda-traitements-a-la-sortie.md) | IHE-PCC - Hospital-Discharge-Medications. La section ‘Traitements à la sortie’ contient une description narrative des médicaments à administrer au patient après sa sortie de l’hospitalisation et doit inclure des entrées ‘Traitement’. |
+| [CDA - FR Vaccinations](StructureDefinition-fr-cda-vaccinations.md) | IHE-PCC - Immunizations Section. Liste des vaccinations effectuées. |
+
+### Eléments CDA corps des composants élémentaires 
 
 | | |
 | :--- | :--- |
@@ -435,7 +492,6 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [List - FR Pregnancy History Document](StructureDefinition-fr-pregnancy-history-document.md) | FRPregnancyHistoryDocument est une liste contenant soit un événement de naissance, soit une observation sur la grossesse, mais pas les deux. |
 | [Media - FR Media Document](StructureDefinition-fr-media-document.md) | FRMediaDocument permet de positionner une image de type gif, jpeg, png ou bm. Elle est encodée en base 64 |
 | [Medication - FR Medication Document](StructureDefinition-fr-medication-document.md) | FRMedicationDocument permet de décrire un médicament ou un vaccin. |
-| [Medication - FR Medications Combinaison Document](StructureDefinition-fr-medications-combinaison-document.md) | FRMedicationsCombinaisonDocument permet de décrire une combinaison de médicaments ou de vaccins. |
 | [MedicationAdministration - FR Medication Administration Document](StructureDefinition-fr-medication-administration-document.md) | * FRMedicationAdministrationDocument permert de décrire les modalités d’administration d’un médicament au patient.
 * Il permet de décrire notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration.
 * Si le traitement est en attente d’administration c’est-à dire qu’il a été prescrit.
@@ -467,7 +523,7 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [Observation - FR Observation Vital Signs Document](StructureDefinition-fr-observation-vital-signs-document.md) | * FRObservationVitalSignsDocument permet d’indiquer les informations détaillées relatives à une mesure clinique spécifique.
 * Il est basée sur la ressource Observation qu’elle spécialise en portant des contraintes sur les vocabulaires des éléments ‘code’ et ‘value’.
  |
-| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-Observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
+| [Observation - FR Observation Vital Signs Panel Document](StructureDefinition-fr-observation-vital-signs-panel-document.md) | FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient. |
 | [Observation - FR Observation Work Related Accident Document](StructureDefinition-fr-observation-work-related-accident-document.md) | FRObservationWorkRelatedAccidentDocument permet d’indiquer si l’élément auquel elle est associée est en rapport avec un accident du travail / une maladie professionnelle. |
 | [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) | FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. |
 | [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md) | FRProcedureImagingDocument permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie, localisation anatomique / latéralité / topographie, d’autres paramètres de l’acte |
@@ -499,7 +555,6 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [FR Immunization Type Extension](StructureDefinition-fr-immunization-type-extension.md) | Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ). |
 | [FR Interpretation Extension](StructureDefinition-fr-interpretation-extension.md) | Extension permettant de spécifier une interprétation. |
 | [FR Medication Administration Sequence Extension](StructureDefinition-fr-medication-administration-sequence-extension.md) | Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration. |
-| [FR Medication Request Out Of Nomenclature Extension](StructureDefinition-fr-medication-request-out-of-nomenclature-extension.md) | Extension permettant d’indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM) |
 | [FR Method Extension](StructureDefinition-fr-method-extension.md) | Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc. |
 | [FR Not Covered Extension](StructureDefinition-fr-not-covered-extension.md) | Extension permettant d’indiquer si le traitement est non remboursable. |
 | [FR Number of Frames Extension](StructureDefinition-fr-number-of-frames-extension.md) | Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR. |
@@ -583,6 +638,7 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [Mapping FRLMCRBIOSousChapitre → FRCDACRBIOSousChapitre → FRCompositionDocument.section:avec-sous-sections.section](ConceptMap-FRSectionLaboratorySubChapterLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMCRBIOSousChapitre vers la section CDA FRCDACRBIOSousChapitre, puis vers le profil FHIR FRCompositionDocument.section:avec-sous-sections.section. |
 | [Mapping FRLMDemandeExamenImagerie → FRCDADICOMDemandeExamen → FRServiceRequestDocument](ConceptMap-FRSectionImagingServiceRequestLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDemandeExamenImagerie vers la section CDA FRCDADICOMDemandeExamen puis vers le profil FHIR FRCompositionDocument.section:serviceRequest. |
 | [Mapping FRLMDirectivesAnticipees → FRCDADirectivesAnticipees → FRAdvanceDirectiveDocument](ConceptMap-FRSectionAdvanceDirectiveLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDirectivesAnticipees vers la section CDA FRCDADirectivesAnticipees, puis vers le profil FHIR FRAdvanceDirectiveDocument. |
+| [Mapping FRLMDispensationMedicaments → FRCDADispensationMedicaments → FRMedicationDispenseDocument](ConceptMap-FRSectionMedicationDispenseLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDispensationMedicaments vers la section CDA FRCDADispensationMedicaments, puis vers la section FHIR FRCompositionDocument.section:medication-dispense. |
 | [Mapping FRLMDispositifsMedicaux → FRCDADispositifsMedicaux → FRCompositionDocument.section:medicalDevice](ConceptMap-FRSectionMedicalDeviceLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDispositifsMedicaux vers la section CDA FRCDADispositifsMedicaux, puis vers la section FHIR FRCompositionDocument.section:medicalDevice. |
 | [Mapping FRLMDocumentPDFCopie → FRCDADocumentPDFCopie → FRCompositionDocument.section:pdfDocumentCopy](ConceptMap-FRSectionPDFDocumentCopyLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDocumentPDFCopie vers la section CDA FRCDADocumentPDFCopie, puis vers la section FHIR FRCompositionDocument.section:pdfDocumentCopy. |
 | [Mapping FRLMDocumentsAjoutes → FRCDADocumentsAjoutes → FRCompositionDocument.section:addedDocuments](ConceptMap-FRSectionAddedDocumentsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDocumentsAjoutes vers la section CDA FRCDADocumentsAjoutes, puis vers la section FHIR FRCompositionDocument.section:addedDocuments. |
@@ -675,6 +731,7 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument](ConceptMap-FRDiagnosticReportLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument. |
 | [Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument](ConceptMap-FRResultsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMResultatsEntry vers le profil CDA FRCDAResultats, puis vers le profil FHIR FRDiagnosticReportDocument. |
 | [Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument](ConceptMap-FRLaboratoryResultsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMResultatsExamensBiologieMedicale vers le profil CDA FRCDAResultatExamensDeBiologie, puis vers le profil FHIR FRObservationLaboratoryReportResultsDocument. |
+| [Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument](ConceptMap-FRImagingSeriesLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMSerieImagerie vers le profil CDA FRCDADICOMSerieImagerie, puis vers le profil FHIR FRImagingStudyDocument. |
 | [Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument](ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMSigneVital vers le profil CDA FRCDASignesVitaux, puis vers le profil FHIR FRObservationVitalSignsPanelDocument. |
 | [Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument](ConceptMap-FRObservationVitalSignsLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMSigneVitalObserve vers le profil CDA FRCDASigneVitalObserve, puis vers le profil FHIR FRObservationVitalSignsDocument. |
 | [Mapping FRLMSujetNonHumain -> FRCDASujetNonHumain -> FRObservationLaboratoryReportResultsDocument](ConceptMap-FRNonHumanSubjectLMCDAFHIR.md) | Mapping des éléments du modele metier FRLMSujetNonHumain vers l’element CDA FRCDASujetNonHumain, puis vers les ressources FHIR Observation/Specimen/Substance. |
@@ -697,10 +754,15 @@ These define data models that represent the domain covered by this implementatio
 
 | | |
 | :--- | :--- |
+| [CDA - FR Dispositifs medicaux](StructureDefinition-fr-dispositifs-medicaux.md) | IHE-PCC - Medical Devices SectionCette section ‘Dispositifs médicaux’ contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée. |
 | [CDA - FR Traitement subordonne](StructureDefinition-fr-cda-traitement-subordonne.md) | Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l’information doit être fournie dans la partie narrative de l’entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément ‘precondition’ pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison. |
-| [Modèle logique métier - FR LM Notes du dispensateur](StructureDefinition-fr-lm-notes-dispensateur.md) | Notes du dispensateur |
-| [Modèle logique métier - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
-| [Modèle logique métier - FR LM Posologie](StructureDefinition-fr-lm-posologie.md) | Posologie |
+| [CDA - FR resultats](StructureDefinition-fr-cda-resultats.md) | Entrée FR-resultats: L’entrée ‘FR-Resultats’ est une entrée de type ‘organizer’ regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…). |
+| [Logical model - FR LM Patient History](StructureDefinition-fr-lm-patient-history.md) | Section Historique du patient |
+| [Logical model - FR LM Travel History](StructureDefinition-fr-lm-section-travel-history.md) | Section Historique des voyages |
+| [Logical model - FR LM Alert](StructureDefinition-fr-lm-alert.md) | Entrée points de vigilances |
+| [Logical model - FR LM Endpoint](StructureDefinition-fr-lm-endpoint.md) | Référence Wado d’un objet DICOM (SOP Instance) |
+| [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md) | Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.) |
+| [Logical model - FR LM Patient Story](StructureDefinition-fr-lm-patient-story.md) | Récit du patient |
 
 ### Structures: Extension Definitions 
 
@@ -723,7 +785,7 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
 | [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md) | ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances |
 | [ValueSet - FR ValueSet Code Traitement](ValueSet-fr-valueset-code-traitement.md) | Jeu de valeurs regroupant les codes de traitement |
-| [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT |
+| [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique). |
 | [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md) | Systèmes autorisés pour les autres codifications. |
 | [ValueSet - FR ValueSet Reference externe](ValueSet-fr-valueset-reference-externe.md) | Jeu de valeurs regroupant les typeCode du document référencé |
 | [ValueSet - FR ValueSet Result Type Document](ValueSet-fr-vs-result-type-document.md) | ValueSet contenant les codes LOINC autorisés pour les types de résultats |
@@ -746,15 +808,6 @@ These define sets of codes used by systems conforming to this implementation gui
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. |
 | [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md) | Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’est trouvé. |
 
-### Terminology: Concept Maps 
-
-These define transformations to convert between codes by systems conforming with this implementation guide.
-
-| | |
-| :--- | :--- |
-| [Mapping FRLMDispensationMedicaments → FRCDADispensationMedicaments → FRMedicationDispenseDocument](ConceptMap-FRSectionMedicationDispenseLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMDispensationMedicaments vers la section CDA FRCDADispensationMedicaments, puis vers la section FHIR FRCompositionDocument.section:medication-dispense. |
-| [Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument](ConceptMap-FRImagingSeriesLMCDAFHIR.md) | Mapping des éléments du modèle métier FRLMSerieImagerie vers le profil CDA FRCDADICOMSerieImagerie, puis vers le profil FHIR FRImagingStudyDocument. |
-
 ### Example: Example Instances 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
@@ -762,6 +815,13 @@ These are example instances that show what data produced and consumed by systems
 | | |
 | :--- | :--- |
 | [BIO-CR-BIO_2024.01_Microbiologie_V1](Binary-BIO-CR-BIO-2024.01-Microbiologie-V1.md) | Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01) |
+| [Example - AllergyIntolerance avec Data Absent Reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’agent allergique est inconnu → code `unknown`
+* `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`
+ |
+| [Example - Procedure avec Data Absent Reason](Procedure-example-procedure-data-absent-reason.md) | Exemple illustrant l’usage de l’extension `data-absent-reason` sur les éléments obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.Cas d’usage illustrés :* `code` : l’acte est inconnu → extension `data-absent-reason` avec code `unknown` (liaison extensible → l’extension peut se substituer au codage)
+* `performedDateTime` : la date de l’acte est temporairement indisponible → extension `data-absent-reason` avec code `temp-unknown`
+* `status` : le statut est inconnu → code d’exception `unknown` du ValueSet `event-status` (liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)
+ |
 | [IPS-FR](Binary-IPS-FR-2024.01.md) | Volet International Patient Summary - France (IPS-FR_2024.01) |
 | [LDL-SES_2022.01](Binary-LDL-SES-2022.01.md) | Document Lettre de liaison à la sortie d’un établissement de soins (LDL-SES_2022.01) |
 | [eDISP-MED-2024.01](Binary-eDISP-MED-2024.01.md) | eDispensation de médicaments (eDISP-MED-2024.01) |

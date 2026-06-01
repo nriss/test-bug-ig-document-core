@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-prelevement | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAPrelevement |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAPrelevement |
 
  
 Entrée FR-Prelevement: IHE-PCC - Specimen collection. L’élément ‘Prélèvement’ est un élément de type ‘procedure’ qui permet de décrire le prélèvement et l’échantillon biologique (le matériel).Cet élément est obligatoirement inclus dans une entrée ‘Résultats d’examens de biologie médicale’ (Laboratory Report Data Processing Entry – 1.3.6.1.4.1.19376.1.3.1). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-prelevement.c
   "name" : "FRCDAPrelevement",
   "title" : "CDA - FR Prelevement",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -154,6 +154,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-prelevement.c
       "path" : "Procedure.code",
       "short" : "Acte de prélèvement - Pour un prélèvement en vue d'examen de biologie médicale, le code affiné NABM de l'acte de prélèvement doit être renseigné si connu, sauf dans le cas d'un recueil d'échantillon effectué par le patient lui-même. Un prélèvement cytologique ou de tissu en vue d'un examen d'anatomie ou de cytologie pathologiques est codé à l'aide d'une nomenclature précisée dans les modèles de contenus métiers.Par défaut, utiliser le code suivant : code='33882-2' displayName='Prélèvement' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'",
       "definition" : "Acte de prélèvement",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.code",
+      "path" : "Procedure.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.codeSystem",
+      "path" : "Procedure.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.displayName",
+      "path" : "Procedure.code.displayName",
       "mustSupport" : true
     },
     {
@@ -281,7 +298,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-prelevement.c
       "short" : "Identifiant de l'échantillon - L'identifiant de l'échantillon est éventuellement multiple (premier identifiant attribué par le préleveur, puis réidentification par le laboratoire).  L'un des identifiants est visible sur l'échantillon matériel (par exemple en code barre sur le tube ou le bocal). ",
       "definition" : "Identifiant de l'échantillon",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.participant:EchantillonPreleve.participantRole.playingEntity",

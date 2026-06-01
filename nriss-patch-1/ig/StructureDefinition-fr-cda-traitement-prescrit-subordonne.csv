@@ -37,7 +37,7 @@
 ","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""SBADM""/>","","","","",,"required","","http://hl7.org/cda/stds/core/ValueSet/CDAActClass","",,,,"SubstanceAdministration.classCode",1,1,"",""
 "SubstanceAdministration.moodCode","SubstanceAdministration.moodCode","","","",1,1,"Y","","","code {[CanonicalType[http://hl7.org/cda/stds/core/StructureDefinition/cs-simple]]} {[]}
 ","","","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""INT""/>","","","",,"required","","http://terminology.hl7.org/ValueSet/v3-xDocumentSubstanceMood|2.0.0","",,,,"SubstanceAdministration.moodCode",1,1,"",""
-"SubstanceAdministration.id","SubstanceAdministration.id","","","",1,*,"","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
+"SubstanceAdministration.id","SubstanceAdministration.id","","","",1,*,"Y","","","http://hl7.org/cda/stds/core/StructureDefinition/II {[]} {[]}
 ","Identifiant de l'entrée","Identifiant de l'entrée","","","","","","","","","",,,,,"",,,,"SubstanceAdministration.id",0,*,"",""
 "SubstanceAdministration.code","SubstanceAdministration.code","","","",0,1,"","","","http://hl7.org/cda/stds/core/StructureDefinition/CD {[]} {[]}
 ","","","","","","","","","","","",,"example","","http://hl7.org/cda/stds/core/ValueSet/CDAActSubstanceAdministrationCode","",,,,"SubstanceAdministration.code",0,1,"",""

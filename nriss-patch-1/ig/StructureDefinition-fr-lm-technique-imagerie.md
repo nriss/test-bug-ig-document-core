@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Technique imagerie - ANS IG document core v0.1.0-snapshot
+# Logical model- FR LM Technique imagerie - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Technique imagerie**
+* **Logical model- FR LM Technique imagerie**
 
-## Logical Model: Modèle logique métier - FR LM Technique imagerie 
+## Logical Model: Logical model- FR LM Technique imagerie 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-technique-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMTechniqueImagerie |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMTechniqueImagerie |
 
  
-Technique imagerie 
+Entrée Technique imagerie 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-technique-imagerie)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-technique-imag
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-technique-imagerie",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMTechniqueImagerie",
-  "title" : "Modèle logique métier - FR LM Technique imagerie",
+  "title" : "Logical model- FR LM Technique imagerie",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-technique-imag
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Technique imagerie",
+  "description" : "Entrée Technique imagerie",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-technique-imag
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-technique-imagerie",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-technique-imagerie",
       "path" : "fr-lm-technique-imagerie",
-      "short" : "Modèle logique métier - FR LM Technique imagerie",
-      "definition" : "Technique imagerie"
-    },
-    {
-      "id" : "fr-lm-technique-imagerie.identifiant",
-      "path" : "fr-lm-technique-imagerie.identifiant",
-      "short" : "Identifiant de l'observation",
-      "definition" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "short" : "Logical model- FR LM Technique imagerie",
+      "definition" : "Entrée Technique imagerie"
     },
     {
       "id" : "fr-lm-technique-imagerie.codeActe",
@@ -109,17 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-technique-imag
       "max" : "1",
       "type" : [{
         "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-technique-imagerie.date",
-      "path" : "fr-lm-technique-imagerie.date",
-      "short" : "\tDate de l'acte",
-      "definition" : "\tDate de l'acte",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -185,17 +163,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-technique-imag
       "binding" : {
         "description" : "jdv-modificateur-topographique-cisis (1.2.250.1.213.1.1.5.688)"
       }
-    },
-    {
-      "id" : "fr-lm-technique-imagerie.participant",
-      "path" : "fr-lm-technique-imagerie.participant",
-      "short" : "Participant",
-      "definition" : "Participant",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
     }]
   }
 }

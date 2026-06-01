@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-transfusion-de-produits-sanguins | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDATransfusionDeProduitsSanguins |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDATransfusionDeProduitsSanguins |
 
  
 Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet d’indiquer s’il a eu ou pas transfusion de produit sanguin. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transfusion-d
   "name" : "FRCDATransfusionDeProduitsSanguins",
   "title" : "CDA - FR Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -175,7 +175,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transfusion-d
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -187,12 +188,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transfusion-d
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "MED-145"
+      "min" : 1,
+      "patternCode" : "MED-145",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -202,7 +207,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-transfusion-d
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Transfusion de produits sanguins"
+      "patternString" : "Transfusion de produits sanguins",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

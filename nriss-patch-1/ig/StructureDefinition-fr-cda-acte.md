@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-acte | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAActe |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAActe |
 
  
 Entrée FR-Acte: IHE-PCC - Procedure. L’entrée ‘Acte’ est une entrée de type ‘procedure’ décrivant un acte planifié ou réalisé. 
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Education du patient](StructureDefinition-fr-cda-education-du-patient.md), [CDA - FR Historique des actes](StructureDefinition-fr-cda-historique-des-actes.md), [CDA - FR Plan de soins](StructureDefinition-fr-cda-plan-de-soins.md) and [CDA - FR Resultats examens](StructureDefinition-fr-cda-resultats-examens.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-acte)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte.csv), [E
   "name" : "FRCDAActe",
   "title" : "CDA - FR Acte",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -188,7 +188,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte.csv), [E
       "path" : "Procedure.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Procedure.code",
@@ -196,6 +197,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-acte.csv), [E
       "short" : "Code d'acte : \r\n\nAussi utilisé pour indiquer qu'il n'y a pas d'acte, ou qu'on ne sait pas s'il y en a.\nTerminologie CCAM (1.2.250.1.215.300.1) si possible. \nSi l'acte n'est pas trouvé dans la terminologie CCAM, utiliser le code='C25218' displayName='Intervention' codeSystem='2.16.840.1.113883.3.26.1.1' codeSystemName='NCIT' et décrire l'acte sous forme de texte libre dans la partie narrative avec une référence vers l'entrée correspondante \nou jdv-absent-or-unknown-procedure-cisis (1.2.250.1.213.1.1.5.665) pour les actes chirurgicaux",
       "definition" : "Code d'acte",
       "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.code",
+      "path" : "Procedure.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.codeSystem",
+      "path" : "Procedure.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.code.displayName",
+      "path" : "Procedure.code.displayName",
       "mustSupport" : true
     },
     {

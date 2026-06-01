@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Observation - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Observation - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Observation**
+* **Logical model - FR LM Observation**
 
-## Logical Model: Modèle logique métier - FR LM Observation 
+## Logical Model: Logical model - FR LM Observation 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMObservation |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMObservation |
 
  
 observation 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Acte](StructureDefinition-fr-lm-acte.md), [Modèle logique métier - FR LM Documents ajoutés](StructureDefinition-fr-lm-documents-ajoutes.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Modèle logique métier - FR LM Exposition aux radiations](StructureDefinition-fr-lm-exposition-radiations.md)... Show 5 more, [Modèle logique métier - FR LM Informations Cliniques](StructureDefinition-fr-lm-informations-cliniques.md), [Modèle logique métier - FR LM Raison de la recommandation](StructureDefinition-fr-lm-raison-recommandation.md), [Modèle logique métier - FR LM Résultats d'événements](StructureDefinition-fr-lm-resultats-evenements.md), [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md) and [Modèle logique métier - FR LM Résultats de laboratoire de biologie de seconde intention](StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md), [Logical model - FR LM Attachments](StructureDefinition-fr-lm-attachments.md), [Logical model - FR LM Conclusion](StructureDefinition-fr-lm-conclusion.md), [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md)... Show 11 more, [Logical model - FR LM Device use](StructureDefinition-fr-lm-device-use.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model- FR LM Pregnancy Status](StructureDefinition-fr-lm-pregnancy-status.md), [Logical model- FR LM Procedure](StructureDefinition-fr-lm-procedure.md), [Logical model - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md), [Logical model - FR LM Service Request](StructureDefinition-fr-lm-service-request.md) and [Logical model - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-observation)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMObservation",
-  "title" : "Modèle logique métier - FR LM Observation",
+  "title" : "Logical model - FR LM Observation",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,57 +66,24 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-observation",
       "path" : "fr-lm-observation",
-      "short" : "Modèle logique métier - FR LM Observation",
+      "short" : "Logical model - FR LM Observation",
       "definition" : "observation"
     },
     {
-      "id" : "fr-lm-observation.observationIdentifiant",
-      "path" : "fr-lm-observation.observationIdentifiant",
-      "short" : "Identifiant de l'observation",
-      "definition" : "Identifiant de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationCode",
-      "path" : "fr-lm-observation.observationCode",
+      "id" : "fr-lm-observation.code",
+      "path" : "fr-lm-observation.code",
       "short" : "Code de l'observation",
       "definition" : "Code de l'observation",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationDescription",
-      "path" : "fr-lm-observation.observationDescription",
-      "short" : "Description narrative de l'observation",
-      "definition" : "Description narrative de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationStatut",
-      "path" : "fr-lm-observation.observationStatut",
-      "short" : "Statut de l'observation",
-      "definition" : "Statut de l'observation",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
       }]
     },
     {
@@ -131,30 +98,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationNombreRenouvellements",
-      "path" : "fr-lm-observation.observationNombreRenouvellements",
-      "short" : "Nombre de renouvellements possibles",
-      "definition" : "Nombre de renouvellements possibles",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Range"
-      }]
-    },
-    {
-      "id" : "fr-lm-observation.observationResultat",
-      "path" : "fr-lm-observation.observationResultat",
+      "id" : "fr-lm-observation.result[x]",
+      "path" : "fr-lm-observation.result[x]",
       "short" : "Valeur de l'observation",
       "definition" : "Valeur de l'observation",
       "min" : 0,
       "max" : "*",
       "type" : [{
         "code" : "CodeableConcept"
+      },
+      {
+        "code" : "string"
+      },
+      {
+        "code" : "Quantity"
+      },
+      {
+        "code" : "Ratio"
+      },
+      {
+        "code" : "Range"
       }]
     },
     {
-      "id" : "fr-lm-observation.observationInterpretation",
-      "path" : "fr-lm-observation.observationInterpretation",
+      "id" : "fr-lm-observation.interpretation",
+      "path" : "fr-lm-observation.interpretation",
       "short" : "Interprétation",
       "definition" : "Interprétation",
       "min" : 0,
@@ -164,8 +132,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationMethode",
-      "path" : "fr-lm-observation.observationMethode",
+      "id" : "fr-lm-observation.method",
+      "path" : "fr-lm-observation.method",
       "short" : "Méthode",
       "definition" : "Méthode",
       "min" : 0,
@@ -175,29 +143,18 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-observation.cs
       }]
     },
     {
-      "id" : "fr-lm-observation.observationLocalisationAnatomique",
-      "path" : "fr-lm-observation.observationLocalisationAnatomique",
+      "id" : "fr-lm-observation.location",
+      "path" : "fr-lm-observation.location",
       "short" : "Localisation anatomique",
       "definition" : "Localisation anatomique",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-body-structure"
       }],
       "binding" : {
         "description" : "SNOMED CT (2.16.840.1.113883.6.96)"
       }
-    },
-    {
-      "id" : "fr-lm-observation.observationAuteur",
-      "path" : "fr-lm-observation.observationAuteur",
-      "short" : "Auteur de l'observation",
-      "definition" : "Auteur de l'observation",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
     }]
   }
 }

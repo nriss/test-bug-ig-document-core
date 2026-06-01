@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Non remboursable - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Non remboursable - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Non remboursable**
+* **Logical model - FR LM Non remboursable**
 
-## Logical Model: Modèle logique métier - FR LM Non remboursable 
+## Logical Model: Logical model - FR LM Non remboursable 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-non-remboursable | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMNonRemboursable |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMNonRemboursable |
 
  
-Non remboursable 
+Entrée Non remboursable 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Traitement Prescrit](StructureDefinition-fr-lm-traitement-prescrit.md)
+* Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-non-remboursable)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-non-remboursab
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-non-remboursable",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMNonRemboursable",
-  "title" : "Modèle logique métier - FR LM Non remboursable",
+  "title" : "Logical model - FR LM Non remboursable",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-non-remboursab
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Non remboursable",
+  "description" : "Entrée Non remboursable",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-non-remboursab
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-non-remboursable",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-non-remboursable",
       "path" : "fr-lm-non-remboursable",
-      "short" : "Modèle logique métier - FR LM Non remboursable",
-      "definition" : "Non remboursable"
-    },
-    {
-      "id" : "fr-lm-non-remboursable.identifiant",
-      "path" : "fr-lm-non-remboursable.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "short" : "Logical model - FR LM Non remboursable",
+      "definition" : "Entrée Non remboursable"
     },
     {
       "id" : "fr-lm-non-remboursable.code",
@@ -98,59 +87,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-non-remboursab
       }]
     },
     {
-      "id" : "fr-lm-non-remboursable.description",
-      "path" : "fr-lm-non-remboursable.description",
-      "short" : "Description narrative",
-      "definition" : "Description narrative",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-non-remboursable.statut",
-      "path" : "fr-lm-non-remboursable.statut",
-      "short" : "Statut de l'entrée",
-      "definition" : "Statut de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }],
-      "patternCode" : "completed"
-    },
-    {
-      "id" : "fr-lm-non-remboursable.horodatage",
-      "path" : "fr-lm-non-remboursable.horodatage",
-      "short" : "Horodatage de l'entrée",
-      "definition" : "Horodatage de l'entrée",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
-      "id" : "fr-lm-non-remboursable.resultat",
-      "path" : "fr-lm-non-remboursable.resultat",
+      "id" : "fr-lm-non-remboursable.result",
+      "path" : "fr-lm-non-remboursable.result",
       "short" : "Résultat de l'observation",
       "definition" : "Résultat de l'observation",
       "min" : 1,
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-non-remboursable.auteur",
-      "path" : "fr-lm-non-remboursable.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
       }]
     }]
   }

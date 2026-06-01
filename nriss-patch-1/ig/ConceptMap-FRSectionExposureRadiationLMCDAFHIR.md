@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionExposureRadiationLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*: |
+| Draft as of 2026-06-01 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMExpositionRadiations vers la section CDA FRCDADICOMExpositionAuxRadiations, puis vers la section FHIR FRCompositionDocument.section:exposureRadiation. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Exposition aux radiations\"",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,14 +98,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
     {
       "code" : "FRLMExpositionRadiations.entree.observationGrossesse",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
       "code" : "FRLMExpositionRadiations.entree.observationIndication",
       "target" : [{
-        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+        "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
         "equivalence" : "equivalent"
       }]
     }]
@@ -163,14 +163,14 @@ Mapping des éléments du modèle métier FRLMExpositionRadiations vers la secti
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationGrossesse",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationGrossesse",
         "equivalence" : "equivalent"
       }]
     },
     {
-      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDICOMObservation",
+      "code" : "FRCDADICOMExpositionAuxRadiations.entry:frDicomObservationIndication",
       "target" : [{
         "code" : "FRCompositionDocument.section:exposureRadiation.entry:FRObservationRadiationExposureDocument.hasMember:observationIndication",
         "equivalence" : "equivalent"

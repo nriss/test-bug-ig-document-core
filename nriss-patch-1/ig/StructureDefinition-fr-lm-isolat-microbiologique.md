@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-isolat-microbiologique | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMIsolatMicrobiologique |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMIsolatMicrobiologique |
 
  
 Isolat microbiologique 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-isolat-microbiologique)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
   "name" : "FRLMIsolatMicrobiologique",
   "title" : "Modèle logique métier - FR LM Isolat microbiologique",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-isolat-microbiologique",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
@@ -76,15 +76,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
       "definition" : "Isolat microbiologique"
     },
     {
-      "id" : "fr-lm-isolat-microbiologique.identifiant",
-      "path" : "fr-lm-isolat-microbiologique.identifiant",
-      "short" : "Identifiant de l'examen",
-      "definition" : "Identifiant de l'examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "id" : "fr-lm-isolat-microbiologique.header.date",
+      "path" : "fr-lm-isolat-microbiologique.header.date",
+      "short" : "Date et heure des résultats"
     },
     {
       "id" : "fr-lm-isolat-microbiologique.codeIsolat",
@@ -95,28 +89,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.statut",
-      "path" : "fr-lm-isolat-microbiologique.statut",
-      "short" : "Niveau de complétude",
-      "definition" : "Niveau de complétude",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.dateResultat",
-      "path" : "fr-lm-isolat-microbiologique.dateResultat",
-      "short" : "Date et heure des résultats",
-      "definition" : "Date et heure des résultats",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -200,50 +172,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
       }]
     },
     {
-      "id" : "fr-lm-isolat-microbiologique.auteur",
-      "path" : "fr-lm-isolat-microbiologique.auteur",
-      "short" : "Participation d'un auteur au document. Apparaît à ce niveau si le compte-rendu de cette analyse procède de cet auteur spécifique.",
-      "definition" : "Participation d'un auteur au document. Apparaît à ce niveau si le compte-rendu de cette analyse procède de cet auteur spécifique.",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.valideur",
-      "path" : "fr-lm-isolat-microbiologique.valideur",
-      "short" : "Valideur de ces résultats",
-      "definition" : "Valideur de ces résultats",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.responsable",
-      "path" : "fr-lm-isolat-microbiologique.responsable",
-      "short" : "Responsable de cet examen",
-      "definition" : "Responsable de cet examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
-      "id" : "fr-lm-isolat-microbiologique.dispositifAutomatique",
-      "path" : "fr-lm-isolat-microbiologique.dispositifAutomatique",
-      "short" : "Dispositif automatique impliqué dans la production des résultats",
-      "definition" : "Dispositif automatique impliqué dans la production des résultats",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant-corps"
-      }]
-    },
-    {
       "id" : "fr-lm-isolat-microbiologique.batterieExamensDeBiologieMedicale",
       "path" : "fr-lm-isolat-microbiologique.batterieExamensDeBiologieMedicale",
       "short" : "Batterie d'examens de biologie médicale",
@@ -273,7 +201,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-media"
       }]
     },
     {
@@ -284,7 +212,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-isolat-microbi
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er"
+        "code" : "string"
       }]
     }]
   }

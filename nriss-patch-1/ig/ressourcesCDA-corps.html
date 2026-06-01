@@ -270,6 +270,120 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Cette page contient la liste des profils CDA définis dans le guide <strong>ANS IG Document Core</strong>, utilisés pour l’implémentation de la partie corps des documents médicaux et médico-sociaux.</p>
 
+<h4 id="liste-des-profils-des-sections-du-corps-des-documents">Liste des profils des sections du corps des documents</h4>
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-cda-allergies-et-hypersensibilites.html">CDA - FR Allergies et hypersensibilites</a></td><td><div><p>IHE-PCC - Allergies-And-Other-Adverse-Reactions</p>
+<ul>
+<li>La section 'Allergies et hypersensibilités' permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l'agent et les réactions observées.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-antecedents-medicaux.html">CDA - FR Antecedents medicaux</a></td><td><div><p>IHE-PCC - History-Of-Past-Illness</p>
+<ul>
+<li>La section 'Antécédents médicaux' doit contenir une liste codée des antécédents médicaux du patient. Il s'agit d'épisodes résolus, c'est à dire de maladies que l'on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-code-a-barres.html">CDA - FR Code a barres</a></td><td><div><p>Cette section permet d'enregistrer des codes à barres</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-commentaire-non-code.html">CDA - FR Commentaire non code</a></td><td><div><p>IHE-PCC - Document-Summary</p>
+<ul>
+<li>Cette section permet d'indiquer un commentaire sous forme textuelle.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-cr-bio-chapitre.html">CDA - FR CR BIO Chapitre</a></td><td><div><p>IHE-PaLM - Laboratory Specialty Section</p>
+<ul>
+<li>Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
+<li>soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l'élément &lt;text&gt;)</li>
+<li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html">CDA - FR CR BIO Sous Chapitre</a></td><td><div><p>IHE-PaLM - Laboratory Report Item Section</p>
+<ul>
+<li>Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale. Elle est comporte un élément 'text' qui porte les résultats présentés et interprétés pour le lecteur et d'une entrée contenant les données codées dont procède le contenu de l'élément 'text'.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-acte-imagerie.html">CDA - FR DICOM Acte imagerie</a></td><td><div><p>DICOM Part 20 - Imaging Procedure Description Section</p>
+<ul>
+<li>Cette section permet d'enregistrer les informations sur les détails techniques de l'acte d'imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-addendum.html">CDA - FR DICOM Addendum</a></td><td><div><p>DICOM Part 20 - Addendum Section</p>
+<ul>
+<li>La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-complications.html">CDA - FR DICOM Complications</a></td><td><div><p>DICOM Part 20 - Complications</p>
+<ul>
+<li>Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-conclusion.html">CDA - FR DICOM Conclusion</a></td><td><div><p>DICOM Part 20 - Impression Section</p>
+<ul>
+<li>Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-demande-examen.html">CDA - FR DICOM Demande examen</a></td><td><div><p>DICOM Part 20 - Request Section</p>
+<ul>
+<li>Justification de la demande d’examen / Finalité de l'examen.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html">CDA - FR DICOM Examen comparatif</a></td><td><div><p>DICOM Part 20 - Comparison Study Section</p>
+<ul>
+<li>Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html">CDA - FR DICOM Exposition aux radiations</a></td><td><div><p>DICOM Part 20 - Radiation Exposure and Protection Information </p>
+<ul>
+<li>Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-historique-medical.html">CDA - FR DICOM Historique medical</a></td><td><div><p>DICOM Part 20 - Medical (General) History Section</p>
+<ul>
+<li>Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html">CDA - FR DICOM Informations cliniques</a></td><td><div><p>DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que :</p>
+<ul>
+<li>Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]</li>
+<li>Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1]</li>
+<li>Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+<li>Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+<li>Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-object-catalog.html">CDA - FR DICOM Object Catalog</a></td><td><div><p>DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :</p>
+<ul>
+<li>[0..*] Examen</li>
+<li>[1..*] Série (avec la modalité d'acquisition)</li>
+<li>[1..*] Objet référencé (avec la classe d'objet)</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-resultats.html">CDA - FR DICOM Resultats</a></td><td><div><p>DICOM Part 20 - Findings</p>
+<ul>
+<li>Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dispensation-medicaments.html">CDA - FR Dispensation medicaments</a></td><td><div><p>IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-document-pdf-copie.html">CDA - FR Document PDF copie</a></td><td><div><p>Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-documents-ajoutes.html">CDA - FR Documents ajoutes</a></td><td><div><p>Liste de documents ajoutés</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-education-du-patient.html">CDA - FR Education du patient</a></td><td><div><p>IHE-PCC - Patient Education Section</p>
+<ul>
+<li>Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-effets-indesirables.html">CDA - FR Effets indesirables</a></td><td><div><p>Liste des effets indésirables prévisibles liés aux médicaments.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html">CDA - FR Facteurs de risque professionnels non code</a></td><td><div><p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-fonctions-physiques.html">CDA - FR Fonctions physiques</a></td><td><div><p>IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-historique-des-actes.html">CDA - FR Historique des actes</a></td><td><div><p>IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-historique-des-grossesses.html">CDA - FR Historique des grossesses</a></td><td><div><p>IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-plan-de-soins.html">CDA - FR Plan de soins</a></td><td><div><p>IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l'amélioration de l'état du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-points-de-vigilances-non-code.html">CDA - FR Points de vigilances non code</a></td><td><div><p>Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée).</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-prescription-dispositifs-medicaux.html">CDA - FR Prescription dispositifs medicaux</a></td><td><div><p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-prescription-medicaments.html">CDA - FR Prescription medicaments</a></td><td><div><p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-problemes-actifs.html">CDA - FR Problemes actifs</a></td><td><div><p>IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.html">CDA - FR Raison de la recommandation non code</a></td><td><div><p>IHE-PCC Reason-For-Referral. Cette section permet d'indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-raison-de-la-recommandation.html">CDA - FR Raison de la recommandation</a></td><td><div><p>IHE-PCC - Coded Reason for Referral Section. Cette section permet d'indiquer la raison pour laquelle le patient est adressé à l'hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l'aide d'une entrée Simple observation et d'une entrée Problème.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.html">CDA - FR Resultats de biologie de seconde intention</a></td><td><div><p>Cette section, optionnelle, est utilisée uniquement dans le cas d'usage particulier des résultats d'examen de laboratoire de biologie de seconde intention, lorsqu'ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d'encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique 'Résultats de laboratoire de biologie de seconde intention'.Attention : cette solution n'est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-resultats-evenements.html">CDA - FR Resultats evenements</a></td><td><div><p>IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d'un acte ou d'un problème.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-resultats-examens-non-code.html">CDA - FR Resultats examens non code</a></td><td><div><p>IHE-PCC - Results. Résultats d’examens sous forme narrative non codée.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-resultats-examens.html">CDA - FR Resultats examens</a></td><td><div><p>IHE-PCC - Coded Results Section. Résultats d'examens réalisés par le patient et éventuellement références à d'autres documents du dossier du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-antecedents-familiaux.html">CDA - FR Antecedents familiaux</a></td><td><div><p>IHE-PCC Coded-Family-Medical-History</p>
+<ul>
+<li>Liste codée des antécédents familiaux</li>
+</ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html">CDA - FR Habitus mode de vie</a></td><td><div><p>IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-resultats.html">CDA - FR Resultats</a></td><td><div><p>Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-signes-vitaux.html">CDA - FR Signes vitaux</a></td><td><div><p>IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-statut-du-document.html">CDA - FR Statut du document</a></td><td><div><p>Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-statut-fonctionnel.html">CDA - FR Statut fonctionnel</a></td><td><div><p>Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitements-a-la-sortie.html">CDA - FR Traitements à la sortie</a></td><td><div><p>IHE-PCC - Hospital-Discharge-Medications. La section 'Traitements à la sortie' contient une description narrative des médicaments à administrer au patient après sa sortie de l'hospitalisation et doit inclure des entrées 'Traitement'.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitements-administres.html">CDA - FR Traitements administres</a></td><td><div><p>IHE-PCC - Medications-Administered. La section 'Traitements administrés' contient une description narrative des médicaments administrés au patient et doit inclure des entrées 'Traitement'.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitements.html">CDA - FR Traitements</a></td><td><div><p>IHE-PCC - Medications. Liste des principales prises médicamenteuses.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-vaccinations.html">CDA - FR Vaccinations</a></td><td><div><p>IHE-PCC - Immunizations Section. Liste des vaccinations effectuées.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-dispositifs-medicaux.html">CDA - FR Dispositifs medicaux</a></td><td><div><p>IHE-PCC - Medical Devices SectionCette section 'Dispositifs médicaux' contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée.</p>
+</div></td></tr></table>
+
+<h4 id="liste-des-profils-des-entrées-du-corps-des-documents">Liste des profils des entrées du corps des documents</h4>
 <table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-cisis-addr.html">CDA - FR CISIS Addr</a></td><td><div><p>Adresse géopostale : Le contenu de addr est défini par la norme AFNOR XPZ 10-011 en tant que structure d'adresse postale et géographique à des fins de présentation. Cette norme est reprise dans le Référentiel Général d'Interopérabilité (RGI).
 Les partenaires de l'échange doivent s'accorder sur la structure de addr à échanger.
 En effet, addr peut convoyer une adresse géopostale formée :</p>
@@ -446,6 +560,7 @@ du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s)</p>
 <li>Isolats microbiologiques (Laboratory Isolate Organizer – 1.3.6.1.4.1.19376.1.3.1.5)</li>
 <li>Résultat d'examen / élément clinique pertinent (Laboratory Observation – 1.3.6.1.4.1.19376.1.3.1.6)</li>
 </ul>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-resultats.html">CDA - FR resultats</a></td><td><div><p>Entrée FR-resultats: L'entrée 'FR-Resultats' est une entrée de type 'organizer' regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…).</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-severite.html">CDA - FR Severite</a></td><td><div><p>Entrée FR-Severite: IHE-PCC - Severity.</p>
 <ul>
 <li>Cette entrée permet de donner le niveau de sévérité d’un problème : bas, modéré, élevé, etc... Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie.</li>
@@ -519,7 +634,7 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 20, 2026 11:58+0000">2026-04-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 1, 2026 14:28+0000">2026-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

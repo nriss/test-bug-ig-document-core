@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-notes-du-dispensateur | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDANotesDuDispensateur |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDANotesDuDispensateur |
 
  
 Entrée FR-Notes-du-dispensateur: IHE PHARM DIS - fulfillment notes. 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-notes-du-disp
   "name" : "FRCDANotesDuDispensateur",
   "title" : "CDA - FR Notes du dispensateur",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,10 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-notes-du-disp
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {
@@ -187,17 +183,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-notes-du-disp
     {
       "id" : "Act.code.code",
       "path" : "Act.code.code",
-      "patternCode" : "FINSTRUCT"
+      "min" : 1,
+      "patternCode" : "FINSTRUCT",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "patternString" : "1.3.6.1.4.1.19376.1.5.3.2"
+      "min" : 1,
+      "patternString" : "1.3.6.1.4.1.19376.1.5.3.2",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystemName",
       "path" : "Act.code.codeSystemName",
       "patternString" : "IHEActCode"
+    },
+    {
+      "id" : "Act.code.displayName",
+      "path" : "Act.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "Act.text",

@@ -1,15 +1,15 @@
-# Modèle logique métier - FR LM Synthese medicale sejour - ANS IG document core v0.1.0-snapshot
+# Logical model- FR LM Synthese medicale sejour - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Synthese medicale sejour**
+* **Logical model- FR LM Synthese medicale sejour**
 
-## Logical Model: Modèle logique métier - FR LM Synthese medicale sejour 
+## Logical Model: Logical model- FR LM Synthese medicale sejour 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-synthese-medicale-sejour | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMSyntheseMedicaleSejour |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMSyntheseMedicaleSejour |
 
  
 Synthese medicale sejour 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-synthese-medic
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-synthese-medicale-sejour",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMSyntheseMedicaleSejour",
-  "title" : "Modèle logique métier - FR LM Synthese medicale sejour",
+  "title" : "Logical model- FR LM Synthese medicale sejour",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-synthese-medic
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-synthese-medicale-sejour",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-synthese-medicale-sejour",
       "path" : "fr-lm-synthese-medicale-sejour",
-      "short" : "Modèle logique métier - FR LM Synthese medicale sejour",
+      "short" : "Logical model- FR LM Synthese medicale sejour",
       "definition" : "Synthese medicale sejour"
-    },
-    {
-      "id" : "fr-lm-synthese-medicale-sejour.identifiant",
-      "path" : "fr-lm-synthese-medicale-sejour.identifiant",
-      "short" : "Identifiant de l'entrée",
-      "definition" : "Identifiant de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
     },
     {
       "id" : "fr-lm-synthese-medicale-sejour.code",
@@ -95,28 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-synthese-medic
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-synthese-medicale-sejour.description",
-      "path" : "fr-lm-synthese-medicale-sejour.description",
-      "short" : "Description narrative de l'entrée",
-      "definition" : "Description narrative de l'entrée",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "Narrative"
-      }]
-    },
-    {
-      "id" : "fr-lm-synthese-medicale-sejour.statut",
-      "path" : "fr-lm-synthese-medicale-sejour.statut",
-      "short" : "Statut de l'entrée. Fixé à la valeur 'completed'",
-      "definition" : "Statut de l'entrée. Fixé à la valeur 'completed'",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
       }]
     },
     {
@@ -139,17 +106,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-synthese-medic
       "max" : "1",
       "type" : [{
         "code" : "string"
-      }]
-    },
-    {
-      "id" : "fr-lm-synthese-medicale-sejour.auteur",
-      "path" : "fr-lm-synthese-medicale-sejour.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
       }]
     }]
   }

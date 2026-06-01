@@ -164,6 +164,136 @@ La norme FHIR permet d’indiquer de façon optionnelle le rattachement d’une 
 
 Chaque entrée d’un document peut avoir un **subject**. Si l’entrée ne contient pas de subject, l’entrée concerne la personne indiquée dans l’élément **Composition.section.focus** de la section. Si la section ne contient pas d’élément **Composition.section.focus**, la section concerne la personne indiquée dans l’élément **subject** du document. C’est le principe de propagation du contexte et qui part du document vers les sections, sous-sections, entrées et sous-entrées emboitées.
 
+#### Gestion des sections vides (pas d’information) :
+
+En FHIR, l’élément **section.emptyReason** permet d’indiquer la raison pour laquelle une section est vide, c’est-à-dire qu’elle ne contient aucune entrée structurée. Son utilisation est conditionnée par le caractère obligatoire de la section dans le modèle de document.
+
+##### Sections obligatoires
+
+Pour les sections obligatoires (ex : Allergies et intolérances, Problèmes, Traitements), lorsqu’aucune entrée structurée n’est fournie, l’élément **section.emptyReason** **DOIT** être renseigné avec une valeur issue du JDV [list-empty-reason](http://hl7.org/fhir/ValueSet/list-empty-reason).
+
+| | | |
+| :--- | :--- | :--- |
+| `nilknown` | Pas d’élément connu | Constatation clinique d’un professionnel de santé concluant, après investigation, à l’absence d’éléments connus pour cette donnée.**Cette valeur ne peut pas être fournie par défaut par un SIS en l’absence d’informations.**Exemples :-**Allergies**: le patient ou son représentant a déclaré n’avoir connaissance d’aucune allergie.-**Médicaments**: le patient déclare ne prendre aucun médicament.-**Diagnostics / problèmes**: le patient déclare qu’aucun événement connu ne doit être enregistré. |
+| `notasked` | Non demandé | Aucune investigation n’a été menée pour déterminer s’il existe des éléments pour cette liste. |
+| `withheld` | Non divulgué | Aucune information n’est fournie pour des raisons de confidentialité. Cela ne signifie pas nécessairement que le contenu est sensible ; il peut s’agir d’une décision personnelle du patient. |
+| `unavailable` | Indisponible | L’information est indisponible au moment de la production du document (ex : patient inconscient). |
+| `notstarted` | Non démarré | Les actions permettant d’obtenir cette information n’ont pas encore démarré. |
+| `closed` | Fermé | Cette liste est désormais fermée ou n’est plus pertinente ni utile. |
+
+##### Sections facultatives
+
+Lorsqu’aucune donnée n’est disponible pour une section facultative, **le producteur ne doit pas créer la section**. L’élément **section.emptyReason** ne s’applique pas aux sections facultatives absentes.
+
+> **En résumé** : **section.emptyReason** s’applique uniquement aux **sections obligatoires vides**. Pour les sections facultatives, l’absence de données se traduit simplement par l’absence de la section dans le document.
+
+#### Gestion de l’absence de données au niveau des éléments (données manquantes)
+
+En FHIR, l’absence d’une valeur dans un élément doit être gérée de manière explicite lorsque cela est **requis**. Les règles diffèrent selon la cardinalité de l’élément et selon que la donnée est codée ou non.
+
+##### Données optionnelles
+
+**(cardinalité `0..1` ou `0..*`)**
+
+Si l’information n’est pas disponible, quelle que soit la raison, **ne pas créer l’élément**. L’absence de l’élément dans la ressource est suffisante pour exprimer l’indisponibilité.
+
+##### Données obligatoires
+
+**(cardinalité `1..1` ou `1..*`)**
+
+Si l’information n’est pas disponible, **le motif de l’absence DOIT être précisé** via les mécanismes décrits ci-dessous.
+
+###### Données obligatoires non codées
+
+Utiliser l’extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason) avec :
+
+* `"url"` : `"http://hl7.org/fhir/StructureDefinition/data-absent-reason"`
+* `"valueCode"` : valeur issue du ValueSet [data-absent-reason](https://hl7.org/fhir/R4/valueset-data-absent-reason.html)
+
+Le ValueSet [data-absent-reason](https://hl7.org/fhir/R4/valueset-data-absent-reason.html) contient les valeurs suivantes :
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 0 | `unknown` | Inconnu | Valeur inconnue. |
+| 1 | `asked-unknown` | Demandé - inconnu | Valeur demandée mais non connue. |
+| 1 | `temp-unknown` | Temporairement indisponible | Temporairement indisponible (mais pourrait ultérieurement être connue). |
+| 1 | `not-asked` | Non demandé | Valeur non demandée. |
+| 1 | `asked-declined` | Demandé - refus de réponse | Valeur demandée / refus de réponse. |
+| 0 | `masked` | Masqué | Valeur non disponible pour des raisons de sécurité, de confidentialité ou autres. |
+| 0 | `not-applicable` | Non applicable | Pas de valeur appropriée pour cet élément (par exemple, la date des dernières règles pour un homme). |
+| 0 | `unsupported` | Non supporté | Le système source ne gère pas cet élément. |
+| 0 | `as-text` | Voir narratif | Valeur fournie dans la partie narrative. |
+| 0 | `error` | Erreur | Valeur indisponible due à une erreur système ou de processus. |
+| 1 | `not-a-number` | Non numérique | La valeur numérique est indéfinie ou non représentable en raison d’une erreur de traitement des nombres à virgule flottante. |
+| 1 | `negative-infinity` | Borne inférieure infinie | La valeur numérique est excessivement basse et non représentable. |
+| 1 | `positive-infinity` | Borne supérieure infinie | La valeur numérique est excessivement élevée et non représentable. |
+| 0 | `not-performed` | Non effectué | La valeur n’est pas disponible car la procédure d’observation n’a pas été effectuée. |
+| 0 | `not-permitted` | Non autorisé | Cette valeur n’est pas autorisée dans ce contexte (par exemple, en raison des profils ou des types de données de base). |
+
+**Exemple** : dans une ressource `Procedure`, lorsque la date d’exécution (`performed[x]`) est inconnue :
+
+```
+{
+  "resourceType": "Procedure",
+  ...
+  "_performedDateTime": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+        "valueCode": "unknown"
+      }
+    ]
+  },
+  ...
+}
+
+```
+
+###### Données obligatoires codées
+
+1. **Données codées à partir d’un codeSystem/valueSet non obligatoire**(`example`,`preferred`ou`extensible`)
+
+Si l’information n’est pas connue et qu’il existe dans la terminologie ou le ValueSet associé **un code d’exception spécifique**, utiliser ce code en priorité.
+
+> Exemple : code SNOMED CT `1287211007` — **“No information available”**.
+
+Dans les autres cas, utiliser l’extension [**Data Absent Reason**](http://hl7.org/fhir/StructureDefinition/data-absent-reason) avec la syntaxe suivante :
+
+```
+{
+  "resourceType": "Observation",
+  ...
+  "code": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+        "code": "masked"
+      }
+    ]
+  },
+  ...
+}
+
+```
+
+1. **Données codées à partir d’un codeSystem/valueSet obligatoire**(`required`)
+
+> **Règle** : lorsqu’une donnée est absente, **utiliser le code d’exception du ValueSet ou de la terminologie associée**. C’est la règle de référence pour une liaison `required`.
+
+En pratique, de nombreux ValueSets ou terminologies ne prévoient pas de code d’exception. Dans ce cas, faute de code applicable, **utiliser l’extension [Data Absent Reason](http://hl7.org/fhir/StructureDefinition/data-absent-reason)** comme mécanisme de repli.
+
+| | |
+| :--- | :--- |
+| Le VS/terminologie contient un code d’exception (ex :`unknown`dans`event-status`) | Utiliser ce code d’exception |
+| Le VS/terminologie ne contient**aucun**code d’exception | Utiliser l’extension`data-absent-reason` |
+
+> **Exemples d’instances : Allergies et Procédures** :
+* L’instance [example-allergy-intolerance-data-absent-reason](AllergyIntolerance-example-allergy-intolerance-data-absent-reason.md) illustre l’usage de l’extension `data-absent-reason` sur les éléments obligatoires du profil [FRAllergyIntoleranceDocument](StructureDefinition-fr-allergie-intolerance-document.md) lorsque la valeur est inconnue ou temporairement indisponible.
+* L’instance [example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.md) illustre les deux cas de figure sur le profil [FRProcedureDocument](StructureDefinition-fr-procedure-document.md) : 
+* **`extension data-absent-reason`** pour les données codées à partir d’un codeSystem/valueSet non obligatoire (`example`, `preferred` ou `extensible`) : éléments `code`, `performedDateTime`
+* **`code d'exception natif`** du ValueSet `event-status`(`unknown`) pour les données codées à partir d’un codeSystem/valueSet obligatoire (`required`) : élément `status`
+ 
+
 ### Conformité des documents FHIR
 
 Les documents au format FHIR définis dans le CI-SIS doivent être conformes :

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAGroupeDeQuestionnairesDEvaluation |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAGroupeDeQuestionnairesDEvaluation |
 
  
 Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel 
@@ -18,7 +18,7 @@ Entrée FR-Groupe-de-questionnaires-d-evaluation: IHE-PCC - Survey-pannel
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Fonctions physiques](StructureDefinition-fr-cda-fonctions-physiques.md) and [CDA - FR Statut fonctionnel](StructureDefinition-fr-cda-statut-fonctionnel.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-groupe-de-questionnaires-d-evaluation)
 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-groupe-de-que
   "name" : "FRCDAGroupeDeQuestionnairesDEvaluation",
   "title" : "CDA - FR Groupe de questionnaires d evaluation",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,10 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-groupe-de-que
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Organizer",
-      "path" : "Organizer"
-    },
-    {
       "id" : "Organizer.templateId",
       "path" : "Organizer.templateId",
       "slicing" : {
@@ -175,13 +171,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-groupe-de-que
       "path" : "Organizer.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code",
       "path" : "Organizer.code",
       "short" : "Code de l'entrée",
       "definition" : "Code de l'entrée",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.code",
+      "path" : "Organizer.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.codeSystem",
+      "path" : "Organizer.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.displayName",
+      "path" : "Organizer.code.displayName",
       "mustSupport" : true
     },
     {

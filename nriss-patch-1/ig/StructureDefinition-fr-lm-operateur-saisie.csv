@@ -3,5 +3,5 @@
 ","Modèle logique métier - FR LM Opérateur de saisie","Opérateur de saisie de la totalité ou d'une partie du contenu du document.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "fr-lm-operateur-saisie.dateSaisie","fr-lm-operateur-saisie.dateSaisie","","","",1,1,"","","","dateTime {[]} {[]}
 ","Date de la saisie.","Date de la saisie.","","","","","","","","","",,,,,"",,,,"fr-lm-operateur-saisie.dateSaisie",1,1,"",""
-"fr-lm-operateur-saisie.operateurSaisie","fr-lm-operateur-saisie.operateurSaisie","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-personne-structure {[]} {[]}
-","Opérateur de saisie","Opérateur de saisie","","","","","","","","","",,,,,"",,,,"fr-lm-operateur-saisie.operateurSaisie",1,1,"",""
+"fr-lm-operateur-saisie.operateurSaisie[x]","fr-lm-operateur-saisie.operateurSaisie[x]","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional {[]} {[]}
+https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient {[]} {[]}","Opérateur de saisie","Opérateur de saisie","","","","","","","","","",,,,,"",,,,"fr-lm-operateur-saisie.operateurSaisie[x]",1,1,"",""

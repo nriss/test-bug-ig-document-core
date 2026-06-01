@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAVaccination |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAVaccination |
 
  
 Entrée FR-Vaccination: IHE-PCC - Immunizations. L’entrée Vaccination est une entrée de type ‘substanceAdministration’ pour décrire l’administration d’un vaccin. Elle permet également de décrire pourquoi un vaccin n’a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l’entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après. 
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Vaccinations](StructureDefinition-fr-cda-vaccinations.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-vaccination)
 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccination.c
   "name" : "FRCDAVaccination",
   "title" : "CDA - FR Vaccination",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -174,7 +174,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccination.c
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.code",
@@ -187,6 +188,23 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccination.c
         "strength" : "required",
         "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination"
       }
+    },
+    {
+      "id" : "SubstanceAdministration.code.code",
+      "path" : "SubstanceAdministration.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.codeSystem",
+      "path" : "SubstanceAdministration.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "SubstanceAdministration.code.displayName",
+      "path" : "SubstanceAdministration.code.displayName",
+      "mustSupport" : true
     },
     {
       "id" : "SubstanceAdministration.text",

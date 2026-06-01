@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-task-patient-transport-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRTaskPatientTransportDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRTaskPatientTransportDocument |
 
  
 FRTaskPatientTransportDocument permet de décrire le transport d’un patient/usager lors d’un déplacement (entrée ou sortie d’hôpital, …). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-task-patient-tran
   "name" : "FRTaskPatientTransportDocument",
   "title" : "Task - FR Task Patient Transport Document",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

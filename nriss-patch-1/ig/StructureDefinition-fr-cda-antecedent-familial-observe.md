@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-antecedent-familial-observe | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAAntecedentFamilialObserve |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAAntecedentFamilialObserve |
 
  
 Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L’entrée Antécédent familial observé permet d’apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-antecedent-fa
   "name" : "FRCDAAntecedentFamilialObserve",
   "title" : "CDA - FR Antecedent familial observe",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -190,7 +190,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-antecedent-fa
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -204,9 +205,32 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-antecedent-fa
       }
     },
     {
+      "id" : "Observation.code.code",
+      "path" : "Observation.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.codeSystem",
+      "path" : "Observation.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.code.displayName",
+      "path" : "Observation.code.displayName",
+      "mustSupport" : true
+    },
+    {
       "id" : "Observation.text",
       "path" : "Observation.text",
-      "short" : "Description narrative de la valeur de l'observation\n* text.reference 1..1 MS\n",
+      "short" : "Description narrative de la valeur de l'observation",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Observation.text.reference",
+      "path" : "Observation.text.reference",
       "min" : 1,
       "mustSupport" : true
     },

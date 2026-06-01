@@ -225,7 +225,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-fr-lm-auteur.html">next&gt;</a>
+          | <a href="StructureDefinition-fr-lm-health-professional.html">next&gt;</a>
 
           </span>
 
@@ -271,43 +271,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Eléments CDA de l'entête</a>
       </li>
       <li>
-         <a href="#5">Eléments CDA du corps</a>
+         <a href="#5">Eléments CDA du corps des sections</a>
       </li>
       <li>
-         <a href="#6">Profils FHIR entête</a>
+         <a href="#6">Eléments CDA corps des composants élémentaires</a>
       </li>
       <li>
-         <a href="#7">Profils FHIR corps</a>
+         <a href="#7">Profils FHIR entête</a>
       </li>
       <li>
-         <a href="#8">Data Type Profiles</a>
+         <a href="#8">Profils FHIR corps</a>
       </li>
       <li>
-         <a href="#9">Extensions FHIR entête</a>
+         <a href="#9">Data Type Profiles</a>
       </li>
       <li>
-         <a href="#10">Extensions FHIR corps</a>
+         <a href="#10">Extensions FHIR entête</a>
       </li>
       <li>
-         <a href="#11">Concept Maps de l'entête du document</a>
+         <a href="#11">Extensions FHIR corps</a>
       </li>
       <li>
-         <a href="#12">Concept Maps des sections d'un document</a>
+         <a href="#12">Concept Maps de l'entête du document</a>
       </li>
       <li>
-         <a href="#13">Concept Maps des composants communs d'un Document</a>
+         <a href="#13">Concept Maps des sections d'un document</a>
       </li>
       <li>
-         <a href="#14">Structures: Logical Models</a>
+         <a href="#14">Concept Maps des composants communs d'un Document</a>
       </li>
       <li>
-         <a href="#15">Structures: Extension Definitions</a>
+         <a href="#15">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#16">Terminology: Value Sets</a>
+         <a href="#16">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#17">Terminology: Concept Maps</a>
+         <a href="#17">Terminology: Value Sets</a>
       </li>
       <li>
          <a href="#18">Example: Example Instances</a>
@@ -329,14 +329,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-auteur.html"
-                  title="StructureDefinition/fr-lm-auteur">Modèle logique métier - FR LM Auteur</a>
+               <a href="StructureDefinition-fr-lm-health-professional.html"
+                  title="StructureDefinition/fr-lm-health-professional">Logical model - FR LM Health Professional</a>
             </td>
             <td>
-<p>Auteur du document : ce peut être un professionnel, un patient/usager ou un système.</p>
-<ul>
-  <li>Pour un professionnel ou un système, la structure de rattachement doit être précisée.</li>
-</ul>
+<p>Une personne (professionnel ou patient ou autre)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-human-name.html"
+                  title="StructureDefinition/fr-lm-human-name">Logical model - FR LM Human Name</a>
+            </td>
+            <td>
+<p>Modele logique metier - FR LM Human Name</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-informant.html"
+                  title="StructureDefinition/fr-lm-informant">Logical model - FR LM Informant</a>
+            </td>
+            <td>
+<p>Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-location.html"
+                  title="StructureDefinition/fr-lm-location">Logical model - FR LM Location</a>
+            </td>
+            <td>
+<p>Lieu</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-organisation.html"
+                  title="StructureDefinition/fr-lm-organisation">Logical model - FR LM Organisation</a>
+            </td>
+            <td>
+<p>Une structure (organisation) pour les professionnels de santé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-patient.html"
+                  title="StructureDefinition/fr-lm-patient">Logical model - FR LM Patient</a>
+            </td>
+            <td>
+<p>Patient/Usager concerné par le document.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-related-person.html"
+                  title="StructureDefinition/fr-lm-related-person">Logical model - FR LM Related Person</a>
+            </td>
+            <td>
+<p>Related Person</p>
 </td>
          </tr>
          <tr>
@@ -381,15 +432,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-informateur.html"
-                  title="StructureDefinition/fr-lm-informateur">Modèle logique métier - FR LM Informateur</a>
-            </td>
-            <td>
-<p>Informateur (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-operateur-saisie.html"
                   title="StructureDefinition/fr-lm-operateur-saisie">Modèle logique métier - FR LM Opérateur de saisie</a>
             </td>
@@ -404,33 +446,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-patient-usager.html"
-                  title="StructureDefinition/fr-lm-patient-usager">Modèle logique métier - FR LM Patient Usager</a>
-            </td>
-            <td>
-<p>Patient/Usager concerné par le document.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-personne-structure.html"
-                  title="StructureDefinition/fr-lm-personne-structure">Modèle logique métier - FR LM Personne et/ou Structure</a>
-            </td>
-            <td>
-<p>Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-personne-structure-auteur.html"
-                  title="StructureDefinition/fr-lm-personne-structure-auteur">Modèle logique métier - FR LM Personne et/ou Structure Auteur</a>
-            </td>
-            <td>
-<p>Une personne (professionnel ou patient ou autre) et/ou une structure (pour les professionnels).</p>
 </td>
          </tr>
          <tr>
@@ -487,15 +502,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-systeme-structure-auteur.html"
-                  title="StructureDefinition/fr-lm-systeme-structure-auteur">Modèle logique métier - FR LM Système / Structure</a>
-            </td>
-            <td>
-<p>Système auteur du document</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-validateur.html"
                   title="StructureDefinition/fr-lm-validateur">Modèle logique métier - FR LM Validateur</a>
             </td>
@@ -522,62 +528,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-historique-des-actes.html"
-                  title="StructureDefinition/fr-lm-historique-des-actes">Historique des actes</a>
-            </td>
-            <td>
-<p>Section Historique des actes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-acte-imagerie.html"
-                  title="StructureDefinition/fr-lm-acte-imagerie">Modèle logique métier - FR LM Acte d'imagerie</a>
-            </td>
-            <td>
-<p>Section Acte d’imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-addendum.html"
-                  title="StructureDefinition/fr-lm-addendum">Modèle logique métier - FR LM Addendum</a>
-            </td>
-            <td>
-<p>Section Addendum</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-allergies-et-hypersensibilites.html"
-                  title="StructureDefinition/fr-lm-allergies-et-hypersensibilites">Modèle logique métier - FR LM Allergies et hypersensibilités</a>
-            </td>
-            <td>
-<p>Section Allergies et hypersensibilités</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-antecedents-familiaux.html"
-                  title="StructureDefinition/fr-lm-antecedents-familiaux">Modèle logique métier - FR LM Antécédents familiaux</a>
-            </td>
-            <td>
-<p>Section Antécédents familiaux</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-antecedents-medicaux.html"
-                  title="StructureDefinition/fr-lm-antecedents-medicaux">Modèle logique métier - FR LM Antécédents médicaux</a>
-            </td>
-            <td>
-<p>Section Antécédents médicaux</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-historique-des-grossesses.html"
-                  title="StructureDefinition/fr-lm-historique-des-grossesses">Modèle logique métier - FR LM Antécédents obstétricaux</a>
+               <a href="StructureDefinition-fr-lm-section-pregnancy-history.html"
+                  title="StructureDefinition/fr-lm-section-pregnancy-history">Logical model  - FR LM Pregnancy History</a>
             </td>
             <td>
 <p>Section Historique des grossesses</p>
@@ -585,80 +537,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-codes-a-barres.html"
-                  title="StructureDefinition/fr-lm-codes-a-barres">Modèle logique métier - FR LM Codes à barres</a>
+               <a href="StructureDefinition-fr-lm-addendum.html"
+                  title="StructureDefinition/fr-lm-addendum">Logical model - FR LM Addendum</a>
             </td>
             <td>
-<p>Section Codes à barres</p>
+<p>Section Addendum</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-commentaire-non-code.html"
-                  title="StructureDefinition/fr-lm-commentaire-non-code">Modèle logique métier - FR LM Commentaire (non-codé)</a>
+               <a href="StructureDefinition-fr-lm-admission-evaluation.html"
+                  title="StructureDefinition/fr-lm-admission-evaluation">Logical model - FR LM Admission Evaluation</a>
             </td>
             <td>
-<p>Section Commentaire (non-codé)</p>
+<p>Section Évaluation à l’admission</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-comparaison-examens-imagerie.html"
-                  title="StructureDefinition/fr-lm-comparaison-examens-imagerie">Modèle logique métier - FR LM Comparaison d'examens d'imagerie</a>
-            </td>
-            <td>
-<p>Section Comparaison d’examens d’imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-complications-acte.html"
-                  title="StructureDefinition/fr-lm-complications-acte">Modèle logique métier - FR LM Complications Acte</a>
-            </td>
-            <td>
-<p>Section Complications au cours de l’acte</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-cr-bio-chapitre.html"
-                  title="StructureDefinition/fr-lm-cr-bio-chapitre">Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau</a>
-            </td>
-            <td>
-<p>Section Compte rendu de biologie de 1er niveau</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-conclusion-examen-imagerie.html"
-                  title="StructureDefinition/fr-lm-conclusion-examen-imagerie">Modèle logique métier - FR LM Conclusion examen d'imagerie</a>
-            </td>
-            <td>
-<p>Section Conclusion examen d’imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-corps-document.html"
-                  title="StructureDefinition/fr-lm-corps-document">Modèle logique métier - FR LM Corps document</a>
-            </td>
-            <td>
-<p>Eléments métier du corps d’un document contenant les sections du document.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-demande-examen-imagerie.html"
-                  title="StructureDefinition/fr-lm-demande-examen-imagerie">Modèle logique métier - FR LM Demande d'examen d'imagerie</a>
-            </td>
-            <td>
-<p>Section Demande d’examen d’imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-directives-anticipees.html"
-                  title="StructureDefinition/fr-lm-directives-anticipees">Modèle logique métier - FR LM Directives-anticipées</a>
+               <a href="StructureDefinition-fr-lm-advance-directives.html"
+                  title="StructureDefinition/fr-lm-advance-directives">Logical model - FR LM Advance Directives</a>
             </td>
             <td>
 <p>Section Directives anticipées</p>
@@ -666,35 +564,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-dispensation-medicaments.html"
-                  title="StructureDefinition/fr-lm-dispensation-medicaments">Modèle logique métier - FR LM Dispensation médicaments</a>
+               <a href="StructureDefinition-fr-lm-alerts.html"
+                  title="StructureDefinition/fr-lm-alerts">Logical model - FR LM Alerts</a>
             </td>
             <td>
-<p>Section Dispensation médicaments</p>
+<p>Section Points de vigilance</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-dispositifs-medicaux.html"
-                  title="StructureDefinition/fr-lm-dispositifs-medicaux">Modèle logique métier - FR LM Dispositifs medicaux</a>
+               <a href="StructureDefinition-fr-lm-allergies-and-intolerances.html"
+                  title="StructureDefinition/fr-lm-allergies-and-intolerances">Logical model - FR LM Allergies And Intolerances</a>
             </td>
             <td>
-<p>Section Dispositifs medicaux</p>
+<p>Section Allergies et hypersensibilités</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-document-pdf-copie.html"
-                  title="StructureDefinition/fr-lm-document-pdf-copie">Modèle logique métier - FR LM Document PDF copie</a>
-            </td>
-            <td>
-<p>Section Document PDF-copie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-documents-ajoutes.html"
-                  title="StructureDefinition/fr-lm-documents-ajoutes">Modèle logique métier - FR LM Documents ajoutés</a>
+               <a href="StructureDefinition-fr-lm-attachments.html"
+                  title="StructureDefinition/fr-lm-attachments">Logical model - FR LM Attachments</a>
             </td>
             <td>
 <p>Section Documents ajoutés</p>
@@ -702,80 +591,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-education-patient.html"
-                  title="StructureDefinition/fr-lm-education-patient">Modèle logique métier - FR LM Education du patient</a>
-            </td>
-            <td>
-<p>Section Education du patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-effets-indesirables.html"
-                  title="StructureDefinition/fr-lm-effets-indesirables">Modèle logique métier - FR LM Effets indesirables</a>
-            </td>
-            <td>
-<p>Section Effets indesirables</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-exposition-radiations.html"
-                  title="StructureDefinition/fr-lm-exposition-radiations">Modèle logique métier - FR LM Exposition aux radiations</a>
-            </td>
-            <td>
-<p>Section Exposition aux radiations</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-facteurs-de-risque-professionnels-non-code.html"
-                  title="StructureDefinition/fr-lm-facteurs-de-risque-professionnels-non-code">Modèle logique métier - FR LM Facteurs de risque professionnels non code</a>
-            </td>
-            <td>
-<p>Section Facteurs de risque professionnels non code</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-fonctions-physiques.html"
-                  title="StructureDefinition/fr-lm-fonctions-physiques">Modèle logique métier - FR LM Fonctions physiques</a>
-            </td>
-            <td>
-<p>Section Fonctions physiques</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-habitus-mode-de-vie.html"
-                  title="StructureDefinition/fr-lm-habitus-mode-de-vie">Modèle logique métier - FR LM Habitus et modes de vie</a>
-            </td>
-            <td>
-<p>Section Habitus et modes de vie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-informations-cliniques.html"
-                  title="StructureDefinition/fr-lm-informations-cliniques">Modèle logique métier - FR LM Informations Cliniques</a>
-            </td>
-            <td>
-<p>Section Informations Cliniques</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-object-catalog.html"
-                  title="StructureDefinition/fr-lm-object-catalog">Modèle logique métier - FR LM Object Catalog</a>
-            </td>
-            <td>
-<p>Section Object Catalog</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-plan-soins.html"
-                  title="StructureDefinition/fr-lm-plan-soins">Modèle logique métier - FR LM Plan de soins</a>
+               <a href="StructureDefinition-fr-lm-care-plans.html"
+                  title="StructureDefinition/fr-lm-care-plans">Logical model - FR LM CarePlans</a>
             </td>
             <td>
 <p>Section Plan de soins</p>
@@ -783,98 +600,44 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-points-de-vigilances-non-code.html"
-                  title="StructureDefinition/fr-lm-points-de-vigilances-non-code">Modèle logique métier - FR LM Points de vigilance (non-codés)</a>
+               <a href="StructureDefinition-fr-lm-comparison-study.html"
+                  title="StructureDefinition/fr-lm-comparison-study">Logical model - FR LM Comparison Study</a>
             </td>
             <td>
-<p>Section Points de vigilance (non-codés)</p>
+<p>Section Comparaison d’examens d’imagerie</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-prescription-dispositifs-medicaux.html"
-                  title="StructureDefinition/fr-lm-prescription-dispositifs-medicaux">Modèle logique métier - FR LM Prescription de dispositifs médicaux</a>
+               <a href="StructureDefinition-fr-lm-result-data.html"
+                  title="StructureDefinition/fr-lm-result-data">Logical model - FR LM Compte rendu de biologie de 1er niveau</a>
             </td>
             <td>
-<p>Section Prescription de dispositifs médicaux</p>
+<p>Section Compte rendu de biologie de 1er niveau</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-prescription-medicaments.html"
-                  title="StructureDefinition/fr-lm-prescription-medicaments">Modèle logique métier - FR LM Prescription de médicaments</a>
+               <a href="StructureDefinition-fr-lm-conclusion.html"
+                  title="StructureDefinition/fr-lm-conclusion">Logical model - FR LM Conclusion</a>
             </td>
             <td>
-<p>Section Prescription de médicaments</p>
+<p>Section Conclusion</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-problemes-actifs.html"
-                  title="StructureDefinition/fr-lm-problemes-actifs">Modèle logique métier - FR LM Problèmes actifs</a>
+               <a href="StructureDefinition-fr-lm-corps-document.html"
+                  title="StructureDefinition/fr-lm-corps-document">Logical model - FR LM Corps document</a>
             </td>
             <td>
-<p>Section Problèmes actifs</p>
+<p>Eléments métier du corps d’un document contenant les sections du document.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-raison-recommandation.html"
-                  title="StructureDefinition/fr-lm-raison-recommandation">Modèle logique métier - FR LM Raison de la recommandation</a>
-            </td>
-            <td>
-<p>Section Raison de la recommandation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-raison-recommandation-non-code.html"
-                  title="StructureDefinition/fr-lm-raison-recommandation-non-code">Modèle logique métier - FR LM Raison de la recommandation (non codée)</a>
-            </td>
-            <td>
-<p>Section Raison de la recommandation (non codée)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats.html"
-                  title="StructureDefinition/fr-lm-resultats">Modèle logique métier - FR LM Résultats</a>
-            </td>
-            <td>
-<p>Section Résultats</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-examen-imagerie.html"
-                  title="StructureDefinition/fr-lm-resultats-examen-imagerie">Modèle logique métier - FR LM Résultats d'examen d'imagerie</a>
-            </td>
-            <td>
-<p>Section Résultats d’examen d’imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-examens.html"
-                  title="StructureDefinition/fr-lm-resultats-examens">Modèle logique métier - FR LM Résultats d'examens</a>
-            </td>
-            <td>
-<p>Section Résultats d’examens</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-examens-non-code.html"
-                  title="StructureDefinition/fr-lm-resultats-examens-non-code">Modèle logique métier - FR LM Résultats d'examens (non codée)</a>
-            </td>
-            <td>
-<p>Section Résultats d’examens (non codée)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-evenements.html"
-                  title="StructureDefinition/fr-lm-resultats-evenements">Modèle logique métier - FR LM Résultats d'événements</a>
+               <a href="StructureDefinition-fr-lm-course-of-encounter.html"
+                  title="StructureDefinition/fr-lm-course-of-encounter">Logical model - FR LM Course of encounter</a>
             </td>
             <td>
 <p>Section Résultats d’événements</p>
@@ -882,80 +645,80 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.html"
-                  title="StructureDefinition/fr-lm-resultats-laboratoire-biologie-seconde-intention">Modèle logique métier - FR LM Résultats de laboratoire de biologie de seconde intention</a>
+               <a href="StructureDefinition-fr-lm-dicom-study-metadata.html"
+                  title="StructureDefinition/fr-lm-dicom-study-metadata">Logical model - FR LM DICOM Study Metadata</a>
             </td>
             <td>
-<p>Section Résultats de laboratoire de biologie de seconde intention</p>
+<p>Section Object Catalog</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-section.html"
-                  title="StructureDefinition/fr-lm-section">Modèle logique métier - FR LM Section</a>
+               <a href="StructureDefinition-fr-lm-encounter-information.html"
+                  title="StructureDefinition/fr-lm-encounter-information">Logical model - FR LM Encounter Information</a>
             </td>
             <td>
-<p>Section</p>
+<p>Section Informations sur la rencontre</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-signes-vitaux.html"
-                  title="StructureDefinition/fr-lm-signes-vitaux">Modèle logique métier - FR LM Signes vitaux</a>
+               <a href="StructureDefinition-fr-lm-examination-report.html"
+                  title="StructureDefinition/fr-lm-examination-report">Logical model - FR LM Examination Report</a>
             </td>
             <td>
-<p>Section Signes vitaux</p>
+<p>Section Acte d’imagerie</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-cr-bio-sous-chapitre.html"
-                  title="StructureDefinition/fr-lm-cr-bio-sous-chapitre">Modèle logique métier - FR LM Sous-chapitre du compte rendu d'examens de biologie</a>
+               <a href="StructureDefinition-fr-lm-exposure-information.html"
+                  title="StructureDefinition/fr-lm-exposure-information">Logical model - FR LM Exposure Information</a>
             </td>
             <td>
-<p>Modèle logique métier de la section Sous-chapitre du compte rendu d’examens de biologie  (section de 2nd niveau)</p>
+<p>Section Exposition aux radiations</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut-document.html"
-                  title="StructureDefinition/fr-lm-statut-document">Modèle logique métier - FR LM Statut du document</a>
+               <a href="StructureDefinition-fr-lm-family-medical-history.html"
+                  title="StructureDefinition/fr-lm-family-medical-history">Logical model - FR LM Family Medical History</a>
             </td>
             <td>
-<p>Section Statut du document</p>
+<p>Section Antécédents familiaux</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut-fonctionnel.html"
-                  title="StructureDefinition/fr-lm-statut-fonctionnel">Modèle logique métier - FR LM Statut fonctionnel</a>
+               <a href="StructureDefinition-fr-lm-medication-prescription.html"
+                  title="StructureDefinition/fr-lm-medication-prescription">Logical model - FR LM FR LM Medication Prescription</a>
             </td>
             <td>
-<p>Section Statut fonctionnel</p>
+<p>Section Prescription de médicaments</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitements.html"
-                  title="StructureDefinition/fr-lm-traitements">Modèle logique métier - FR LM Traitements</a>
+               <a href="StructureDefinition-fr-lm-history-of-past-illness.html"
+                  title="StructureDefinition/fr-lm-history-of-past-illness">Logical model - FR LM FRLM History Of Past Illness</a>
             </td>
             <td>
-<p>Section Traitements</p>
+<p>Section Antécédents médicaux</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitements-administres.html"
-                  title="StructureDefinition/fr-lm-traitements-administres">Modèle logique métier - FR LM Traitements administrés</a>
+               <a href="StructureDefinition-fr-lm-hazardous-working-conditions.html"
+                  title="StructureDefinition/fr-lm-hazardous-working-conditions">Logical model - FR LM Hazardous Working Conditions</a>
             </td>
             <td>
-<p>Section Traitements administrés</p>
+<p>Section Facteurs de risque professionnels non codés</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitement-sortie.html"
-                  title="StructureDefinition/fr-lm-traitement-sortie">Modèle logique métier - FR LM Traitements à la sortie</a>
+               <a href="StructureDefinition-fr-lm-hospital-discharge-medications.html"
+                  title="StructureDefinition/fr-lm-hospital-discharge-medications">Logical model - FR LM Hospital Discharge Medications</a>
             </td>
             <td>
 <p>Section Traitements à la sortie</p>
@@ -963,11 +726,209 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-vaccinations.html"
-                  title="StructureDefinition/fr-lm-vaccinations">Modèle logique métier - FR LM Vaccinations</a>
+               <a href="StructureDefinition-fr-lm-immunisations.html"
+                  title="StructureDefinition/fr-lm-immunisations">Logical model - FR LM Immunisations</a>
             </td>
             <td>
 <p>Section Vaccinations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medical-device-prescriptions.html"
+                  title="StructureDefinition/fr-lm-medical-device-prescriptions">Logical Model - FR LM Medical Device Prescriptions</a>
+            </td>
+            <td>
+<p>Section Prescription de dispositifs médicaux</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medical-devices-and-implants.html"
+                  title="StructureDefinition/fr-lm-medical-devices-and-implants">Logical Model - FR LM Medical Devices and Implants</a>
+            </td>
+            <td>
+<p>Section Dispositifs Medicaux</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medication-dispensations.html"
+                  title="StructureDefinition/fr-lm-medication-dispensations">Logical model - FR LM Medication Dispensations</a>
+            </td>
+            <td>
+<p>Section Dispensation médicaments</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medication-summary.html"
+                  title="StructureDefinition/fr-lm-medication-summary">Logical model - FR LM Medication Summary</a>
+            </td>
+            <td>
+<p>Section Traitements</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-note.html"
+                  title="StructureDefinition/fr-lm-note">Logical model - FR LM Note</a>
+            </td>
+            <td>
+<p>Section Commentaire (non-codé)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-results.html"
+                  title="StructureDefinition/fr-lm-observation-results">Logical model - FR LM ObservationResults</a>
+            </td>
+            <td>
+<p>Section Résultats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-order-information.html"
+                  title="StructureDefinition/fr-lm-order-information">Logical model - FR LM Order Information</a>
+            </td>
+            <td>
+<p>Section Demande d’examen d’imagerie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-patient-education.html"
+                  title="StructureDefinition/fr-lm-patient-education">Logical model - FR LM Patient Education</a>
+            </td>
+            <td>
+<p>Section Education du patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-predictable-adverse-drug-reaction.html"
+                  title="StructureDefinition/fr-lm-predictable-adverse-drug-reaction">Logical model - FR LM Predictable Adverse Drug Reaction</a>
+            </td>
+            <td>
+<p>Section Effets indesirables</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-presented-form.html"
+                  title="StructureDefinition/fr-lm-presented-form">Logical model - FR LM Presented Form</a>
+            </td>
+            <td>
+<p>Section Document PDF-copie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-problems.html"
+                  title="StructureDefinition/fr-lm-problems">Logical model - FR LM Problems</a>
+            </td>
+            <td>
+<p>Section Problems</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-procedures.html"
+                  title="StructureDefinition/fr-lm-procedures">logical model - FR LM Procedures</a>
+            </td>
+            <td>
+<p>Section Historique des actes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-qr-code.html"
+                  title="StructureDefinition/fr-lm-qr-code">Logical model - FR LM QR Code</a>
+            </td>
+            <td>
+<p>Section Codes à barres</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-reason-for-referral.html"
+                  title="StructureDefinition/fr-lm-reason-for-referral">Logical model - FR LM Reason for referral</a>
+            </td>
+            <td>
+<p>Section Raison de la recommandation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-recommendation.html"
+                  title="StructureDefinition/fr-lm-recommendation">Logical model - FR LM Recommendation</a>
+            </td>
+            <td>
+<p>Section Recommandation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-section.html"
+                  title="StructureDefinition/fr-lm-section">Logical model - FR LM Section</a>
+            </td>
+            <td>
+<p>Section</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-social-history.html"
+                  title="StructureDefinition/fr-lm-social-history">Logical model - FR LM SocialHistory</a>
+            </td>
+            <td>
+<p>Section Habitus et modes de vie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-status-document.html"
+                  title="StructureDefinition/fr-lm-status-document">Logical model - FR LM Status Document</a>
+            </td>
+            <td>
+<p>Section Statut du Document</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-supporting-information.html"
+                  title="StructureDefinition/fr-lm-supporting-information">Logical model - FR LM Supporting Information</a>
+            </td>
+            <td>
+<p>Section Informations Cliniques</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-traitements-administres.html"
+                  title="StructureDefinition/fr-lm-traitements-administres">Logical model - FR LM Traitements administrés</a>
+            </td>
+            <td>
+<p>Section Traitements administrés</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-vital-signs.html"
+                  title="StructureDefinition/fr-lm-vital-signs">Logical model - FR LM Vital Signs</a>
+            </td>
+            <td>
+<p>Section Signes vitaux</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-functional-status.html"
+                  title="StructureDefinition/fr-lm-functional-status">logical model- FR LM Functional Status</a>
+            </td>
+            <td>
+<p>Section Statut fonctionnel</p>
 </td>
          </tr>
       </tbody>
@@ -980,101 +941,605 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-dispositif-medical.html"
-                  title="StructureDefinition/fr-lm-dispositif-medical">Modèle logique métier - Dispositif médical</a>
+               <a href="StructureDefinition-fr-lm-device.html"
+                  title="StructureDefinition/fr-lm-device">Logical model - Device</a>
             </td>
             <td>
-<p>Dispositif médical</p>
+<p>Entrée Dispositif médical</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-accidents-transfusionnels.html"
-                  title="StructureDefinition/fr-lm-accidents-transfusionnels">Modèle logique métier - FR LM Accident transfusionnel</a>
+               <a href="StructureDefinition-fr-lm-administration-blood-derivatives.html"
+                  title="StructureDefinition/fr-lm-administration-blood-derivatives">Logical model - FR LM Administration of Blood Derivatives</a>
             </td>
             <td>
-<p>Accident transfusionnel</p>
+<p>Entrée Administration de dérivés du sang</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-acte.html"
-                  title="StructureDefinition/fr-lm-acte">Modèle logique métier - FR LM Acte</a>
+               <a href="StructureDefinition-fr-lm-advance-directive.html"
+                  title="StructureDefinition/fr-lm-advance-directive">Logical model - FR LM Advance Directive</a>
             </td>
             <td>
-<p>Acte</p>
+<p>Entree Directive anticipee</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-acte-substitution.html"
-                  title="StructureDefinition/fr-lm-acte-substitution">Modèle logique métier - FR LM Acte substitution</a>
+               <a href="StructureDefinition-fr-lm-adverse-event.html"
+                  title="StructureDefinition/fr-lm-adverse-event">Logical model - FR LM Adverse Event</a>
             </td>
             <td>
-<p>Acte substitution</p>
+<p>Entrée Effet indésirable</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-administration-de-derives-du-sang.html"
-                  title="StructureDefinition/fr-lm-administration-de-derives-du-sang">Modèle logique métier - FR LM Administration de dérivés du sang</a>
+               <a href="StructureDefinition-fr-lm-adverse-event-during-hospitalization.html"
+                  title="StructureDefinition/fr-lm-adverse-event-during-hospitalization">Logical model - FR LM Adverse Events During Hospitalization</a>
             </td>
             <td>
-<p>Administration de dérivés du sang</p>
+<p>Entrée Evènements indésirables pendant l’hospitalisation</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-administration-produit-de-sante.html"
-                  title="StructureDefinition/fr-lm-administration-produit-de-sante">Modèle logique métier - FR LM Administration produit de sante</a>
+               <a href="StructureDefinition-fr-lm-adverse-event-following-administration-blood-derivatives.html"
+                  title="StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives">Logical model - FR LM Adverse Events Following Administration of Blood Derivatives</a>
             </td>
             <td>
-<p>Administration produit de sante</p>
+<p>Entrée Evènements indésirables suite à l’administration de dérivés du sang</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-allergie-ou-hypersensibilite.html"
-                  title="StructureDefinition/fr-lm-allergie-ou-hypersensibilite">Modèle logique métier - FR LM Allergie ou Hypersensibilité</a>
+               <a href="StructureDefinition-fr-lm-allergy-intolerance.html"
+                  title="StructureDefinition/fr-lm-allergy-intolerance">Logical model - FR LM Allergy Intolerance</a>
             </td>
             <td>
-<p>Allergie ou hypersensibilite</p>
+<p>Entrée Allergie ou Hypersensibilité</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-antecedent-familial-observe.html"
-                  title="StructureDefinition/fr-lm-antecedent-familial-observe">Modèle logique métier - FR LM Antécédent familial observé</a>
+               <a href="StructureDefinition-fr-lm-observation-assessment.html"
+                  title="StructureDefinition/fr-lm-observation-assessment">Logical model - FR LM Assessment</a>
             </td>
             <td>
-<p>Antécédent familial</p>
+<p>Entrée Evaluation</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-auteur-apsr.html"
-                  title="StructureDefinition/fr-lm-auteur-apsr">Modèle logique métier - FR LM Auteur APSR</a>
+               <a href="StructureDefinition-fr-lm-assessments.html"
+                  title="StructureDefinition/fr-lm-assessments">Logical model - FR LM Assessments</a>
             </td>
             <td>
-<p>Auteur APSR (Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Auteur</p>
+<p>Entrée Groupe de questionnaires d’évalutation</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-autorisation-exposition.html"
-                  title="StructureDefinition/fr-lm-autorisation-exposition">Modèle logique métier - FR LM Autorisation exposition</a>
+               <a href="StructureDefinition-fr-lm-attachment.html"
+                  title="StructureDefinition/fr-lm-attachment">Logical model - FR LM Attachment</a>
             </td>
             <td>
-<p>Autorisation exposition</p>
+<p>Entrée Document attaché</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-autorisation-substitution.html"
-                  title="StructureDefinition/fr-lm-autorisation-substitution">Modèle logique métier - FR LM Autorisation substitution</a>
+               <a href="StructureDefinition-fr-lm-body-structure.html"
+                  title="StructureDefinition/fr-lm-body-structure">Logical model - FR LM Body Structure</a>
             </td>
             <td>
-<p>Autorisation substitution</p>
+<p>Localisation anatomique</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-care-plan.html"
+                  title="StructureDefinition/fr-lm-care-plan">Logical model - FR LM Care Plan</a>
+            </td>
+            <td>
+<p>Entrée Plan de soins</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-condition.html"
+                  title="StructureDefinition/fr-lm-condition">Logical model - FR LM Condition</a>
+            </td>
+            <td>
+<p>Entrée Problème</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-device-use.html"
+                  title="StructureDefinition/fr-lm-device-use">Logical model - FR LM Device use</a>
+            </td>
+            <td>
+<p>Entrée Dispositif médical usage</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-dicom-medication-administration.html"
+                  title="StructureDefinition/fr-lm-dicom-medication-administration">Logical model - FR LM DICOM Medication Administration</a>
+            </td>
+            <td>
+<p>Entrée Administration de produit de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-dose-number.html"
+                  title="StructureDefinition/fr-lm-dose-number">Logical model - FR LM Dose Number</a>
+            </td>
+            <td>
+<p>Entrée Rang de la vaccination</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-encounter.html"
+                  title="StructureDefinition/fr-lm-encounter">Logical model - FR LM Encounter</a>
+            </td>
+            <td>
+<p>Entrée Rencontre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-entry.html"
+                  title="StructureDefinition/fr-lm-entry">Logical model - FR LM Entry</a>
+            </td>
+            <td>
+<p>Modèle logique représentant l’entrée</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-evolution-adverse-event.html"
+                  title="StructureDefinition/fr-lm-evolution-adverse-event">Logical model - FR LM Evolution Adverse Event</a>
+            </td>
+            <td>
+<p>Entrée Evolution effet indesirable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-family-member-history.html"
+                  title="StructureDefinition/fr-lm-family-member-history">Logical model - FR LM Family Member History</a>
+            </td>
+            <td>
+<p>Entrée Antécédent familial</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-hors-amm.html"
+                  title="StructureDefinition/fr-lm-hors-amm">Logical model - FR LM Hors AMM</a>
+            </td>
+            <td>
+<p>Entrée Hors Autorisation de Mise sur le Marché (AMM)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.html"
+                  title="StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants">Logical model - FR LM Identification de micro-organismes multirésistants</a>
+            </td>
+            <td>
+<p>Entrée Identification de micro-organismes multirésistants</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-imaging-study.html"
+                  title="StructureDefinition/fr-lm-imaging-study">Logical model - FR LM Imaging Study</a>
+            </td>
+            <td>
+<p>Entrée DICOM Examen Imagerie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-immunisation.html"
+                  title="StructureDefinition/fr-lm-immunisation">Logical model - FR LM Immunisation</a>
+            </td>
+            <td>
+<p>Entrée Vaccination</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-immunization-recommendation.html"
+                  title="StructureDefinition/fr-lm-immunization-recommendation">Logical model - FR LM Immunization Recommendation</a>
+            </td>
+            <td>
+<p>Entrée Vaccin recommandé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-imputabilite-effet-indesirable.html"
+                  title="StructureDefinition/fr-lm-imputabilite-effet-indesirable">logical model - FR LM Imputabilite effet indesirable</a>
+            </td>
+            <td>
+<p>Entrée Imputabilite effet indesirable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medication.html"
+                  title="StructureDefinition/fr-lm-medication">Logical model - FR LM Medication</a>
+            </td>
+            <td>
+<p>Entrée Produit de santé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medication-dispense.html"
+                  title="StructureDefinition/fr-lm-medication-dispense">Logical model - FR LM Medication Dispense</a>
+            </td>
+            <td>
+<p>Entrée Traitement dispense</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-prescription-item.html"
+                  title="StructureDefinition/fr-lm-prescription-item">Logical model - FR LM Medication Prescription</a>
+            </td>
+            <td>
+<p>Entrée Traitement prescrit</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-modalite-entree.html"
+                  title="StructureDefinition/fr-lm-modalite-entree">logical model - FR LM Modalité d'entrée</a>
+            </td>
+            <td>
+<p>Entrée Modalité d’entrée</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-modalite-sortie.html"
+                  title="StructureDefinition/fr-lm-modalite-sortie">Logical model - FR LM Modalité de sortie</a>
+            </td>
+            <td>
+<p>Entrée Modalité de sortie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-non-remboursable.html"
+                  title="StructureDefinition/fr-lm-non-remboursable">Logical model - FR LM Non remboursable</a>
+            </td>
+            <td>
+<p>Entrée Non remboursable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation.html"
+                  title="StructureDefinition/fr-lm-observation">Logical model - FR LM Observation</a>
+            </td>
+            <td>
+<p>observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-long-term-condition.html"
+                  title="StructureDefinition/fr-lm-observation-long-term-condition">Logical model - FR LM Observation Long Term Condition</a>
+            </td>
+            <td>
+<p>Entrée Observation en rapport avec une Affection Longue Durée (ALD)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-related-to-prevention.html"
+                  title="StructureDefinition/fr-lm-observation-related-to-prevention">Logical model - FR LM Observation Related to Prevention</a>
+            </td>
+            <td>
+<p>Entrée Observation en rapport avec la prevention</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-vital-sign.html"
+                  title="StructureDefinition/fr-lm-observation-vital-sign">Logical model - FR LM Observation Vital Sign</a>
+            </td>
+            <td>
+<p>Signe vital observé</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-work-related-accident.html"
+                  title="StructureDefinition/fr-lm-observation-work-related-accident">Logical model - FR LM Observation Work Related Accident</a>
+            </td>
+            <td>
+<p>Entrée Observation en rapport avec un accident travail</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-media.html"
+                  title="StructureDefinition/fr-lm-observation-media">Logical model - FR LM ObservationMedia</a>
+            </td>
+            <td>
+<p>Entrée Image illustrative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-patient-sujet-non-humain.html"
+                  title="StructureDefinition/fr-lm-patient-sujet-non-humain">Logical model - FR LM Patient avec sujet non humain</a>
+            </td>
+            <td>
+<p>Patient avec sujet non humain</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-patient-transfer.html"
+                  title="StructureDefinition/fr-lm-patient-transfer">Logical model - FR LM Patient Transfer.</a>
+            </td>
+            <td>
+<p>Entrée Transfert du patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-prescription-entree.html"
+                  title="StructureDefinition/fr-lm-prescription-entree">Logical model - FR LM Prescription</a>
+            </td>
+            <td>
+<p>Prescription</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-quantity-exposure.html"
+                  title="StructureDefinition/fr-lm-quantity-exposure">Logical model - FR LM Quantity Exposure</a>
+            </td>
+            <td>
+<p>Quantité exposition</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-recherche-de-micro-organismes.html"
+                  title="StructureDefinition/fr-lm-recherche-de-micro-organismes">Logical model - FR LM Recherche de micro organismes</a>
+            </td>
+            <td>
+<p>Recherche de micro organismes</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-resultats-entree.html"
+                  title="StructureDefinition/fr-lm-resultats-entree">Logical model - FR LM Resultats</a>
+            </td>
+            <td>
+<p>Resultats</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-resultats-examens-biologie-medicale.html"
+                  title="StructureDefinition/fr-lm-resultats-examens-biologie-medicale">Logical model - FR LM Resultats d'examens de biologie medicale</a>
+            </td>
+            <td>
+<p>Resultats d’examens de biologie medicale</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-reference-item-prescription.html"
+                  title="StructureDefinition/fr-lm-reference-item-prescription">Logical model - FR LM Référence item prescription</a>
+            </td>
+            <td>
+<p>Référence item prescription</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-series.html"
+                  title="StructureDefinition/fr-lm-series">Logical model - FR LM Series</a>
+            </td>
+            <td>
+<p>Séries d’actes d’imagerie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-service-request.html"
+                  title="StructureDefinition/fr-lm-service-request">Logical model - FR LM Service Request</a>
+            </td>
+            <td>
+<p>Entrée Demande d’examen ou de suivi / Objectif à atteindre</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-severity-adverse-event.html"
+                  title="StructureDefinition/fr-lm-severity-adverse-event">Logical model - FR LM Severity Adverse Event</a>
+            </td>
+            <td>
+<p>Entrée Gravité effet indésirable</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-sop-instance.html"
+                  title="StructureDefinition/fr-lm-sop-instance">Logical model - FR LM SOP Instance</a>
+            </td>
+            <td>
+<p>SOP Instance</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-specimen.html"
+                  title="StructureDefinition/fr-lm-specimen">Logical model - FR LM Specimen</a>
+            </td>
+            <td>
+<p>Entrée Prélèvement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-status.html"
+                  title="StructureDefinition/fr-lm-status">Logical model - FR LM Statut</a>
+            </td>
+            <td>
+<p>Statut</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-status-document-entry.html"
+                  title="StructureDefinition/fr-lm-status-document-entry">Logical model - FR LM Statut du document</a>
+            </td>
+            <td>
+<p>Entrée Statut du document</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-sujet-non-humain.html"
+                  title="StructureDefinition/fr-lm-sujet-non-humain">Logical model - FR LM Sujet non humain</a>
+            </td>
+            <td>
+<p>Sujet non humain</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-transfusion-accidents.html"
+                  title="StructureDefinition/fr-lm-transfusion-accidents">Logical model - FR LM Transfusion accidents</a>
+            </td>
+            <td>
+<p>Entrée Accidents transfusionnels</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-transfusion-de-produits-sanguins.html"
+                  title="StructureDefinition/fr-lm-transfusion-de-produits-sanguins">Logical model - FR LM Transfusion de produits sanguins</a>
+            </td>
+            <td>
+<p>Transfusion de produits sanguins</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-travel-history.html"
+                  title="StructureDefinition/fr-lm-travel-history">Logical model - FR LM TravelHistory</a>
+            </td>
+            <td>
+<p>Historique des voyages.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-laboratory-observation.html"
+                  title="StructureDefinition/fr-lm-laboratory-observation">Logical model - Laboratory Observation</a>
+            </td>
+            <td>
+<p>Entrée Résultat d’examen de laboratoire</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-dosageInstructions.html"
+                  title="StructureDefinition/fr-lm-dosageInstructions">Logical model- FR LM Dosage Instructions</a>
+            </td>
+            <td>
+<p>Posologie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-medication-administration.html"
+                  title="StructureDefinition/fr-lm-medication-administration">Logical model- FR LM Medication Administration	</a>
+            </td>
+            <td>
+<p>Entrée Traitement</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-observation-social-history.html"
+                  title="StructureDefinition/fr-lm-observation-social-history">Logical model- FR LM Observation Social History</a>
+            </td>
+            <td>
+<p>Entrée Habitus Mode de vie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-history.html"
+                  title="StructureDefinition/fr-lm-pregnancy-history">Logical model- FR LM Pregnancy History</a>
+            </td>
+            <td>
+<p>Entrée Historique de la grossesse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-observation.html"
+                  title="StructureDefinition/fr-lm-pregnancy-observation">Logical model- FR LM Pregnancy Observation</a>
+            </td>
+            <td>
+<p>Observation sur la grossesse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-pregnancy-status.html"
+                  title="StructureDefinition/fr-lm-pregnancy-status">Logical model- FR LM Pregnancy Status</a>
+            </td>
+            <td>
+<p>Statut de grossesse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-procedure.html"
+                  title="StructureDefinition/fr-lm-procedure">Logical model- FR LM Procedure</a>
+            </td>
+            <td>
+<p>Entrée Acte</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-synthese-medicale-sejour.html"
+                  title="StructureDefinition/fr-lm-synthese-medicale-sejour">Logical model- FR LM Synthese medicale sejour</a>
+            </td>
+            <td>
+<p>Synthese medicale sejour</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-technique-imagerie.html"
+                  title="StructureDefinition/fr-lm-technique-imagerie">Logical model- FR LM Technique imagerie</a>
+            </td>
+            <td>
+<p>Entrée Technique imagerie</p>
 </td>
          </tr>
          <tr>
@@ -1083,259 +1548,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-lm-batterie-examens-biologie-medicale">Modèle logique métier - FR LM Batterie d'examens de biologie médicale</a>
             </td>
             <td>
-<p>Batterie d’examens de biologie médicale</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-certitude.html"
-                  title="StructureDefinition/fr-lm-certitude">Modèle logique métier - FR LM Certitude</a>
-            </td>
-            <td>
-<p>Certitude</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-commentaire-er.html"
-                  title="StructureDefinition/fr-lm-commentaire-er">Modèle logique métier - FR LM Commentaire</a>
-            </td>
-            <td>
-<p>Commentaire</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-criticite.html"
-                  title="StructureDefinition/fr-lm-criticite">Modèle logique métier - FR LM Criticite</a>
-            </td>
-            <td>
-<p>Criticite</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-demande-examen-ou-suivi.html"
-                  title="StructureDefinition/fr-lm-demande-examen-ou-suivi">Modèle logique métier - FR LM Demande d'examen ou de suivi</a>
-            </td>
-            <td>
-<p>Demande d’examen ou de suivi / Objectif à atteindre</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-directive-anticipee.html"
-                  title="StructureDefinition/fr-lm-directive-anticipee">Modèle logique métier - FR LM Directive anticipée</a>
-            </td>
-            <td>
-<p>Directive anticipée</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-dispositif-medical-entree.html"
-                  title="StructureDefinition/fr-lm-dispositif-medical-entree">Modèle logique métier - FR LM Dispositif médical</a>
-            </td>
-            <td>
-<p>Dispositif médical</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-document-attache.html"
-                  title="StructureDefinition/fr-lm-document-attache">Modèle logique métier - FR LM Document attaché</a>
-            </td>
-            <td>
-<p>Document attaché</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-dose-antigene.html"
-                  title="StructureDefinition/fr-lm-dose-antigene">Modèle logique métier - FR LM Dose d'antigène</a>
-            </td>
-            <td>
-<p>Dose d’antigène</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-effet-indesirable.html"
-                  title="StructureDefinition/fr-lm-effet-indesirable">Modèle logique métier - FR LM Effet indesirable</a>
-            </td>
-            <td>
-<p>Effet indesirable</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-en-rapport-avec-la-prevention.html"
-                  title="StructureDefinition/fr-lm-en-rapport-avec-la-prevention">Modèle logique métier - FR LM En rapport avec la prevention</a>
-            </td>
-            <td>
-<p>En rapport avec la prevention</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-en-rapport-avec-accident-travail.html"
-                  title="StructureDefinition/fr-lm-en-rapport-avec-accident-travail">Modèle logique métier - FR LM En rapport avec un accident travail</a>
-            </td>
-            <td>
-<p>En rapport avec un accident travail</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-en-rapport-avec-ald.html"
-                  title="StructureDefinition/fr-lm-en-rapport-avec-ald">Modèle logique métier - FR LM En rapport avec une Affection Longue Durée (ALD)</a>
-            </td>
-            <td>
-<p>En rapport avec une Affection Longue Durée (ALD)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evaluation.html"
-                  title="StructureDefinition/fr-lm-evaluation">Modèle logique métier - FR LM Evaluation</a>
-            </td>
-            <td>
-<p>Evaluation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evaluation-composant.html"
-                  title="StructureDefinition/fr-lm-evaluation-composant">Modèle logique métier - FR LM Evaluation Composant</a>
-            </td>
-            <td>
-<p>Evaluation Composant</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evaluation-composant-n2.html"
-                  title="StructureDefinition/fr-lm-evaluation-composant-n2">Modèle logique métier - FR LM Evaluation Composant N2</a>
-            </td>
-            <td>
-<p>Evaluation Composant N2</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evolution-effet-indesirable.html"
-                  title="StructureDefinition/fr-lm-evolution-effet-indesirable">Modèle logique métier - FR LM Evolution effet indesirable</a>
-            </td>
-            <td>
-<p>Evolution effet indesirable</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evenement-indesirable-pendant-hospitalisation.html"
-                  title="StructureDefinition/fr-lm-evenement-indesirable-pendant-hospitalisation">Modèle logique métier - FR LM Evènements indésirables pendant l'hospitalisation</a>
-            </td>
-            <td>
-<p>Evènements indésirables pendant l’hospitalisation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-evenements-indesirables-suite-administration-derives-sang.html"
-                  title="StructureDefinition/fr-lm-evenements-indesirables-suite-administration-derives-sang">Modèle logique métier - FR LM Evènements indésirables suite à l'administration de dérivés du sang</a>
-            </td>
-            <td>
-<p>Evènements indésirables suite à l’administration de dérivés du sang</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-examen-imagerie.html"
-                  title="StructureDefinition/fr-lm-examen-imagerie">Modèle logique métier - FR LM Examen Imagerie</a>
-            </td>
-            <td>
-<p>DICOM Examen Imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-gravite-effet-indesirable.html"
-                  title="StructureDefinition/fr-lm-gravite-effet-indesirable">Modèle logique métier - FR LM Gravite effet indesirable</a>
-            </td>
-            <td>
-<p>Gravite effet indesirable</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-group-de-questionnaires-devaluation.html"
-                  title="StructureDefinition/fr-lm-group-de-questionnaires-devaluation">Modèle logique métier - FR LM Groupe de questionnaires d'évalutation</a>
-            </td>
-            <td>
-<p>Groupe de questionnaires d’évalutation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-habitus-mode-de-vie-entree.html"
-                  title="StructureDefinition/fr-lm-habitus-mode-de-vie-entree">Modèle logique métier - FR LM Habitus Mode de vie</a>
-            </td>
-            <td>
-<p>Habitus Mode de vie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-historique-grossesse.html"
-                  title="StructureDefinition/fr-lm-historique-grossesse">Modèle logique métier - FR LM Historique de la grossesse</a>
-            </td>
-            <td>
-<p>Historique de la grossesse</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-hors-amm.html"
-                  title="StructureDefinition/fr-lm-hors-amm">Modèle logique métier - FR LM Hors Autorisation de Mise sur le Marché (AMM)</a>
-            </td>
-            <td>
-<p>Hors Autorisation de Mise sur le Marché (AMM)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-identification-de-micro-organismes-multiresistants.html"
-                  title="StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants">Modèle logique métier - FR LM Identification de micro-organismes multirésistants</a>
-            </td>
-            <td>
-<p>Identification de micro-organismes multirésistants</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-image-illustrative.html"
-                  title="StructureDefinition/fr-lm-image-illustrative">Modèle logique métier - FR LM Image illustrative</a>
-            </td>
-            <td>
-<p>Image illustrative.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-imputabilite-effet-indesirable.html"
-                  title="StructureDefinition/fr-lm-imputabilite-effet-indesirable">Modèle logique métier - FR LM Imputabilite effet indesirable</a>
-            </td>
-            <td>
-<p>Imputabilite effet indesirable</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-informant-apsr.html"
-                  title="StructureDefinition/fr-lm-informant-apsr">Modèle logique métier - FR LM Informant APSR</a>
-            </td>
-            <td>
-<p>Informant APSR(Anatomic Pathology Structured Report), la structure de cet élément est identique à celle de l’élément Informateur</p>
+<p>Entrée Batterie d’examens de biologie médicale</p>
 </td>
          </tr>
          <tr>
@@ -1358,407 +1571,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-modalite-entree.html"
-                  title="StructureDefinition/fr-lm-modalite-entree">Modèle logique métier - FR LM Modalité d'entrée</a>
-            </td>
-            <td>
-<p>Modalité d’entrée</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-modalite-sortie.html"
-                  title="StructureDefinition/fr-lm-modalite-sortie">Modèle logique métier - FR LM Modalité de sortie</a>
-            </td>
-            <td>
-<p>Modalité de sortie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-naissance.html"
-                  title="StructureDefinition/fr-lm-naissance">Modèle logique métier - FR LM Naissance</a>
-            </td>
-            <td>
-<p>Naissance</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-non-remboursable.html"
-                  title="StructureDefinition/fr-lm-non-remboursable">Modèle logique métier - FR LM Non remboursable</a>
-            </td>
-            <td>
-<p>Non remboursable</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-observation.html"
-                  title="StructureDefinition/fr-lm-observation">Modèle logique métier - FR LM Observation</a>
-            </td>
-            <td>
-<p>observation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-observation-grossesse.html"
-                  title="StructureDefinition/fr-lm-observation-grossesse">Modèle logique métier - FR LM Observation sur la grossesse</a>
-            </td>
-            <td>
-<p>Observation sur la grossesse</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-participant-corps.html"
-                  title="StructureDefinition/fr-lm-participant-corps">Modèle logique métier - FR LM Participant</a>
-            </td>
-            <td>
-<p>Participant</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-participant-apsr.html"
-                  title="StructureDefinition/fr-lm-participant-apsr">Modèle logique métier - FR LM Participant APSR</a>
-            </td>
-            <td>
-<p>Participant APSR(Anatomic Pathology Structured Report)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-patient-sujet-non-humain.html"
-                  title="StructureDefinition/fr-lm-patient-sujet-non-humain">Modèle logique métier - FR LM Patient avec sujet non humain</a>
-            </td>
-            <td>
-<p>Patient avec sujet non humain</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-performer.html"
-                  title="StructureDefinition/fr-lm-performer">Modèle logique métier - FR LM Performer</a>
-            </td>
-            <td>
-<p>Performer</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-prescription-entree.html"
-                  title="StructureDefinition/fr-lm-prescription-entree">Modèle logique métier - FR LM Prescription</a>
-            </td>
-            <td>
-<p>Prescription</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-probleme.html"
-                  title="StructureDefinition/fr-lm-probleme">Modèle logique métier - FR LM Problème</a>
-            </td>
-            <td>
-<p>Problème</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-produit-sante.html"
-                  title="StructureDefinition/fr-lm-produit-sante">Modèle logique métier - FR LM Produit de santé</a>
-            </td>
-            <td>
-<p>Produit de santé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-prelevement.html"
-                  title="StructureDefinition/fr-lm-prelevement">Modèle logique métier - FR LM Prélèvement</a>
-            </td>
-            <td>
-<p>Prélèvement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-quantite-produit.html"
-                  title="StructureDefinition/fr-lm-quantite-produit">Modèle logique métier - FR LM Quantité de produit</a>
-            </td>
-            <td>
-<p>Quantité de produit</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-quantite-exposition.html"
-                  title="StructureDefinition/fr-lm-quantite-exposition">Modèle logique métier - FR LM Quantité exposition</a>
-            </td>
-            <td>
-<p>Quantité exposition</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-rang-vaccination.html"
-                  title="StructureDefinition/fr-lm-rang-vaccination">Modèle logique métier - FR LM Rang de la vaccination</a>
-            </td>
-            <td>
-<p>Rang de la vaccination</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-recherche-de-micro-organismes.html"
-                  title="StructureDefinition/fr-lm-recherche-de-micro-organismes">Modèle logique métier - FR LM Recherche de micro organismes</a>
-            </td>
-            <td>
-<p>Recherche de micro organismes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-rencontre.html"
-                  title="StructureDefinition/fr-lm-rencontre">Modèle logique métier - FR LM Rencontre</a>
-            </td>
-            <td>
-<p>Rencontre</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-entree.html"
-                  title="StructureDefinition/fr-lm-resultats-entree">Modèle logique métier - FR LM Resultats</a>
-            </td>
-            <td>
-<p>Resultats</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-resultats-examens-biologie-medicale.html"
-                  title="StructureDefinition/fr-lm-resultats-examens-biologie-medicale">Modèle logique métier - FR LM Resultats d'examens de biologie medicale</a>
-            </td>
-            <td>
-<p>Resultats d’examens de biologie medicale</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-reference-interne.html"
-                  title="StructureDefinition/fr-lm-reference-interne">Modèle logique métier - FR LM Référence interne</a>
-            </td>
-            <td>
-<p>Référence interne</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-reference-item-prescription.html"
-                  title="StructureDefinition/fr-lm-reference-item-prescription">Modèle logique métier - FR LM Référence item prescription</a>
-            </td>
-            <td>
-<p>Référence item prescription</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-references-externes.html"
-                  title="StructureDefinition/fr-lm-references-externes">Modèle logique métier - FR LM Références externes</a>
-            </td>
-            <td>
-<p>Références externes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-resultat-examens-biologie-element-clinique-pertinent.html"
                   title="StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent">Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent</a>
             </td>
             <td>
 <p>Résultat d’examens de biologie / élement clinique pertinent</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-serie-imagerie.html"
-                  title="StructureDefinition/fr-lm-serie-imagerie">Modèle logique métier - FR LM Serie imagerie</a>
-            </td>
-            <td>
-<p>Serie imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-signe-vital-observe.html"
-                  title="StructureDefinition/fr-lm-signe-vital-observe">Modèle logique métier - FR LM Signe vital observé</a>
-            </td>
-            <td>
-<p>Signe vital observé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-sop-instance.html"
-                  title="StructureDefinition/fr-lm-sop-instance">Modèle logique métier - FR LM SOP Instance</a>
-            </td>
-            <td>
-<p>SOP Instance</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut.html"
-                  title="StructureDefinition/fr-lm-statut">Modèle logique métier - FR LM Statut</a>
-            </td>
-            <td>
-<p>Statut</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut-clinique-patient.html"
-                  title="StructureDefinition/fr-lm-statut-clinique-patient">Modèle logique métier - FR LM Statut clinique du patient</a>
-            </td>
-            <td>
-<p>Statut clinique du patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut-document-entree.html"
-                  title="StructureDefinition/fr-lm-statut-document-entree">Modèle logique métier - FR LM Statut du document</a>
-            </td>
-            <td>
-<p>Statut du document</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-statut-probleme.html"
-                  title="StructureDefinition/fr-lm-statut-probleme">Modèle logique métier - FR LM Statut du problème</a>
-            </td>
-            <td>
-<p>Statut du problème.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-sujet.html"
-                  title="StructureDefinition/fr-lm-sujet">Modèle logique métier - FR LM Sujet</a>
-            </td>
-            <td>
-<p>Sujet</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-sujet-non-humain.html"
-                  title="StructureDefinition/fr-lm-sujet-non-humain">Modèle logique métier - FR LM Sujet non humain</a>
-            </td>
-            <td>
-<p>Sujet non humain</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-synthese-medicale-sejour.html"
-                  title="StructureDefinition/fr-lm-synthese-medicale-sejour">Modèle logique métier - FR LM Synthese medicale sejour</a>
-            </td>
-            <td>
-<p>Synthese medicale sejour</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-severite.html"
-                  title="StructureDefinition/fr-lm-severite">Modèle logique métier - FR LM Sévérité</a>
-            </td>
-            <td>
-<p>Sévérité.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-technique-imagerie.html"
-                  title="StructureDefinition/fr-lm-technique-imagerie">Modèle logique métier - FR LM Technique imagerie</a>
-            </td>
-            <td>
-<p>Technique imagerie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitement.html"
-                  title="StructureDefinition/fr-lm-traitement">Modèle logique métier - FR LM Traitement</a>
-            </td>
-            <td>
-<p>Traitement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitement-dispense.html"
-                  title="StructureDefinition/fr-lm-traitement-dispense">Modèle logique métier - FR LM Traitement dispensé</a>
-            </td>
-            <td>
-<p>Traitement dispense</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-traitement-prescrit.html"
-                  title="StructureDefinition/fr-lm-traitement-prescrit">Modèle logique métier - FR LM Traitement Prescrit</a>
-            </td>
-            <td>
-<p>Traitement prescrit</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-transfert-du-patient.html"
-                  title="StructureDefinition/fr-lm-transfert-du-patient">Modèle logique métier - FR LM Transfert du patient</a>
-            </td>
-            <td>
-<p>Transfert du patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-transfusion-de-produits-sanguins.html"
-                  title="StructureDefinition/fr-lm-transfusion-de-produits-sanguins">Modèle logique métier - FR LM Transfusion de produits sanguins</a>
-            </td>
-            <td>
-<p>Transfusion de produits sanguins</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-vaccin-recommande.html"
-                  title="StructureDefinition/fr-lm-vaccin-recommande">Modèle logique métier - FR LM Vaccin recommandé</a>
-            </td>
-            <td>
-<p>Vaccin recommandé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-vaccination.html"
-                  title="StructureDefinition/fr-lm-vaccination">Modèle logique métier - FR LM Vaccination</a>
-            </td>
-            <td>
-<p>Vaccination</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-echantillon-preleve.html"
-                  title="StructureDefinition/fr-lm-echantillon-preleve">Modèle logique métier - FR LM Échantillon prélevé</a>
-            </td>
-            <td>
-<p>Échantillon prélevé</p>
 </td>
          </tr>
       </tbody>
@@ -2088,7 +1905,500 @@ L’occurrence de documentationOf/serviceEvent contenant les données de l’év
       </tbody>
    </table>
    <a name="5"> </a>
-   <h3>Eléments CDA du corps </h3>
+   <h3>Eléments CDA du corps des sections </h3>
+    
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-allergies-et-hypersensibilites.html"
+                  title="StructureDefinition/fr-cda-allergies-et-hypersensibilites">CDA - FR Allergies et hypersensibilites</a>
+            </td>
+            <td>
+<p>IHE-PCC - Allergies-And-Other-Adverse-Reactions</p>
+<ul>
+  <li>La section ‘Allergies et hypersensibilités’ permet de décrire la liste codée des allergies et hypersensibilités (médicaments, environnements, aliments,..) précisant notamment l’agent et les réactions observées.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-antecedents-familiaux.html"
+                  title="StructureDefinition/fr-cda-section-antecedents-familiaux">CDA - FR Antecedents familiaux</a>
+            </td>
+            <td>
+<p>IHE-PCC Coded-Family-Medical-History</p>
+<ul>
+  <li>Liste codée des antécédents familiaux</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-antecedents-medicaux.html"
+                  title="StructureDefinition/fr-cda-antecedents-medicaux">CDA - FR Antecedents medicaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - History-Of-Past-Illness</p>
+<ul>
+  <li>La section ‘Antécédents médicaux’ doit contenir une liste codée des antécédents médicaux du patient. Il s’agit d’épisodes résolus, c’est à dire de maladies que l’on considère comme guéries. Si une maladies est susceptible de présenter des épisodes de rechute, elle sera classée dans des problèmes actifs, même si ces épisodes dont résolus.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-code-a-barres.html"
+                  title="StructureDefinition/fr-cda-code-a-barres">CDA - FR Code a barres</a>
+            </td>
+            <td>
+<p>Cette section permet d’enregistrer des codes à barres</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-commentaire-non-code.html"
+                  title="StructureDefinition/fr-cda-commentaire-non-code">CDA - FR Commentaire non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Document-Summary</p>
+<ul>
+  <li>Cette section permet d’indiquer un commentaire sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-chapitre">CDA - FR CR BIO Chapitre</a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Specialty Section</p>
+<ul>
+  <li>Une section de premier niveau est appelée ‘Chapitre’ et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
+  <li>soit directement la présentation des résultats d’examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l’élément &lt;text&gt;)</li>
+  <li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d’éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale.Remarque : L’arborescence du corps du compte rendu d’examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html"
+                  title="StructureDefinition/fr-cda-cr-bio-sous-chapitre">CDA - FR CR BIO Sous Chapitre</a>
+            </td>
+            <td>
+<p>IHE-PaLM - Laboratory Report Item Section</p>
+<ul>
+  <li>Section de second niveau, appelée sous-chapitre (par exemple « Gaz du sang ») qui présente un sous-ensemble de un ou plusieurs résultats d’examens de biologie médicale. Elle est comporte un élément ‘text’ qui porte les résultats présentés et interprétés pour le lecteur et d’une entrée contenant les données codées dont procède le contenu de l’élément ‘text’.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-acte-imagerie.html"
+                  title="StructureDefinition/fr-cda-dicom-acte-imagerie">CDA - FR DICOM Acte imagerie</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Imaging Procedure Description Section</p>
+<ul>
+  <li>Cette section permet d’enregistrer les informations sur les détails techniques de l’acte d’imagerie et peut inclure des informations sur le protocole, le dispositif d’imagerie, le contraste, la dose de rayonnement, les médicaments administrés.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-addendum.html"
+                  title="StructureDefinition/fr-cda-dicom-addendum">CDA - FR DICOM Addendum</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Addendum Section</p>
+<ul>
+  <li>La section Addendum permet d’enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-complications.html"
+                  title="StructureDefinition/fr-cda-dicom-complications">CDA - FR DICOM Complications</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Complications</p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les complications survenues au cours de l’acte sous forme textuelle.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-conclusion.html"
+                  title="StructureDefinition/fr-cda-dicom-conclusion">CDA - FR DICOM Conclusion</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Impression Section</p>
+<ul>
+  <li>Cette section permet d’enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-demande-examen.html"
+                  title="StructureDefinition/fr-cda-dicom-demande-examen">CDA - FR DICOM Demande examen</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Request Section</p>
+<ul>
+  <li>Justification de la demande d’examen / Finalité de l’examen.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html"
+                  title="StructureDefinition/fr-cda-dicom-examen-comparatif">CDA - FR DICOM Examen comparatif</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Comparison Study Section</p>
+<ul>
+  <li>Cette section textuelle permet d’enregistrer une comparaison de l’acte actuel avec un acte antérieur.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html"
+                  title="StructureDefinition/fr-cda-dicom-exposition-aux-radiations">CDA - FR DICOM Exposition aux radiations</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Radiation Exposure and Protection Information </p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-historique-medical.html"
+                  title="StructureDefinition/fr-cda-dicom-historique-medical">CDA - FR DICOM Historique medical</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Medical (General) History Section</p>
+<ul>
+  <li>Cette sous-section permet d’enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html"
+                  title="StructureDefinition/fr-cda-dicom-informations-cliniques">CDA - FR DICOM Informations cliniques</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Clinical Information Section. Cette section permet d’enregistrer les détails cliniques liés au patient, tels que :</p>
+<ul>
+  <li>Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]</li>
+  <li>Finalité de l’examen dans la même sous-section FR-DICOM-demande-examen [0..1]</li>
+  <li>Antécédents médicaux significatifs et pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
+  <li>Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-object-catalog.html"
+                  title="StructureDefinition/fr-cda-dicom-object-catalog">CDA - FR DICOM Object Catalog</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l’organisation suivante :</p>
+<ul>
+  <li>[0..*] Examen</li>
+  <li>[1..*] Série (avec la modalité d’acquisition)</li>
+  <li>[1..*] Objet référencé (avec la classe d’objet)</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dicom-resultats.html"
+                  title="StructureDefinition/fr-cda-dicom-resultats">CDA - FR DICOM Resultats</a>
+            </td>
+            <td>
+<p>DICOM Part 20 - Findings</p>
+<ul>
+  <li>Cette section permet d’enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-dispensation-medicaments.html"
+                  title="StructureDefinition/fr-cda-dispensation-medicaments">CDA - FR Dispensation medicaments</a>
+            </td>
+            <td>
+<p>IHE PHARM DIS - Dispense SectionDescription d’un médicament administré au patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-document-pdf-copie.html"
+                  title="StructureDefinition/fr-cda-document-pdf-copie">CDA - FR Document PDF copie</a>
+            </td>
+            <td>
+<p>Cette section ne contient qu’une et une seule entrée FR-Document-attache qui contiendra la copie PDF encodée en B64 du document CDA.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-documents-ajoutes.html"
+                  title="StructureDefinition/fr-cda-documents-ajoutes">CDA - FR Documents ajoutes</a>
+            </td>
+            <td>
+<p>Liste de documents ajoutés</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-education-du-patient.html"
+                  title="StructureDefinition/fr-cda-education-du-patient">CDA - FR Education du patient</a>
+            </td>
+            <td>
+<p>IHE-PCC - Patient Education Section</p>
+<ul>
+  <li>Liste des éléments se rapportant à l’éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-effets-indesirables.html"
+                  title="StructureDefinition/fr-cda-effets-indesirables">CDA - FR Effets indesirables</a>
+            </td>
+            <td>
+<p>Liste des effets indésirables prévisibles liés aux médicaments.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html"
+                  title="StructureDefinition/fr-cda-facteurs-de-risque-professionnels-non-code">CDA - FR Facteurs de risque professionnels non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-fonctions-physiques.html"
+                  title="StructureDefinition/fr-cda-fonctions-physiques">CDA - FR Fonctions physiques</a>
+            </td>
+            <td>
+<p>IHE-PCC - Physical Function Section. Cette section permet d’enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html"
+                  title="StructureDefinition/fr-cda-section-habitus-mode-de-vie">CDA - FR Habitus mode de vie</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-actes.html"
+                  title="StructureDefinition/fr-cda-historique-des-actes">CDA - FR Historique des actes</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-historique-des-grossesses.html"
+                  title="StructureDefinition/fr-cda-historique-des-grossesses">CDA - FR Historique des grossesses</a>
+            </td>
+            <td>
+<p>IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l’historique des grossesses de la patiente.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-plan-de-soins.html"
+                  title="StructureDefinition/fr-cda-plan-de-soins">CDA - FR Plan de soins</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-points-de-vigilances-non-code.html"
+                  title="StructureDefinition/fr-cda-points-de-vigilances-non-code">CDA - FR Points de vigilances non code</a>
+            </td>
+            <td>
+<p>Section FR-Points-de-vigilances-non-code. Points de vigilance sous forme narrative (section non codée).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-cda-prescription-dispositifs-medicaux">CDA - FR Prescription dispositifs medicaux</a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions des dispositifs médicaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-prescription-medicaments.html"
+                  title="StructureDefinition/fr-cda-prescription-medicaments">CDA - FR Prescription medicaments</a>
+            </td>
+            <td>
+<p>IHE-PRE - Prescription. Cette section regroupe les lignes de prescriptions médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-problemes-actifs.html"
+                  title="StructureDefinition/fr-cda-problemes-actifs">CDA - FR Problemes actifs</a>
+            </td>
+            <td>
+<p>IHE-PCC - Active-Problems-Section. Liste des problèmes actifs du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation">CDA - FR Raison de la recommandation</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Reason for Referral Section. Cette section permet d’indiquer la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc. et de donner des informations complémentaires, sous forme codées, à l’aide d’une entrée Simple observation et d’une entrée Problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-raison-de-la-recommandation-non-code.html"
+                  title="StructureDefinition/fr-cda-raison-de-la-recommandation-non-code">CDA - FR Raison de la recommandation non code</a>
+            </td>
+            <td>
+<p>IHE-PCC Reason-For-Referral. Cette section permet d’indiquer, sous forme textuelle uniquement, la raison pour laquelle le patient est adressé à l’hôpital, à une consultation, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-resultats.html"
+                  title="StructureDefinition/fr-cda-section-resultats">CDA - FR Resultats</a>
+            </td>
+            <td>
+<p>Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-de-biologie-de-seconde-intention.html"
+                  title="StructureDefinition/fr-cda-resultats-de-biologie-de-seconde-intention">CDA - FR Resultats de biologie de seconde intention</a>
+            </td>
+            <td>
+<p>Cette section, optionnelle, est utilisée uniquement dans le cas d’usage particulier des résultats d’examen de laboratoire de biologie de seconde intention, lorsqu’ils ne peuvent être fournis dans un format structuré mais uniquement au format PDF.Cette solution permet d’encapsuler un fichier au format (PDF) et encodé en base 64 dans une section spécifique ‘Résultats de laboratoire de biologie de seconde intention’.Attention : cette solution n’est pas conseillée et reste temporaire, car à terme, tous les résultats émanant des laboratoires de biologie devront être fournis dans un format structuré et codé.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-evenements.html"
+                  title="StructureDefinition/fr-cda-resultats-evenements">CDA - FR Resultats evenements</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d’un acte ou d’un problème.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens.html"
+                  title="StructureDefinition/fr-cda-resultats-examens">CDA - FR Resultats examens</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Results Section. Résultats d’examens réalisés par le patient et éventuellement références à d’autres documents du dossier du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-resultats-examens-non-code.html"
+                  title="StructureDefinition/fr-cda-resultats-examens-non-code">CDA - FR Resultats examens non code</a>
+            </td>
+            <td>
+<p>IHE-PCC - Results. Résultats d’examens sous forme narrative non codée.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-section-signes-vitaux.html"
+                  title="StructureDefinition/fr-cda-section-signes-vitaux">CDA - FR Signes vitaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-du-document.html"
+                  title="StructureDefinition/fr-cda-statut-du-document">CDA - FR Statut du document</a>
+            </td>
+            <td>
+<p>Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu’à sa validation définitive par son responsable légal.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-statut-fonctionnel.html"
+                  title="StructureDefinition/fr-cda-statut-fonctionnel">CDA - FR Statut fonctionnel</a>
+            </td>
+            <td>
+<p>Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d’évaluation du statut fonctionnel du patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements.html"
+                  title="StructureDefinition/fr-cda-traitements">CDA - FR Traitements</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications. Liste des principales prises médicamenteuses.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-administres.html"
+                  title="StructureDefinition/fr-cda-traitements-administres">CDA - FR Traitements administres</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medications-Administered. La section ‘Traitements administrés’ contient une description narrative des médicaments administrés au patient et doit inclure des entrées ‘Traitement’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-traitements-a-la-sortie.html"
+                  title="StructureDefinition/fr-cda-traitements-a-la-sortie">CDA - FR Traitements à la sortie</a>
+            </td>
+            <td>
+<p>IHE-PCC - Hospital-Discharge-Medications. La section ‘Traitements à la sortie’ contient une description narrative des médicaments à administrer au patient après sa sortie de l’hospitalisation et doit inclure des entrées ‘Traitement’.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-cda-vaccinations.html"
+                  title="StructureDefinition/fr-cda-vaccinations">CDA - FR Vaccinations</a>
+            </td>
+            <td>
+<p>IHE-PCC - Immunizations Section. Liste des vaccinations effectuées.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Eléments CDA corps des composants élémentaires </h3>
     
 <table class="grid">
       <col style="width:20%"/>
@@ -3205,7 +3515,7 @@ Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée 
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Profils FHIR entête </h3>
     
 <table class="grid">
@@ -3312,7 +3622,7 @@ Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée 
          </tr>
       </tbody>
    </table>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Profils FHIR corps </h3>
     
 <table class="grid">
@@ -3521,15 +3831,6 @@ L’examen est composé d’une ou de plusieurs séries d’images médicales.</
             </td>
             <td>
 <p>FRMedicationDocument permet de décrire un médicament ou un vaccin.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-medications-combinaison-document.html"
-                  title="StructureDefinition/fr-medications-combinaison-document">Medication - FR Medications Combinaison Document</a>
-            </td>
-            <td>
-<p>FRMedicationsCombinaisonDocument permet de décrire une combinaison de médicaments ou de vaccins.</p>
 </td>
          </tr>
          <tr>
@@ -3755,8 +4056,8 @@ L’examen est composé d’une ou de plusieurs séries d’images médicales.</
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-Observation-vital-signs-panel-document.html"
-                  title="StructureDefinition/fr-Observation-vital-signs-panel-document">Observation - FR Observation Vital Signs Panel Document</a>
+               <a href="StructureDefinition-fr-observation-vital-signs-panel-document.html"
+                  title="StructureDefinition/fr-observation-vital-signs-panel-document">Observation - FR Observation Vital Signs Panel Document</a>
             </td>
             <td>
 <p>FRObservationVitalSignsPanelDocument permet de regrouper des informations relatives aux mesures cliniques du patient.</p>
@@ -3819,7 +4120,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Data Type Profiles </h3>
     
 <table class="grid">
@@ -3854,7 +4155,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Extensions FHIR entête </h3>
     
 <table class="grid">
@@ -3880,7 +4181,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Extensions FHIR corps </h3>
     
 <table class="grid">
@@ -3929,15 +4230,6 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
             </td>
             <td>
 <p>Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-medication-request-out-of-nomenclature-extension.html"
-                  title="StructureDefinition/fr-medication-request-out-of-nomenclature-extension">FR Medication Request Out Of Nomenclature Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer si le traitement prescrit est hors autorisation de mise sur le marché (AMM)</p>
 </td>
          </tr>
          <tr>
@@ -3996,7 +4288,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Concept Maps de l'entête du document </h3>
     
 <table class="grid">
@@ -4253,7 +4545,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="12"> </a>
+   <a name="13"> </a>
    <h3>Concept Maps des sections d'un document </h3>
     
 <table class="grid">
@@ -4329,6 +4621,15 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
             </td>
             <td>
 <p>Mapping des éléments du modèle métier FRLMDirectivesAnticipees vers la section CDA FRCDADirectivesAnticipees, puis vers le profil FHIR FRAdvanceDirectiveDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-FRSectionMedicationDispenseLMCDAFHIR.html"
+                  title="ConceptMap/FRSectionMedicationDispenseLMCDAFHIR">Mapping FRLMDispensationMedicaments → FRCDADispensationMedicaments → FRMedicationDispenseDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMDispensationMedicaments vers la section CDA FRCDADispensationMedicaments, puis vers la section FHIR FRCompositionDocument.section:medication-dispense.</p>
 </td>
          </tr>
          <tr>
@@ -4684,7 +4985,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="13"> </a>
+   <a name="14"> </a>
    <h3>Concept Maps des composants communs d'un Document </h3>
     
 <table class="grid">
@@ -5126,6 +5427,15 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ConceptMap-FRImagingSeriesLMCDAFHIR.html"
+                  title="ConceptMap/FRImagingSeriesLMCDAFHIR">Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument</a>
+            </td>
+            <td>
+<p>Mapping des éléments du modèle métier FRLMSerieImagerie vers le profil CDA FRCDADICOMSerieImagerie, puis vers le profil FHIR FRImagingStudyDocument.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.html"
                   title="ConceptMap/FRObservationVitalSignsPanelLMCDAFHIR">Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument</a>
             </td>
@@ -5261,12 +5571,21 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="14"> </a>
+   <a name="15"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-dispositifs-medicaux.html"
+                  title="StructureDefinition/fr-dispositifs-medicaux">CDA - FR Dispositifs medicaux</a>
+            </td>
+            <td>
+<p>IHE-PCC - Medical Devices SectionCette section ‘Dispositifs médicaux’ contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée.</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-fr-cda-traitement-subordonne.html"
@@ -5278,17 +5597,53 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-notes-dispensateur.html"
-                  title="StructureDefinition/fr-lm-notes-dispensateur">Modèle logique métier - FR LM Notes du dispensateur</a>
+               <a href="StructureDefinition-fr-cda-resultats.html"
+                  title="StructureDefinition/fr-cda-resultats">CDA - FR resultats</a>
             </td>
             <td>
-<p>Notes du dispensateur</p>
+<p>Entrée FR-resultats: L’entrée ‘FR-Resultats’ est une entrée de type ‘organizer’ regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-patient-history.html"
+                  title="StructureDefinition/fr-lm-patient-history">Logical model  - FR LM Patient History</a>
+            </td>
+            <td>
+<p>Section Historique du patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-section-travel-history.html"
+                  title="StructureDefinition/fr-lm-section-travel-history">Logical model  - FR LM Travel History</a>
+            </td>
+            <td>
+<p>Section Historique des voyages</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-alert.html"
+                  title="StructureDefinition/fr-lm-alert">Logical model - FR LM Alert</a>
+            </td>
+            <td>
+<p>Entrée points de vigilances</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-lm-endpoint.html"
+                  title="StructureDefinition/fr-lm-endpoint">Logical model - FR LM Endpoint</a>
+            </td>
+            <td>
+<p>Référence Wado d’un objet DICOM (SOP Instance)</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-fr-lm-observation-result.html"
-                  title="StructureDefinition/fr-lm-observation-result">Modèle logique métier - FR LM Observation Result</a>
+                  title="StructureDefinition/fr-lm-observation-result">Logical model - FR LM Observation Result</a>
             </td>
             <td>
 <p>Résultat d’une observation médicale (résultat d’examen de laboratoire, d’imagerie, etc.)</p>
@@ -5296,16 +5651,16 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-lm-posologie.html"
-                  title="StructureDefinition/fr-lm-posologie">Modèle logique métier - FR LM Posologie</a>
+               <a href="StructureDefinition-fr-lm-patient-story.html"
+                  title="StructureDefinition/fr-lm-patient-story">Logical model - FR LM Patient Story</a>
             </td>
             <td>
-<p>Posologie</p>
+<p>Récit du patient</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="15"> </a>
+   <a name="16"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5340,7 +5695,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="16"> </a>
+   <a name="17"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5397,7 +5752,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
                   title="ValueSet/fr-vs-edqm-document">ValueSet - FR ValueSet EDQM Document</a>
             </td>
             <td>
-<p>ValueSet basé sur le CodeSystem EDQM fourni par SMT</p>
+<p>ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique).</p>
 </td>
          </tr>
          <tr>
@@ -5513,32 +5868,6 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="17"> </a>
-   <h3>Terminology: Concept Maps </h3>
-    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-FRSectionMedicationDispenseLMCDAFHIR.html"
-                  title="ConceptMap/FRSectionMedicationDispenseLMCDAFHIR">Mapping FRLMDispensationMedicaments → FRCDADispensationMedicaments → FRMedicationDispenseDocument</a>
-            </td>
-            <td>
-<p>Mapping des éléments du modèle métier FRLMDispensationMedicaments vers la section CDA FRCDADispensationMedicaments, puis vers la section FHIR FRCompositionDocument.section:medication-dispense.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ConceptMap-FRImagingSeriesLMCDAFHIR.html"
-                  title="ConceptMap/FRImagingSeriesLMCDAFHIR">Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument</a>
-            </td>
-            <td>
-<p>Mapping des éléments du modèle métier FRLMSerieImagerie vers le profil CDA FRCDADICOMSerieImagerie, puis vers le profil FHIR FRImagingStudyDocument.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
    <a name="18"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
@@ -5552,6 +5881,42 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
             </td>
             <td>
 <p>Compte-rendu d’examens de biologie médicale - exemple Microbiologie (BIO-CR-BIO-2024.01)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"
+                  title="AllergyIntolerance/example-allergy-intolerance-data-absent-reason">Example - AllergyIntolerance avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou
+temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’agent allergique est inconnu → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">reaction.manifestation</code> : la manifestation clinique est inconnue → code <code class="language-plaintext highlighter-rouge">unknown</code></li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Procedure-example-procedure-data-absent-reason.html"
+                  title="Procedure/example-procedure-data-absent-reason">Example - Procedure avec Data Absent Reason</a>
+            </td>
+            <td>
+<p>Exemple illustrant l’usage de l’extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> sur les éléments
+obligatoires de la ressource Procedure dont la valeur est inconnue ou temporairement indisponible.</p>
+
+<p>Cas d’usage illustrés :</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">code</code> : l’acte est inconnu → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">unknown</code>
+(liaison extensible → l’extension peut se substituer au codage)</li>
+  <li><code class="language-plaintext highlighter-rouge">performedDateTime</code> : la date de l’acte est temporairement indisponible → extension <code class="language-plaintext highlighter-rouge">data-absent-reason</code> avec code <code class="language-plaintext highlighter-rouge">temp-unknown</code></li>
+  <li><code class="language-plaintext highlighter-rouge">status</code> : le statut est inconnu → code d’exception <code class="language-plaintext highlighter-rouge">unknown</code> du ValueSet <code class="language-plaintext highlighter-rouge">event-status</code>
+(liaison required → on utilise directement le code d’exception du ValueSet, pas l’extension)</li>
+</ul>
 </td>
          </tr>
          <tr>
@@ -5642,7 +6007,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-fr-lm-auteur.html">next&gt;</a>
+                <a href="StructureDefinition-fr-lm-health-professional.html">next&gt;</a>
 
               </td>
             </tr>
@@ -5652,7 +6017,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 20, 2026 11:58+0000">2026-04-20</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 1, 2026 14:28+0000">2026-06-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "fr-vs-edqm-document"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-edqm-document</b></p><a name=\"fr-vs-edqm-document\"> </a><a name=\"hcfr-vs-edqm-document\"> </a><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-standardterms.html\"><code>https://smt.esante.gouv.fr/terminologie-standardterms</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-edqm-document</b></p><a name=\"fr-vs-edqm-document\"> </a><a name=\"hcfr-vs-edqm-document\"> </a><ul><li>Include codes provenant de<a href=\"https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-terminologie-standardterms.html\"><code>https://smt.esante.gouv.fr/terminologie-standardterms</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span> où concept  est-un PDF (Forme galénique)</li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document"^^xsd:anyURI ;
@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "ValueSet - FR ValueSet EDQM Document"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-04-20T11:58:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-01T14:28:18+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -31,7 +31,7 @@
        fhir:value [ fhir:v "https://esante.gouv.fr" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "ValueSet basé sur le CodeSystem EDQM fourni par SMT"] ; # 
+  fhir:description [ fhir:v "ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique)."] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [
@@ -47,7 +47,12 @@
        fhir:system [
          fhir:v "https://smt.esante.gouv.fr/terminologie-standardterms"^^xsd:anyURI ;
          fhir:l <https://smt.esante.gouv.fr/terminologie-standardterms>
-       ]
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "PDF" ]
+       ] )
      ] )
   ] . # 
 

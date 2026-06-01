@@ -124,14 +124,6 @@
       ]
     },
     {
-      "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension",
-      "title": "FR Medication Request Out Of Nomenclature Extension",
-      "types": [
-        "boolean",
-        "boolean"
-      ]
-    },
-    {
       "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension",
       "title": "FR Method Extension",
       "types": [
@@ -240,88 +232,6 @@
     }
   ],
   "profiles": {
-    "Observation": [
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-administration-blood-derivatives-document",
-        "title": "Observation - FR Observation Administration Blood Derivatives Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document",
-        "title": "Observation - FR Observation Antenatal Testing And Surveillance Battery Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-birth-event-document",
-        "title": "Observation - FR Observation Birth Event Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-blood-product-transfusion-document",
-        "title": "Observation - FR Blood Product Transfusion Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-contra-indications-document",
-        "title": "Observation - FR Observation Contra Indications Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-laboratory-report-results-document",
-        "title": "Observation - FR Observation Laboratory Report Results Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-medical-summary-document",
-        "title": "Observation - FR Observation Medical Summary Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-microorganism-detection-document",
-        "title": "Observation - FR Observation Microorganism Detection Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-multiresistant-microorganism-document",
-        "title": "Observation - FR Observation Multiresistant Microorganisms Identification Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document",
-        "title": "Observation - FR Observation Pain Score Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-document",
-        "title": "Observation - FR Observation Pregnancy Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-history-document",
-        "title": "Observation - FR Observation Pregnancy History Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document",
-        "title": "Observation - FR Observation Radiation Exposure Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document",
-        "title": "Observation - FR Observation Result Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-social-history-document",
-        "title": "Observation - FR Observation Social History Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-survey-document",
-        "title": "Observation - FR Observation Survey Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-survey-pannel-document",
-        "title": "Observation - FR Observation Survey Pannel Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-transfusion-accidents-document",
-        "title": "Observation - FR Observation Transfusion Accidents Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document",
-        "title": "Observation - FR Observation Vital Signs Document"
-      },
-      {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-work-related-accident-document",
-        "title": "Observation - FR Observation Work Related Accident Document"
-      }
-    ],
     "Consent": [
       {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document",
@@ -474,8 +384,8 @@
     ],
     "Medication": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document",
-        "title": "Medication - FR Medications Combinaison Document"
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document",
+        "title": "Medication - FR Medication Document"
       }
     ],
     "MedicationRequest": [
@@ -488,6 +398,92 @@
       {
         "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-statement-document",
         "title": "MedicationStatement - FR Medication Statement Document"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-administration-blood-derivatives-document",
+        "title": "Observation - FR Observation Administration Blood Derivatives Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-antenatal-testing-surveillance-battery-document",
+        "title": "Observation - FR Observation Antenatal Testing And Surveillance Battery Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-birth-event-document",
+        "title": "Observation - FR Observation Birth Event Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-blood-product-transfusion-document",
+        "title": "Observation - FR Blood Product Transfusion Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-contra-indications-document",
+        "title": "Observation - FR Observation Contra Indications Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-laboratory-report-results-document",
+        "title": "Observation - FR Observation Laboratory Report Results Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-medical-summary-document",
+        "title": "Observation - FR Observation Medical Summary Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-microorganism-detection-document",
+        "title": "Observation - FR Observation Microorganism Detection Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-multiresistant-microorganism-document",
+        "title": "Observation - FR Observation Multiresistant Microorganisms Identification Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pain-score-document",
+        "title": "Observation - FR Observation Pain Score Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-document",
+        "title": "Observation - FR Observation Pregnancy Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-pregnancy-history-document",
+        "title": "Observation - FR Observation Pregnancy History Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document",
+        "title": "Observation - FR Observation Radiation Exposure Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document",
+        "title": "Observation - FR Observation Result Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-social-history-document",
+        "title": "Observation - FR Observation Social History Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-survey-document",
+        "title": "Observation - FR Observation Survey Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-survey-pannel-document",
+        "title": "Observation - FR Observation Survey Pannel Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-transfusion-accidents-document",
+        "title": "Observation - FR Observation Transfusion Accidents Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document",
+        "title": "Observation - FR Observation Vital Signs Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-panel-document",
+        "title": "Observation - FR Observation Vital Signs Panel Document"
+      },
+      {
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-work-related-accident-document",
+        "title": "Observation - FR Observation Work Related Accident Document"
       }
     ],
     "Organization": [
@@ -576,8 +572,12 @@
       "MedicationRequest.dispenseRequest"
     ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "AllergyIntolerance.code",
+      "AllergyIntolerance.reaction.manifestation",
       "DocumentReference.type",
-      "Immunization.occurrence[x]"
+      "Immunization.occurrence[x]",
+      "Procedure.code",
+      "Procedure.performedDateTime"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -592,13 +592,8 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
-      "fr-lm-image-illustrative",
-      "fr-lm-notes-dispensateur",
-      "fr-lm-probleme.reference.externalDocument",
-      "fr-lm-reference-item-prescription",
-      "fr-lm-reference-item-prescription.reference.externalDocument",
-      "fr-lm-references-externes.reference.externalDocument",
-      "fr-lm-traitement-dispense"
+      "fr-lm-medication-dispense",
+      "fr-lm-reference-item-prescription.reference.externalDocument"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
@@ -623,7 +618,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization",
-      "fr-lm-traitement-prescrit"
+      "fr-lm-allergy-intolerance",
+      "fr-lm-allergy-intolerance.reaction",
+      "fr-lm-condition",
+      "fr-lm-device-use",
+      "fr-lm-immunisation",
+      "fr-lm-procedure"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
@@ -778,7 +778,6 @@
       "FamilyMemberHistory.condition",
       "Immunization.performer.actor",
       "Media.operator",
-      "MedicationRequest",
       "Observation.performer",
       "Procedure.performer.actor",
       "Procedure.recorder",
@@ -802,9 +801,6 @@
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-sequence-extension": [
       "MedicationAdministration.dosage"
-    ],
-    "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension": [
-      "MedicationRequest"
     ],
     "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-method-extension": [
       "FamilyMemberHistory.condition",
@@ -890,6 +886,9 @@
     "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-medication-productname": [
       "Immunization",
       "Medication"
+    ],
+    "https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel": [
+      "MedicationRequest"
     ]
   }
 }

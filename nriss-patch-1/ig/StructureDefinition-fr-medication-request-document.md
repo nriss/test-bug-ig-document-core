@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRMedicationRequestDocument |
+| Draft as of 2026-06-01 | *Computable Name*:FRMedicationRequestDocument |
 
  
 FRMedicationRequestDocument permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "name" : "FRMedicationRequestDocument",
   "title" : "MedicationRequest - FR Medication Request Document",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -104,62 +104,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
         }],
         "ordered" : false,
         "rules" : "open"
-      },
-      "min" : 1
-    },
-    {
-      "id" : "MedicationRequest.extension:author",
-      "path" : "MedicationRequest.extension",
-      "sliceName" : "author",
-      "short" : "Auteur du document Prescription",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "MedicationRequest.extension:author.extension:type",
-      "path" : "MedicationRequest.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "MedicationRequest.extension:author.extension:type.value[x]",
-      "path" : "MedicationRequest.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "MedicationRequest.extension:author.extension:actor",
-      "path" : "MedicationRequest.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "MedicationRequest.extension:author.extension:actor.value[x]",
-      "path" : "MedicationRequest.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
+      }
     },
     {
       "id" : "MedicationRequest.extension:horsAMM",
       "path" : "MedicationRequest.extension",
       "sliceName" : "horsAMM",
       "short" : "Hors Autorisation de mise sur le marché",
-      "min" : 1,
-      "max" : "1",
+      "min" : 0,
+      "max" : "*",
       "type" : [{
         "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-out-of-nomenclature-extension"]
-      }]
+        "profile" : ["https://profiles.ihe.net/PHARM/MPD/StructureDefinition/ihe-ext-offLabel"]
+      }],
+      "mustSupport" : true
     },
     {
       "id" : "MedicationRequest.extension:notCovered",
       "path" : "MedicationRequest.extension",
       "sliceName" : "notCovered",
-      "short" : "Traitement prescrit n'est remboursable / remboursable",
+      "short" : "Traitement non remboursable",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -195,10 +159,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
       },
       {
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medications-combinaison-document"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-document"]
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.subject",
+      "path" : "MedicationRequest.subject",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
+      }]
+    },
+    {
+      "id" : "MedicationRequest.encounter",
+      "path" : "MedicationRequest.encounter",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document"]
+      }]
     },
     {
       "id" : "MedicationRequest.authoredOn",
@@ -211,7 +191,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
       "short" : "Prescripteur",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitioner-document"]
       }],
       "mustSupport" : true
     },
@@ -566,7 +547,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
     {
       "id" : "MedicationRequest.dispenseRequest.validityPeriod",
       "path" : "MedicationRequest.dispenseRequest.validityPeriod",
-      "short" : "Période de renouvellement",
+      "short" : "Période de validité",
       "mustSupport" : true
     },
     {
@@ -614,6 +595,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdminSubstitutionCode-cisis"
       }
+    },
+    {
+      "id" : "MedicationRequest.substitution.reason",
+      "path" : "MedicationRequest.substitution.reason",
+      "mustSupport" : true
+    },
+    {
+      "id" : "MedicationRequest.substitution.reason.text",
+      "path" : "MedicationRequest.substitution.reason.text",
+      "short" : "Motif de non substitution (Marge thérapeutique étroite, Enfant forme galénique, Contre-indication formelle)."
     }]
   }
 }

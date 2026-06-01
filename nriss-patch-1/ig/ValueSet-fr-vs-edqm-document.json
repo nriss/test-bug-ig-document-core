@@ -3,7 +3,7 @@
   "id" : "fr-vs-edqm-document",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-edqm-document</b></p><a name=\"fr-vs-edqm-document\"> </a><a name=\"hcfr-vs-edqm-document\"> </a><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.7.0/CodeSystem-terminologie-standardterms.html\"><code>https://smt.esante.gouv.fr/terminologie-standardterms</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-edqm-document</b></p><a name=\"fr-vs-edqm-document\"> </a><a name=\"hcfr-vs-edqm-document\"> </a><ul><li>Include codes provenant de<a href=\"https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-terminologie-standardterms.html\"><code>https://smt.esante.gouv.fr/terminologie-standardterms</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span> où concept  est-un PDF (Forme galénique)</li></ul></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document",
   "version" : "0.1.0-snapshot",
@@ -11,7 +11,7 @@
   "title" : "ValueSet - FR ValueSet EDQM Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -20,7 +20,7 @@
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "ValueSet basé sur le CodeSystem EDQM fourni par SMT",
+  "description" : "ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique).",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -30,7 +30,12 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://smt.esante.gouv.fr/terminologie-standardterms"
+      "system" : "https://smt.esante.gouv.fr/terminologie-standardterms",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "PDF"
+      }]
     }]
   }
 }

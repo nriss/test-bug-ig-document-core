@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-serie-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDADICOMSerieImagerie |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDADICOMSerieImagerie |
 
  
 Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
   "name" : "FRCDADICOMSerieImagerie",
   "title" : "CDA - FR DICOM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -153,7 +153,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
       "path" : "Act.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "min" : 1
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",
@@ -165,12 +166,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
     {
       "id" : "Act.code.code",
       "path" : "Act.code.code",
-      "patternCode" : "113015"
+      "min" : 1,
+      "patternCode" : "113015",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystem",
       "path" : "Act.code.codeSystem",
-      "patternString" : "1.2.840.10008.2.16.4"
+      "min" : 1,
+      "patternString" : "1.2.840.10008.2.16.4",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.codeSystemName",
@@ -180,7 +185,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
     {
       "id" : "Act.code.displayName",
       "path" : "Act.code.displayName",
-      "patternString" : "Séries"
+      "patternString" : "Séries",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code.qualifier",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAListeDesAllergiesEtHypersensibilites |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAListeDesAllergiesEtHypersensibilites |
 
  
 Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intolerance-Concern. 
@@ -18,7 +18,7 @@ Entrée FR-Liste-des-allergies-et-hypersensibilites: IHE-PCC - Allergy-And-Intol
 
 **Utilisations:**
 
-* Ce Profil de modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Utilise ce/t/te Profil de modèle logique: [CDA - FR Allergies et hypersensibilites](StructureDefinition-fr-cda-allergies-et-hypersensibilites.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-cda-liste-des-allergies-et-hypersensibilites)
 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-all
   "name" : "FRCDAListeDesAllergiesEtHypersensibilites",
   "title" : "CDA - FR Liste des allergies et hypersensibilites",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -98,10 +98,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-all
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Act",
-      "path" : "Act"
-    },
-    {
       "id" : "Act.templateId",
       "path" : "Act.templateId",
       "slicing" : {
@@ -192,7 +188,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-liste-des-all
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Act.code",

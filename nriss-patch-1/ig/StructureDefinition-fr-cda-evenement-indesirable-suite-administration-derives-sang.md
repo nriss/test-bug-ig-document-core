@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evenement-indesirable-suite-administration-derives-sang | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAEvenementIndesirableSuiteAdministrationDerivesSang |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAEvenementIndesirableSuiteAdministrationDerivesSang |
 
  
 Entrée FR-Evenement-indesirable-suite-administration-derives-sang: Cette entrée permet de décrire sous forme textuelle des événements indésirables survenus suite à l’administration de dérivés du sang. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement-ind
   "name" : "FRCDAEvenementIndesirableSuiteAdministrationDerivesSang",
   "title" : "CDA - FR Evenement indesirable suite administration derives sang",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -169,7 +169,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement-ind
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
       "min" : 1,
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code",
@@ -181,12 +182,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement-ind
     {
       "id" : "Observation.code.code",
       "path" : "Observation.code.code",
-      "patternCode" : "MED-148"
+      "min" : 1,
+      "patternCode" : "MED-148",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystem",
       "path" : "Observation.code.codeSystem",
-      "patternString" : "1.2.250.1.213.1.1.4.322"
+      "min" : 1,
+      "patternString" : "1.2.250.1.213.1.1.4.322",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.code.codeSystemName",
@@ -196,7 +201,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evenement-ind
     {
       "id" : "Observation.code.displayName",
       "path" : "Observation.code.displayName",
-      "patternString" : "Evènements indésirables suite à l'administration de dérivés du sang"
+      "patternString" : "Evènements indésirables suite à l'administration de dérivés du sang",
+      "mustSupport" : true
     },
     {
       "id" : "Observation.text",

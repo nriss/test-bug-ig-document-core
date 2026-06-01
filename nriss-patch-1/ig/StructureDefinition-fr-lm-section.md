@@ -1,22 +1,22 @@
-# Modèle logique métier - FR LM Section - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Section - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Section**
+* **Logical model - FR LM Section**
 
-## Logical Model: Modèle logique métier - FR LM Section 
+## Logical Model: Logical model - FR LM Section 
 
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMSection |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMSection |
 
  
 Section 
 
 **Utilisations:**
 
-* Dérivé de ce Modèle logique: [Modèle logique métier - FR LM Acte d'imagerie](StructureDefinition-fr-lm-acte-imagerie.md), [Modèle logique métier - FR LM Addendum](StructureDefinition-fr-lm-addendum.md), [Modèle logique métier - FR LM Allergies et hypersensibilités](StructureDefinition-fr-lm-allergies-et-hypersensibilites.md), [Modèle logique métier - FR LM Antécédents familiaux](StructureDefinition-fr-lm-antecedents-familiaux.md)... Show 44 more, [Modèle logique métier - FR LM Antécédents médicaux](StructureDefinition-fr-lm-antecedents-medicaux.md), [Modèle logique métier - FR LM Codes à barres](StructureDefinition-fr-lm-codes-a-barres.md), [Modèle logique métier - FR LM Commentaire (non-codé)](StructureDefinition-fr-lm-commentaire-non-code.md), [Modèle logique métier - FR LM Comparaison d'examens d'imagerie](StructureDefinition-fr-lm-comparaison-examens-imagerie.md), [Modèle logique métier - FR LM Complications Acte](StructureDefinition-fr-lm-complications-acte.md), [Modèle logique métier - FR LM Conclusion examen d'imagerie](StructureDefinition-fr-lm-conclusion-examen-imagerie.md), [Modèle logique métier - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-cr-bio-chapitre.md), [Modèle logique métier - FR LM Sous-chapitre du compte rendu d'examens de biologie](StructureDefinition-fr-lm-cr-bio-sous-chapitre.md), [Modèle logique métier - FR LM Demande d'examen d'imagerie](StructureDefinition-fr-lm-demande-examen-imagerie.md), [Modèle logique métier - FR LM Directives-anticipées](StructureDefinition-fr-lm-directives-anticipees.md), [Modèle logique métier - FR LM Dispensation médicaments](StructureDefinition-fr-lm-dispensation-medicaments.md), [Modèle logique métier - FR LM Dispositifs medicaux](StructureDefinition-fr-lm-dispositifs-medicaux.md), [Modèle logique métier - FR LM Document PDF copie](StructureDefinition-fr-lm-document-pdf-copie.md), [Modèle logique métier - FR LM Documents ajoutés](StructureDefinition-fr-lm-documents-ajoutes.md), [Modèle logique métier - FR LM Education du patient](StructureDefinition-fr-lm-education-patient.md), [Modèle logique métier - FR LM Effets indesirables](StructureDefinition-fr-lm-effets-indesirables.md), [Modèle logique métier - FR LM Exposition aux radiations](StructureDefinition-fr-lm-exposition-radiations.md), [Modèle logique métier - FR LM Facteurs de risque professionnels non code](StructureDefinition-fr-lm-facteurs-de-risque-professionnels-non-code.md), [Modèle logique métier - FR LM Fonctions physiques](StructureDefinition-fr-lm-fonctions-physiques.md), [Modèle logique métier - FR LM Habitus et modes de vie](StructureDefinition-fr-lm-habitus-mode-de-vie.md), [Historique des actes](StructureDefinition-fr-lm-historique-des-actes.md), [Modèle logique métier - FR LM Antécédents obstétricaux](StructureDefinition-fr-lm-historique-des-grossesses.md), [Modèle logique métier - FR LM Informations Cliniques](StructureDefinition-fr-lm-informations-cliniques.md), [Modèle logique métier - FR LM Object Catalog](StructureDefinition-fr-lm-object-catalog.md), [Modèle logique métier - FR LM Plan de soins](StructureDefinition-fr-lm-plan-soins.md), [Modèle logique métier - FR LM Points de vigilance (non-codés)](StructureDefinition-fr-lm-points-de-vigilances-non-code.md), [Modèle logique métier - FR LM Prescription de dispositifs médicaux](StructureDefinition-fr-lm-prescription-dispositifs-medicaux.md), [Modèle logique métier - FR LM Prescription de médicaments](StructureDefinition-fr-lm-prescription-medicaments.md), [Modèle logique métier - FR LM Problèmes actifs](StructureDefinition-fr-lm-problemes-actifs.md), [Modèle logique métier - FR LM Raison de la recommandation (non codée)](StructureDefinition-fr-lm-raison-recommandation-non-code.md), [Modèle logique métier - FR LM Raison de la recommandation](StructureDefinition-fr-lm-raison-recommandation.md), [Modèle logique métier - FR LM Résultats d'événements](StructureDefinition-fr-lm-resultats-evenements.md), [Modèle logique métier - FR LM Résultats d'examen d'imagerie](StructureDefinition-fr-lm-resultats-examen-imagerie.md), [Modèle logique métier - FR LM Résultats d'examens (non codée)](StructureDefinition-fr-lm-resultats-examens-non-code.md), [Modèle logique métier - FR LM Résultats d'examens](StructureDefinition-fr-lm-resultats-examens.md), [Modèle logique métier - FR LM Résultats de laboratoire de biologie de seconde intention](StructureDefinition-fr-lm-resultats-laboratoire-biologie-seconde-intention.md), [Modèle logique métier - FR LM Résultats](StructureDefinition-fr-lm-resultats.md), [Modèle logique métier - FR LM Signes vitaux](StructureDefinition-fr-lm-signes-vitaux.md), [Modèle logique métier - FR LM Statut du document](StructureDefinition-fr-lm-statut-document.md), [Modèle logique métier - FR LM Statut fonctionnel](StructureDefinition-fr-lm-statut-fonctionnel.md), [Modèle logique métier - FR LM Traitements à la sortie](StructureDefinition-fr-lm-traitement-sortie.md), [Modèle logique métier - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md), [Modèle logique métier - FR LM Traitements](StructureDefinition-fr-lm-traitements.md) and [Modèle logique métier - FR LM Vaccinations](StructureDefinition-fr-lm-vaccinations.md)
+* Dérivé de ce Modèle logique: [Logical model - FR LM Addendum](StructureDefinition-fr-lm-addendum.md), [Logical model - FR LM Admission Evaluation](StructureDefinition-fr-lm-admission-evaluation.md), [Logical model - FR LM Advance Directives](StructureDefinition-fr-lm-advance-directives.md), [Logical model - FR LM Alerts](StructureDefinition-fr-lm-alerts.md)... Show 42 more, [Logical model - FR LM Allergies And Intolerances](StructureDefinition-fr-lm-allergies-and-intolerances.md), [Logical model - FR LM Attachments](StructureDefinition-fr-lm-attachments.md), [Logical model - FR LM CarePlans](StructureDefinition-fr-lm-care-plans.md), [Logical model - FR LM Comparison Study](StructureDefinition-fr-lm-comparison-study.md), [Logical model - FR LM Conclusion](StructureDefinition-fr-lm-conclusion.md), [Logical model - FR LM Course of encounter](StructureDefinition-fr-lm-course-of-encounter.md), [Logical model - FR LM DICOM Study Metadata](StructureDefinition-fr-lm-dicom-study-metadata.md), [Logical model - FR LM Encounter Information](StructureDefinition-fr-lm-encounter-information.md), [Logical model - FR LM Examination Report](StructureDefinition-fr-lm-examination-report.md), [Logical model - FR LM Exposure Information](StructureDefinition-fr-lm-exposure-information.md), [Logical model - FR LM Family Medical History](StructureDefinition-fr-lm-family-medical-history.md), [logical model- FR LM Functional Status](StructureDefinition-fr-lm-functional-status.md), [Logical model - FR LM Hazardous Working Conditions](StructureDefinition-fr-lm-hazardous-working-conditions.md), [Logical model - FR LM FRLM History Of Past Illness](StructureDefinition-fr-lm-history-of-past-illness.md), [Logical model - FR LM Hospital Discharge Medications](StructureDefinition-fr-lm-hospital-discharge-medications.md), [Logical model - FR LM Immunisations](StructureDefinition-fr-lm-immunisations.md), [Logical Model - FR LM Medical Device Prescriptions](StructureDefinition-fr-lm-medical-device-prescriptions.md), [Logical Model - FR LM Medical Devices and Implants](StructureDefinition-fr-lm-medical-devices-and-implants.md), [Logical model - FR LM Medication Dispensations](StructureDefinition-fr-lm-medication-dispensations.md), [Logical model - FR LM FR LM Medication Prescription](StructureDefinition-fr-lm-medication-prescription.md), [Logical model - FR LM Medication Summary](StructureDefinition-fr-lm-medication-summary.md), [Logical model - FR LM Note](StructureDefinition-fr-lm-note.md), [Logical model - FR LM ObservationResults](StructureDefinition-fr-lm-observation-results.md), [Logical model - FR LM Order Information](StructureDefinition-fr-lm-order-information.md), [Logical model - FR LM Patient Education](StructureDefinition-fr-lm-patient-education.md), [Logical model - FR LM Patient History](StructureDefinition-fr-lm-patient-history.md), [Logical model - FR LM Patient Story](StructureDefinition-fr-lm-patient-story.md), [Logical model - FR LM Predictable Adverse Drug Reaction](StructureDefinition-fr-lm-predictable-adverse-drug-reaction.md), [Logical model - FR LM Presented Form](StructureDefinition-fr-lm-presented-form.md), [Logical model - FR LM Problems](StructureDefinition-fr-lm-problems.md), [logical model - FR LM Procedures](StructureDefinition-fr-lm-procedures.md), [Logical model - FR LM QR Code](StructureDefinition-fr-lm-qr-code.md), [Logical model - FR LM Reason for referral](StructureDefinition-fr-lm-reason-for-referral.md), [Logical model - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md), [Logical model - FR LM Compte rendu de biologie de 1er niveau](StructureDefinition-fr-lm-result-data.md), [Logical model - FR LM Pregnancy History](StructureDefinition-fr-lm-section-pregnancy-history.md), [Logical model - FR LM Travel History](StructureDefinition-fr-lm-section-travel-history.md), [Logical model - FR LM SocialHistory](StructureDefinition-fr-lm-social-history.md), [Logical model - FR LM Status Document](StructureDefinition-fr-lm-status-document.md), [Logical model - FR LM Supporting Information](StructureDefinition-fr-lm-supporting-information.md), [Logical model - FR LM Traitements administrés](StructureDefinition-fr-lm-traitements-administres.md) and [Logical model - FR LM Vital Signs](StructureDefinition-fr-lm-vital-signs.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-section)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-section.csv), 
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-section",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMSection",
-  "title" : "Modèle logique métier - FR LM Section",
+  "title" : "Logical model - FR LM Section",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-section.csv), 
     "element" : [{
       "id" : "fr-lm-section",
       "path" : "fr-lm-section",
-      "short" : "Modèle logique métier - FR LM Section",
+      "short" : "Logical model - FR LM Section",
       "definition" : "Section"
     },
     {
@@ -87,8 +87,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-section.csv), 
       }]
     },
     {
-      "id" : "fr-lm-section.titreSection",
-      "path" : "fr-lm-section.titreSection",
+      "id" : "fr-lm-section.titleSection",
+      "path" : "fr-lm-section.titleSection",
       "short" : "Titre de la section",
       "definition" : "Titre de la section",
       "min" : 0,
@@ -98,19 +98,74 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-section.csv), 
       }]
     },
     {
-      "id" : "fr-lm-section.blocNarratif",
-      "path" : "fr-lm-section.blocNarratif",
+      "id" : "fr-lm-section.description",
+      "path" : "fr-lm-section.description",
       "short" : "Bloc narratif",
       "definition" : "Bloc narratif",
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "Narrative"
+        "code" : "string"
       }]
     },
     {
-      "id" : "fr-lm-section.sousSection",
-      "path" : "fr-lm-section.sousSection",
+      "id" : "fr-lm-section.author[x]",
+      "path" : "fr-lm-section.author[x]",
+      "short" : "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.",
+      "definition" : "author[x] peut correspondre soit à un professionnel, soit à une organisation, soit à un système.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "fr-lm-section.author[x].authorProfessional",
+      "path" : "fr-lm-section.author[x].authorProfessional",
+      "short" : "L'auteur est un professionnel de santé",
+      "definition" : "L'auteur est un professionnel de santé",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-health-professional"
+      }]
+    },
+    {
+      "id" : "fr-lm-section.author[x].authorOrganisation",
+      "path" : "fr-lm-section.author[x].authorOrganisation",
+      "short" : "L'auteur est une organisation",
+      "definition" : "L'auteur est une organisation",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      }]
+    },
+    {
+      "id" : "fr-lm-section.author[x].authorDevice",
+      "path" : "fr-lm-section.author[x].authorDevice",
+      "short" : "L'auteur est un système",
+      "definition" : "L'auteur est un système",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-device"
+      }]
+    },
+    {
+      "id" : "fr-lm-section.informant",
+      "path" : "fr-lm-section.informant",
+      "short" : "Informateur",
+      "definition" : "Informateur",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-informant"
+      }]
+    },
+    {
+      "id" : "fr-lm-section.subSection",
+      "path" : "fr-lm-section.subSection",
       "short" : "Sous-sections",
       "definition" : "Sous-sections",
       "min" : 0,
@@ -120,8 +175,8 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-section.csv), 
       }]
     },
     {
-      "id" : "fr-lm-section.entree",
-      "path" : "fr-lm-section.entree",
+      "id" : "fr-lm-section.entry",
+      "path" : "fr-lm-section.entry",
       "short" : "Entrées",
       "definition" : "Entrées",
       "min" : 0,

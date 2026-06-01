@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRLMBatterieExamensBiologieMedicale |
+| Draft as of 2026-06-01 | *Computable Name*:FRLMBatterieExamensBiologieMedicale |
 
  
-Batterie d’examens de biologie médicale 
+Entrée Batterie d’examens de biologie médicale 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Modèle logique métier - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
+* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Isolat microbiologique](StructureDefinition-fr-lm-isolat-microbiologique.md) and [Logical model - FR LM Resultats d'examens de biologie medicale](StructureDefinition-fr-lm-resultats-examens-biologie-medicale.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-batterie-examens-biologie-medicale)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
   "name" : "FRLMBatterieExamensBiologieMedicale",
   "title" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Batterie d'examens de biologie médicale",
+  "description" : "Entrée Batterie d'examens de biologie médicale",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -66,25 +66,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
   "kind" : "logical",
   "abstract" : false,
   "type" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-batterie-examens-biologie-medicale",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-entry",
   "derivation" : "specialization",
   "differential" : {
     "element" : [{
       "id" : "fr-lm-batterie-examens-biologie-medicale",
       "path" : "fr-lm-batterie-examens-biologie-medicale",
       "short" : "Modèle logique métier - FR LM Batterie d'examens de biologie médicale",
-      "definition" : "Batterie d'examens de biologie médicale"
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.identifiant",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.identifiant",
-      "short" : "Identifiant de la batterie d'examen",
-      "definition" : "Identifiant de la batterie d'examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Identifier"
-      }]
+      "definition" : "Entrée Batterie d'examens de biologie médicale"
     },
     {
       "id" : "fr-lm-batterie-examens-biologie-medicale.codeBatterieExamen",
@@ -95,28 +84,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "max" : "1",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.statut",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.statut",
-      "short" : "Niveau de complétude",
-      "definition" : "Niveau de complétude",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "code"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.dateExamen",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.dateExamen",
-      "short" : "Date de l'examen",
-      "definition" : "Date de l'examen",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
       }]
     },
     {
@@ -145,28 +112,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       }]
     },
     {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.auteur",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.auteur",
-      "short" : "Auteur",
-      "definition" : "Auteur",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-auteur"
-      }]
-    },
-    {
-      "id" : "fr-lm-batterie-examens-biologie-medicale.participant",
-      "path" : "fr-lm-batterie-examens-biologie-medicale.participant",
-      "short" : "Participant",
-      "definition" : "Participant",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant"
-      }]
-    },
-    {
       "id" : "fr-lm-batterie-examens-biologie-medicale.prelevement",
       "path" : "fr-lm-batterie-examens-biologie-medicale.prelevement",
       "short" : "Prélèvement",
@@ -174,7 +119,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-prelevement"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-specimen"
       }]
     },
     {
@@ -196,7 +141,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-image-illustrative"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-media"
       }]
     },
     {
@@ -207,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-batterie-exame
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-commentaire-er"
+        "code" : "string"
       }]
     }]
   }

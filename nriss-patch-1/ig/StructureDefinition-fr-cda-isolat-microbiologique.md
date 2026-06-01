@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-isolat-microbiologique | *Version*:0.1.0-snapshot |
-| Draft as of 2026-04-20 | *Computable Name*:FRCDAIsolatMicrobiologique |
+| Draft as of 2026-06-01 | *Computable Name*:FRCDAIsolatMicrobiologique |
 
  
 Entrée FR-Isolat-microbiologique: IHE-PCC - Laboratory isolate organizer. 
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-isolat-microb
   "name" : "FRCDAIsolatMicrobiologique",
   "title" : "CDA - FR Isolat microbiologique",
   "status" : "draft",
-  "date" : "2026-04-20T11:58:08+00:00",
+  "date" : "2026-06-01T14:28:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -99,10 +99,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-isolat-microb
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
-      "id" : "Organizer",
-      "path" : "Organizer"
-    },
-    {
       "id" : "Organizer.templateId",
       "path" : "Organizer.templateId",
       "slicing" : {
@@ -161,13 +157,31 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-isolat-microb
       "path" : "Organizer.id",
       "short" : "Identifiant de l'entrée",
       "definition" : "Identifiant de l'entrée",
-      "max" : "1"
+      "max" : "1",
+      "mustSupport" : true
     },
     {
       "id" : "Organizer.code",
       "path" : "Organizer.code",
       "short" : "Code isolat : le code de l’isolat peut être codé avec les terminologies SNOMED CT et NCBI",
       "definition" : "Code isolat",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.code",
+      "path" : "Organizer.code.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.codeSystem",
+      "path" : "Organizer.code.codeSystem",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Organizer.code.displayName",
+      "path" : "Organizer.code.displayName",
       "mustSupport" : true
     },
     {
