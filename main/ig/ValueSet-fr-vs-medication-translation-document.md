@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "ValueSet - FR ValueSet Medication Translation Document",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-01T14:41:15+00:00",
+  "date" : "2026-06-01T15:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

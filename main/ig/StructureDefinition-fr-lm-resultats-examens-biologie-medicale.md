@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-resultats-exam
   "name" : "FRLMResultatsExamensBiologieMedicale",
   "title" : "Logical model - FR LM Resultats d'examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-06-01T14:41:15+00:00",
+  "date" : "2026-06-01T15:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

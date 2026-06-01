@@ -60,7 +60,7 @@ Other representations of profile: [CSV](StructureDefinition-cisis-telecom.csv), 
   "name" : "CISISTelecom",
   "title" : "CDA - FR CISIS Telecom",
   "status" : "draft",
-  "date" : "2026-06-01T14:41:15+00:00",
+  "date" : "2026-06-01T15:18:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
