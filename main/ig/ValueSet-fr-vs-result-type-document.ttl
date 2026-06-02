@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "ValueSet - FR ValueSet Result Type Document"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-01T15:18:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-02T07:35:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;

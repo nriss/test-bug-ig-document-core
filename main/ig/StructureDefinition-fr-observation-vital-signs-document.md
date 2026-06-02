@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-01 | *Computable Name*:FRObservationVitalSignsDocument |
+| Draft as of 2026-06-02 | *Computable Name*:FRObservationVitalSignsDocument |
 
  
 * FRObservationVitalSignsDocument permet d’indiquer les informations détaillées relatives à une mesure clinique spécifique.
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
   "name" : "FRObservationVitalSignsDocument",
   "title" : "Observation - FR Observation Vital Signs Document",
   "status" : "draft",
-  "date" : "2026-06-01T15:18:33+00:00",
+  "date" : "2026-06-02T07:35:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

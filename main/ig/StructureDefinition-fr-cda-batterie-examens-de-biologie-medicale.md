@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-batterie-examens-de-biologie-medicale | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-01 | *Computable Name*:FRCDABatterieExamensDeBiologieMedicale |
+| Draft as of 2026-06-02 | *Computable Name*:FRCDABatterieExamensDeBiologieMedicale |
 
  
 Entrée FR-Batterie-examens-de-biologie-medicale: IHE-PCC - Laboratory Battery Organizer. L’entrée Batterie d’examens de biologie médicale est une entrée de type ‘organizer’ qui permet de décrire des examens de biologie médicale comprenant un ou plusieurs éléments porteurs de résultats et d’éventuels commentaires interprétant cet ensemble de résultats. L’examen de biologie médicale peut préciser des participants qui lui sont propres (validateur, auteur, responsable, laboratoire sous-traitant, automate …) et peut aussi décrire son échantillon biologique. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-batterie-exam
   "name" : "FRCDABatterieExamensDeBiologieMedicale",
   "title" : "CDA - FR Batterie examens de biologie medicale",
   "status" : "draft",
-  "date" : "2026-06-01T15:18:33+00:00",
+  "date" : "2026-06-02T07:35:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

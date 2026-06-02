@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-status-reason-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-01 | *Computable Name*:FRStatusReasonExtension |
+| Draft as of 2026-06-02 | *Computable Name*:FRStatusReasonExtension |
 
 Extension permettant d’indiquer le motif du statut métier d’une évaluation.
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-status-reason-ext
   "name" : "FRStatusReasonExtension",
   "title" : "FR Status Reason Extension",
   "status" : "draft",
-  "date" : "2026-06-01T15:18:33+00:00",
+  "date" : "2026-06-02T07:35:19+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
