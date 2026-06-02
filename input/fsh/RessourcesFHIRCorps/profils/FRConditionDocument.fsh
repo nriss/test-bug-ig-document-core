@@ -31,7 +31,6 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * subject only Reference(FRPatientINSDocument or FRPatientDocument)
 
 * onset[x] 1..1 MS
-* onsetDateTime
 * onsetDateTime ^short = "Date de début du problème"
 
 * abatement[x] MS
