@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fr-vs-discharge-disposition-document",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-discharge-disposition-document</b></p><a name=\"fr-vs-discharge-disposition-document\"> </a><a name=\"hcfr-vs-discharge-disposition-document\"> </a><ul><li>Include tous les codes définis dans <code>urn:oid:1.2.250.1.213.2.14</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetDischargeDispositionDocument",
+  "title" : "ValueSet – FR Discharge Disposition Document",
+  "status" : "draft",
+  "date" : "2026-06-03T07:56:38+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Mode de sortie d'une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "FRANCE"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.250.1.213.2.14"
+    }]
+  }
+}
