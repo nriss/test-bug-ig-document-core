@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FREncounterCareDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FREncounterCareDocument |
 
  
 Ce profil représente l’association du document à une prise en charge. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
   "name" : "FREncounterCareDocument",
   "title" : "FR Encounter Care Document",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -118,10 +118,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
     {
       "id" : "Encounter.participant:responsibleParty.type.coding",
       "path" : "Encounter.participant.type.coding",
-      "patternCoding" : {
-        "system" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
-        "code" : "DIS",
-        "display" : "Responsable de la sortie"
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-participation-type-encounter"
       }
     },
     {
@@ -169,11 +168,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
     {
       "id" : "Encounter.hospitalization.dischargeDisposition",
       "path" : "Encounter.hospitalization.dischargeDisposition",
-      "short" : "Type sortie",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document"
-      }
+      "short" : "Type sortie"
     },
     {
       "id" : "Encounter.location",

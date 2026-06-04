@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FREncounterDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FREncounterDocument |
 
  
 FREncounterDocument est un profil permettant de conserver les modalités d’une rencontre du patient. Il peut s’agir d’une rencontre passée ou à venir 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-documen
   "name" : "FREncounterDocument",
   "title" : "Encounter - FR Encounter Document",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -111,11 +111,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-documen
     {
       "id" : "Encounter.class",
       "path" : "Encounter.class",
-      "short" : "Type de rencontre (JDV_HL7_ActEncounterCode_CISIS ou JDV spécifique au volet)",
+      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)",
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
-        "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActEncounterCode-cisis"
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class"
       }
     },
     {

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-demande-d-examen-ou-de-suivi | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRCDADemandeDExamenOuDeSuivi |
+| Draft as of 2026-06-04 | *Computable Name*:FRCDADemandeDExamenOuDeSuivi |
 
  
 Entrée FR-Demande-d-examen-ou-de-suivi: IHE-PCC - Observation Request L’entrée Demande d’examen / de suivi est une observation qui permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. Cette entrée est basée sur l’élément Simple Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13) qu’elle spécialise. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-demande-d-exa
   "name" : "FRCDADemandeDExamenOuDeSuivi",
   "title" : "CDA - FR Demande d examen ou de suivi",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

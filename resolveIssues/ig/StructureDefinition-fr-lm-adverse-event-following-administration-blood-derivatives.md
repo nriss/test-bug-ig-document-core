@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRLMAdverseEventFollowingAdministrationBloodDerivatives |
+| Draft as of 2026-06-04 | *Computable Name*:FRLMAdverseEventFollowingAdministrationBloodDerivatives |
 
  
 Entrée Evènements indésirables suite à l’administration de dérivés du sang 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-adverse-event-
   "name" : "FRLMAdverseEventFollowingAdministrationBloodDerivatives",
   "title" : "Logical model - FR LM Adverse Events Following Administration of Blood Derivatives",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

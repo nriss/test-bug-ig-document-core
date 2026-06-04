@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-radiation-exposure-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRObservationRadiationExposureDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRObservationRadiationExposureDocument |
 
  
 FRObservationRadiationExposureDocument permet d’enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-radia
   "name" : "FRObservationRadiationExposureDocument",
   "title" : "Observation - FR Observation Radiation Exposure Document",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

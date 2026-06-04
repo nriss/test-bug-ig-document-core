@@ -11,7 +11,7 @@
   fhir:id [ fhir:v "fr-vs-vaccine-code-cis"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-vaccine-code-cis</b></p><a name=\"fr-vs-vaccine-code-cis\"> </a><a name=\"hcfr-vs-vaccine-code-cis\"> </a><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.9.2/CodeSystem-terminologie-bdpm.html\"><code>https://smt.esante.gouv.fr/terminologie-bdpm</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-vaccine-code-cis</b></p><a name=\"fr-vs-vaccine-code-cis\"> </a><a name=\"hcfr-vs-vaccine-code-cis\"> </a><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.10.0/CodeSystem-terminologie-bdpm.html\"><code>https://smt.esante.gouv.fr/terminologie-bdpm</code></a><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-vaccine-code-cis"^^xsd:anyURI ;
@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRValueSetVaccineCodeCISDocument"] ; # 
   fhir:title [ fhir:v "ValueSet – FR ValueSet Codes vaccins CIS (BDPM)"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-03T07:56:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-04T08:54:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;

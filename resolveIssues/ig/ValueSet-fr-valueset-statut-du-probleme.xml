@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="fr-valueset-statut-du-probleme"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-valueset-statut-du-probleme</b></p><a name="fr-valueset-statut-du-probleme"> </a><a name="hcfr-valueset-statut-du-probleme"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-jdv-hl7-allergyintolerance-clinical-cisis.html">AllergyIntolerance Clinical Status Codes</a></li><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.9.2/ValueSet-jdv-hl7-condition-clinical-cisis.html">Condition Clinical Status Codes</a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-valueset-statut-du-probleme</b></p><a name="fr-valueset-statut-du-probleme"> </a><a name="hcfr-valueset-statut-du-probleme"> </a><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-hl7-allergyintolerance-clinical-cisis.html">AllergyIntolerance Clinical Status Codes</a></li><li>Importe tous les codes contenu dans <a href="https://interop.esante.gouv.fr/terminologies/1.10.0/ValueSet-jdv-hl7-condition-clinical-cisis.html">Condition Clinical Status Codes</a></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-statut-du-probleme"/>
   <version value="0.1.0-snapshot"/>
   <name value="FRValueSetStatutDuProbleme"/>
   <title value="ValueSet - FR ValueSet Statut du problème"/>
   <status value="draft"/>
-  <date value="2026-06-03T07:56:38+00:00"/>
+  <date value="2026-06-04T08:54:45+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>

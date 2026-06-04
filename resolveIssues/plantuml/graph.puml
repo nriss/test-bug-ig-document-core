@@ -40,7 +40,6 @@ package IG #DDDDDD{
         class FRAccessionNumberIdentifierDocument{
 
              Identifier.type => [1..None]
-             Identifier.type.coding => [1..1]
              Identifier.system => [None..None]
              Identifier.value => [1..None]
         } 
@@ -51,7 +50,6 @@ package IG #DDDDDD{
              Consent.identifier:mainIdentifier => [1..1]
              Consent.status => [None..None]
              Consent.scope => [None..None]
-             Consent.scope.coding => [None..None]
              Consent.dateTime => [None..None]
              Consent.source[x] => [None..None]
              Consent.source[x]:sourceReference => [0..1]
@@ -7667,7 +7665,6 @@ package IG #DDDDDD{
         class FRObservationSocialHistoryDocument{
 
              Observation.category => [1..1]
-             Observation.category.coding => [1..1]
              Observation.code => [None..None]
              Observation.value[x] => [None..None]
              Observation.component => [None..1]
@@ -8235,9 +8232,13 @@ package IG #DDDDDD{
 
      FRCompositionDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationType
 
-        class FRValueSetDischargeDispositionDocument  
+        class FRValueSetParticipationTypeEncounter  
 
-     FREncounterCareDocument -[#black,dotted,thickness=2]-> FRValueSetDischargeDispositionDocument
+     FREncounterCareDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationTypeEncounter
+
+        class FRValueSetEncounterClass  
+
+     FREncounterDocument -[#black,dotted,thickness=2]-> FRValueSetEncounterClass
 
         class FRValueSetVaccineCodeCISDocument  
 
@@ -8294,6 +8295,10 @@ package IG #DDDDDD{
         class FRValueSetProcedureCodeDocument  
 
      FRProcedureDocument -[#black,dotted,thickness=2]-> FRValueSetProcedureCodeDocument
+
+        class FRValueSetRelationshipRole  
+
+     FRRelatedPersonDocument -[#black,dotted,thickness=2]-> FRValueSetRelationshipRole
        }
 
 package "Ressources de base" #palegreen {

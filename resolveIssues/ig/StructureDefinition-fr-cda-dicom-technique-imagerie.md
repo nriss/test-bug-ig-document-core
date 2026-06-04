@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-technique-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRCDADICOMTechniqueImagerie |
+| Draft as of 2026-06-04 | *Computable Name*:FRCDADICOMTechniqueImagerie |
 
  
 Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie modalité d’acquisition localisation anatomique / latéralité / topographie d’autres paramètres de l’acte 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-techniq
   "name" : "FRCDADICOMTechniqueImagerie",
   "title" : "CDA - FR DICOM Technique imagerie",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

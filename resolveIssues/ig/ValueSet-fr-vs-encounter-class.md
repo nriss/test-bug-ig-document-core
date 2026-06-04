@@ -1,22 +1,24 @@
-# ValueSet – FR Discharge Disposition Document - ANS IG document core v0.1.0-snapshot
+# FR ValueSet Encounter Class - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **ValueSet – FR Discharge Disposition Document**
+* **FR ValueSet Encounter Class**
 
-## ValueSet: ValueSet – FR Discharge Disposition Document 
+## ValueSet: FR ValueSet Encounter Class 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRValueSetDischargeDispositionDocument |
+| *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class | *Version*:0.1.0-snapshot |
+| Draft as of 2026-06-04 | *Computable Name*:FRValueSetEncounterClass |
 
  
-Mode de sortie d’une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14). 
+ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode. 
+* Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.
+ 
 
  **References** 
 
-* [FR Encounter Care Document](StructureDefinition-fr-encounter-care-document.md)
+* [Encounter - FR Encounter Document](StructureDefinition-fr-encounter-document.md)
 
 ### Définition logique (CLD)
 
@@ -46,13 +48,14 @@ No Expansion for this valueset (Unknown Code System)
 ```json
 {
   "resourceType" : "ValueSet",
-  "id" : "fr-vs-discharge-disposition-document",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document",
+  "id" : "fr-vs-encounter-class",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class",
   "version" : "0.1.0-snapshot",
-  "name" : "FRValueSetDischargeDispositionDocument",
-  "title" : "ValueSet – FR Discharge Disposition Document",
+  "name" : "FRValueSetEncounterClass",
+  "title" : "FR ValueSet Encounter Class",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "experimental" : false,
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -61,7 +64,7 @@ No Expansion for this valueset (Unknown Code System)
       "value" : "https://esante.gouv.fr"
     }]
   }],
-  "description" : "Mode de sortie d'une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14).",
+  "description" : "ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.\n - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -71,7 +74,7 @@ No Expansion for this valueset (Unknown Code System)
   }],
   "compose" : {
     "include" : [{
-      "system" : "urn:oid:1.2.250.1.213.2.14"
+      "system" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
     }]
   }
 }

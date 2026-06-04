@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-instructions-au-patient | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRCDAInstructionsAuPatient |
+| Draft as of 2026-06-04 | *Computable Name*:FRCDAInstructionsAuPatient |
 
  
 Entrée FR-Instructions-au-patient: IHE-PCC - Patient-Medication-Instructions. Cette entrée permet d’enregistrer des instructions au patient : 
@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-instructions-
   "name" : "FRCDAInstructionsAuPatient",
   "title" : "CDA - FR Instructions au patient",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

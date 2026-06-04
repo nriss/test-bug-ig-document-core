@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-social-history-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRObservationSocialHistoryDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRObservationSocialHistoryDocument |
 
  
 FRObservationSocialHistoryDocument décrit les habitudes de vie du patient (Habitus / Mode de vie). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-socia
   "name" : "FRObservationSocialHistoryDocument",
   "title" : "Observation - FR Observation Social History Document",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -112,18 +112,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-socia
       "short" : "Catégorie de l'observation",
       "min" : 1,
       "max" : "1",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history",
+          "display" : "Social History"
+        }]
+      },
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.category.coding",
-      "path" : "Observation.category.coding",
-      "min" : 1,
-      "max" : "1",
-      "patternCoding" : {
-        "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
-        "code" : "social-history",
-        "display" : "Social History"
-      }
     },
     {
       "id" : "Observation.code",

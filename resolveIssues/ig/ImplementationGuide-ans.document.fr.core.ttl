@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-03T07:56:38+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-04T08:54:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -76,7 +76,7 @@
        fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.9.2" ]
+     fhir:version [ fhir:v "1.10.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
@@ -6942,11 +6942,74 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-encounter-class" ]
+       ] ;
+       fhir:name [ fhir:v "FR ValueSet Encounter Class" ] ;
+       fhir:description [ fhir:v "ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.\n - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-participation-type> ;
          fhir:reference [ fhir:v "ValueSet/fr-doc-vs-participation-type" ]
        ] ;
        fhir:name [ fhir:v "FR ValueSet Participation Type" ] ;
        fhir:description [ fhir:v "Type de participation : destinataire" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-participation-type-encounter> ;
+         fhir:reference [ fhir:v "ValueSet/fr-valueset-participation-type-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "FR ValueSet Participation Type Encounter" ] ;
+       fhir:description [ fhir:v "ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role> ;
+         fhir:reference [ fhir:v "ValueSet/fr-valueset-relationship-role" ]
+       ] ;
+       fhir:name [ fhir:v "FR ValueSet Relationship Role" ] ;
+       fhir:description [ fhir:v "ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -13992,27 +14055,6 @@
        ] ;
        fhir:name [ fhir:v "ValueSet - FR ValueSet Type Vaccination" ] ;
        fhir:description [ fhir:v "Jeu de valeurs regroupant les codes de type de vaccination" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document> ;
-         fhir:reference [ fhir:v "ValueSet/fr-vs-discharge-disposition-document" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet – FR Discharge Disposition Document" ] ;
-       fhir:description [ fhir:v "Mode de sortie d'une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

@@ -3779,11 +3779,25 @@
   "name" : "FRValueSetCodeTraitement"
 },
 {
+  "id" : "fr-valueset-participation-type-encounter",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-participation-type-encounter",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetParticipationTypeEncounter"
+},
+{
   "id" : "fr-valueset-reference-externe",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
   "version" : "0.1.0-snapshot",
   "name" : "FRValueSetReferenceExterne"
+},
+{
+  "id" : "fr-valueset-relationship-role",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetRelationshipRole"
 },
 {
   "id" : "fr-valueset-status-code",
@@ -3835,18 +3849,18 @@
   "name" : "FRValueSetAllergySubstanceDocument"
 },
 {
-  "id" : "fr-vs-discharge-disposition-document",
-  "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-discharge-disposition-document",
-  "version" : "0.1.0-snapshot",
-  "name" : "FRValueSetDischargeDispositionDocument"
-},
-{
   "id" : "fr-vs-edqm-document",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-edqm-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRValueSetEDQMDocument"
+},
+{
+  "id" : "fr-vs-encounter-class",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetEncounterClass"
 },
 {
   "id" : "fr-vs-evaluation-type",

@@ -770,7 +770,11 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [FR ValueSet Encounter Class](ValueSet-fr-vs-encounter-class.md) | ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.* Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.
+ |
 | [FR ValueSet Participation Type](ValueSet-fr-doc-vs-participation-type.md) | Type de participation : destinataire |
+| [FR ValueSet Participation Type Encounter](ValueSet-fr-valueset-participation-type-encounter.md) | ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType |
+| [FR ValueSet Relationship Role](ValueSet-fr-valueset-relationship-role.md) | ValueSet pour le rôle de relation de l’informateur basé sur HL7 RoleClass - TRE_R260 |
 | [FR ValueSet UCUM Document](ValueSet-fr-value-set-ucum-document.md) | Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux. |
 | [Fr ValueSet RolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md) | Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle). |
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
@@ -785,7 +789,6 @@ These define sets of codes used by systems conforming to this implementation gui
  |
 | [ValueSet - FR ValueSet Statut du problème](ValueSet-fr-valueset-statut-du-probleme.md) | Jeu de valeurs regroupant les codes de statut du problème et des allergies/intolérances |
 | [ValueSet - FR ValueSet Type Vaccination](ValueSet-fr-valueset-type-vaccination.md) | Jeu de valeurs regroupant les codes de type de vaccination |
-| [ValueSet – FR Discharge Disposition Document](ValueSet-fr-vs-discharge-disposition-document.md) | Mode de sortie d’une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14). |
 | [ValueSet – FR ValueSet Allergy Code Document](ValueSet-fr-vs-allergy-code.md) | Jeu de valeurs permettant de coder l’agent responsable d’une allergie :* Médicaments : CIP ou UCD
 * Substances : SMS
 * Aliments : CIM-11 Chapitre X Extensions – Allergènes ou substances non médicinales

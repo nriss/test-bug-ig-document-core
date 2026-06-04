@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-modalite-sortie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-03 | *Computable Name*:FRCDAModaliteSortie |
+| Draft as of 2026-06-04 | *Computable Name*:FRCDAModaliteSortie |
 
  
 Entrée FR-Modalite-sortie: Cette entrée permet de préciser la modalité de sortie du patient d’un ES (retour à domicile, EHPAD, HAD, etc…). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-modalite-sort
   "name" : "FRCDAModaliteSortie",
   "title" : "CDA - FR Modalite sortie",
   "status" : "draft",
-  "date" : "2026-06-03T07:56:38+00:00",
+  "date" : "2026-06-04T08:54:45+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-06-03T07:56:38+00:00"/>
+  <date value="2026-06-04T08:54:45+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -45,7 +45,7 @@
   <dependsOn id="ans_fr_terminologies">
     <uri value="https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies"/>
     <packageId value="ans.fr.terminologies"/>
-    <version value="1.9.2"/>
+    <version value="1.10.0"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_fr_core">
     <uri value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
@@ -3518,10 +3518,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-vs-encounter-class"/>
+      </reference>
+      <name value="FR ValueSet Encounter Class"/>
+      <description value="ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.&#xA; - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-doc-vs-participation-type"/>
       </reference>
       <name value="FR ValueSet Participation Type"/>
       <description value="Type de participation : destinataire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-participation-type-encounter"/>
+      </reference>
+      <name value="FR ValueSet Participation Type Encounter"/>
+      <description value="ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/fr-valueset-relationship-role"/>
+      </reference>
+      <name value="FR ValueSet Relationship Role"/>
+      <description value="ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -7355,17 +7388,6 @@
       </reference>
       <name value="ValueSet - FR ValueSet Type Vaccination"/>
       <description value="Jeu de valeurs regroupant les codes de type de vaccination"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-vs-discharge-disposition-document"/>
-      </reference>
-      <name value="ValueSet – FR Discharge Disposition Document"/>
-      <description value="Mode de sortie d'une prise en charge (JDV_J25 - urn:oid:1.2.250.1.213.2.14)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
