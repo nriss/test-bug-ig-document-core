@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-blood-product-transfusion-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRObservationBloodProductTransfusionDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRObservationBloodProductTransfusionDocument |
 
  
 FRObservationBloodProductTransfusionDocument permet d’indiquer s’il a eu ou pas transfusion de produit sanguin. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-blood
   "name" : "FRObservationBloodProductTransfusionDocument",
   "title" : "Observation - FR Blood Product Transfusion Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -118,22 +118,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-blood
       "id" : "Observation.code",
       "path" : "Observation.code",
       "short" : "Code de l'observation",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "MED-145",
+          "display" : "Transfusion de produits sanguins"
+        }]
+      },
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding.system",
-      "path" : "Observation.code.coding.system",
-      "patternUri" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
-    },
-    {
-      "id" : "Observation.code.coding.code",
-      "path" : "Observation.code.coding.code",
-      "patternCode" : "MED-145"
-    },
-    {
-      "id" : "Observation.code.coding.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Transfusion de produits sanguins"
     },
     {
       "id" : "Observation.subject",

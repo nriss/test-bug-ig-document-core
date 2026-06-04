@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-02T07:35:19+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-04T15:31:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -76,7 +76,7 @@
        fhir:l <https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.terminologies" ] ;
-     fhir:version [ fhir:v "1.9.2" ]
+     fhir:version [ fhir:v "1.10.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_fr_core" ] ;
      fhir:uri [
@@ -1462,12 +1462,6 @@
        fhir:id [ fhir:v "Data Type FHIR" ] ;
        fhir:name [ fhir:v "Data Type Profiles" ]
      ] [
-       fhir:id [ fhir:v "Extensions FHIR entête" ] ;
-       fhir:name [ fhir:v "Extensions FHIR entête" ]
-     ] [
-       fhir:id [ fhir:v "Extensions FHIR corps" ] ;
-       fhir:name [ fhir:v "Extensions FHIR corps" ]
-     ] [
        fhir:id [ fhir:v "Mapping ML-CDA-FHIR entête" ] ;
        fhir:name [ fhir:v "Concept Maps de l'entête du document" ]
      ] [
@@ -1511,8 +1505,8 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-allergie-intolerance-document" ]
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-allergy-intolerance-document" ]
        ] ;
        fhir:name [ fhir:v "AllergyIntolerance - FR Allergy and intolerance Document" ] ;
        fhir:description [ fhir:v "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie." ] ;
@@ -6245,8 +6239,8 @@
        fhir:description [ fhir:v "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou\ntemporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'agent allergique est inconnu → code `unknown`\n- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document>
+         fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document>
        ]
      ] [
        fhir:extension ( [
@@ -6334,8 +6328,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6356,8 +6349,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR entête" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6487,8 +6479,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6552,8 +6543,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6574,8 +6564,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6618,8 +6607,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6640,8 +6628,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6662,8 +6649,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6684,8 +6670,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6793,8 +6778,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR entête" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6859,8 +6843,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6881,8 +6864,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6925,8 +6907,7 @@
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
-       ] ;
-       fhir:groupingId [ fhir:v "Extensions FHIR corps" ]
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -6949,6 +6930,27 @@
          fhir:v false
        ] ;
        fhir:groupingId [ fhir:v "Data Type FHIR" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-encounter-class" ]
+       ] ;
+       fhir:name [ fhir:v "FR ValueSet Encounter Class" ] ;
+       fhir:description [ fhir:v "ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.\n - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
      ] [
        fhir:extension ( [
          fhir:url [
@@ -13943,27 +13945,6 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document> ;
-         fhir:reference [ fhir:v "ValueSet/fr-vs-result-type-document" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet - FR ValueSet Result Type Document" ] ;
-       fhir:description [ fhir:v "ValueSet contenant les codes LOINC autorisés pour les types de résultats" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code> ;
          fhir:reference [ fhir:v "ValueSet/fr-valueset-status-code" ]
        ] ;
@@ -14074,6 +14055,48 @@
        ] ;
        fhir:name [ fhir:v "ValueSet – FR ValueSet Codes d’actes" ] ;
        fhir:description [ fhir:v "Codes autorisés pour indiquer un acte.\nInclut :\n- Terminologie CCAM\n- NCIT (code C25218 : 'Intervention') si l'acte n'est pas trouvé dans CCAM\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nSi aucun code approprié n’est disponible, l’acte peut être décrit en texte libre." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-vaccine-code-cis> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-vaccine-code-cis" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet – FR ValueSet Codes vaccins CIS (BDPM)" ] ;
+       fhir:description [ fhir:v "Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-location-body-structure-document> ;
+         fhir:reference [ fhir:v "ValueSet/fr-vs-location-body-structure-document" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet – FR ValueSet Localisation anatomique et voie d'abord" ] ;
+       fhir:description [ fhir:v "Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d'abord.\nInclut :\n- Les structures anatomiques pour body site : http://hl7.org/fhir/ValueSet/body-site\n- Les structures anatomiques pour voie d'abord (approach-site-codes) : http://hl7.org/fhir/ValueSet/approach-site-codes" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

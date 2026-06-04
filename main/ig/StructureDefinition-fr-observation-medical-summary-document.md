@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-medical-summary-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRObservationMedicalSummaryDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRObservationMedicalSummaryDocument |
 
  
 FRObservationMedicalSummaryDocument permet de fournir, sous forme textuelle, une synthèse médicale du séjour. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-medic
   "name" : "FRObservationMedicalSummaryDocument",
   "title" : "Observation - FR Observation Medical Summary Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -118,22 +118,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-medic
       "id" : "Observation.code",
       "path" : "Observation.code",
       "short" : "Code de l'observation",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis",
+          "code" : "MED-142",
+          "display" : "Synthèse médicale"
+        }]
+      },
       "mustSupport" : true
-    },
-    {
-      "id" : "Observation.code.coding.system",
-      "path" : "Observation.code.coding.system",
-      "patternUri" : "https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis"
-    },
-    {
-      "id" : "Observation.code.coding.code",
-      "path" : "Observation.code.coding.code",
-      "patternCode" : "MED-142"
-    },
-    {
-      "id" : "Observation.code.coding.display",
-      "path" : "Observation.code.coding.display",
-      "patternString" : "Synthèse médicale"
     },
     {
       "id" : "Observation.subject",

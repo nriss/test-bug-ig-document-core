@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-specimen-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRSpecimenDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRSpecimenDocument |
 
  
 FRSpecimenDocument est un profil utilisé pour décrire le prélèvement et l’échantillon biologique (le matériel). 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-specimen-document
   "name" : "FRSpecimenDocument",
   "title" : "Specimen - FR Specimen Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -154,18 +154,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-specimen-document
       "id" : "Specimen.collection.bodySite",
       "path" : "Specimen.collection.bodySite",
       "short" : "Localisation anatomique",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Specimen.collection.bodySite.coding",
-      "path" : "Specimen.collection.bodySite.coding",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Specimen.collection.bodySite.coding.system",
-      "path" : "Specimen.collection.bodySite.coding.system",
-      "patternUri" : "http://snomed.info/sct"
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+      }
     },
     {
       "id" : "Specimen.processing.description",

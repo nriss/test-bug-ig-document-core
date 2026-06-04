@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-responsable | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRLMResponsable |
+| Draft as of 2026-06-04 | *Computable Name*:FRLMResponsable |
 
  
 Représente le responsable du document, qui est : 
@@ -51,7 +51,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-responsable.cs
   "name" : "FRLMResponsable",
   "title" : "Modèle logique métier - FR LM Responsable",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -286,34 +286,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#9">Data Type Profiles</a>
       </li>
       <li>
-         <a href="#10">Extensions FHIR entête</a>
+         <a href="#10">Concept Maps de l'entête du document</a>
       </li>
       <li>
-         <a href="#11">Extensions FHIR corps</a>
+         <a href="#11">Concept Maps des sections d'un document</a>
       </li>
       <li>
-         <a href="#12">Concept Maps de l'entête du document</a>
+         <a href="#12">Concept Maps des composants communs d'un Document</a>
       </li>
       <li>
-         <a href="#13">Concept Maps des sections d'un document</a>
+         <a href="#13">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#14">Concept Maps des composants communs d'un Document</a>
+         <a href="#14">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#15">Structures: Logical Models</a>
+         <a href="#15">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#16">Structures: Extension Definitions</a>
+         <a href="#16">Example: Example Instances</a>
       </li>
       <li>
-         <a href="#17">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#18">Example: Example Instances</a>
-      </li>
-      <li>
-         <a href="#19">Other</a>
+         <a href="#17">Other</a>
       </li>
    </ul>
 </div>
@@ -3639,8 +3633,8 @@ Une vaccination prévue dépend d’un plan accepté et à venir. Cette entrée 
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-allergie-intolerance-document.html"
-                  title="StructureDefinition/fr-allergie-intolerance-document">AllergyIntolerance - FR Allergy and intolerance Document</a>
+               <a href="StructureDefinition-fr-allergy-intolerance-document.html"
+                  title="StructureDefinition/fr-allergy-intolerance-document">AllergyIntolerance - FR Allergy and intolerance Document</a>
             </td>
             <td>
 <p>FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie.</p>
@@ -4156,139 +4150,6 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
       </tbody>
    </table>
    <a name="10"> </a>
-   <h3>Extensions FHIR entête </h3>
-    
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-author-time-extension.html"
-                  title="StructureDefinition/fr-author-time-extension">FR Author Time Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-performer-event-extension.html"
-                  title="StructureDefinition/fr-performer-event-extension">FR Performer Event Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’ajouter un performer à l’élément event d’une Composition.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="11"> </a>
-   <h3>Extensions FHIR corps </h3>
-    
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-actor-extension.html"
-                  title="StructureDefinition/fr-actor-extension">FR Actor Extension</a>
-            </td>
-            <td>
-<p>Extension permettant de représenter un acteur impliqué dans le document avec son type et sa référence.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-family-member-history-body-site-extension.html"
-                  title="StructureDefinition/fr-family-member-history-body-site-extension">FR Family Member History Body Site Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-immunization-type-extension.html"
-                  title="StructureDefinition/fr-immunization-type-extension">FR Immunization Type Extension</a>
-            </td>
-            <td>
-<p>Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-interpretation-extension.html"
-                  title="StructureDefinition/fr-interpretation-extension">FR Interpretation Extension</a>
-            </td>
-            <td>
-<p>Extension permettant de spécifier une interprétation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-medication-administration-sequence-extension.html"
-                  title="StructureDefinition/fr-medication-administration-sequence-extension">FR Medication Administration Sequence Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-method-extension.html"
-                  title="StructureDefinition/fr-method-extension">FR Method Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-not-covered-extension.html"
-                  title="StructureDefinition/fr-not-covered-extension">FR Not Covered Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer si le traitement est non remboursable.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-number-of-frames-extension.html"
-                  title="StructureDefinition/fr-number-of-frames-extension">FR Number of Frames Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-procedure-difficulty-extension.html"
-                  title="StructureDefinition/fr-procedure-difficulty-extension">FR Procedure Difficulty Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-procedure-priority-extension.html"
-                  title="StructureDefinition/fr-procedure-priority-extension">FR Procedure Priority Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer d’indique la priorité clinique de l’observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-status-reason-extension.html"
-                  title="StructureDefinition/fr-status-reason-extension">FR Status Reason Extension</a>
-            </td>
-            <td>
-<p>Extension permettant d’indiquer le motif du statut métier d’une évaluation.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="12"> </a>
    <h3>Concept Maps de l'entête du document </h3>
     
 <table class="grid">
@@ -4545,7 +4406,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="13"> </a>
+   <a name="11"> </a>
    <h3>Concept Maps des sections d'un document </h3>
     
 <table class="grid">
@@ -4985,7 +4846,7 @@ acte d’imagerie, localisation anatomique / latéralité / topographie, d’aut
          </tr>
       </tbody>
    </table>
-   <a name="14"> </a>
+   <a name="12"> </a>
    <h3>Concept Maps des composants communs d'un Document </h3>
     
 <table class="grid">
@@ -5571,7 +5432,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="15"> </a>
+   <a name="13"> </a>
    <h3>Structures: Logical Models </h3>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
 <table class="grid">
@@ -5660,7 +5521,7 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
       </tbody>
    </table>
-   <a name="16"> </a>
+   <a name="14"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -5668,11 +5529,38 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-fr-actor-extension.html"
+                  title="StructureDefinition/fr-actor-extension">FR Actor Extension</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter un acteur impliqué dans le document avec son type et sa référence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-author-time-extension.html"
+                  title="StructureDefinition/fr-author-time-extension">FR Author Time Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-fr-comparison-studies-extension.html"
                   title="StructureDefinition/fr-comparison-studies-extension">FR Comparison Studies Extension</a>
             </td>
             <td>
 <p>Examen de comparaison radiologique</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-family-member-history-body-site-extension.html"
+                  title="StructureDefinition/fr-family-member-history-body-site-extension">FR Family Member History Body Site Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux</p>
 </td>
          </tr>
          <tr>
@@ -5686,6 +5574,60 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-fr-immunization-type-extension.html"
+                  title="StructureDefinition/fr-immunization-type-extension">FR Immunization Type Extension</a>
+            </td>
+            <td>
+<p>Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-interpretation-extension.html"
+                  title="StructureDefinition/fr-interpretation-extension">FR Interpretation Extension</a>
+            </td>
+            <td>
+<p>Extension permettant de spécifier une interprétation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-medication-administration-sequence-extension.html"
+                  title="StructureDefinition/fr-medication-administration-sequence-extension">FR Medication Administration Sequence Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-method-extension.html"
+                  title="StructureDefinition/fr-method-extension">FR Method Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-not-covered-extension.html"
+                  title="StructureDefinition/fr-not-covered-extension">FR Not Covered Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer si le traitement est non remboursable.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-number-of-frames-extension.html"
+                  title="StructureDefinition/fr-number-of-frames-extension">FR Number of Frames Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-fr-patient-history-extension.html"
                   title="StructureDefinition/fr-patient-history-extension">FR Patient History Extension</a>
             </td>
@@ -5693,14 +5635,62 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
 <p>Historique médical du patient pertinent pour l’examen d’imagerie</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-performer-event-extension.html"
+                  title="StructureDefinition/fr-performer-event-extension">FR Performer Event Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’ajouter un performer à l’élément event d’une Composition.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-procedure-difficulty-extension.html"
+                  title="StructureDefinition/fr-procedure-difficulty-extension">FR Procedure Difficulty Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-procedure-priority-extension.html"
+                  title="StructureDefinition/fr-procedure-priority-extension">FR Procedure Priority Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer d’indique la priorité clinique de l’observation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-status-reason-extension.html"
+                  title="StructureDefinition/fr-status-reason-extension">FR Status Reason Extension</a>
+            </td>
+            <td>
+<p>Extension permettant d’indiquer le motif du statut métier d’une évaluation.</p>
+</td>
+         </tr>
       </tbody>
    </table>
-   <a name="17"> </a>
+   <a name="15"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-vs-encounter-class.html"
+                  title="ValueSet/fr-vs-encounter-class">FR ValueSet Encounter Class</a>
+            </td>
+            <td>
+<p>ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.</p>
+<ul>
+  <li>Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.</li>
+</ul>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-fr-doc-vs-participation-type.html"
@@ -5771,15 +5761,6 @@ profil CDA FRCDADispositifMedical, puis vers le profil FHIR FRDeviceUseStatement
             </td>
             <td>
 <p>Jeu de valeurs regroupant les typeCode du document référencé</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-vs-result-type-document.html"
-                  title="ValueSet/fr-vs-result-type-document">ValueSet - FR ValueSet Result Type Document</a>
-            </td>
-            <td>
-<p>ValueSet contenant les codes LOINC autorisés pour les types de résultats</p>
 </td>
          </tr>
          <tr>
@@ -5858,6 +5839,29 @@ Inclut :</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-fr-vs-vaccine-code-cis.html"
+                  title="ValueSet/fr-vs-vaccine-code-cis">ValueSet – FR ValueSet Codes vaccins CIS (BDPM)</a>
+            </td>
+            <td>
+<p>Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-vs-location-body-structure-document.html"
+                  title="ValueSet/fr-vs-location-body-structure-document">ValueSet – FR ValueSet Localisation anatomique et voie d'abord</a>
+            </td>
+            <td>
+<p>Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d’abord.
+Inclut :</p>
+<ul>
+  <li>Les structures anatomiques pour body site : http://hl7.org/fhir/ValueSet/body-site</li>
+  <li>Les structures anatomiques pour voie d’abord (approach-site-codes) : http://hl7.org/fhir/ValueSet/approach-site-codes</li>
+</ul>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-fr-vs-evaluation-type.html"
                   title="ValueSet/fr-vs-evaluation-type">ValueSet – FR ValueSet Type d'évaluation</a>
             </td>
@@ -5868,7 +5872,7 @@ Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’e
          </tr>
       </tbody>
    </table>
-   <a name="18"> </a>
+   <a name="16"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -5963,7 +5967,7 @@ obligatoires de la ressource Procedure dont la valeur est inconnue ou temporaire
          </tr>
       </tbody>
    </table>
-   <a name="19"> </a>
+   <a name="17"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -6017,7 +6021,7 @@ obligatoires de la ressource Procedure dont la valeur est inconnue ou temporaire
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 2, 2026 07:35+0000">2026-06-02</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 4, 2026 15:31+0000">2026-06-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-care-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FREncounterCareDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FREncounterCareDocument |
 
  
 Ce profil représente l’association du document à une prise en charge. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
   "name" : "FREncounterCareDocument",
   "title" : "FR Encounter Care Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -113,17 +113,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
     {
       "id" : "Encounter.participant:responsibleParty.type",
       "path" : "Encounter.participant.type",
-      "short" : "Type de participation"
-    },
-    {
-      "id" : "Encounter.participant:responsibleParty.type.coding.system",
-      "path" : "Encounter.participant.type.coding.system",
-      "patternUri" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"
-    },
-    {
-      "id" : "Encounter.participant:responsibleParty.type.coding.code",
-      "path" : "Encounter.participant.type.coding.code",
-      "patternCode" : "DIS"
+      "short" : "Type de participation",
+      "min" : 1,
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
+          "code" : "DIS",
+          "display" : "Responsable de la sortie"
+        }]
+      }
     },
     {
       "id" : "Encounter.participant:responsibleParty.individual",
@@ -171,11 +169,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
       "id" : "Encounter.hospitalization.dischargeDisposition",
       "path" : "Encounter.hospitalization.dischargeDisposition",
       "short" : "Type sortie"
-    },
-    {
-      "id" : "Encounter.hospitalization.dischargeDisposition.coding.system",
-      "path" : "Encounter.hospitalization.dischargeDisposition.coding.system",
-      "patternUri" : "urn:oid:1.2.250.1.213.2.14"
     },
     {
       "id" : "Encounter.location",

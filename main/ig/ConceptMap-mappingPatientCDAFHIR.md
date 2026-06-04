@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingPatientCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:Mapping Métier/CDA/FHIR : "Patient/Usager" |
+| Draft as of 2026-06-04 | *Computable Name*:Mapping Métier/CDA/FHIR : "Patient/Usager" |
 
  
 Ce ConceptMap présente deux groupes de mapping : 
@@ -31,7 +31,7 @@ Ce ConceptMap présente deux groupes de mapping :
   "title" : "Mapping Métier/CDA/FHIR : \"Patient/Usager\"",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

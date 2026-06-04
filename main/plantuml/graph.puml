@@ -40,10 +40,6 @@ package IG #DDDDDD{
         class FRAccessionNumberIdentifierDocument{
 
              Identifier.type => [1..None]
-             Identifier.type.coding => [1..1]
-             Identifier.type.coding.system => [None..None]
-             Identifier.type.coding.code => [None..None]
-             Identifier.type.coding.display => [None..None]
              Identifier.system => [None..None]
              Identifier.value => [1..None]
         } 
@@ -54,9 +50,6 @@ package IG #DDDDDD{
              Consent.identifier:mainIdentifier => [1..1]
              Consent.status => [None..None]
              Consent.scope => [None..None]
-             Consent.scope.coding.system => [None..None]
-             Consent.scope.coding.code => [None..None]
-             Consent.scope.coding.display => [None..None]
              Consent.dateTime => [None..None]
              Consent.source[x] => [None..None]
              Consent.source[x]:sourceReference => [0..1]
@@ -104,6 +97,7 @@ package IG #DDDDDD{
 
         class FRBodyStructureDocument{
 
+             BodyStructure.location => [None..None]
              BodyStructure.locationQualifier => [None..None]
         } 
 
@@ -139,9 +133,6 @@ package IG #DDDDDD{
              CarePlan.identifier => [1..None]
              CarePlan.category => [1..1]
              CarePlan.category.coding => [1..1]
-             CarePlan.category.coding.system => [None..None]
-             CarePlan.category.coding.code => [None..None]
-             CarePlan.category.coding.display => [None..None]
              CarePlan.author => [None..None]
              CarePlan.activity.reference => [None..None]
              CarePlan.activity.detail.product[x] => [None..None]
@@ -5176,8 +5167,6 @@ package IG #DDDDDD{
              Condition.severity => [None..None]
              Condition.code => [1..None]
              Condition.bodySite => [None..None]
-             Condition.bodySite.coding => [1..1]
-             Condition.bodySite.coding.system => [None..None]
              Condition.subject => [None..None]
              Condition.onset[x] => [1..None]
              Condition.onset[x]:onsetDateTime => [0..1]
@@ -5248,45 +5237,47 @@ package IG #DDDDDD{
 
         class FRDiagnosticReportBIOChapterDocument{
 
+             DiagnosticReport => [None..None]
              DiagnosticReport.status => [None..None]
-             DiagnosticReport.category => [1..1]
+             DiagnosticReport.category => [None..None]
+             DiagnosticReport.category:chapitreBIO => [1..*]
              DiagnosticReport.code => [None..None]
              DiagnosticReport.subject => [1..None]
              DiagnosticReport.encounter => [None..None]
-             DiagnosticReport.effective[x] => [1..None]
-             DiagnosticReport.performer => [1..None]
-             DiagnosticReport.performer.extension => [1..None]
-             DiagnosticReport.performer.extension:author => <&plus>[1..*]
-             DiagnosticReport.performer.extension:author.extension:type => <&plus>[None..None]
-             DiagnosticReport.performer.extension:author.extension:type.value[x] => <&plus>[None..None]
-             DiagnosticReport.performer.extension:author.extension:actor => <&plus>[None..None]
-             DiagnosticReport.performer.extension:author.extension:actor.value[x] => <&plus>[None..None]
+             DiagnosticReport.effective[x] => [None..None]
+             DiagnosticReport.performer => [None..None]
+             DiagnosticReport.performer:organization => [0..*]
              DiagnosticReport.resultsInterpreter => [None..None]
              DiagnosticReport.specimen => [None..None]
-             DiagnosticReport.result => [1..None]
+             DiagnosticReport.result => [None..None]
              DiagnosticReport.conclusion => [None..None]
-             DiagnosticReport.presentedForm => [1..1]
         } 
 
         class FRDiagnosticReportDocument{
 
-             DiagnosticReport.identifier => [1..1]
+             DiagnosticReport.identifier => [None..None]
              DiagnosticReport.status => [None..None]
+             DiagnosticReport.category => [1..None]
              DiagnosticReport.code => [None..None]
              DiagnosticReport.effective[x] => [1..None]
              DiagnosticReport.performer => [None..None]
-             DiagnosticReport.performer.extension => [1..None]
-             DiagnosticReport.performer.extension:performerFunction => <&plus>[1..1]
-             DiagnosticReport.performer.extension:performerFunction.value[x].coding.code => <&plus>[None..None]
              DiagnosticReport.resultsInterpreter => [None..None]
              DiagnosticReport.resultsInterpreter.extension => [1..None]
-             DiagnosticReport.resultsInterpreter.extension:performerFunction => <&plus>[1..1]
-             DiagnosticReport.resultsInterpreter.extension:performerFunction.value[x].coding.code => <&plus>[None..None]
+             DiagnosticReport.resultsInterpreter.extension:author => <&plus>[1..*]
+             DiagnosticReport.resultsInterpreter.extension:author.extension:type => <&plus>[None..None]
+             DiagnosticReport.resultsInterpreter.extension:author.extension:type.value[x] => <&plus>[None..None]
+             DiagnosticReport.resultsInterpreter.extension:author.extension:actor => <&plus>[None..None]
+             DiagnosticReport.resultsInterpreter.extension:author.extension:actor.value[x] => <&plus>[None..None]
              DiagnosticReport.result => [1..None]
+             DiagnosticReport.media => [None..None]
+             DiagnosticReport.media.link => [None..None]
+             DiagnosticReport.conclusion => [None..None]
+             DiagnosticReport.presentedForm => [1..1]
         } 
 
         class FRDiagnosticReportImagingDocument{
 
+             DiagnosticReport => [None..None]
              DiagnosticReport.extension => [None..None]
              DiagnosticReport.extension:comparaison => <&plus>[0..*]
              DiagnosticReport.extension:historiqueMedical => <&plus>[0..*]
@@ -5295,17 +5286,12 @@ package IG #DDDDDD{
              DiagnosticReport.basedOn => [None..None]
              DiagnosticReport.basedOn:serviceRequestAccessionNumber => [0..*]
              DiagnosticReport.status => [None..None]
+             DiagnosticReport.category => [None..None]
              DiagnosticReport.code => [None..None]
              DiagnosticReport.subject => [None..None]
              DiagnosticReport.performer => [None..None]
              DiagnosticReport.performer:organization => [0..*]
-             DiagnosticReport.resultsInterpreter => [None..None]
-             DiagnosticReport.resultsInterpreter.extension => [1..None]
-             DiagnosticReport.resultsInterpreter.extension:author => <&plus>[1..*]
-             DiagnosticReport.resultsInterpreter.extension:author.extension:type => <&plus>[None..None]
-             DiagnosticReport.resultsInterpreter.extension:author.extension:type.value[x] => <&plus>[None..None]
-             DiagnosticReport.resultsInterpreter.extension:author.extension:actor => <&plus>[None..None]
-             DiagnosticReport.resultsInterpreter.extension:author.extension:actor.value[x] => <&plus>[None..None]
+             DiagnosticReport.resultsInterpreter.extension:author => <&plus>[None..None]
              DiagnosticReport.result => [None..None]
              DiagnosticReport.result:resultatActuel => [0..1]
              DiagnosticReport.result:resultatAnterieur => [0..1]
@@ -5354,23 +5340,21 @@ package IG #DDDDDD{
              Encounter.type => [None..None]
              Encounter.participant => [None..None]
              Encounter.participant:responsibleParty => [0..1]
-             Encounter.participant:responsibleParty.type => [None..None]
-             Encounter.participant:responsibleParty.type.coding.system => [None..None]
-             Encounter.participant:responsibleParty.type.coding.code => [None..None]
+             Encounter.participant:responsibleParty.type => [1..None]
              Encounter.participant:responsibleParty.individual => [1..None]
              Encounter.participant:encounterParticipant => [0..*]
              Encounter.participant:encounterParticipant.type => [None..None]
              Encounter.participant:encounterParticipant.individual => [1..None]
              Encounter.period => [None..None]
              Encounter.hospitalization.dischargeDisposition => [None..None]
-             Encounter.hospitalization.dischargeDisposition.coding.system => [None..None]
              Encounter.location => [1..1]
              Encounter.location.location => [None..None]
         } 
 
         class FREncounterDocument{
 
-             Encounter.identifier => [1..None]
+             Encounter => [None..None]
+             Encounter.identifier => [None..None]
              Encounter.status => [None..None]
              Encounter.class => [None..None]
              Encounter.priority => [None..None]
@@ -5464,7 +5448,6 @@ package IG #DDDDDD{
              Immunization.vaccineCode => [None..None]
              Immunization.vaccineCode.coding => [1..None]
              Immunization.vaccineCode.coding:cis => [1..1]
-             Immunization.vaccineCode.coding:cis.system => [1..None]
              Immunization.vaccineCode.coding:translation => [0..*]
              Immunization.vaccineCode.coding:translation.system => [1..None]
              Immunization.occurrence[x] => [None..None]
@@ -5502,7 +5485,6 @@ package IG #DDDDDD{
              ImmunizationRecommendation.recommendation.vaccineCode => [None..None]
              ImmunizationRecommendation.recommendation.vaccineCode.coding => [1..None]
              ImmunizationRecommendation.recommendation.vaccineCode.coding:cis => [1..1]
-             ImmunizationRecommendation.recommendation.vaccineCode.coding:cis.system => [1..None]
              ImmunizationRecommendation.recommendation.vaccineCode.coding:translation => [0..*]
              ImmunizationRecommendation.recommendation.vaccineCode.coding:translation.system => [1..None]
              ImmunizationRecommendation.recommendation.forecastStatus => [None..None]
@@ -7294,8 +7276,6 @@ package IG #DDDDDD{
              MedicationRequest.dosageInstruction.additionalInstruction => [None..None]
              MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient => [0..1]
              MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding => [1..1]
-             MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding.system => [None..None]
-             MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding.code => [None..None]
              MedicationRequest.dosageInstruction.additionalInstruction:precondition => [0..1]
              MedicationRequest.dosageInstruction.additionalInstruction:precondition.text => [None..None]
              MedicationRequest.dosageInstruction.timing => [None..None]
@@ -7405,9 +7385,6 @@ package IG #DDDDDD{
 
              Observation.status => [None..None]
              Observation.code => [None..None]
-             Observation.code.coding.system => [None..None]
-             Observation.code.coding.code => [None..None]
-             Observation.code.coding.display => [None..None]
              Observation.focus => [1..1]
              Observation.effective[x] => [1..None]
              Observation.value[x] => [None..0]
@@ -7419,9 +7396,6 @@ package IG #DDDDDD{
              Observation.identifier => [1..1]
              Observation.status => [None..None]
              Observation.code => [None..None]
-             Observation.code.coding.system => [None..None]
-             Observation.code.coding.code => [None..None]
-             Observation.code.coding.display => [None..None]
              Observation.subject => [1..None]
              Observation.encounter => [None..None]
              Observation.effective[x] => [1..None]
@@ -7529,9 +7503,6 @@ package IG #DDDDDD{
              Observation.identifier => [1..1]
              Observation.status => [None..None]
              Observation.code => [None..None]
-             Observation.code.coding.system => [None..None]
-             Observation.code.coding.code => [None..None]
-             Observation.code.coding.display => [None..None]
              Observation.subject => [1..None]
              Observation.encounter => [None..None]
              Observation.effective[x] => [1..None]
@@ -7693,9 +7664,6 @@ package IG #DDDDDD{
         class FRObservationSocialHistoryDocument{
 
              Observation.category => [1..1]
-             Observation.category.coding => [1..1]
-             Observation.category.coding.system => [None..None]
-             Observation.category.coding.code => [None..None]
              Observation.code => [None..None]
              Observation.value[x] => [None..None]
              Observation.component => [None..1]
@@ -7710,8 +7678,6 @@ package IG #DDDDDD{
              Observation.status.extension:statusReason => <&plus>[0..1]
              Observation.category => [1..1]
              Observation.category.coding => [1..1]
-             Observation.category.coding.system => [None..None]
-             Observation.category.coding.code => [None..None]
              Observation.code => [None..None]
              Observation.performer => [None..None]
              Observation.performer.extension:Evaluateur => <&plus>[0..1]
@@ -7799,7 +7765,6 @@ package IG #DDDDDD{
              Observation.bodySite => [None..None]
              Observation.method => [None..None]
              Observation.component.value[x] => [1..None]
-             Observation.component.value[x].system => [None..None]
         } 
 
         class FRObservationVitalSignsPanelDocument{
@@ -7895,6 +7860,8 @@ package IG #DDDDDD{
 
              Procedure.extension => [None..None]
              Procedure.extension:priority => <&plus>[0..1]
+             Procedure.extension:approachBodySite => <&plus>[0..*]
+             Procedure.extension:approachBodySite.value[x] => <&plus>[None..None]
              Procedure.extension:difficulte => <&plus>[0..1]
              Procedure.identifier => [1..None]
              Procedure.partOf => [None..None]
@@ -7925,32 +7892,26 @@ package IG #DDDDDD{
              Procedure.performer.actor.extension:Participant.extension:type.value[x] => <&plus>[None..None]
              Procedure.performer.actor.extension:Participant.extension:actor => <&plus>[None..None]
              Procedure.performer.actor.extension:Participant.extension:actor.value[x] => <&plus>[None..None]
+             Procedure.performer.actor.extension:Dispositif => <&plus>[0..*]
+             Procedure.performer.actor.extension:Dispositif.extension:type => <&plus>[None..None]
+             Procedure.performer.actor.extension:Dispositif.extension:type.value[x] => <&plus>[None..None]
+             Procedure.performer.actor.extension:Dispositif.extension:actor => <&plus>[None..None]
+             Procedure.performer.actor.extension:Dispositif.extension:actor.value[x] => <&plus>[None..None]
              Procedure.reasonReference => [None..None]
              Procedure.bodySite => [None..None]
-             Procedure.bodySite:ApproachSiteCode => [0..*]
-             Procedure.bodySite:ApproachSiteCode.coding => [1..1]
-             Procedure.bodySite:ApproachSiteCode.coding.system => [None..None]
-             Procedure.bodySite:TargetSiteCode => [0..*]
-             Procedure.bodySite:TargetSiteCode.coding => [1..1]
-             Procedure.bodySite:TargetSiteCode.coding.system => [None..None]
              Procedure.usedReference => [None..None]
         } 
 
         class FRProcedureImagingDocument{
 
-             Procedure.identifier => [1..1]
+             Procedure => [None..None]
+             Procedure.identifier => [None..1]
              Procedure.basedOn => [None..None]
              Procedure.basedOn:serviceRequestAccessionNumber => [0..*]
              Procedure.partOf => [None..None]
-             Procedure.code => [1..None]
-             Procedure.subject => [None..None]
-             Procedure.performed[x] => [None..None]
-             Procedure.performer => [None..None]
-             Procedure.performer.function => [1..None]
-             Procedure.performer:participant => [0..*]
-             Procedure.performer:participant.actor => [None..None]
-             Procedure.performer:dispositif-medical => [0..*]
-             Procedure.performer:dispositif-medical.actor => [None..None]
+             Procedure.code => [None..None]
+             Procedure.performer.actor.extension:Participant => <&plus>[None..None]
+             Procedure.performer.actor.extension:Dispositif => <&plus>[None..None]
              Procedure.reasonReference => [None..None]
              Procedure.bodySite => [None..None]
              Procedure.bodySite.extension:precisionTopographique => <&plus>[0..1]
@@ -7961,8 +7922,6 @@ package IG #DDDDDD{
         class FRRelatedPersonDocument{
 
              RelatedPerson.relationship:Role => [None..None]
-             RelatedPerson.relationship:Role.coding.code => [None..None]
-             RelatedPerson.relationship:Role.coding.display => [None..None]
              RelatedPerson.relationship:RelationType => [None..1]
              RelatedPerson.name => [1..1]
              RelatedPerson.name.given => [None..1]
@@ -8005,8 +7964,6 @@ package IG #DDDDDD{
              Specimen.collection.collector => [None..None]
              Specimen.collection.collected[x] => [None..None]
              Specimen.collection.bodySite => [None..None]
-             Specimen.collection.bodySite.coding => [1..1]
-             Specimen.collection.bodySite.coding.system => [None..None]
              Specimen.processing.description => [None..None]
              Specimen.processing.procedure.coding.code => [1..None]
              Specimen.processing.additive => [None..None]
@@ -8059,11 +8016,10 @@ package IG #DDDDDD{
      FRDeviceRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRDeviceUseStatementDocument -[#black,dashed,thickness=2]-> FRNotCoveredExtension
      FRDeviceUseStatementDocument -[#black,dashed,thickness=2]-> FRActorExtension
-     FRDiagnosticReportBIOChapterDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRDiagnosticReportDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRDiagnosticReportImagingDocument -[#black,dashed,thickness=2]-> FRComparisonStudiesExtension
      FRDiagnosticReportImagingDocument -[#black,dashed,thickness=2]-> FRPatientHistoryExtension
      FRDiagnosticReportImagingDocument -[#black,dashed,thickness=2]-> FRImagingProcedureExtension
-     FRDiagnosticReportImagingDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FREncounterDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FREncounterDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FREncounterDocument -[#black,dashed,thickness=2]-> FRActorExtension
@@ -8108,6 +8064,7 @@ package IG #DDDDDD{
      FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
+     FRProcedureDocument -[#black,dashed,thickness=2]-> FRActorExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRInterpretationExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRMethodExtension
      FRServiceRequestDocument -[#black,dashed,thickness=2]-> FRActorExtension
@@ -8147,7 +8104,6 @@ package IG #DDDDDD{
           Extension.extension => [None..0]
           Extension.url => [None..None]
           Extension.value[x] => [None..None]
-          Extension.value[x].coding.system => [None..None]
         } 
         class FRImagingProcedureExtension{
 
@@ -8242,6 +8198,10 @@ package IG #DDDDDD{
 
      FRAllergyIntoleranceDocument -[#black,dotted,thickness=2]-> FRValueSetAllergySubstanceDocument
 
+        class FRValueSetLocationBodyStructureDocument  
+
+     FRBodyStructureDocument -[#black,dotted,thickness=2]-> FRValueSetLocationBodyStructureDocument
+
         class FRValueSetStatusCode  
 
      FRCDAIsolatMicrobiologique -[#black,dotted,thickness=2]-> FRValueSetStatusCode
@@ -8270,13 +8230,21 @@ package IG #DDDDDD{
 
      FRCompositionDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationType
 
-        class FRValueSetResultTypeDocument  
+        class FRValueSetEncounterClass  
 
-     FRDiagnosticReportDocument -[#black,dotted,thickness=2]-> FRValueSetResultTypeDocument
+     FREncounterDocument -[#black,dotted,thickness=2]-> FRValueSetEncounterClass
+
+        class FRValueSetVaccineCodeCISDocument  
+
+     FRImmunizationDocument -[#black,dotted,thickness=2]-> FRValueSetVaccineCodeCISDocument
 
         class FRValueSetMedicationTranslationDocument  
 
      FRImmunizationDocument -[#black,dotted,thickness=2]-> FRValueSetMedicationTranslationDocument
+
+        class FRValueSetVaccineCodeCISDocument  
+
+     FRImmunizationRecommendationDocument -[#black,dotted,thickness=2]-> FRValueSetVaccineCodeCISDocument
 
         class FRValueSetMedicationTranslationDocument  
 
@@ -9157,17 +9125,17 @@ package "Ressources de base" #palegreen {
 
     class48a85c3cc509715567fa4b3fe50c01ce --> FRDeviceUseStatementDocument
 
- class "DiagnosticReport" as  class4a13057f4409624a283d7471c591d19e 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document" as  class26f4b33cca580a79bb96ffdfbf0ae815 
 
-    class4a13057f4409624a283d7471c591d19e --> FRDiagnosticReportBIOChapterDocument
+    class26f4b33cca580a79bb96ffdfbf0ae815 --> FRDiagnosticReportBIOChapterDocument
 
  class "DiagnosticReport" as  class4a13057f4409624a283d7471c591d19e 
 
     class4a13057f4409624a283d7471c591d19e --> FRDiagnosticReportDocument
 
- class "DiagnosticReport" as  class4a13057f4409624a283d7471c591d19e 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document" as  class26f4b33cca580a79bb96ffdfbf0ae815 
 
-    class4a13057f4409624a283d7471c591d19e --> FRDiagnosticReportImagingDocument
+    class26f4b33cca580a79bb96ffdfbf0ae815 --> FRDiagnosticReportImagingDocument
 
  class "http://hl7.org/cda/stds/core/StructureDefinition/Section" as  classee0e0056a3297dc79c67abaf47837962 
 
@@ -9181,9 +9149,9 @@ package "Ressources de base" #palegreen {
 
     class67c94c9a57029ce118810d8d7e718509 --> FREncounterCareDocument
 
- class "Encounter" as  classd1e9f9f891de8f9a655739a01fbf68f0 
+ class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter" as  class67c94c9a57029ce118810d8d7e718509 
 
-    classd1e9f9f891de8f9a655739a01fbf68f0 --> FREncounterDocument
+    class67c94c9a57029ce118810d8d7e718509 --> FREncounterDocument
 
  class "Endpoint" as  class2a6ba72e93aa7fa676d07973ed2716bb 
 
@@ -9913,9 +9881,9 @@ package "Ressources de base" #palegreen {
 
     class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> FRProcedureDocument
 
- class "Procedure" as  class8c4271e6faf2cea4cfc8e5b7108d8ee9 
+ class "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document" as  class06e9866922f160e6dbde896f8cff983b 
 
-    class8c4271e6faf2cea4cfc8e5b7108d8ee9 --> FRProcedureImagingDocument
+    class06e9866922f160e6dbde896f8cff983b --> FRProcedureImagingDocument
 
  class "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-related-person" as  class73d64d75d9b8829a511eb36c46458829 
 

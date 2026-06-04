@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-vital-signs-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRObservationVitalSignsDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRObservationVitalSignsDocument |
 
  
 * FRObservationVitalSignsDocument permet d’indiquer les informations détaillées relatives à une mesure clinique spécifique.
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
   "name" : "FRObservationVitalSignsDocument",
   "title" : "Observation - FR Observation Vital Signs Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -189,7 +189,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
       "id" : "Observation.bodySite",
       "path" : "Observation.bodySite",
       "short" : "Site de l'observation",
-      "mustSupport" : true
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+      }
     },
     {
       "id" : "Observation.method",
@@ -200,16 +203,15 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-vital
     {
       "id" : "Observation.component.value[x]",
       "path" : "Observation.component.value[x]",
+      "short" : "Valeur quantitative du signe vital",
       "min" : 1,
       "type" : [{
         "code" : "Quantity"
-      }]
-    },
-    {
-      "id" : "Observation.component.value[x].system",
-      "path" : "Observation.component.value[x].system",
-      "short" : "Valeur quantitative du signe vital",
-      "patternUri" : "http://unitsofmeasure.org"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://terminology.hl7.org/ValueSet/ucum-units"
+      }
     }]
   }
 }

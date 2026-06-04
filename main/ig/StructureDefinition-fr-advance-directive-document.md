@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-advance-directive-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRAdvanceDirectiveDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRAdvanceDirectiveDocument |
 
  
 FRAdvanceDirectiveDocument permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d’état d’exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l’arrêt ou du refus de traitement ou d’acte médicaux.» 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-advance-directive
   "name" : "FRAdvanceDirectiveDocument",
   "title" : "Consent - FR Advance directive Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -121,22 +121,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-advance-directive
       "id" : "Consent.scope",
       "path" : "Consent.scope",
       "short" : "Consent de type directive anticipée",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+          "code" : "adr",
+          "display" : "Advance Directive"
+        }]
+      },
       "mustSupport" : true
-    },
-    {
-      "id" : "Consent.scope.coding.system",
-      "path" : "Consent.scope.coding.system",
-      "patternUri" : "http://terminology.hl7.org/CodeSystem/consentscope"
-    },
-    {
-      "id" : "Consent.scope.coding.code",
-      "path" : "Consent.scope.coding.code",
-      "patternCode" : "adr"
-    },
-    {
-      "id" : "Consent.scope.coding.display",
-      "path" : "Consent.scope.coding.display",
-      "patternString" : "Advance Directive"
     },
     {
       "id" : "Consent.dateTime",

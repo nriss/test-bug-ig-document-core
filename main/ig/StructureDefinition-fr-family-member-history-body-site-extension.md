@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
+| Draft as of 2026-06-04 | *Computable Name*:FRFamilyMemberHistoryBodySiteExtension |
 
 Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux
 
@@ -31,6 +31,8 @@ Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https:/
 
 Other representations of profile: [CSV](StructureDefinition-fr-family-member-history-body-site-extension.csv), [Excel](StructureDefinition-fr-family-member-history-body-site-extension.xlsx), [Schematron](StructureDefinition-fr-family-member-history-body-site-extension.sch) 
 
+#### Bindings terminologiques
+
 #### Contraintes
 
 
@@ -46,7 +48,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-family-member-his
   "name" : "FRFamilyMemberHistoryBodySiteExtension",
   "title" : "FR Family Member History Body Site Extension",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -100,12 +102,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-family-member-his
       "path" : "Extension.value[x]",
       "type" : [{
         "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "Extension.value[x].coding.system",
-      "path" : "Extension.value[x].coding.system",
-      "patternUri" : "http://snomed.info/sct"
+      }],
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+      }
     }]
   }
 }

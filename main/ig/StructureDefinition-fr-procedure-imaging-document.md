@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-imaging-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRProcedureImagingDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRProcedureImagingDocument |
 
  
 FRProcedureImagingDocument permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie, localisation anatomique / latéralité / topographie, d’autres paramètres de l’acte 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
   "name" : "FRProcedureImagingDocument",
   "title" : "Procedure - FR Procedure Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
   "kind" : "resource",
   "abstract" : false,
   "type" : "Procedure",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -92,10 +92,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
     {
       "id" : "Procedure.identifier",
       "path" : "Procedure.identifier",
-      "short" : "Identifiant",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "max" : "1"
     },
     {
       "id" : "Procedure.basedOn",
@@ -134,82 +131,26 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
       "id" : "Procedure.code",
       "path" : "Procedure.code",
       "short" : "Code de l'acte d'imagerie",
-      "min" : 1,
-      "mustSupport" : true,
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis"
       }
     },
     {
-      "id" : "Procedure.subject",
-      "path" : "Procedure.subject",
-      "short" : "Patient concerné",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-patient-ins-document"]
-      }],
-      "mustSupport" : true
+      "id" : "Procedure.performer.actor.extension:Participant",
+      "path" : "Procedure.performer.actor.extension",
+      "sliceName" : "Participant",
+      "short" : "Participant à l'acte d'imagerie"
     },
     {
-      "id" : "Procedure.performed[x]",
-      "path" : "Procedure.performed[x]",
-      "short" : "Date de l'acte",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.performer",
-      "path" : "Procedure.performer",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.performer.function",
-      "path" : "Procedure.performer.function",
-      "min" : 1
-    },
-    {
-      "id" : "Procedure.performer:participant",
-      "path" : "Procedure.performer",
-      "sliceName" : "participant",
-      "short" : "Participant à l'acte d'imagerie",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Procedure.performer:participant.actor",
-      "path" : "Procedure.performer.actor",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
-    },
-    {
-      "id" : "Procedure.performer:dispositif-medical",
-      "path" : "Procedure.performer",
-      "sliceName" : "dispositif-medical",
-      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Procedure.performer:dispositif-medical.actor",
-      "path" : "Procedure.performer.actor",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
-      }]
+      "id" : "Procedure.performer.actor.extension:Dispositif",
+      "path" : "Procedure.performer.actor.extension",
+      "sliceName" : "Dispositif",
+      "short" : "Dispositif médical utilisé lors de l'acte d'imagerie"
     },
     {
       "id" : "Procedure.reasonReference",
       "path" : "Procedure.reasonReference",
-      "short" : "La justification que la procédure a été effectuée",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document"]
@@ -218,8 +159,6 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
     {
       "id" : "Procedure.bodySite",
       "path" : "Procedure.bodySite",
-      "short" : "Localisation anatomique",
-      "mustSupport" : true,
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-localisation-anatomique-cisis"

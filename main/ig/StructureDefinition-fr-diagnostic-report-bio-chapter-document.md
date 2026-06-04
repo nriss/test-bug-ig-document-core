@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-bio-chapter-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRDiagnosticReportBIOChapterDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRDiagnosticReportBIOChapterDocument |
 
  
 FRDiagnosticReportBIOChapterDocument utilisé pour représenter un CR de biologie 
 
 **Utilisations:**
 
-* Ce Profil n'est utilisé par aucun autre profil dans ce guide d'implémentation
+* Référence ce Profil: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-diagnostic-report-bio-chapter-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "name" : "FRDiagnosticReportBIOChapterDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report BIO chapter Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "kind" : "resource",
   "abstract" : false,
   "type" : "DiagnosticReport",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -92,16 +92,35 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
     {
       "id" : "DiagnosticReport.status",
       "path" : "DiagnosticReport.status",
-      "short" : "Statut du rapport de BIO (final, partial ...)",
-      "mustSupport" : true
+      "short" : "Statut du rapport de BIO (final, partial ...)"
     },
     {
       "id" : "DiagnosticReport.category",
       "path" : "DiagnosticReport.category",
-      "short" : "Codes des chapitres de CR BIO",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "value",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
+      "short" : "Catégorie du rapport de biologie",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "26436-6",
+          "display" : "Biologie polyvalente"
+        }]
+      }
+    },
+    {
+      "id" : "DiagnosticReport.category:chapitreBIO",
+      "path" : "DiagnosticReport.category",
+      "sliceName" : "chapitreBIO",
+      "short" : "Codes des chapitres du compte-rendu de BIO",
+      "definition" : "Le code du chapitre doit être un code issu du jeu de valeurs Circuit de la biologie (disponible sur bioloinc.fr), onglet ‘2.Chapitres LOINC’ et contenant les codes et libellés traduits en français pour la biologie.",
       "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "max" : "*"
     },
     {
       "id" : "DiagnosticReport.code",
@@ -133,65 +152,35 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
     {
       "id" : "DiagnosticReport.effective[x]",
       "path" : "DiagnosticReport.effective[x]",
-      "short" : "Date et heure de création du document",
-      "min" : 1,
-      "mustSupport" : true
+      "short" : "Date et heure de création du document"
     },
     {
       "id" : "DiagnosticReport.performer",
       "path" : "DiagnosticReport.performer",
-      "min" : 1,
-      "mustSupport" : true
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      }
     },
     {
-      "id" : "DiagnosticReport.performer.extension",
-      "path" : "DiagnosticReport.performer.extension",
-      "min" : 1
-    },
-    {
-      "id" : "DiagnosticReport.performer.extension:author",
-      "path" : "DiagnosticReport.performer.extension",
-      "sliceName" : "author",
-      "short" : "Auteur du compte-rendu de BIO (Médecin - Biologie médicale)",
-      "min" : 1,
+      "id" : "DiagnosticReport.performer:organization",
+      "path" : "DiagnosticReport.performer",
+      "sliceName" : "organization",
+      "short" : "Organization productrice du CR de biologie",
+      "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "DiagnosticReport.performer.extension:author.extension:type",
-      "path" : "DiagnosticReport.performer.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "DiagnosticReport.performer.extension:author.extension:type.value[x]",
-      "path" : "DiagnosticReport.performer.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "DiagnosticReport.performer.extension:author.extension:actor",
-      "path" : "DiagnosticReport.performer.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "DiagnosticReport.performer.extension:author.extension:actor.value[x]",
-      "path" : "DiagnosticReport.performer.extension.extension.value[x]",
-      "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-organization-document"]
       }]
     },
     {
       "id" : "DiagnosticReport.resultsInterpreter",
       "path" : "DiagnosticReport.resultsInterpreter",
-      "short" : "Interpréteur de résultat primaire",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }],
-      "mustSupport" : true
+      "short" : "Interpréteur de résultat primaire"
     },
     {
       "id" : "DiagnosticReport.specimen",
@@ -206,27 +195,16 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
     {
       "id" : "DiagnosticReport.result",
       "path" : "DiagnosticReport.result",
-      "short" : "Résultats",
-      "min" : 1,
+      "short" : "Résultats d'examen de biologie",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-laboratory-report-results-document"]
-      }],
-      "mustSupport" : true
+      }]
     },
     {
       "id" : "DiagnosticReport.conclusion",
       "path" : "DiagnosticReport.conclusion",
-      "short" : "Si le CR de BIO ne comporte pas de sous-chapitres (les commentaires seront dans les sous-chapitres).",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.presentedForm",
-      "path" : "DiagnosticReport.presentedForm",
-      "short" : "Copie du document",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
+      "short" : "Si le CR de BIO ne comporte pas de sous-chapitres (les commentaires seront dans les sous-chapitres)."
     }]
   }
 }

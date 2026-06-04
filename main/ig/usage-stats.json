@@ -81,18 +81,7 @@
       "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-family-member-history-body-site-extension",
       "title": "FR Family Member History Body Site Extension",
       "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
+        "CodeableConcept"
       ]
     },
     {
@@ -246,7 +235,7 @@
     ],
     "AllergyIntolerance": [
       {
-        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document",
+        "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document",
         "title": "AllergyIntolerance - FR Allergy and intolerance Document"
       }
     ],
@@ -604,10 +593,6 @@
     "http://hl7.org/fhir/StructureDefinition/event-basedOn|5.2.0": [
       "Composition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/event-performerFunction": [
-      "DiagnosticReport.performer",
-      "DiagnosticReport.resultsInterpreter"
-    ],
     "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
       "HumanName",
       "Practitioner.name",
@@ -630,6 +615,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
       "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure": [
+      "Procedure"
     ],
     "http://hl7.org/fhir/StructureDefinition/procedure-targetBodyStructure": [
       "Observation.bodySite",
@@ -772,7 +760,6 @@
       "Condition.recorder",
       "DeviceRequest.requester",
       "DeviceUseStatement.source",
-      "DiagnosticReport.performer",
       "DiagnosticReport.resultsInterpreter",
       "Encounter.participant.individual",
       "FamilyMemberHistory.condition",

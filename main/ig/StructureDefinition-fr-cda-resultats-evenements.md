@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-evenements | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRCDASectionResultatsEvenements |
+| Draft as of 2026-06-04 | *Computable Name*:FRCDASectionResultatsEvenements |
 
  
 IHE-PCC - Coded-Event-Outcomes. Evenements observés au décours d’un acte ou d’un problème. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-eve
   "name" : "FRCDASectionResultatsEvenements",
   "title" : "CDA - FR Resultats evenements",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-care-plan-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRCarePlanDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRCarePlanDocument |
 
  
 FRCarePlanDocument est un profil permettant d’enregistrer une référence à un traitement dans un plan de traitement. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-care-plan-documen
   "name" : "FRCarePlanDocument",
   "title" : "CarePlan - FR Care Plan Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -108,22 +108,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-care-plan-documen
       "id" : "CarePlan.category.coding",
       "path" : "CarePlan.category.coding",
       "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "CarePlan.category.coding.system",
-      "path" : "CarePlan.category.coding.system",
-      "patternUri" : "urn:1.3.6.1.4.1.19376.1.9.2.2"
-    },
-    {
-      "id" : "CarePlan.category.coding.code",
-      "path" : "CarePlan.category.coding.code",
-      "patternCode" : "IHEPharmacyItemTypeList"
-    },
-    {
-      "id" : "CarePlan.category.coding.display",
-      "path" : "CarePlan.category.coding.display",
-      "patternString" : "Ligne dans un plan de traitement"
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "urn:oid:1.3.6.1.4.1.19376.1.9.2.2",
+        "code" : "MTPItem",
+        "display" : "Ligne dans un plan de traitement"
+      }
     },
     {
       "id" : "CarePlan.author",

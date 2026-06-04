@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-request-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRMedicationRequestDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRMedicationRequestDocument |
 
  
 FRMedicationRequestDocument permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d’administration. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
   "name" : "FRMedicationRequestDocument",
   "title" : "MedicationRequest - FR Medication Request Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -296,17 +296,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-reques
       "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding",
       "path" : "MedicationRequest.dosageInstruction.additionalInstruction.coding",
       "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding.system",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.coding.system",
-      "patternUri" : "http://terminology.hl7.org/CodeSystem/v3-ActCode"
-    },
-    {
-      "id" : "MedicationRequest.dosageInstruction.additionalInstruction:instructionsPatient.coding.code",
-      "path" : "MedicationRequest.dosageInstruction.additionalInstruction.coding.code",
-      "patternCode" : "PINSTRUCT"
+      "max" : "1",
+      "patternCoding" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "PINSTRUCT",
+        "display" : "Patient Medication Instructions"
+      }
     },
     {
       "id" : "MedicationRequest.dosageInstruction.additionalInstruction:precondition",

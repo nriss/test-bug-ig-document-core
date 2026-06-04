@@ -73,10 +73,12 @@
 * [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md)
 * [ValueSet – FR ValueSet Allergy Substance Document](ValueSet-fr-vs-allergy-substance.md)
 * [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md)
+* [FR ValueSet Encounter Class](ValueSet-fr-vs-encounter-class.md)
 * [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md)
+* [ValueSet – FR ValueSet Localisation anatomique et voie d'abord](ValueSet-fr-vs-location-body-structure-document.md)
 * [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md)
 * [ValueSet – FR ValueSet Codes d’actes](ValueSet-fr-vs-procedure-code.md)
-* [ValueSet - FR ValueSet Result Type Document](ValueSet-fr-vs-result-type-document.md)
+* [ValueSet – FR ValueSet Codes vaccins CIS (BDPM)](ValueSet-fr-vs-vaccine-code-cis.md)
 
 ### Logicals
 
@@ -433,7 +435,7 @@
 
 * [Consent - FR Advance directive Document](StructureDefinition-fr-advance-directive-document.md)
 * [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md)
-* [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
+* [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergy-intolerance-document.md)
 * [BodyStructure - FR Body Structure Document](StructureDefinition-fr-body-structure-document.md)
 * [FR Bundle Document](StructureDefinition-fr-bundle-document.md)
 * [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md)

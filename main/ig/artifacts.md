@@ -467,7 +467,7 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | | |
 | :--- | :--- |
 | [AdverseEvent - FR adverse event Document](StructureDefinition-fr-adverse-event-document.md) | FRAdverseEventDocument permet de décrire un effet indésirable prévisible lié à un médicament |
-| [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md) | FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. |
+| [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergy-intolerance-document.md) | FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. |
 | [BodyStructure - FR Body Structure Document](StructureDefinition-fr-body-structure-document.md) | FRBodyStructureDocument permet de préciser les modificateurs topographiques associés à une localisation anatomique. |
 | [CarePlan - FR Care Plan Document](StructureDefinition-fr-care-plan-document.md) | FRCarePlanDocument est un profil permettant d’enregistrer une référence à un traitement dans un plan de traitement. |
 | [Condition - FR Condition Document](StructureDefinition-fr-condition-document.md) | FRConditionDocument est un profil utilisé pour décrire un problème du patient (une pathologie par exemple). |
@@ -538,29 +538,6 @@ Modèles de données métier représentant les concepts communs, modélisés ind
 | [FR Accession Number Identifier Document](StructureDefinition-fr-accession-number-identifier-document.md) | DataType définissant l’Accession Number d’une demande d’examen. Il s’agit d’un identifiant unique attribué à chaque demande d’examen. |
 | [FR Human Name Document](StructureDefinition-fr-human-name-document.md) | Ce profil correspond au type de données HumanName utilisé dans le document. |
 | [FR Study Instance Uid Identifier Document](StructureDefinition-fr-study-instance-uid-identifier-document.md) | DataType définissant l’UID de l’instance Study (0020,000D) d’une demande d’examen d’imagerie |
-
-### Extensions FHIR entête 
-
-| | |
-| :--- | :--- |
-| [FR Author Time Extension](StructureDefinition-fr-author-time-extension.md) | Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition. |
-| [FR Performer Event Extension](StructureDefinition-fr-performer-event-extension.md) | Extension permettant d’ajouter un performer à l’élément event d’une Composition. |
-
-### Extensions FHIR corps 
-
-| | |
-| :--- | :--- |
-| [FR Actor Extension](StructureDefinition-fr-actor-extension.md) | Extension permettant de représenter un acteur impliqué dans le document avec son type et sa référence. |
-| [FR Family Member History Body Site Extension](StructureDefinition-fr-family-member-history-body-site-extension.md) | Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux |
-| [FR Immunization Type Extension](StructureDefinition-fr-immunization-type-extension.md) | Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ). |
-| [FR Interpretation Extension](StructureDefinition-fr-interpretation-extension.md) | Extension permettant de spécifier une interprétation. |
-| [FR Medication Administration Sequence Extension](StructureDefinition-fr-medication-administration-sequence-extension.md) | Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration. |
-| [FR Method Extension](StructureDefinition-fr-method-extension.md) | Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc. |
-| [FR Not Covered Extension](StructureDefinition-fr-not-covered-extension.md) | Extension permettant d’indiquer si le traitement est non remboursable. |
-| [FR Number of Frames Extension](StructureDefinition-fr-number-of-frames-extension.md) | Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR. |
-| [FR Procedure Difficulty Extension](StructureDefinition-fr-procedure-difficulty-extension.md) | Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte. |
-| [FR Procedure Priority Extension](StructureDefinition-fr-procedure-priority-extension.md) | Extension permettant d’indiquer d’indique la priorité clinique de l’observation. |
-| [FR Status Reason Extension](StructureDefinition-fr-status-reason-extension.md) | Extension permettant d’indiquer le motif du statut métier d’une évaluation. |
 
 ### Concept Maps de l'entête du document 
 
@@ -770,9 +747,22 @@ These define constraints on FHIR data types for systems conforming to this imple
 
 | | |
 | :--- | :--- |
+| [FR Actor Extension](StructureDefinition-fr-actor-extension.md) | Extension permettant de représenter un acteur impliqué dans le document avec son type et sa référence. |
+| [FR Author Time Extension](StructureDefinition-fr-author-time-extension.md) | Extension permettant d’ajouter un horodatage (TS) à l’élément author d’une Composition. |
 | [FR Comparison Studies Extension](StructureDefinition-fr-comparison-studies-extension.md) | Examen de comparaison radiologique |
+| [FR Family Member History Body Site Extension](StructureDefinition-fr-family-member-history-body-site-extension.md) | Extension permettant d’indiquer la localisation anatomique d’une condition dans antécédents familiaux |
 | [FR Imaging Procedure Extension](StructureDefinition-fr-imaging-procedure-extension.md) | Imaging procedure used for the imaging acquisition |
+| [FR Immunization Type Extension](StructureDefinition-fr-immunization-type-extension.md) | Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ). |
+| [FR Interpretation Extension](StructureDefinition-fr-interpretation-extension.md) | Extension permettant de spécifier une interprétation. |
+| [FR Medication Administration Sequence Extension](StructureDefinition-fr-medication-administration-sequence-extension.md) | Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration. |
+| [FR Method Extension](StructureDefinition-fr-method-extension.md) | Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d’examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc. |
+| [FR Not Covered Extension](StructureDefinition-fr-not-covered-extension.md) | Extension permettant d’indiquer si le traitement est non remboursable. |
+| [FR Number of Frames Extension](StructureDefinition-fr-number-of-frames-extension.md) | Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR. |
 | [FR Patient History Extension](StructureDefinition-fr-patient-history-extension.md) | Historique médical du patient pertinent pour l’examen d’imagerie |
+| [FR Performer Event Extension](StructureDefinition-fr-performer-event-extension.md) | Extension permettant d’ajouter un performer à l’élément event d’une Composition. |
+| [FR Procedure Difficulty Extension](StructureDefinition-fr-procedure-difficulty-extension.md) | Extension permettant d’indiquer la difficulté perçue ou mesurée d’un acte. |
+| [FR Procedure Priority Extension](StructureDefinition-fr-procedure-priority-extension.md) | Extension permettant d’indiquer d’indique la priorité clinique de l’observation. |
+| [FR Status Reason Extension](StructureDefinition-fr-status-reason-extension.md) | Extension permettant d’indiquer le motif du statut métier d’une évaluation. |
 
 ### Terminology: Value Sets 
 
@@ -780,6 +770,8 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
+| [FR ValueSet Encounter Class](ValueSet-fr-vs-encounter-class.md) | ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.* Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.
+ |
 | [FR ValueSet Participation Type](ValueSet-fr-doc-vs-participation-type.md) | Type de participation : destinataire |
 | [Fr ValueSet RolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md) | Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle). |
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
@@ -788,7 +780,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [ValueSet - FR ValueSet EDQM Document](ValueSet-fr-vs-edqm-document.md) | ValueSet basé sur le CodeSystem EDQM fourni par SMT. classe PDF (forme galénique). |
 | [ValueSet - FR ValueSet Medication Translation Document](ValueSet-fr-vs-medication-translation-document.md) | Systèmes autorisés pour les autres codifications. |
 | [ValueSet - FR ValueSet Reference externe](ValueSet-fr-valueset-reference-externe.md) | Jeu de valeurs regroupant les typeCode du document référencé |
-| [ValueSet - FR ValueSet Result Type Document](ValueSet-fr-vs-result-type-document.md) | ValueSet contenant les codes LOINC autorisés pour les types de résultats |
 | [ValueSet - FR ValueSet StatusCode](ValueSet-fr-valueset-status-code.md) | Jeu de valeurs permet d’indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné).* ‘completed’ : Rendu final complet. Tous les résultats attendus pour cet examen sont présents.
 * ‘active’ : Rendu partiel. Certains résultats sont encore à venir pour cet examen.
 * ‘aborted’ : L’examen est abandonné. Quelques résultats peuvent apparaître.
@@ -806,6 +797,10 @@ These define sets of codes used by systems conforming to this implementation gui
 * NCIT (code C25218 : ‘Intervention’) si l’acte n’est pas trouvé dans CCAM
 * CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.
 Si aucun code approprié n’est disponible, l’acte peut être décrit en texte libre. |
+| [ValueSet – FR ValueSet Codes vaccins CIS (BDPM)](ValueSet-fr-vs-vaccine-code-cis.md) | Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS. |
+| [ValueSet – FR ValueSet Localisation anatomique et voie d'abord](ValueSet-fr-vs-location-body-structure-document.md) | Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d’abord. Inclut :* Les structures anatomiques pour body site : http://hl7.org/fhir/ValueSet/body-site
+* Les structures anatomiques pour voie d’abord (approach-site-codes) : http://hl7.org/fhir/ValueSet/approach-site-codes
+ |
 | [ValueSet – FR ValueSet Type d'évaluation](ValueSet-fr-vs-evaluation-type.md) | Codes autorisés pour indiquer le type d’évaluation. Inclut LOINC, ICF, et permet d’autres systèmes si aucun code approprié n’est trouvé. |
 
 ### Example: Example Instances 

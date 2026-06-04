@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-immunization-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRImmunizationDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRImmunizationDocument |
 
  
 FRImmunizationDocument permet de décrire l’administration d’un vaccin. 
@@ -44,7 +44,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
   "name" : "FRImmunizationDocument",
   "title" : "Immunization - FR Immunization Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -152,7 +152,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
     {
       "id" : "Immunization.identifier",
       "path" : "Immunization.identifier",
-      "short" : "Identifiant de l’entrée. \n - Attribué par le LPS avec un identifiant unique de type UUID affecté à l’attribut root (l’attribut extension est omis).",
+      "short" : "Identifiant",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true
@@ -187,13 +187,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-immunization-docu
       "path" : "Immunization.vaccineCode.coding",
       "sliceName" : "cis",
       "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Immunization.vaccineCode.coding:cis.system",
-      "path" : "Immunization.vaccineCode.coding.system",
-      "min" : 1,
-      "patternUri" : "https://smt.esante.gouv.fr/terminologie-bdpm"
+      "max" : "1",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-vaccine-code-cis"
+      }
     },
     {
       "id" : "Immunization.vaccineCode.coding:translation",

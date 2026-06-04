@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRBodyStructureDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRBodyStructureDocument |
 
  
 FRBodyStructureDocument permet de préciser les modificateurs topographiques associés à une localisation anatomique. 
 
 **Utilisations:**
 
-* Référence ce Profil: [Observation - FR Observation Radiation Exposure Document](StructureDefinition-fr-observation-radiation-exposure-document.md) and [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
+* Référence ce Profil: [Observation - FR Observation Radiation Exposure Document](StructureDefinition-fr-observation-radiation-exposure-document.md), [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) and [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-body-structure-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-body-structure-do
   "name" : "FRBodyStructureDocument",
   "title" : "BodyStructure - FR Body Structure Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -90,8 +90,18 @@ Other representations of profile: [CSV](StructureDefinition-fr-body-structure-do
       "path" : "BodyStructure"
     },
     {
+      "id" : "BodyStructure.location",
+      "path" : "BodyStructure.location",
+      "short" : "Localisation anatomique ou voie d'abord",
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-location-body-structure-document"
+      }
+    },
+    {
       "id" : "BodyStructure.locationQualifier",
       "path" : "BodyStructure.locationQualifier",
+      "short" : "Modificateurs topographiques",
       "binding" : {
         "strength" : "required",
         "valueSet" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modificateur-topographique-cisis"

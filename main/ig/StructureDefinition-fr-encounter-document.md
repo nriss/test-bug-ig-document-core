@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FREncounterDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FREncounterDocument |
 
  
 FREncounterDocument est un profil permettant de conserver les modalités d’une rencontre du patient. Il peut s’agir d’une rencontre passée ou à venir 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-documen
   "name" : "FREncounterDocument",
   "title" : "Encounter - FR Encounter Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,31 +82,41 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-documen
   "kind" : "resource",
   "abstract" : false,
   "type" : "Encounter",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "baseDefinition" : "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
       "id" : "Encounter",
-      "path" : "Encounter"
+      "path" : "Encounter",
+      "constraint" : [{
+        "key" : "fr-encounter-status",
+        "severity" : "error",
+        "human" : "Le statut de la rencontre doit être 'finished' (rencontre réalisée), 'planned' (rencontre planifiée) ou 'proposed' (rencontre prévue mais non confirmée).",
+        "expression" : "status = 'finished' or status = 'planned' or status = 'proposed'",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-encounter-document"
+      }]
     },
     {
       "id" : "Encounter.identifier",
       "path" : "Encounter.identifier",
       "short" : "Identifiant de la rencontre",
-      "min" : 1,
       "mustSupport" : true
     },
     {
       "id" : "Encounter.status",
       "path" : "Encounter.status",
-      "short" : "Si rencontre réalisée : status='finished'\nSi rencontre planifiée : status='planned'\nSi rencontre prévue mais non confirmée : status='proposed'",
+      "short" : "Statut de la rencontre (finished | planned | proposed)",
       "mustSupport" : true
     },
     {
       "id" : "Encounter.class",
       "path" : "Encounter.class",
-      "short" : "Type de rencontre :\nValeur généralement issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) mais un autre JDV peut être utilisé pour certains documents spécifiques (dans ce cas, le JDV est fourni dans le volet concerné).",
-      "mustSupport" : true
+      "short" : "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class"
+      }
     },
     {
       "id" : "Encounter.priority",

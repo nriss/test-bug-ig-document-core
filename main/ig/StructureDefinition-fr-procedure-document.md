@@ -9,13 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRProcedureDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRProcedureDocument |
 
  
 FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. 
 
 **Utilisations:**
 
+* Dérivé de ce Profil: [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
 * Exemples pour ce/t/te Profil: [Procedure/example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-document)
@@ -41,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
   "name" : "FRProcedureDocument",
   "title" : "Procedure - FR Procedure Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -114,6 +115,27 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
       "mustSupport" : true
     },
     {
+      "id" : "Procedure.extension:approachBodySite",
+      "path" : "Procedure.extension",
+      "sliceName" : "approachBodySite",
+      "short" : "Voie d'abord",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/procedure-approachBodyStructure"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.extension:approachBodySite.value[x]",
+      "path" : "Procedure.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-body-structure-document"]
+      }]
+    },
+    {
       "id" : "Procedure.extension:difficulte",
       "path" : "Procedure.extension",
       "sliceName" : "difficulte",
@@ -136,10 +158,11 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
     {
       "id" : "Procedure.partOf",
       "path" : "Procedure.partOf",
-      "short" : "Références vers des Observations de scores associés à l'acte",
+      "short" : "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie).",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation"]
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document"]
       }],
       "mustSupport" : true
     },
@@ -157,7 +180,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
       "min" : 1,
       "mustSupport" : true,
       "binding" : {
-        "strength" : "extensible",
+        "strength" : "preferred",
         "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code"
       }
     },
@@ -341,70 +364,66 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
       "path" : "Procedure.performer.actor.extension.extension.value[x]",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document",
-        "http://hl7.org/fhir/StructureDefinition/Device"]
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
+      }]
+    },
+    {
+      "id" : "Procedure.performer.actor.extension:Dispositif",
+      "path" : "Procedure.performer.actor.extension",
+      "sliceName" : "Dispositif",
+      "short" : "Dispositif automatique utilisé lors de l'acte",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Extension",
+        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Procedure.performer.actor.extension:Dispositif.extension:type",
+      "path" : "Procedure.performer.actor.extension.extension",
+      "sliceName" : "type"
+    },
+    {
+      "id" : "Procedure.performer.actor.extension:Dispositif.extension:type.value[x]",
+      "path" : "Procedure.performer.actor.extension.extension.value[x]",
+      "patternCode" : "PART"
+    },
+    {
+      "id" : "Procedure.performer.actor.extension:Dispositif.extension:actor",
+      "path" : "Procedure.performer.actor.extension.extension",
+      "sliceName" : "actor"
+    },
+    {
+      "id" : "Procedure.performer.actor.extension:Dispositif.extension:actor.value[x]",
+      "path" : "Procedure.performer.actor.extension.extension.value[x]",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Device"]
       }]
     },
     {
       "id" : "Procedure.reasonReference",
       "path" : "Procedure.reasonReference",
-      "short" : "Motif de l'acte",
+      "short" : "Motif de l'acte / Justification de la réalisation de l'acte",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document"]
-      }],
-      "mustSupport" : true
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-condition-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-bio-chapter-document"]
+      }]
     },
     {
       "id" : "Procedure.bodySite",
       "path" : "Procedure.bodySite",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "short" : "Voie d'abord et localisation anatomique",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Procedure.bodySite:ApproachSiteCode",
-      "path" : "Procedure.bodySite",
-      "sliceName" : "ApproachSiteCode",
-      "short" : "Voie d’abord",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Procedure.bodySite:ApproachSiteCode.coding",
-      "path" : "Procedure.bodySite.coding",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Procedure.bodySite:ApproachSiteCode.coding.system",
-      "path" : "Procedure.bodySite.coding.system",
-      "patternUri" : "http://snomed.info/sct"
-    },
-    {
-      "id" : "Procedure.bodySite:TargetSiteCode",
-      "path" : "Procedure.bodySite",
-      "sliceName" : "TargetSiteCode",
       "short" : "Localisation anatomique",
-      "min" : 0,
-      "max" : "*"
-    },
-    {
-      "id" : "Procedure.bodySite:TargetSiteCode.coding",
-      "path" : "Procedure.bodySite.coding",
-      "min" : 1,
-      "max" : "1"
-    },
-    {
-      "id" : "Procedure.bodySite:TargetSiteCode.coding.system",
-      "path" : "Procedure.bodySite.coding.system",
-      "patternUri" : "http://snomed.info/sct"
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://hl7.org/fhir/ValueSet/body-site"
+      }
     },
     {
       "id" : "Procedure.usedReference",

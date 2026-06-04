@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-related-person-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRRelatedPersonDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRRelatedPersonDocument |
 
  
 Ce profil représente l’informateur non professionnel. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
   "name" : "FRRelatedPersonDocument",
   "title" : "FR RelatedPerson Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,17 +84,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
     "element" : [{
       "id" : "RelatedPerson.relationship:Role",
       "path" : "RelatedPerson.relationship",
-      "sliceName" : "Role"
-    },
-    {
-      "id" : "RelatedPerson.relationship:Role.coding.code",
-      "path" : "RelatedPerson.relationship.coding.code",
-      "patternCode" : "CON"
-    },
-    {
-      "id" : "RelatedPerson.relationship:Role.coding.display",
-      "path" : "RelatedPerson.relationship.coding.display",
-      "patternString" : "Informateur"
+      "sliceName" : "Role",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "CON",
+          "display" : "Informateur"
+        }]
+      }
     },
     {
       "id" : "RelatedPerson.relationship:RelationType",

@@ -853,9 +853,9 @@
   "name" : "FRAdverseEventDocument"
 },
 {
-  "id" : "fr-allergie-intolerance-document",
+  "id" : "fr-allergy-intolerance-document",
   "type" : "StructureDefinition",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document",
   "version" : "0.1.0-snapshot",
   "name" : "FRAllergyIntoleranceDocument"
 },
@@ -3835,11 +3835,25 @@
   "name" : "FRValueSetEDQMDocument"
 },
 {
+  "id" : "fr-vs-encounter-class",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetEncounterClass"
+},
+{
   "id" : "fr-vs-evaluation-type",
   "type" : "ValueSet",
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-evaluation-type",
   "version" : "0.1.0-snapshot",
   "name" : "FRValueSetEvaluationTypeDocument"
+},
+{
+  "id" : "fr-vs-location-body-structure-document",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-location-body-structure-document",
+  "version" : "0.1.0-snapshot",
+  "name" : "FRValueSetLocationBodyStructureDocument"
 },
 {
   "id" : "fr-vs-medication-translation-document",
@@ -3856,9 +3870,9 @@
   "name" : "FRValueSetProcedureCodeDocument"
 },
 {
-  "id" : "fr-vs-result-type-document",
+  "id" : "fr-vs-vaccine-code-cis",
   "type" : "ValueSet",
-  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-result-type-document",
+  "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-vaccine-code-cis",
   "version" : "0.1.0-snapshot",
-  "name" : "FRValueSetResultTypeDocument"
+  "name" : "FRValueSetVaccineCodeCISDocument"
 }]

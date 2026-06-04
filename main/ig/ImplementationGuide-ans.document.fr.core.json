@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -49,7 +49,7 @@
     "id" : "ans_fr_terminologies",
     "uri" : "https://interop.esante.gouv.fr/terminologies/ImplementationGuide/ans.fr.terminologies",
     "packageId" : "ans.fr.terminologies",
-    "version" : "1.9.2"
+    "version" : "1.10.0"
   },
   {
     "id" : "hl7_fhir_fr_core",
@@ -724,14 +724,6 @@
       "name" : "Data Type Profiles"
     },
     {
-      "id" : "Extensions FHIR entête",
-      "name" : "Extensions FHIR entête"
-    },
-    {
-      "id" : "Extensions FHIR corps",
-      "name" : "Extensions FHIR corps"
-    },
-    {
       "id" : "Mapping ML-CDA-FHIR entête",
       "name" : "Concept Maps de l'entête du document"
     },
@@ -762,7 +754,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/fr-allergie-intolerance-document"
+        "reference" : "StructureDefinition/fr-allergy-intolerance-document"
       },
       "name" : "AllergyIntolerance - FR Allergy and intolerance Document",
       "description" : "FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie.",
@@ -3554,7 +3546,7 @@
       },
       "name" : "Example - AllergyIntolerance avec Data Absent Reason",
       "description" : "Exemple illustrant l'usage de l'extension `data-absent-reason` sur les éléments\nobligatoires de la ressource AllergyIntolerance dont la valeur est inconnue ou\ntemporairement indisponible.\n\nCas d'usage illustrés :\n- `code` : l'agent allergique est inconnu → code `unknown`\n- `reaction.manifestation` : la manifestation clinique est inconnue → code `unknown`",
-      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergie-intolerance-document"
+      "exampleCanonical" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document"
     },
     {
       "extension" : [{
@@ -3604,8 +3596,7 @@
       },
       "name" : "FR Actor Extension",
       "description" : "Extension permettant de représenter un acteur impliqué dans le document avec son type et sa référence.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3617,8 +3608,7 @@
       },
       "name" : "FR Author Time Extension",
       "description" : "Extension permettant d'ajouter un horodatage (TS) à l'élément author d'une Composition.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR entête"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3694,8 +3684,7 @@
       },
       "name" : "FR Family Member History Body Site Extension",
       "description" : "Extension permettant d'indiquer la localisation anatomique d'une condition dans antécédents familiaux",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3732,8 +3721,7 @@
       },
       "name" : "FR Immunization Type Extension",
       "description" : "Extension permettant de représenter le type de vaccination (ex: INITIMMUNIZ, BOOSTER, IMMUNIZ).",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3745,8 +3733,7 @@
       },
       "name" : "FR Interpretation Extension",
       "description" : "Extension permettant de spécifier une interprétation.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3771,8 +3758,7 @@
       },
       "name" : "FR Medication Administration Sequence Extension",
       "description" : "Extension permettant d'indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3784,8 +3770,7 @@
       },
       "name" : "FR Method Extension",
       "description" : "Extension permettant d’indiquer la méthode utilisée : techniques biologiques (ex. : titration, agglutination…), techniques d’imagerie dans les demandes d'examen (ultrasound, tomographie, IRM…), des méthodes de mesure spécifiques, etc.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3797,8 +3782,7 @@
       },
       "name" : "FR Not Covered Extension",
       "description" : "Extension permettant d'indiquer si le traitement est non remboursable.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3810,8 +3794,7 @@
       },
       "name" : "FR Number of Frames Extension",
       "description" : "Extension permettant d’indiquer le nombre de cadres référencés dans une instance ImagingStudy, conforme aux exigences du modèle logique Xt-EHR.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3874,8 +3857,7 @@
       },
       "name" : "FR Performer Event Extension",
       "description" : "Extension permettant d'ajouter un performer à l'élément event d'une Composition.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR entête"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3913,8 +3895,7 @@
       },
       "name" : "FR Procedure Difficulty Extension",
       "description" : "Extension permettant d'indiquer la difficulté perçue ou mesurée d'un acte.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3926,8 +3907,7 @@
       },
       "name" : "FR Procedure Priority Extension",
       "description" : "Extension permettant d’indiquer d'indique la priorité clinique de l’observation.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3952,8 +3932,7 @@
       },
       "name" : "FR Status Reason Extension",
       "description" : "Extension permettant d'indiquer le motif du statut métier d'une évaluation.",
-      "exampleBoolean" : false,
-      "groupingId" : "Extensions FHIR corps"
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -3967,6 +3946,18 @@
       "description" : "DataType définissant l’UID de l’instance Study (0020,000D) d'une demande d'examen d'imagerie",
       "exampleBoolean" : false,
       "groupingId" : "Data Type FHIR"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-vs-encounter-class"
+      },
+      "name" : "FR ValueSet Encounter Class",
+      "description" : "ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.\n - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -8092,18 +8083,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-vs-result-type-document"
-      },
-      "name" : "ValueSet - FR ValueSet Result Type Document",
-      "description" : "ValueSet contenant les codes LOINC autorisés pour les types de résultats",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/fr-valueset-status-code"
       },
       "name" : "ValueSet - FR ValueSet StatusCode",
@@ -8168,6 +8147,30 @@
       },
       "name" : "ValueSet – FR ValueSet Codes d’actes",
       "description" : "Codes autorisés pour indiquer un acte.\nInclut :\n- Terminologie CCAM\n- NCIT (code C25218 : 'Intervention') si l'acte n'est pas trouvé dans CCAM\n- CISIS jdv-absent-or-unknown-procedure-cisis pour actes chirurgicaux inconnus ou absents.\n\nSi aucun code approprié n’est disponible, l’acte peut être décrit en texte libre.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-vs-vaccine-code-cis"
+      },
+      "name" : "ValueSet – FR ValueSet Codes vaccins CIS (BDPM)",
+      "description" : "Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fr-vs-location-body-structure-document"
+      },
+      "name" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord",
+      "description" : "Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d'abord.\nInclut :\n- Les structures anatomiques pour body site : http://hl7.org/fhir/ValueSet/body-site\n- Les structures anatomiques pour voie d'abord (approach-site-codes) : http://hl7.org/fhir/ValueSet/approach-site-codes",
       "exampleBoolean" : false
     },
     {

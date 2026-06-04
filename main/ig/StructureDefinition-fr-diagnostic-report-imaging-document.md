@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-imaging-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRDiagnosticReportImagingDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRDiagnosticReportImagingDocument |
 
  
 Le profil FRDiagnosticReportImagingDocument est dédié aux comptes rendus d’imagerie. Ce document représente le rapport d’un examen d’imagerie. Il constitue la ressource principale qui fait référence à l’ensemble des données produites lors de l’examen d’imagerie. 
 
 **Utilisations:**
 
-* Référence ce Profil: [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
+* Référence ce Profil: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md) and [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-diagnostic-report-imaging-document)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "name" : "FRDiagnosticReportImagingDocument",
   "title" : "DiagnosticReport - FR Diagnostic Report Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -82,7 +82,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
   "kind" : "resource",
   "abstract" : false,
   "type" : "DiagnosticReport",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-diagnostic-report-document",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -176,6 +176,17 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
       "short" : "Statut du compte-rendu d'imagerie"
     },
     {
+      "id" : "DiagnosticReport.category",
+      "path" : "DiagnosticReport.category",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "18748-4",
+          "display" : "Imagerie"
+        }]
+      }
+    },
+    {
       "id" : "DiagnosticReport.code",
       "path" : "DiagnosticReport.code",
       "short" : "Type de document d'imagerie",
@@ -202,8 +213,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
           "path" : "$this"
         }],
         "rules" : "open"
-      },
-      "mustSupport" : true
+      }
     },
     {
       "id" : "DiagnosticReport.performer:organization",
@@ -218,49 +228,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
       }]
     },
     {
-      "id" : "DiagnosticReport.resultsInterpreter",
-      "path" : "DiagnosticReport.resultsInterpreter",
-      "mustSupport" : true
-    },
-    {
-      "id" : "DiagnosticReport.resultsInterpreter.extension",
-      "path" : "DiagnosticReport.resultsInterpreter.extension",
-      "min" : 1
-    },
-    {
       "id" : "DiagnosticReport.resultsInterpreter.extension:author",
       "path" : "DiagnosticReport.resultsInterpreter.extension",
       "sliceName" : "author",
-      "short" : "Auteur du compte-rendu d'imagerie (Médecin - Radiologue)",
-      "min" : 1,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-actor-extension"]
-      }]
-    },
-    {
-      "id" : "DiagnosticReport.resultsInterpreter.extension:author.extension:type",
-      "path" : "DiagnosticReport.resultsInterpreter.extension.extension",
-      "sliceName" : "type"
-    },
-    {
-      "id" : "DiagnosticReport.resultsInterpreter.extension:author.extension:type.value[x]",
-      "path" : "DiagnosticReport.resultsInterpreter.extension.extension.value[x]",
-      "patternCode" : "AUT"
-    },
-    {
-      "id" : "DiagnosticReport.resultsInterpreter.extension:author.extension:actor",
-      "path" : "DiagnosticReport.resultsInterpreter.extension.extension",
-      "sliceName" : "actor"
-    },
-    {
-      "id" : "DiagnosticReport.resultsInterpreter.extension:author.extension:actor.value[x]",
-      "path" : "DiagnosticReport.resultsInterpreter.extension.extension.value[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-practitionerRole-document"]
-      }]
+      "short" : "Auteur du compte-rendu d'imagerie (Médecin - Radiologue)"
     },
     {
       "id" : "DiagnosticReport.result",
@@ -274,28 +245,33 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
         "rules" : "open"
       },
       "short" : "Résultats d'examen (actuels ou antérieurs)",
-      "comment" : "Les résultats sont exprimés sous forme non codée dans notre cas d’usage. Le contenu narratif du résultat est porté dans une note",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document"]
-      }],
-      "mustSupport" : true
+      "comment" : "Les résultats sont exprimés sous forme non codée dans notre cas d’usage. Le contenu narratif du résultat est porté dans une note"
     },
     {
       "id" : "DiagnosticReport.result:resultatActuel",
       "path" : "DiagnosticReport.result",
       "sliceName" : "resultatActuel",
       "short" : "Résultats actuels de l'examen d'imagerie",
+      "comment" : "Si les résultats d'examen sont codés, ils sont référencés dans FRObservationResultDocument. Si les résultats d'examen sont exprimés sous forme non codée, ils sont portés dans une note de FRObservationResultDocument.",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document"]
+      }]
     },
     {
       "id" : "DiagnosticReport.result:resultatAnterieur",
       "path" : "DiagnosticReport.result",
       "sliceName" : "resultatAnterieur",
       "short" : "Résultats antérieurs",
+      "comment" : "Si les résultats d'examen sont codés, ils sont référencés dans FRObservationResultDocument. Si les résultats d'examen sont exprimés sous forme non codée, ils sont portés dans une note de FRObservationResultDocument.",
       "min" : 0,
-      "max" : "1"
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-result-document"]
+      }]
     },
     {
       "id" : "DiagnosticReport.imagingStudy",
@@ -309,8 +285,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-diagnostic-report
     {
       "id" : "DiagnosticReport.conclusion",
       "path" : "DiagnosticReport.conclusion",
-      "short" : "Conclusions cliniques et interprétations du rapport d’imagerie.",
-      "mustSupport" : true
+      "short" : "Conclusions cliniques et interprétations du rapport d’imagerie."
     }]
   }
 }

@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-intolerance-type-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-02 | *Computable Name*:FRValueSetAllergyInoleranceTypeDocument |
+| Draft as of 2026-06-04 | *Computable Name*:FRValueSetAllergyInoleranceTypeDocument |
 
  
 ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances 
 
  **References** 
 
-* [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergie-intolerance-document.md)
+* [AllergyIntolerance - FR Allergy and intolerance Document](StructureDefinition-fr-allergy-intolerance-document.md)
 
 ### Définition logique (CLD)
 
@@ -50,7 +50,7 @@ ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies e
   "name" : "FRValueSetAllergyInoleranceTypeDocument",
   "title" : "ValueSet - FR ValueSet Allergy Intolerance Type Document",
   "status" : "draft",
-  "date" : "2026-06-02T07:35:19+00:00",
+  "date" : "2026-06-04T15:31:02+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
