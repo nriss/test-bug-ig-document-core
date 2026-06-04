@@ -75,7 +75,13 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:Role","RelatedPerson.relationship","Role","","",0,1,"","","Y","CodeableConcept {[]} {[]}
-","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role","",,,,"RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","The nature of the relationship. Rôle de la personne. Ex : personne de confiance, aidant ...","The nature of the relationship between a patient and the related person.","","We need to know the relationship with the patient since it influences the interpretation of the information attributed to this person.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass""/>
+    <code value=""CON""/>
+    <display value=""Informateur""/>
+  </coding>
+</valueCodeableConcept>","","","",,"preferred","","https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role","",,,,"RelatedPerson.relationship",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","code","FiveWs.class","NK1-3"
 "RelatedPerson.relationship:Role.id","RelatedPerson.relationship.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -85,7 +91,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "RelatedPerson.relationship:Role.coding","RelatedPerson.relationship.coding","","","",0,*,"","","Y","Coding {[]} {[]}
-","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,"required","","https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role","",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","union(., ./translation)","C*E.1-8, C*E.10-22"
 "RelatedPerson.relationship:Role.coding.id","RelatedPerson.relationship.coding.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"

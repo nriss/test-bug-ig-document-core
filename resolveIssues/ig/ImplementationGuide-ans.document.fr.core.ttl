@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-04T08:54:45+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-04T14:47:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -6984,74 +6984,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-participation-type-encounter> ;
-         fhir:reference [ fhir:v "ValueSet/fr-valueset-participation-type-encounter" ]
-       ] ;
-       fhir:name [ fhir:v "FR ValueSet Participation Type Encounter" ] ;
-       fhir:description [ fhir:v "ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role> ;
-         fhir:reference [ fhir:v "ValueSet/fr-valueset-relationship-role" ]
-       ] ;
-       fhir:name [ fhir:v "FR ValueSet Relationship Role" ] ;
-       fhir:description [ fhir:v "ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260" ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
          fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-role-prise-charge> ;
          fhir:reference [ fhir:v "ValueSet/fr-doc-vs-role-prise-charge" ]
        ] ;
        fhir:name [ fhir:v "Fr ValueSet RolePriseCharge" ] ;
        fhir:description [ fhir:v "Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle)." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-value-set-ucum-document> ;
-         fhir:reference [ fhir:v "ValueSet/fr-value-set-ucum-document" ]
-       ] ;
-       fhir:name [ fhir:v "FR ValueSet UCUM Document" ] ;
-       fhir:description [ fhir:v "Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

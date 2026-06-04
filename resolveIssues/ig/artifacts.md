@@ -773,9 +773,6 @@ These define sets of codes used by systems conforming to this implementation gui
 | [FR ValueSet Encounter Class](ValueSet-fr-vs-encounter-class.md) | ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.* Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers.
  |
 | [FR ValueSet Participation Type](ValueSet-fr-doc-vs-participation-type.md) | Type de participation : destinataire |
-| [FR ValueSet Participation Type Encounter](ValueSet-fr-valueset-participation-type-encounter.md) | ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType |
-| [FR ValueSet Relationship Role](ValueSet-fr-valueset-relationship-role.md) | ValueSet pour le rôle de relation de l’informateur basé sur HL7 RoleClass - TRE_R260 |
-| [FR ValueSet UCUM Document](ValueSet-fr-value-set-ucum-document.md) | Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux. |
 | [Fr ValueSet RolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md) | Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle). |
 | [ValueSet - FR ValueSet Actor Type Document](ValueSet-fr-vs-actor-type-document.md) | Jeu de valeurs pour les types d’acteurs. |
 | [ValueSet - FR ValueSet Allergy Intolerance Type Document](ValueSet-fr-vs-allergy-intolerance-type-document.md) | ValueSet contenant les codes SNOMED CT autorisés pour les types d’allergies et d’intolérances |

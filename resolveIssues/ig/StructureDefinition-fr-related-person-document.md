@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
   "name" : "FRRelatedPersonDocument",
   "title" : "FR RelatedPerson Document",
   "status" : "draft",
-  "date" : "2026-06-04T08:54:45+00:00",
+  "date" : "2026-06-04T14:47:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -84,14 +84,13 @@ Other representations of profile: [CSV](StructureDefinition-fr-related-person-do
     "element" : [{
       "id" : "RelatedPerson.relationship:Role",
       "path" : "RelatedPerson.relationship",
-      "sliceName" : "Role"
-    },
-    {
-      "id" : "RelatedPerson.relationship:Role.coding",
-      "path" : "RelatedPerson.relationship.coding",
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role"
+      "sliceName" : "Role",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass",
+          "code" : "CON",
+          "display" : "Informateur"
+        }]
       }
     },
     {

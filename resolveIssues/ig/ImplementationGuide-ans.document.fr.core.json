@@ -10,7 +10,7 @@
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-06-04T08:54:45+00:00",
+  "date" : "2026-06-04T14:47:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -3977,46 +3977,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/fr-valueset-participation-type-encounter"
-      },
-      "name" : "FR ValueSet Participation Type Encounter",
-      "description" : "ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-valueset-relationship-role"
-      },
-      "name" : "FR ValueSet Relationship Role",
-      "description" : "ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/fr-doc-vs-role-prise-charge"
       },
       "name" : "Fr ValueSet RolePriseCharge",
       "description" : "Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle).",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/fr-value-set-ucum-document"
-      },
-      "name" : "FR ValueSet UCUM Document",
-      "description" : "Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux.",
       "exampleBoolean" : false
     },
     {

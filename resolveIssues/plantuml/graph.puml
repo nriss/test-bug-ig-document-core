@@ -5340,8 +5340,7 @@ package IG #DDDDDD{
              Encounter.type => [None..None]
              Encounter.participant => [None..None]
              Encounter.participant:responsibleParty => [0..1]
-             Encounter.participant:responsibleParty.type => [None..None]
-             Encounter.participant:responsibleParty.type.coding => [None..None]
+             Encounter.participant:responsibleParty.type => [1..None]
              Encounter.participant:responsibleParty.individual => [1..None]
              Encounter.participant:encounterParticipant => [0..*]
              Encounter.participant:encounterParticipant.type => [None..None]
@@ -7923,7 +7922,6 @@ package IG #DDDDDD{
         class FRRelatedPersonDocument{
 
              RelatedPerson.relationship:Role => [None..None]
-             RelatedPerson.relationship:Role.coding => [None..None]
              RelatedPerson.relationship:RelationType => [None..1]
              RelatedPerson.name => [1..1]
              RelatedPerson.name.given => [None..1]
@@ -8232,10 +8230,6 @@ package IG #DDDDDD{
 
      FRCompositionDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationType
 
-        class FRValueSetParticipationTypeEncounter  
-
-     FREncounterCareDocument -[#black,dotted,thickness=2]-> FRValueSetParticipationTypeEncounter
-
         class FRValueSetEncounterClass  
 
      FREncounterDocument -[#black,dotted,thickness=2]-> FRValueSetEncounterClass
@@ -8284,10 +8278,6 @@ package IG #DDDDDD{
 
      FRObservationSurveyDocument -[#black,dotted,thickness=2]-> FRValueSetEvaluationTypeDocument
 
-        class FRValueSetUCUMDocument  
-
-     FRObservationVitalSignsDocument -[#black,dotted,thickness=2]-> FRValueSetUCUMDocument
-
         class FRValueSetRolePriseCharge  
 
      FRPractitionerDocument -[#black,dotted,thickness=2]-> FRValueSetRolePriseCharge
@@ -8295,10 +8285,6 @@ package IG #DDDDDD{
         class FRValueSetProcedureCodeDocument  
 
      FRProcedureDocument -[#black,dotted,thickness=2]-> FRValueSetProcedureCodeDocument
-
-        class FRValueSetRelationshipRole  
-
-     FRRelatedPersonDocument -[#black,dotted,thickness=2]-> FRValueSetRelationshipRole
        }
 
 package "Ressources de base" #palegreen {

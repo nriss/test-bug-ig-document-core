@@ -55,7 +55,7 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
   "name" : "FRValueSetProcedureCodeDocument",
   "title" : "ValueSet – FR ValueSet Codes d’actes",
   "status" : "draft",
-  "date" : "2026-06-04T08:54:45+00:00",
+  "date" : "2026-06-04T14:47:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

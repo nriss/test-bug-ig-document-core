@@ -26,7 +26,7 @@ Mapping des éléments du modele metier FRLMObservation vers le profil CDA FRCDA
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Metier/CDA/FHIR : \"Observation\"",
   "status" : "draft",
-  "date" : "2026-06-04T08:54:45+00:00",
+  "date" : "2026-06-04T14:47:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

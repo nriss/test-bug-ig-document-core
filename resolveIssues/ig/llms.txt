@@ -63,11 +63,8 @@
 
 * [FR ValueSet Participation Type](ValueSet-fr-doc-vs-participation-type.md)
 * [Fr ValueSet RolePriseCharge](ValueSet-fr-doc-vs-role-prise-charge.md)
-* [FR ValueSet UCUM Document](ValueSet-fr-value-set-ucum-document.md)
 * [ValueSet - FR ValueSet Code Traitement](ValueSet-fr-valueset-code-traitement.md)
-* [FR ValueSet Participation Type Encounter](ValueSet-fr-valueset-participation-type-encounter.md)
 * [ValueSet - FR ValueSet Reference externe](ValueSet-fr-valueset-reference-externe.md)
-* [FR ValueSet Relationship Role](ValueSet-fr-valueset-relationship-role.md)
 * [ValueSet - FR ValueSet StatusCode](ValueSet-fr-valueset-status-code.md)
 * [ValueSet - FR ValueSet Statut du problème](ValueSet-fr-valueset-statut-du-probleme.md)
 * [ValueSet - FR ValueSet Type Vaccination](ValueSet-fr-valueset-type-vaccination.md)

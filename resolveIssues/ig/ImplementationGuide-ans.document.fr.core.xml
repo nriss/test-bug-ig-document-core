@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-06-04T08:54:45+00:00"/>
+  <date value="2026-06-04T14:47:37+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -3540,43 +3540,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-valueset-participation-type-encounter"/>
-      </reference>
-      <name value="FR ValueSet Participation Type Encounter"/>
-      <description value="ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-valueset-relationship-role"/>
-      </reference>
-      <name value="FR ValueSet Relationship Role"/>
-      <description value="ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/fr-doc-vs-role-prise-charge"/>
       </reference>
       <name value="Fr ValueSet RolePriseCharge"/>
       <description value="Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle)."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-value-set-ucum-document"/>
-      </reference>
-      <name value="FR ValueSet UCUM Document"/>
-      <description value="Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

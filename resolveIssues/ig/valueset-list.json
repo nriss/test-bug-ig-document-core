@@ -18,15 +18,6 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge"]
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-value-set-ucum-document",
-    "version" : "0.1.0-snapshot",
-    "status" : "draft",
-    "name" : "FRValueSetUCUMDocument",
-    "title" : "FR ValueSet UCUM Document",
-    "description" : "Jeu de valeurs des unités de mesure UCUM utilisées dans les signes vitaux.",
-    "systems" : ["http://unitsofmeasure.org"]
-  },
-  {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-code-traitement",
     "version" : "0.1.0-snapshot",
     "status" : "draft",
@@ -37,15 +28,6 @@
     "http://terminology.hl7.org/CodeSystem/v3-ActCode"]
   },
   {
-    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-participation-type-encounter",
-    "version" : "0.1.0-snapshot",
-    "status" : "draft",
-    "name" : "FRValueSetParticipationTypeEncounter",
-    "title" : "FR ValueSet Participation Type Encounter",
-    "description" : "ValueSet pour le type de participation du responsable de la prise en charge basé sur TRE_A13 - HL7 ParticipationType",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"]
-  },
-  {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-reference-externe",
     "version" : "0.1.0-snapshot",
     "status" : "draft",
@@ -53,15 +35,6 @@
     "title" : "ValueSet - FR ValueSet Reference externe",
     "description" : "Jeu de valeurs regroupant les typeCode du document référencé",
     "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActRelationshipType"]
-  },
-  {
-    "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-relationship-role",
-    "version" : "0.1.0-snapshot",
-    "status" : "draft",
-    "name" : "FRValueSetRelationshipRole",
-    "title" : "FR ValueSet Relationship Role",
-    "description" : "ValueSet pour le rôle de relation de l'informateur basé sur HL7 RoleClass - TRE_R260",
-    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R260-HL7RoleClass/FHIR/TRE-R260-HL7RoleClass"]
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code",
