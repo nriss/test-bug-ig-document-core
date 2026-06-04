@@ -5,11 +5,13 @@ Title: "DiagnosticReport - FR Diagnostic Report Document"
 Description: "FRDiagnosticReportDocument est un profil permettant de regrouper les types des résultats classés par type d’examens (BIO, IMG, etc…)."
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
-* identifier 1..1  MS
+* identifier MS
 * identifier ^short = "Identifiant"
-* code MS
+* category 1.. MS
   * ^short = "Type de résultat"
-* code from FRValueSetResultTypeDocument (required) // VS à remplacer par le JDV ANS à créer par Alain
+* category from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-resultat-type-cisis (preferred)
+
+* code ^short = "Code du résultat"
 * status MS
 * status ^short = "Statut"
 * status = #final
@@ -18,17 +20,28 @@ Description: "FRDiagnosticReportDocument est un profil permettant de regrouper l
   * ^short = "Date"
 * performer MS 
   * ^short = "Exécutant"
-* performer.extension contains $event-performerFunction named performerFunction 1..1
-* performer.extension[performerFunction] 1..1
-* performer.extension[performerFunction].valueCodeableConcept.coding.code = #PPRF "primary performer"
 * performer only Reference (FRPractitionerDocument or FRPractitionerRoleDocument or FROrganizationDocument)
 
 * resultsInterpreter MS
   * ^short = "Auteur"
-* resultsInterpreter.extension contains $event-performerFunction named performerFunction 1..1
-* resultsInterpreter.extension[performerFunction] 1..1
-* resultsInterpreter.extension[performerFunction].valueCodeableConcept.coding.code = #AUT "author (originator)"
-* resultsInterpreter only Reference (FRPractitionerDocument or FRPractitionerRoleDocument or FROrganizationDocument)
+* resultsInterpreter only Reference (FRPractitionerDocument or FRPractitionerRoleDocument or FROrganizationDocument)  
+* resultsInterpreter.extension contains FRActorExtension named author 1..*
+* resultsInterpreter.extension[author] ^short = "Auteur du compte-rendu (Médecin - Radiologue - Biologiste ...)"
+* resultsInterpreter.extension[author].extension[type].valueCode = #AUT
+* resultsInterpreter.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+
 * result 1..* MS
-  * ^short = "Resultat"
-* result only Reference (FRObservationResultDocument)
+  * ^short = "Résultat"
+* result only Reference (FRObservationResultDocument or FRObservationLaboratoryReportResultsDocument)
+
+* media MS
+* media ^short = "Images clés associées à ce rapport"
+  * link MS
+  * link ^short = "Lien vers les images clés"
+  * link only Reference(FRMediaDocument)
+
+* conclusion MS
+* conclusion ^short = "Conclusions cliniques et interprétations du rapport."
+
+* presentedForm 1..1 MS
+* presentedForm ^short = "Copie du document"

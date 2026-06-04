@@ -1,5 +1,5 @@
 Profile: FREncounterDocument
-Parent: Encounter
+Parent: FRCoreEncounterProfile
 Id: fr-encounter-document
 Title: "Encounter - FR Encounter Document"
 Description: "FREncounterDocument est un profil permettant de conserver les modalités d'une rencontre du patient. Il peut s'agir d'une rencontre passée ou à venir"
@@ -11,15 +11,12 @@ Description: "FREncounterDocument est un profil permettant de conserver les moda
 * identifier ^short = "Identifiant de la rencontre"
 
 * class MS
-* class ^short = "Type de rencontre :
-Valeur généralement issue du JDV_HL7_ActEncounterCode_CISIS (2.16.840.1.113883.1.11.13955) mais un autre JDV peut être utilisé pour certains documents spécifiques (dans ce cas, le JDV est fourni dans le volet concerné)."
+* class ^short = "Type de rencontre (codes HL7 ActEncounterCode ou codes spécifiques au volet)"
+* class from FRValueSetEncounterClass (extensible)
 
 * status MS
-* status ^short = """
-Si rencontre réalisée : status='finished'
-Si rencontre planifiée : status='planned'
-Si rencontre prévue mais non confirmée : status='proposed'
-"""
+* status ^short = "Statut de la rencontre (finished | planned | proposed)"
+* obeys fr-encounter-status
 
 * period MS
 * period ^short = "Date début et fin de la rencontre
@@ -65,3 +62,8 @@ Sinon : l'exécutant n'est pas obligatoire mais peut être renseigné"
 * hospitalization.dischargeDisposition ^short = "Modalité de sortie du patient lors de la rencontre: 
 Valeur provenant du jdv-modalite-sortie-cisis ou autre JDV spécifique à un volet"
 * hospitalization.dischargeDisposition from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-sortie-cisis (preferred)
+
+Invariant: fr-encounter-status
+Description: "Le statut de la rencontre doit être 'finished' (rencontre réalisée), 'planned' (rencontre planifiée) ou 'proposed' (rencontre prévue mais non confirmée)."
+Severity: #error
+Expression: "status = 'finished' or status = 'planned' or status = 'proposed'"

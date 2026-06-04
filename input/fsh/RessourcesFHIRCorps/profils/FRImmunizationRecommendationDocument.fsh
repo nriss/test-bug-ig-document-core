@@ -9,8 +9,7 @@ Description: "FRImmunizationRecommendationDocument permet de décrire une vaccin
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * identifier 1..1 MS
-* identifier ^short = "Identifiant de l’entrée. 
- - Attribué par le LPS avec un identifiant unique de type UUID affecté à l’attribut root (l’attribut extension est omis)."
+* identifier ^short = "Identifiant"
 
 * recommendation 1..1
   * forecastStatus = #complete
@@ -26,8 +25,7 @@ Description: "FRImmunizationRecommendationDocument permet de décrire une vaccin
   * vaccineCode ^short = "Vaccin. Code du produit de santé"
   // Slice CIS obligatoire
   * vaccineCode.coding contains cis 1..1
-  * vaccineCode.coding[cis].system 1..1
-  * vaccineCode.coding[cis].system = "https://smt.esante.gouv.fr/terminologie-bdpm"
+  * vaccineCode.coding[cis] from FRValueSetVaccineCodeCISDocument (required)
 
   // Slice (autres codifications)
   * vaccineCode.coding contains translation 0..*

@@ -8,8 +8,7 @@ Description: "FRImmunizationDocument permet de décrire l'administration d'un va
 
 //* ^extension[$imposeProfile].valueCanonical = Canonical()
 * identifier 1..1 MS
-* identifier ^short = "Identifiant de l’entrée. 
- - Attribué par le LPS avec un identifiant unique de type UUID affecté à l’attribut root (l’attribut extension est omis)."
+* identifier ^short = "Identifiant" 
 
 // à supprimer après retour de NRISS et remplacer par * protocolApplied.series
 //* extension contains fr-immunization-type-extension named typeVaccination 1..1
@@ -40,8 +39,7 @@ Description: "FRImmunizationDocument permet de décrire l'administration d'un va
 * vaccineCode ^short = "Vaccin. Code du produit de santé"
 // Slice CIS obligatoire
 * vaccineCode.coding contains cis 1..1
-* vaccineCode.coding[cis].system 1..1
-* vaccineCode.coding[cis].system = "https://smt.esante.gouv.fr/terminologie-bdpm"
+* vaccineCode.coding[cis] from FRValueSetVaccineCodeCISDocument (required)
 
 // Slice (autres codifications)
 * vaccineCode.coding contains translation 0..*

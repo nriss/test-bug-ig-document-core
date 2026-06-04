@@ -49,6 +49,7 @@ L’examen est composé d'une ou de plusieurs séries d’images médicales."
 
 // ImagingStudy.series.bodySite est une nouvelle donnée qui n'était pas présente en CDA
 * series.bodySite ^short = "Localisation anatomique en SNOMED CT"
+* series.bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
  // Modificateurs topographiques
 * series.laterality 1..1 MS

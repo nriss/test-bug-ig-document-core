@@ -24,8 +24,8 @@ Description: "FRObservationPainScoreDocument permet d'enregistrer l'évaluation 
 * interpretation ^short = "Interprétation"
 * interpretation from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evaluation-douleur-cisis
 
-* bodySite MS
-  * ^short = "Localisation de la douleur"
+* bodySite ^short = "Localisation de la douleur"
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * value[x] only integer
 * valueInteger 1..1 MS

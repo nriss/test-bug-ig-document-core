@@ -11,11 +11,13 @@ Description: "FRAdverseEventDocument permet de décrire un effet indésirable pr
 * category from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-origine-effet-indesirable-cisis (required)
 * category ^short = "Type d'effet indésirable"
 
+// date de début de l'effet indésirable
+// la date de fin de l'effet indésirable est à renseigner dans resultingCondition.abatementDateTime
 * date 1.. MS
-* date ^short = "Date de début"
+* date ^short = "Date de début de l'effet indésirable"
 
 * detected 1.. MS
-* detected ^short = "Date de fin"
+* detected ^short = "Date de détection de l'effet indésirable"
 
 * suspectEntity 1.. MS
 

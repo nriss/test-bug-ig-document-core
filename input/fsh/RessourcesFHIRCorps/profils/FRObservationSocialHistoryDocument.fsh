@@ -9,9 +9,7 @@ Description: "FRObservationSocialHistoryDocument décrit les habitudes de vie du
 
 * category 1..1 MS
 * category ^short = "Catégorie de l'observation"
-* category.coding 1..1
-* category.coding.code = #social-history
-* category.coding.system = "http://terminology.hl7.org/CodeSystem/observation-category"
+* category = $observation-category#social-history "Social History"
 
 * code MS
 /*Lorsque l’élément social ne figure pas dans ce ValueSet, le code 'Autre élément social' du VS est utilisé, 

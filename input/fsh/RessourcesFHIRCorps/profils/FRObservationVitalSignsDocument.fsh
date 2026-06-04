@@ -26,9 +26,8 @@ Description: "
 * interpretation from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ObservationInterpretation-cisis
 * method MS 
   * ^short = "Méthode utilisée pour l'observation"
-* bodySite MS 
-  * ^short = "Site de l'observation"
-
+* bodySite ^short = "Site de l'observation"
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 * performer 0..1 MS
 * performer.extension contains FRActorExtension named author 0..*
 * performer.extension[author] ^short = "Auteur de l’observation"
@@ -40,12 +39,7 @@ Description: "
     or FRPatientINSDocument
     )
     
-/* * component.value[x] only Quantity
-* component.valueQuantity 1..1 MS
-* component.valueQuantity.unit from FRValueSetUCUMDocument (required)
-  * ^short = "Unité de la mesure" */
-
 * component.value[x] only Quantity
 * component.valueQuantity 1..1 MS
-* component.valueQuantity.system = "http://unitsofmeasure.org" 
+* component.valueQuantity from  http://terminology.hl7.org/ValueSet/ucum-units (required)
   * ^short = "Valeur quantitative du signe vital"

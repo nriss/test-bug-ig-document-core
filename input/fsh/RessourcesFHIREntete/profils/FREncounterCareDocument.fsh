@@ -8,7 +8,6 @@ Description: "Ce profil représente l'association du document à une prise en ch
 * period 1..1
 * period ^short = "Date de début et de fin de la prise en charge"
 * hospitalization.dischargeDisposition ^short = "Type sortie"
-* hospitalization.dischargeDisposition.coding.system = "urn:oid:1.2.250.1.213.2.14"
 
 // Slicing : participant 
 * participant ^slicing.discriminator.type = #value
@@ -19,8 +18,7 @@ Description: "Ce profil représente l'association du document à une prise en ch
 * participant contains responsibleParty 0..1
 * participant[responsibleParty] ^short = "Responsable de la prise en charge"
 * participant[responsibleParty].type ^short = "Type de participation"
-* participant[responsibleParty].type.coding.code = #DIS
-* participant[responsibleParty].type.coding.system = "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType"
+* participant[responsibleParty].type = $TRE_A13-HL7ParticipationType#DIS "Responsable de la sortie"
 * participant[responsibleParty].individual 1..1
 * participant[responsibleParty].individual ^short = "Entité responsable de la prise en charge"
 * participant[responsibleParty].individual only Reference(FRPractitionerRoleDocument)

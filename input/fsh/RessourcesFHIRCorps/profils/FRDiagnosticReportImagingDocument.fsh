@@ -1,13 +1,13 @@
 Profile: FRDiagnosticReportImagingDocument
 Id: fr-diagnostic-report-imaging-document
-Parent: DiagnosticReport
+Parent: FRDiagnosticReportDocument
 Title: "DiagnosticReport - FR Diagnostic Report Imaging Document"
 Description: """
 Le profil FRDiagnosticReportImagingDocument est dédié aux comptes rendus d’imagerie.
 Ce document représente le rapport d’un examen d’imagerie. Il constitue la ressource principale qui fait référence à l’ensemble des données produites lors de l’examen d’imagerie.
 """
 
-* identifier 1..*
+* identifier 1..
   * ^short = "identifiant du compte-rendu d'imagerie"
 
 * status
@@ -22,8 +22,9 @@ Ce document représente le rapport d’un examen d’imagerie. Il constitue la r
 * basedOn[serviceRequestAccessionNumber] only Reference(FRServiceRequestDocument)
 * basedOn[serviceRequestAccessionNumber] ^short = "Référence à la demande d'examen contenant l'Accession Number"
 
+* category = $LNC#18748-4 "Imagerie"
 
-* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis
+* code from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-code-document-imagerie-cisis (required)
   * ^short = "Type de document d'imagerie"
 
 * subject only Reference(FRPatientINSDocument)
@@ -38,14 +39,8 @@ Ce document représente le rapport d’un examen d’imagerie. Il constitue la r
 * performer[organization] only Reference(FROrganizationDocument)
 * performer[organization] ^short = "Organization productrice du CR d'imagerie"
 
-* resultsInterpreter MS
-* resultsInterpreter.extension contains FRActorExtension named author 1..*
 * resultsInterpreter.extension[author] ^short = "Auteur du compte-rendu d'imagerie (Médecin - Radiologue)"
-* resultsInterpreter.extension[author].extension[type].valueCode = #AUT
-* resultsInterpreter.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
-* result MS
-* result only Reference(FRObservationResultDocument)
 * result ^short = "Résultats d'examen (actuels ou antérieurs)"
 * result ^comment = "Les résultats sont exprimés sous forme non codée dans notre cas d’usage. Le contenu narratif du résultat est porté dans une note"
 
@@ -59,12 +54,15 @@ Ce document représente le rapport d’un examen d’imagerie. Il constitue la r
 
 // Slice : résultats actuels
 * result[resultatActuel] ^short = "Résultats actuels de l'examen d'imagerie"
+* result[resultatActuel] ^comment = "Si les résultats d'examen sont codés, ils sont référencés dans FRObservationResultDocument. Si les résultats d'examen sont exprimés sous forme non codée, ils sont portés dans une note de FRObservationResultDocument."
+* result[resultatActuel] only Reference(FRObservationResultDocument)
 
 // Slice : résultats antérieurs
 * result[resultatAnterieur] ^short = "Résultats antérieurs"
+* result[resultatAnterieur] ^comment = "Si les résultats d'examen sont codés, ils sont référencés dans FRObservationResultDocument. Si les résultats d'examen sont exprimés sous forme non codée, ils sont portés dans une note de FRObservationResultDocument."
+* result[resultatAnterieur] only Reference(FRObservationResultDocument)
 
 // La conclusion est non codée
-* conclusion MS
 * conclusion ^short = "Conclusions cliniques et interprétations du rapport d’imagerie."
 
 * imagingStudy only Reference(FRImagingStudyDocument)

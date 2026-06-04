@@ -39,6 +39,7 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
 
 * bodySite MS
 * bodySite ^short = "Cible"
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * extension contains FRInterpretationExtension named interpretation 0..1
 * extension[interpretation] MS

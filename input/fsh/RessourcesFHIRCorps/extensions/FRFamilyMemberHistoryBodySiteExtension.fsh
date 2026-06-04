@@ -6,4 +6,4 @@ Description: "Extension permettant d'indiquer la localisation anatomique d'une c
 * ^context[+].type = #element
 * ^context[=].expression = "FamilyMemberHistory"
 * value[x] only CodeableConcept
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
+* valueCodeableConcept from http://hl7.org/fhir/ValueSet/body-site (extensible)

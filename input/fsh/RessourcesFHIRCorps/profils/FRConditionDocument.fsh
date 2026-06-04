@@ -43,10 +43,9 @@ Si pas de problème ou pas d'information : https://smt.esante.gouv.fr/fhir/Value
 * recorder.extension[author].extension[type].valueCode = #AUT
 * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
-* bodySite
+* bodySite MS
 * bodySite ^short = "Localisation anatomique"
-* bodySite.coding 1..1
-* bodySite.coding.system = "http://snomed.info/sct"
+* bodySite from http://hl7.org/fhir/ValueSet/body-site (extensible)
 
 * severity MS
 * severity ^short = "Sévérité"

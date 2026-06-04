@@ -1,27 +1,35 @@
 Profile: FRDiagnosticReportBIOChapterDocument
-Parent: DiagnosticReport
+Parent: FRDiagnosticReportDocument
 Id: fr-diagnostic-report-bio-chapter-document
 Title: "DiagnosticReport - FR Diagnostic Report BIO chapter Document"
 Description: "FRDiagnosticReportBIOChapterDocument utilisé pour représenter un CR de biologie"
 
 * code MS 
 * code ^short = "Type de document"
-* category 1..1 MS
-* category ^short = "Codes des chapitres de CR BIO"
-* effective[x] 1..1 MS
+
+* category = $LNC#26436-6 "Biologie polyvalente"
+* category
+  * ^short = "Catégorie du rapport de biologie"
+* category ^slicing.discriminator.type = #value
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains chapitreBIO 1..*
+* category[chapitreBIO] 
+  * ^short = "Codes des chapitres du compte-rendu de BIO"
+  * ^definition = "Le code du chapitre doit être un code issu du jeu de valeurs Circuit de la biologie (disponible sur bioloinc.fr), onglet ‘2.Chapitres LOINC’ et contenant les codes et libellés traduits en français pour la biologie."
+
 * effective[x] ^short = "Date et heure de création du document"
-* status MS
+
 * status ^short = "Statut du rapport de BIO (final, partial ...)"
 
-* performer 1..* MS
-* performer.extension contains FRActorExtension named author 1..*
-* performer.extension[author] ^short = "Auteur du compte-rendu de BIO (Médecin - Biologie médicale)"
-* performer.extension[author].extension[type].valueCode = #AUT
-* performer.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
+* performer ^slicing.discriminator.type = #pattern
+* performer ^slicing.discriminator.path = "$this"
+* performer ^slicing.rules = #open
+* performer contains organization 0..*
+* performer[organization] only Reference(FROrganizationDocument)
+* performer[organization] ^short = "Organization productrice du CR de biologie"
 
-* resultsInterpreter MS
 * resultsInterpreter ^short = "Interpréteur de résultat primaire"
-* resultsInterpreter only Reference(FRPractitionerRoleDocument)
 
 * encounter MS
 * encounter ^short = "L’événement de soins auquel se rapporte ce compte rendu de laboratoire (moment où l’examen a été prescrit)."
@@ -37,11 +45,7 @@ Description: "FRDiagnosticReportBIOChapterDocument utilisé pour représenter un
 * specimen ^short = "Échantillons sur lesquels repose ce compte rendu."
 
 * result 1..* MS
-* result ^short = "Résultats"
+* result ^short = "Résultats d'examen de biologie"
 * result only Reference(FRObservationLaboratoryReportResultsDocument)
 
-* presentedForm 1..1 MS
-* presentedForm ^short = "Copie du document"
-
-* conclusion MS
 * conclusion ^short = "Si le CR de BIO ne comporte pas de sous-chapitres (les commentaires seront dans les sous-chapitres)."

@@ -85,8 +85,7 @@ Description: "FRMedicationRequestDocument permet de décrire un traitement presc
 * dosageInstruction.additionalInstruction[instructionsPatient]
   * ^short = "Instruction au patient"
   * coding 1..1
-  * coding.code = #PINSTRUCT
-  * coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+  * coding = $v3-ActCode#PINSTRUCT "Patient Medication Instructions"
  
 * dosageInstruction.additionalInstruction[precondition]
   * ^short = "Condition préalable à l'utilisation du médicament"

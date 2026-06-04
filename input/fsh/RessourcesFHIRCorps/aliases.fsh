@@ -20,6 +20,8 @@ Alias: $CCAM = https://smt.esante.gouv.fr/terminologie-ccam
 Alias: $SMS = https://smt.esante.gouv.fr/terminologie-sms
 Alias: $terminologie-cisis = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
+Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
+Alias: $observation-category = http://terminology.hl7.org/CodeSystem/observation-category
 
 // JDVs
 Alias: $jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis = https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationImmunizationCode-cisis
