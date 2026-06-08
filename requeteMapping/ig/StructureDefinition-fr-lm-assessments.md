@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-assessments.cs
   "name" : "FRLMAssessments",
   "title" : "Logical model - FR LM Assessments",
   "status" : "draft",
-  "date" : "2026-06-08T14:21:16+00:00",
+  "date" : "2026-06-08T15:10:46+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
