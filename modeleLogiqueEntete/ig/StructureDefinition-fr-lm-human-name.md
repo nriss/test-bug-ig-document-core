@@ -16,7 +16,7 @@ Modele logique metier - FR LM Human Name
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md) and [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Health Professional](StructureDefinition-fr-lm-health-professional.md), [Logical model - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model - FR LM Patient](StructureDefinition-fr-lm-patient.md) and [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-human-name)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-human-name.csv
   "name" : "FRLMHumanName",
   "title" : "Logical model - FR LM Human Name",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

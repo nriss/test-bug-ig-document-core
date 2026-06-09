@@ -16,7 +16,7 @@ Informant (personne ayant fourni des informations utiles à la production du doc
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md), [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md) and [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md), [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md) and [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-informant)
 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-informant.csv)
   "name" : "FRLMInformant",
   "title" : "Logical model - FR LM Informant",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

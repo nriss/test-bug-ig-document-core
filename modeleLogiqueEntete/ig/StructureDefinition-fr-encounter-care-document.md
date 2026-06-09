@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
   "name" : "FREncounterCareDocument",
   "title" : "FR Encounter Care Document",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -113,15 +113,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-encounter-care-do
     {
       "id" : "Encounter.participant:responsibleParty.type",
       "path" : "Encounter.participant.type",
-      "short" : "Type de participation",
-      "min" : 1,
-      "patternCodeableConcept" : {
-        "coding" : [{
-          "system" : "https://mos.esante.gouv.fr/NOS/TRE_A13-HL7ParticipationType/FHIR/TRE-A13-HL7ParticipationType",
-          "code" : "DIS",
-          "display" : "Responsable de la sortie"
-        }]
-      }
+      "short" : "Type de participation"
     },
     {
       "id" : "Encounter.participant:responsibleParty.individual",

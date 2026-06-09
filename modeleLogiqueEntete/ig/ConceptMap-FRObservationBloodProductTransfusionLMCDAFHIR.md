@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTransfusionDeProduitsSanguins vers
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

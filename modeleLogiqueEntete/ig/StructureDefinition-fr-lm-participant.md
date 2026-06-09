@@ -1,10 +1,10 @@
-# Modèle logique métier - FR LM Participant - ANS IG document core v0.1.0-snapshot
+# Logical model - FR LM Participant - ANS IG document core v0.1.0-snapshot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
-* **Modèle logique métier - FR LM Participant**
+* **Logical model - FR LM Participant**
 
-## Logical Model: Modèle logique métier - FR LM Participant 
+## Logical Model: Logical model - FR LM Participant 
 
 | | |
 | :--- | :--- |
@@ -16,7 +16,7 @@ Personne/Structure impliquée dans les évènements décrits par le document qui
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md) and [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-participant)
 
@@ -43,9 +43,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
   "url" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant",
   "version" : "0.1.0-snapshot",
   "name" : "FRLMParticipant",
-  "title" : "Modèle logique métier - FR LM Participant",
+  "title" : "Logical model - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -72,7 +72,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
     "element" : [{
       "id" : "fr-lm-participant",
       "path" : "fr-lm-participant",
-      "short" : "Modèle logique métier - FR LM Participant",
+      "short" : "Logical model - FR LM Participant",
       "definition" : "Personne/Structure impliquée dans les évènements décrits par le document qui n'a pas été mentionné ailleurs."
     },
     {

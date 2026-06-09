@@ -16,7 +16,7 @@ Une personne (professionnel ou patient ou autre)
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md), [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md), [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md)... Show 13 more, [Logical model - FR LM Intended Recipient](StructureDefinition-fr-lm-intended-recipient.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md), [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md), [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md), [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md), [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md) and [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Attester](StructureDefinition-fr-lm-attester.md), [Logical model - FR LM Data Enterer](StructureDefinition-fr-lm-data-enterer.md), [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Entry](StructureDefinition-fr-lm-entry.md)... Show 13 more, [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md), [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md), [Logical model - FR LM Intended Recipient](StructureDefinition-fr-lm-intended-recipient.md), [Modèle logique métier - FR LM Laboratoire exécutant](StructureDefinition-fr-lm-laboratoire-executant.md), [Logical model - FR LM Legal Authentication](StructureDefinition-fr-lm-legal-authentication.md), [Logical model - FR LM Medication Dispense](StructureDefinition-fr-lm-medication-dispense.md), [Logical model - FR LM Observation Result](StructureDefinition-fr-lm-observation-result.md), [Logical model - FR LM Order](StructureDefinition-fr-lm-order.md), [Logical model - FR LM Participant](StructureDefinition-fr-lm-participant.md), [Logical model- FR LM Pregnancy History](StructureDefinition-fr-lm-pregnancy-history.md), [Logical model- FR LM Pregnancy Observation](StructureDefinition-fr-lm-pregnancy-observation.md), [Logical model - FR LM Section](StructureDefinition-fr-lm-section.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-health-professional)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
   "name" : "FRLMHealthProfessional",
   "title" : "Logical model - FR LM Health Professional",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -76,21 +76,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
       "definition" : "Une personne (professionnel ou patient ou autre)"
     },
     {
-      "id" : "fr-lm-health-professional.personne",
-      "path" : "fr-lm-health-professional.personne",
-      "short" : "Personne",
-      "definition" : "Personne",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.identifiantPersonne",
-      "path" : "fr-lm-health-professional.personne.identifiantPersonne",
-      "short" : "Identifiant de la personne.\n- obligatoire pour les professionnels et les patients.",
-      "definition" : "Identifiant de la personne.\n- obligatoire pour les professionnels et les patients.",
+      "id" : "fr-lm-health-professional.identifier",
+      "path" : "fr-lm-health-professional.identifier",
+      "short" : "Identifiant.",
+      "definition" : "Identifiant.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -98,54 +87,21 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.roleFonctionnel",
-      "path" : "fr-lm-health-professional.personne.roleFonctionnel",
-      "short" : "Rôle fonctionnel",
-      "definition" : "Rôle fonctionnel",
+      "id" : "fr-lm-health-professional.name",
+      "path" : "fr-lm-health-professional.name",
+      "short" : "Nom du professionnel de santé.",
+      "definition" : "Nom du professionnel de santé.",
       "min" : 0,
       "max" : "1",
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-human-name"
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.dateExecution",
-      "path" : "fr-lm-health-professional.personne.dateExecution",
-      "short" : "Date de l’exécution",
-      "definition" : "Date de l’exécution",
-      "min" : 1,
-      "max" : "1",
-      "type" : [{
-        "code" : "dateTime"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.professionRole",
-      "path" : "fr-lm-health-professional.personne.professionRole",
-      "short" : "\n- Profession pour les professionnels.\n- Rôle pour les non professionnels.",
-      "definition" : "\n- Profession pour les professionnels.\n- Rôle pour les non professionnels.",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.lien",
-      "path" : "fr-lm-health-professional.personne.lien",
-      "short" : "Lien de la personne avec le patient/usager",
-      "definition" : "Lien de la personne avec le patient/usager",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.adresse",
-      "path" : "fr-lm-health-professional.personne.adresse",
-      "short" : "Adresse géopostale",
-      "definition" : "Adresse géopostale",
+      "id" : "fr-lm-health-professional.address",
+      "path" : "fr-lm-health-professional.address",
+      "short" : "Adresses géopostales du professionnel de santé.",
+      "definition" : "Adresses géopostales du professionnel de santé.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -153,10 +109,10 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.coordonneesTelecom",
-      "path" : "fr-lm-health-professional.personne.coordonneesTelecom",
-      "short" : "Coordonnées télécom",
-      "definition" : "Coordonnées télécom",
+      "id" : "fr-lm-health-professional.telecom",
+      "path" : "fr-lm-health-professional.telecom",
+      "short" : "Coordonnées télécom du professionnel de santé.",
+      "definition" : "Coordonnées télécom du professionnel de santé.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -164,69 +120,47 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-health-profess
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.IdentitePersonne",
-      "path" : "fr-lm-health-professional.personne.IdentitePersonne",
-      "short" : "Identité de la personne",
-      "definition" : "Identité de la personne",
+      "id" : "fr-lm-health-professional.professionalRole",
+      "path" : "fr-lm-health-professional.professionalRole",
+      "short" : "Rôle professionnel",
+      "definition" : "Rôle professionnel",
       "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Base"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.IdentitePersonne.nomPersonne",
-      "path" : "fr-lm-health-professional.personne.IdentitePersonne.nomPersonne",
-      "short" : "Nom de la personne",
-      "definition" : "Nom de la personne",
-      "min" : 1,
       "max" : "*",
       "type" : [{
         "code" : "Base"
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.IdentitePersonne.prenomPersonne",
-      "path" : "fr-lm-health-professional.personne.IdentitePersonne.prenomPersonne",
-      "short" : "Prénom de la personne",
-      "definition" : "Prénom de la personne",
+      "id" : "fr-lm-health-professional.professionalRole.role",
+      "path" : "fr-lm-health-professional.professionalRole.role",
+      "short" : "Rôle du professionnel de santé.",
+      "definition" : "Rôle du professionnel de santé.",
       "min" : 0,
       "max" : "*",
       "type" : [{
-        "code" : "string"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.IdentitePersonne.civilite",
-      "path" : "fr-lm-health-professional.personne.IdentitePersonne.civilite",
-      "short" : "Civilité",
-      "definition" : "Civilité",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
         "code" : "CodeableConcept"
       }]
     },
     {
-      "id" : "fr-lm-health-professional.personne.IdentitePersonne.titre",
-      "path" : "fr-lm-health-professional.personne.IdentitePersonne.titre",
-      "short" : "Titre",
-      "definition" : "Titre",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "CodeableConcept"
-      }]
-    },
-    {
-      "id" : "fr-lm-health-professional.personne.structure",
-      "path" : "fr-lm-health-professional.personne.structure",
-      "short" : "Structure",
-      "definition" : "Structure",
+      "id" : "fr-lm-health-professional.professionalRole.organisation",
+      "path" : "fr-lm-health-professional.professionalRole.organisation",
+      "short" : "Organisation à laquelle le professionnel de santé est rattaché pour exercer ce rôle.",
+      "definition" : "Organisation à laquelle le professionnel de santé est rattaché pour exercer ce rôle.",
       "min" : 0,
       "max" : "1",
       "type" : [{
         "code" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-organisation"
+      }]
+    },
+    {
+      "id" : "fr-lm-health-professional.professionalRole.specialty",
+      "path" : "fr-lm-health-professional.professionalRole.specialty",
+      "short" : "Spécialité d'un professionnel de santé qui décrit le rôle fonctionnel qu'il exerce au sein de l'organisation.",
+      "definition" : "Spécialité d'un professionnel de santé qui décrit le rôle fonctionnel qu'il exerce au sein de l'organisation.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
       }]
     }]
   }

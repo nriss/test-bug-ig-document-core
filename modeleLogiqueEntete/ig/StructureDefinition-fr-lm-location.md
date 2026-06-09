@@ -16,7 +16,7 @@ Lieu
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md), [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) and [Logical model - FR LM Specimen](StructureDefinition-fr-lm-specimen.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-location)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-location.csv),
   "name" : "FRLMLocation",
   "title" : "Logical model - FR LM Location",
   "status" : "draft",
-  "date" : "2026-06-09T09:28:52+00:00",
+  "date" : "2026-06-09T14:42:35+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
