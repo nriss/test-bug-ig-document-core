@@ -69,7 +69,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-habitus-mode-
   "name" : "FRCDAHabitusModeDeVie",
   "title" : "CDA - FR Habitus Mode de vie",
   "status" : "draft",
-  "date" : "2026-06-09T09:13:27+00:00",
+  "date" : "2026-06-09T09:28:52+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
