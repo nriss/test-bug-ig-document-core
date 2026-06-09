@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-allergy-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRValueSetAllergyCodeDocument |
+| Draft as of 2026-06-09 | *Computable Name*:FRValueSetAllergyCodeDocument |
 
  
 Jeu de valeurs permettant de coder l’agent responsable d’une allergie : 
@@ -58,7 +58,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRValueSetAllergyCodeDocument",
   "title" : "ValueSet – FR ValueSet Allergy Code Document",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

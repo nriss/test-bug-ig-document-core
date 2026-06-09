@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-organisme-assurance-maladie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRCDAOrganismeAssuranceMaladie |
+| Draft as of 2026-06-09 | *Computable Name*:FRCDAOrganismeAssuranceMaladie |
 
  
 Entrée FR-Organisme-assurance-maladie: IHE-PCC - Payers-entry. L’entrée Organisme d’assurance maladie est une entrée permettant de décrire un organisme d’assurance maladie. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-organisme-ass
   "name" : "FRCDAOrganismeAssuranceMaladie",
   "title" : "CDA - FR Organisme assurance maladie",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

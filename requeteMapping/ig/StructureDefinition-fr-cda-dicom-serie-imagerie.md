@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-serie-imagerie | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRCDADICOMSerieImagerie |
+| Draft as of 2026-06-09 | *Computable Name*:FRCDADICOMSerieImagerie |
 
  
 Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-serie-i
   "name" : "FRCDADICOMSerieImagerie",
   "title" : "CDA - FR DICOM Serie imagerie",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

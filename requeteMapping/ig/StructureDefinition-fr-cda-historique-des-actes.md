@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-historique-des-actes | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRCDASectionHistoriqueDesActes |
+| Draft as of 2026-06-09 | *Computable Name*:FRCDASectionHistoriqueDesActes |
 
  
 IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-historique-de
   "name" : "FRCDASectionHistoriqueDesActes",
   "title" : "CDA - FR Historique des actes",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-participation-type | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRValueSetParticipationType |
+| Draft as of 2026-06-09 | *Computable Name*:FRValueSetParticipationType |
 
  
 Type de participation : destinataire 
@@ -54,7 +54,7 @@ Type de participation : destinataire
   "title" : "FR ValueSet Participation Type",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

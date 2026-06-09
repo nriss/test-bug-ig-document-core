@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-medical-devices-and-implants | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRLMMedicalDevicesAndImplants |
+| Draft as of 2026-06-09 | *Computable Name*:FRLMMedicalDevicesAndImplants |
 
  
 Section Dispositifs Medicaux 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-medical-device
   "name" : "FRLMMedicalDevicesAndImplants",
   "title" : "Logical Model - FR LM Medical Devices and Implants",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

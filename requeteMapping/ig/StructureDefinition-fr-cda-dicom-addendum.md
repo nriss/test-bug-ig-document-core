@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-addendum | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRCDASectionDICOMAddendum |
+| Draft as of 2026-06-09 | *Computable Name*:FRCDASectionDICOMAddendum |
 
  
 DICOM Part 20 - Addendum Section 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-addendu
   "name" : "FRCDASectionDICOMAddendum",
   "title" : "CDA - FR DICOM Addendum",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

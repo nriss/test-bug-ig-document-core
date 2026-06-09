@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-patient | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-08 | *Computable Name*:FRCDADICOMExpositionPatient |
+| Draft as of 2026-06-09 | *Computable Name*:FRCDADICOMExpositionPatient |
 
  
 Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l’entrée FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l’identité du professionnel de santé ayant donné l’autorisation de l’exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "name" : "FRCDADICOMExpositionPatient",
   "title" : "CDA - FR DICOM Exposition patient",
   "status" : "draft",
-  "date" : "2026-06-08T15:10:46+00:00",
+  "date" : "2026-06-09T09:02:40+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
