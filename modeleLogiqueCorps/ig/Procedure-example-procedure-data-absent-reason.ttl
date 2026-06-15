@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/core/Procedure/example-procedure-data-absent-reason> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-procedure-data-absent-reason"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Procédure example-procedure-data-absent-reason</b></p><a name=\"example-procedure-data-absent-reason\"> </a><a name=\"hcexample-procedure-data-absent-reason\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"StructureDefinition-fr-procedure-document.html\">Procedure - FR Procedure Document</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.3.0/NamingSystem-uri.html\" title=\"As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt #xD;#xA;#xD;#xA;This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: #xD;#xA;#xD;#xA;Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.#xD;#xA;#xD;#xA;This OID may also be used in CD.codeSystem.\">Uniform Resource Identifier (URI)</a>/urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890</p><p><b>status</b>: Unknown</p><p><b>code</b>: <span title=\"Codes :\">Acte réalisé inconnu : utilisation de l'extension data-absent-reason avec code 'unknown'</span></p><p><b>subject</b>: <a href=\"Patient/exemple-patient\">Exemple Patient</a></p><p><b>performed</b>: Absent because : temp-unknown</p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [
+       fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ;
+       fhir:l <urn:ietf:rfc:3986>
+     ] ;
+     fhir:value [ fhir:v "urn:uuid:a1b2c3d4-e5f6-7890-abcd-ef1234567890" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:code [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "unknown"
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "Acte réalisé inconnu : utilisation de l'extension data-absent-reason avec code 'unknown'" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/Patient/exemple-patient> ;
+     fhir:reference [ fhir:v "Patient/exemple-patient" ] ;
+     fhir:display [ fhir:v "Exemple Patient" ]
+  ] ; # 
+  fhir:performed [
+     a fhir:DateTime ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/data-absent-reason>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "temp-unknown"
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
