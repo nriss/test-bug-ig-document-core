@@ -21,7 +21,7 @@
 ","Sous-sections","Sous-sections","","","","","","","","","",,,,,"",,,,"fr-lm-section.subSection",0,*,"",""
 "fr-lm-course-of-encounter.entry","fr-lm-course-of-encounter.entry","","","",0,*,"","","","Base {[]} {[]}
 ","Entrées","Entrées","","","","","","","","","",,,,,"",,,,"fr-lm-section.entry",0,*,"",""
-"fr-lm-course-of-encounter.entry.testResults","fr-lm-course-of-encounter.entry.testResults","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation {[]} {[]}
+"fr-lm-course-of-encounter.entry.testResults","fr-lm-course-of-encounter.entry.testResults","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-observation-result {[]} {[]}
 ","Entrée Simple observation","Entrée Simple observation","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.testResults",1,*,"",""
 "fr-lm-course-of-encounter.entry.patientTransfer","fr-lm-course-of-encounter.entry.patientTransfer","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-transfer {[]} {[]}
 ","Entrée Transfert du patient","Entrée Transfert du patient","","","","","","","","","",,,,,"",,,,"fr-lm-course-of-encounter.entry.patientTransfer",0,*,"",""

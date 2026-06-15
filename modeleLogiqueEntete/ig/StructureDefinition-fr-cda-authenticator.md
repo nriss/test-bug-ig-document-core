@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-authenticator | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*:FRCDAAuthenticator |
+| Draft as of 2026-06-15 | *Computable Name*:FRCDAAuthenticator |
 
  
 L’élément de l’en-tête du CDA authenticator permet de représenter le professionnel (personne physique) attestant la validité du contenu du document. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-authenticator
   "name" : "FRCDAAuthenticator",
   "title" : "CDA - authenticator",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

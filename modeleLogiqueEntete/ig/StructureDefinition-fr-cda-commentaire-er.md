@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-commentaire-er | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*:FRCDACommentaireER |
+| Draft as of 2026-06-15 | *Computable Name*:FRCDACommentaireER |
 
  
 Entrée FR-Commentaire-ER: IHE-PCC - Comments L’entrée FR-Commentaire-ER est un élément qui permet de joindre un commentaire à une entrée ou à une section. Note : IHE PCC a limité l’utilisation de l’élément « Comments » (1.3.6.1.4.1.19376.1.5.3.1.4.2) aux entrées de type observation et organizer. Ce n’est pas le cas dans CDD pour l’élément « Comment » (2.16.840.1.113883.10.20.1.40). Dans le CI-SIS, le choix a été fait de ne pas limiter l’utilisation de l’entrée FR-Commentaire-ER (1.3.6.1.4.1.19376.1.5.3.1.4.2) comme dans CCD. Lorsque l’entrée FR-Commentaire-ER est utilisée dans une entrée : de type organizer : l’utiliser dans un élément component avec l’attribut type-Code=’COMP’.de type observation ou act, etc… : l’utiliser dans un élément entryRelationship avec les attributs typeCode=’SUBJ’ et inversionInd=’true’. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-commentaire-e
   "name" : "FRCDACommentaireER",
   "title" : "CDA - FR Commentaire ER",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

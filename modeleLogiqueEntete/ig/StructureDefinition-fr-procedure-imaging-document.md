@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-imaging-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*:FRProcedureImagingDocument |
+| Draft as of 2026-06-15 | *Computable Name*:FRProcedureImagingDocument |
 
  
 FRProcedureImagingDocument permet d’enregistrer les différents paramètres de l’acquisition d’image : acte d’imagerie, localisation anatomique / latéralité / topographie, d’autres paramètres de l’acte 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-imaging
   "name" : "FRProcedureImagingDocument",
   "title" : "Procedure - FR Procedure Imaging Document",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

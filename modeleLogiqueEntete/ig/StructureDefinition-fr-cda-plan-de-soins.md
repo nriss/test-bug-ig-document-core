@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-plan-de-soins | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*:FRCDASectionPlanDeSoins |
+| Draft as of 2026-06-15 | *Computable Name*:FRCDASectionPlanDeSoins |
 
  
 IHE-PCC - Coded Care Plan. La section Plan de soins doit contenir une description narrative des attentes en matière de soins, y compris des propositions, des objectifs et des demandes pour le suivi ou l’amélioration de l’état du patient. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-plan-de-soins
   "name" : "FRCDASectionPlanDeSoins",
   "title" : "CDA - FR Plan de soins",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

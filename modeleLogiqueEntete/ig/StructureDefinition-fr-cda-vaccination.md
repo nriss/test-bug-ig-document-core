@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-vaccination | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*:FRCDAVaccination |
+| Draft as of 2026-06-15 | *Computable Name*:FRCDAVaccination |
 
  
 Entrée FR-Vaccination: IHE-PCC - Immunizations. L’entrée Vaccination est une entrée de type ‘substanceAdministration’ pour décrire l’administration d’un vaccin. Elle permet également de décrire pourquoi un vaccin n’a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l’entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-vaccination.c
   "name" : "FRCDAVaccination",
   "title" : "CDA - FR Vaccination",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,64 +1,64 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
     <title>CDA - ANS IG document core v0.1.0-snapshot</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link rel="stylesheet" href="fhir.css"/>
+    <link href="fhir.css" rel="stylesheet"/>
 
-      <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
 
-      <!-- Project extras -->
-    <link rel="stylesheet" href="assets/css/project.css"/>
-    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
-    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
-  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-      <!-- Placeholder for child template CSS declarations -->
+    <!-- Placeholder for child template CSS declarations -->
 
-    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
-      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- [if lt IE 9]>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif] -->
+    <![endif]-->
 
-      <!-- Favicons -->
-    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
-    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
-    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-    <script src="assets/js/mermaid.js" type="text/javascript"></script>
-    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"4.1"}
     h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
-    <div id="segment-header" class="segment">    <!-- segment-header -->
-      <div class="container">    <!-- container -->
-          <!-- Placeholder for child template header declarations -->
-<div style="display: flex; flex-direction: column;" id="family-nav">
-  <a no-external="true" style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/fhir">
-    <img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" style="display: block; width: 100%;" height="50"/> 
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> 
   </a>
-  <a no-external="true" style="scale: 0.5;" id="hl7-search-lnk" href="http://hl7.org/cda">
-    <img src="assets/images/cda-logo-www.png" alt="Visit the CDA website" style="display: block; width: 100%;" height="50"/> 
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/> 
   </a>
 </div>
 
-  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
-    <a no-external="true" id="hl7-logo" href="https://esante.gouv.fr/"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
-    <a no-external="true" id="hl7-search-lnk" href="searchform.html"><img src="assets/images/search.png" alt="Search FHIR"/></a>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
 
   <div id="ig-search">
@@ -72,33 +72,33 @@
 
 
 
-  <img src="assets/images/fra.svg" alt="France flag" title="France" height="16"/>
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
           </p>
         </div>
-      </div>   <!-- /container -->
-    </div>    <!-- /segment-header -->
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">    <!-- container -->
-          <!-- HEADER CONTENT -->
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-            <!-- status-bar -->
+          <!--status-bar-->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-                <!-- menu.xml -->
+              <!-- menu.xml  -->
 
-<ul class="nav navbar-nav">
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Accueil</a>
   </li>
@@ -129,8 +129,8 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a name="l222">​</a>
-        <a href="StructureDefinition-fr-lm-entete-document.html">Modèle logique métier</a>
+      <li>
+        <a href="StructureDefinition-fr-lm-header-document.html">Modèle logique métier</a>
       </li>
       <li>
         <a href="ressourcesCDA-entete.html">CDA</a>
@@ -144,7 +144,7 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Corps d'un document
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Corps d&apos;un document
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -171,34 +171,34 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication" target="_blank">Espace de publication du CI-SIS</a>
+        <a target="_blank" href="https://esante.gouv.fr/offres-services/ci-sis/espace-publication">Espace de publication du CI-SIS</a>
       </li>
       <li>
-        <a href="https://smt.esante.gouv.fr/" target="_blank">Serveur Multi-terminologies</a>
+        <a target="_blank" href="https://smt.esante.gouv.fr/">Serveur Multi-terminologies</a>
       </li>
       <li>
-        <a href="https://smt.esante.gouv.fr/fhir" target="_blank">Serveur Multi-terminologies / FHIR</a>
+        <a target="_blank" href="https://smt.esante.gouv.fr/fhir">Serveur Multi-terminologies / FHIR</a>
       </li>
       <li>
-        <a href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html" target="_blank">IG terminologies et jeux de valeurs du CI-SIS</a>
+        <a target="_blank" href="https://ansforge.github.io/IG-terminologie-de-sante/ig/main/index.html">IG terminologies et jeux de valeurs du CI-SIS</a>
       </li>
       <li>
-        <a href="https://interop.esante.gouv.fr/" target="_blank">Espace de tests du CI-SIS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/">Espace de tests du CI-SIS</a>
       </li>
       <li>
-        <a href="https://github.com/ansforge/TestContenuCDA-3-0" target="_blank">testContenuCDA</a>
+        <a target="_blank" href="https://github.com/ansforge/TestContenuCDA-3-0">testContenuCDA</a>
       </li>
       <li>
         <a href="securite.html">Sécurité</a>
       </li>
       <li>
-        <a href="https://hl7.org/cda/stds/online-navigation/index.html" target="_blank">Standard CDA</a>
+        <a target="_blank" href="https://hl7.org/cda/stds/online-navigation/index.html">Standard CDA</a>
       </li>
       <li>
-        <a href="https://hl7.org/fhir/R4/index.html" target="_blank">Standard FHIR</a>
+        <a target="_blank" href="https://hl7.org/fhir/R4/index.html">Standard FHIR</a>
       </li>
       <li>
-        <a href="https://interop.esante.gouv.fr/ig/documentation/index.html" target="_blank">Documentation des guides d'implémentation de l'ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/index.html">Documentation des guides d&apos;implémentation de l&apos;ANS</a>
       </li>
       <li>
         <a href="downloads.html">Téléchargements et usage</a>
@@ -206,18 +206,18 @@
     </ul>
   </li>
 </ul>
-            </div>    <!-- /.nav-collapse -->
-          </div>    <!-- /.container -->
-        </nav>    <!-- /.navbar -->
-        <!-- /HEADER CONTENT -->
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-navbar -->
-      <!-- status-bar -->
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
 
-    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
-      <div class="container">    <!-- container -->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="corpsDocument.html"><b>Corps d'un document</b></a></li><li><b>CDA</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='corpsDocument.html'><b>Corps d'un document</b></a></li><li><b>CDA</b></li>
 
           <span style="float:right;">
 
@@ -230,12 +230,12 @@
           </span>
 
         </ul>
-      </div>    <!-- /container -->
-    </div>    <!-- /segment-breadcrumb -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">    <!-- segment-content -->
-      <div class="container">    <!-- container -->
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -247,7 +247,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/document/core/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
+  <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   <h2>CDA</h2>
   
 
@@ -262,9 +262,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p>  <!-- white space is critical inside of capture --></p>
+    <p><!-- white space is critical inside of capture --></p>
 <div>
-  <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown. -->
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 <h3 id="liste-des-profils">Liste des profils</h3>
 
@@ -288,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
 <li>Une section de premier niveau est appelée 'Chapitre' et correspond à une sous-discipline de la biologie médicale (par exemple « biochimie »). Elle contient :</li>
 <li>soit directement la présentation des résultats d'examens de biologie médicale obtenus pour ce chapitre : dans ce cas, il y a un unique élément &lt;text&gt; (présentation du contenu pour le lecteur) et un unique élément &lt;entry&gt; (données codées pour les SIS dont procède le contenu de l'élément &lt;text&gt;)</li>
-<li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau&nbsp;présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
+<li>soit une liste de sections de second niveau, appelés sous-chapitres (par exemple « Gaz du sang ») : dans ce cas, il y a une liste d'éléments &lt;component&gt; dont chacun introduit une &lt;section&gt; de second niveau présentant un sous-ensemble de un ou plusieurs résultats d'examens de biologie médicale.Remarque : L'arborescence du corps du compte rendu d'examens de biologie médicale est choisie par le LPS producteur du document selon la logique de présentation définie par le laboratoire.</li>
 </ul>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-cr-bio-sous-chapitre.html">CDA - FR CR BIO Sous Chapitre</a></td><td><div><p>IHE-PaLM - Laboratory Report Item Section</p>
 <ul>
@@ -302,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
 <li>La section Addendum permet d'enregistrer, dans une nouvelle version du compte-rendu, des informations correctives ou complémentaires par rapport au compte-rendu initial.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-complications.html">CDA - FR DICOM Complications</a></td><td><div><p>DICOM Part 20 -&nbsp;Complications</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-complications.html">CDA - FR DICOM Complications</a></td><td><div><p>DICOM Part 20 - Complications</p>
 <ul>
 <li>Cette sous-section permet d'enregistrer les complications survenues au cours de l'acte sous forme textuelle.</li>
 </ul>
@@ -310,23 +310,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
 <li>Cette section permet d'enregistrer les informations sur les diagnostics les plus importantes ou d’autres conclusions cliniques qui peuvent être faites à partir des observations d’imagerie et d’autres informations cliniques. Elle peut inclure des recommandations pour des tests d’imagerie supplémentaires ou d’autres actions, ainsi que des évaluations globales.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-demande-examen.html">CDA - FR DICOM Demande examen</a></td><td><div><p>DICOM Part 20 -&nbsp;Request Section</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-demande-examen.html">CDA - FR DICOM Demande examen</a></td><td><div><p>DICOM Part 20 - Request Section</p>
 <ul>
 <li>Justification de la demande d’examen / Finalité de l'examen.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html">CDA - FR DICOM Examen comparatif</a></td><td><div><p>DICOM Part 20 -&nbsp;Comparison Study Section</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-examen-comparatif.html">CDA - FR DICOM Examen comparatif</a></td><td><div><p>DICOM Part 20 - Comparison Study Section</p>
 <ul>
 <li>Cette section textuelle permet d'enregistrer une comparaison de l'acte actuel avec un acte antérieur.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html">CDA - FR DICOM Exposition aux radiations</a></td><td><div><p>DICOM Part 20 -&nbsp;Radiation Exposure and Protection Information&nbsp;</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-exposition-aux-radiations.html">CDA - FR DICOM Exposition aux radiations</a></td><td><div><p>DICOM Part 20 - Radiation Exposure and Protection Information </p>
 <ul>
 <li>Cette sous-section permet d'enregistrer les informations relatives à l’exposition du patient aux rayonnements et les informations de radioprotection.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-historique-medical.html">CDA - FR DICOM Historique medical</a></td><td><div><p>DICOM Part 20 -&nbsp;Medical (General) History Section</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-historique-medical.html">CDA - FR DICOM Historique medical</a></td><td><div><p>DICOM Part 20 - Medical (General) History Section</p>
 <ul>
 <li>Cette sous-section permet d'enregistrer les antécédents médicaux, les antécédents chirurgicaux et les contre-indications.</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html">CDA - FR DICOM Informations cliniques</a></td><td><div><p>DICOM Part 20 -&nbsp;Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que :</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-informations-cliniques.html">CDA - FR DICOM Informations cliniques</a></td><td><div><p>DICOM Part 20 - Clinical Information Section. Cette section permet d'enregistrer les détails cliniques liés au patient, tels que :</p>
 <ul>
 <li>Justification de la demande dans la sous-section FR-DICOM-demande-examen [1..1]</li>
 <li>Finalité de l'examen dans la même sous-section FR-DICOM-demande-examen [0..1]</li>
@@ -334,13 +334,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li>Antécédents chirurgicaux pertinents pour cet examen dans la sous-section FR-Historique-medical [0..1]</li>
 <li>Contre-indications et facteurs de risques connus au moment de la demande et dépendant de la modalité dans la sous-section FR-Historique-medical [0..1]</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-object-catalog.html">CDA - FR DICOM Object Catalog</a></td><td><div><p>DICOM Part 20 -&nbsp;DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-object-catalog.html">CDA - FR DICOM Object Catalog</a></td><td><div><p>DICOM Part 20 - DICOM Object Catalog Section. Le catalogue d’objets DICOM répertorie tous les objets référencés selon l'organisation suivante :</p>
 <ul>
 <li>[0..*] Examen</li>
 <li>[1..*] Série (avec la modalité d'acquisition)</li>
 <li>[1..*] Objet référencé (avec la classe d'objet)</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-resultats.html">CDA - FR DICOM Resultats</a></td><td><div><p>DICOM Part 20 -&nbsp;Findings</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-resultats.html">CDA - FR DICOM Resultats</a></td><td><div><p>DICOM Part 20 - Findings</p>
 <ul>
 <li>Cette section permet d'enregistrer, sous forme textuelle, les observations cliniquement significatives confirmées ou découvertes au cours de l’intervention d’imagerie (description des résultats).</li>
 </ul>
@@ -352,7 +352,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li>Liste des éléments se rapportant à l'éducation du patient vis-à-vis de sa maladie ou par rapport à un acte prévu.</li>
 </ul>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-effets-indesirables.html">CDA - FR Effets indesirables</a></td><td><div><p>Liste des effets indésirables prévisibles liés aux médicaments.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html">CDA - FR Facteurs de risque professionnels non code</a></td><td><div><p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ&copy;e).</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-facteurs-de-risque-professionnels-non-code.html">CDA - FR Facteurs de risque professionnels non code</a></td><td><div><p>IHE-PCC - Hazardous-Working-Conditions-SectionFacteurs de risques professionnels sous forme narrative (section non codÃ©e).</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-fonctions-physiques.html">CDA - FR Fonctions physiques</a></td><td><div><p>IHE-PCC - Physical Function Section. Cette section permet d'enregistrer les problÃ¨mes physiques fonctionnels et structurels qui concernent le patient.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-historique-des-actes.html">CDA - FR Historique des actes</a></td><td><div><p>IHE-PCC - Coded-List-Of-Surgeries. Liste codée des actes chirurgicaux, diagnostiques invasifs (ex : cathétérisme cardiaque), thérapeutiques (ex : dialyse). Cette liste contient des entrées codées FR-Acte et éventuellement des entrées FR-References-externes à des documents faisant mention de ces actes.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-historique-des-grossesses.html">CDA - FR Historique des grossesses</a></td><td><div><p>IHE-PCC - Pregnancy-History-Section. Cette section permet de décrire l'historique des grossesses de la patiente.</p>
@@ -371,8 +371,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
 <li>Liste codée des antécédents familiaux</li>
 </ul>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html">CDA - FR Habitus mode de vie</a></td><td><div><p>IHE-PCC - Coded Social History Section. Liste codÃ&copy;e des informations relatives aux habitus et au mode de vie du patient.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-resultats.html">CDA - FR Resultats</a></td><td><div><p>Cette section regroupe les rÃ&copy;sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ&copy;nÃ&copy;tique humaine...)</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-habitus-mode-de-vie.html">CDA - FR Habitus mode de vie</a></td><td><div><p>IHE-PCC - Coded Social History Section. Liste codÃ©e des informations relatives aux habitus et au mode de vie du patient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-resultats.html">CDA - FR Resultats</a></td><td><div><p>Cette section regroupe les rÃ©sultats d'examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine...)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-section-signes-vitaux.html">CDA - FR Signes vitaux</a></td><td><div><p>IHE-PCC - Coded Vital Signs. Section Liste codée des résultats mesurés des signes vitaux.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-statut-du-document.html">CDA - FR Statut du document</a></td><td><div><p>Cette section permet d’indiquer le statut du document (son état d’avancement dans le cycle de vie du document, depuis sa création jusqu'à sa validation définitive par son responsable légal.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-statut-fonctionnel.html">CDA - FR Statut fonctionnel</a></td><td><div><p>Section FR-Statut-fonctionnel. Cette section permet de décrire des résultats d'évaluation du statut fonctionnel du patient.</p>
@@ -402,7 +402,7 @@ En effet, addr peut convoyer une adresse géopostale formée :</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-acte-substitution.html">CDA - FR Acte substitution</a></td><td><div><p>Entrée FR-Acte-substitution: IHE PHARM DIS - Substitution actCette observation permet d'indiquer si le traitement a été substitué.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-acte.html">CDA - FR Acte</a></td><td><div><p>Entrée FR-Acte: IHE-PCC - Procedure. L'entrée 'Acte' est une entrée de type 'procedure' décrivant un acte planifié ou réalisé.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-administration-de-derives-du-sang.html">CDA - FR Administration de derives du sang</a></td><td><div><p>Entrée FR-Administration-de-derives-du-sang: IHE-PCC - Simple-Observation Cette entrée permet d'indiquer s'il y a eu ou pas une administration de dérivés du sang.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html">CDA - FR Allergie ou hypersensibilite</a></td><td><div><p>Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique&nbsp;alimentaire, etc.La date de début et de finL'agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l'entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu'elle spécialise.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-allergie-ou-hypersensibilite.html">CDA - FR Allergie ou hypersensibilite</a></td><td><div><p>Entrée FR-Allergie-ou-hypersensibilite: IHE-PCC Allergy-And-Intolerance Cette entrée permet de décrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie, en précisant :Le type : allergie médicamenteuse, hypersensibilité non allergique alimentaire, etc.La date de début et de finL'agent responsable : médicament, agent environnemental, …Le statut clinique : Actif, Inactif, RésoluLa criticité : Bas, Elevé, Impossible à évaluerLa certitude : Confirmé, Non confirmé, RéfutéLa (les) réaction(s) observée(s) : urticaire, nausée, … etLa sévérité de la réaction : Potentiellement mortel, Elevé, Modéré, Bas, …un commentaire sur la réactionCette entrée est basée sur l'entrée Problème (1.3.6.1.4.1.19376.1.5.3.1.4.5) qu'elle spécialise.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-antecedent-familial-observe.html">CDA - FR Antecedent familial observe</a></td><td><div><p>Entrée FR-Antecedent-familial-observe: IHE-PCC - Family History Observation L'entrée Antécédent familial observé permet d'apporter des informations complémentaires relatives aux membres de la famille du patient (pathologies, etc…). Cette entrée est utilisée dans un élément Antécédents familiaux (1.3.6.1.4.1.19376.1.5.3.1.4.15).</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-antecedents-familiaux.html">CDA - FR Antecedents familiaux</a></td><td><div><p>Entrée FR-Antecedents-familiaux: IHE-PCC - Family History Organizer L'entrée Antécédents familiaux est une entrée de type organizer qui permet de regrouper des informations relatives aux membres de la famille du patient. Les éléments ‘component' de cet organizer sont des entrées de type Family History Observation (1.3.6.1.4.1.19376.1.5.3.1.4.13.3).</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-autorisation-substitution.html">CDA - FR Autorisation Substitution</a></td><td><div><p>Entrée FR-Autorisation-Substitution: IHE-PRE - Substitution-Permission. Cette observation permet d'indiquer si le traitement auquel elle est associée peut être substitué.</p>
@@ -428,17 +428,17 @@ En effet, addr peut convoyer une adresse géopostale formée :</p>
 </ul>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-cadres-a-afficher.html">CDA - FR DICOM Cadres à afficher</a></td><td><div><p>Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à afficher pour les images référencées</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-cadres-references.html">CDA - FR DICOM Cadres de références</a></td><td><div><p>Entrée FR-DICOM-Cadres-references: DICOM Part 20 - Une observation d’images référencées contient une liste de valeurs de type entiers pour les images référencées d’une instance SOP d’images.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-examen-imagerie.html">CDA - FR DICOM Examen imagerie</a></td><td><div><p>Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 -&nbsp;Study Act. Cette entrée contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d'une ou de plusieurs séries d’images médicales.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-exposition-patient.html">CDA - FR DICOM Exposition patient</a></td><td><div><p>Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l'entrée&nbsp;FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l'identité du professionnel de santé ayant donné l'autorisation de l'exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-examen-imagerie.html">CDA - FR DICOM Examen imagerie</a></td><td><div><p>Entrée FR-DICOM-Examen-imagerie: DICOM Part 20 - Study Act. Cette entrée contient les informations DICOM d’un examen d’imagerie réalisé sur un patient. L’examen est composé d'une ou de plusieurs séries d’images médicales.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-exposition-patient.html">CDA - FR DICOM Exposition patient</a></td><td><div><p>Entrée FR-DICOM-Exposition-patient: DICOM Part 20 - inclue dans l'entrée FR-DICOM-Exposition-aux-radiations. Cette entrée permet d’enregistrer l'identité du professionnel de santé ayant donné l'autorisation de l'exposition du patient aux rayonnements.Elle est obligatoire dans la norme DICOM Part 20.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-objectifs-de-reference.html">CDA - FR DICOM Objectifs de référence</a></td><td><div><p>Entrée FR-DICOM-Objectifs-de-reference: DICOM Part 20. Cette entrée permet d’enregistrer les objectifs de référence d’imagerie.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-observation-subordonnee.html">CDA - FR DICOM Observation subordonnee</a></td><td><div><p>Entrée FR-DICOM-Observation-subordonnee: DICOM PART 20 - Observation codée</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-observation.html">CDA - FR DICOM Observation</a></td><td><div><p>Entrée FR-DICOM-Observation: DICOM Part 20 -&nbsp;Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-quantite-subordonnee.html">CDA - FR DICOM Quantite subordonnee</a></td><td><div><p>Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant :  Le type de la mesure,&nbsp;La localisation anatomique / latéralité / topographie,&nbsp;  La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-quantite.html">CDA - FR DICOM Quantite</a></td><td><div><p>Entrée FR-DICOM-Quantite: DICOM Part 20 -&nbsp;Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-serie-imagerie.html">CDA - FR DICOM Serie imagerie</a></td><td><div><p>Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 -&nbsp;Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html">CDA - FR DICOM SOP instance observation subordonnee</a></td><td><div><p>Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 -&nbsp;SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-sop-instance-observation.html">CDA - FR DICOM SOP instance observation</a></td><td><div><p>Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 -&nbsp;SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-technique-imagerie.html">CDA - FR DICOM Technique imagerie</a></td><td><div><p>Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 -&nbsp;Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-observation.html">CDA - FR DICOM Observation</a></td><td><div><p>Entrée FR-DICOM-Observation: DICOM Part 20 - Coded Observation. Cette entrée permet d’enregistrer une observation avec une valeur codée ou textuelle.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-quantite-subordonnee.html">CDA - FR DICOM Quantite subordonnee</a></td><td><div><p>Entrée FR-DICOM-Quantite-subordonnee: Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant :  Le type de la mesure, La localisation anatomique / latéralité / topographie,   La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-quantite.html">CDA - FR DICOM Quantite</a></td><td><div><p>Entrée FR-DICOM-Quantite: DICOM Part 20 - Quantity Measurement. Cette entrée permet d’enregistrer les mesures quantitatives telles que les mesures linéaires, les mesures de surface, de volume et numériques en précisant : Le type de la mesure, La localisation anatomique / latéralité / topographie, La quantité. Si la mesure quantitative est basée sur les données d’une image, une référence à l’image peut être précisée dans la partie narrative.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-serie-imagerie.html">CDA - FR DICOM Serie imagerie</a></td><td><div><p>Entrée FR-DICOM-Serie-imagerie: DICOM Part 20 - Series Act. Cette entrée contient les informations de la série générique utilisée pour porter l’entrée FR-DICOM-SOP-instance-observation.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html">CDA - FR DICOM SOP instance observation subordonnee</a></td><td><div><p>Entrée FR-DICOM-SOP-instance-observation-subordonnee: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-sop-instance-observation.html">CDA - FR DICOM SOP instance observation</a></td><td><div><p>Entrée FR-DICOM-SOP-instance-observation: DICOM Part 20 - SOP Instance Observation. Cette entrée permet d'enregistrer l’url permettant d’accéder aux images sur la Drim box source.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dicom-technique-imagerie.html">CDA - FR DICOM Technique imagerie</a></td><td><div><p>Entrée FR-DICOM-Technique-imagerie: DICOM Part 20 - Procedure Technique Cette entrée permet d’enregistrer les différents paramètres de l’acquisition d’image :  acte d'imagerie  modalité d'acquisition  localisation anatomique / latéralité / topographie d'autres paramètres de l'acte</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-directive-anticipee.html">CDA - FR Directive anticipee</a></td><td><div><p>Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d'état d'exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l'arrêt ou du refus de traitement ou d'acte médicaux.».</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-dispositif-medical.html">CDA - FR Dispositif medical</a></td><td><div><p>Entrée FR-Dispositif-medical: L'entrée Dispositif Médical est une entrée de type 'supply' qui permet de fournir les information sur un dispositif médical.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-document-attache.html">CDA - FR Document attache</a></td><td><div><p>Entrée FR-Document-attache: L'entrée Document Attaché est une entrée de type organiser qui permet de regrouper dans une même entrée les éléments qui contiennent :</p>
@@ -490,7 +490,7 @@ d'une personne de confiance désignée par le patient ;
 d'une personne à prévenir en cas d'urgence ;
 du ou des aidant(s) du patient ;de la ou des personne(s) aidée(s)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-instruction-au-patient.html">CDA - FR Instruction au patient</a></td><td><div><p>Entrée FR-Instruction-au-patient: IHE-PCC - Simple-Observation. Cette entrée permet d’enregistrer une instruction au patient sous forme codée (c’est notamment le cas pour les prescriptions d’examens de biologie médicale).</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-instructions-au-dispensateur.html">CDA - FR Instructions au dispensateur</a></td><td><div><p>Entrée FR-Instructions-au-dispensateur: IHE-PCC -&nbsp;Medication Fulfillment Instructions.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-instructions-au-dispensateur.html">CDA - FR Instructions au dispensateur</a></td><td><div><p>Entrée FR-Instructions-au-dispensateur: IHE-PCC - Medication Fulfillment Instructions.</p>
 <ul>
 <li>Toute prescription peut faire l'objet d'instructions au dispensateur (pharmacien), par exemple pour indiquer que le traitement doit être étiqueté dans une langue étrangère, etc …</li>
 <li>Cette entrée est incluse dans une entrée Prescription à l'aide d'un élément entryRelationship .</li>
@@ -585,11 +585,11 @@ Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées F
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitement-prescrit.html">CDA - FR Traitement prescrit</a></td><td><div><p>Entrée FR-Traitement-prescrit: IHE-PRE Prescription Item. Cette entrée de type substanceAdministration permet de décrire un traitement prescrit avec notamment le médicament, le mode d’administration, la quantité, la durée et la fréquence d'administration.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitement-subordonne.html">CDA - FR Traitement subordonne</a></td><td><div><p>Entrée FR-Traitement-subordonne: Une entrée FR-Traitement de premier niveau peut contenir une ou plusieurs sous-entrées FR-Traitement-subordonne pour les cas spécifiques des dosages progressifs, fractionnés ou conditionnels, ou pour gérer la combinaison de médicaments. L’utilisation de sous-entrées FR-Traitement-subordonne pour traiter ces cas est facultative. Dans le cas où l’entrée FR-Traitement-subordonne n’est pas utilisée, l'information doit être fournie dans la partie narrative de l'entrée FR-Traitement de premier niveau sous forme de texte libre.Pour les dosages progressifs, fractionnés ou conditionnels, les sous-entrées FR-Traitement-subordonne ne doivent spécifier que la fréquence et / ou le dosage modifiés.Pour le dosage conditionnel, chaque sous-entrée FR-Traitement-subordonne doit avoir un élément 'precondition' pour indiquer les conditions préalables à l’utilisation du médicament.Pour la combinaison de médicaments, chaque sous-entrée FR-Traitement-subordonne précisera le produit entrant dans la combinaison.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-traitement.html">CDA - FR Traitement</a></td><td><div><p>Entrée FR-Traitement: IHE-PCC - Medications. L'entrée 'Traitement' est une entrée de type 'substanceAdministration' décrivant les modalités d'administration d'un médicament au patient. Elle permet de décrire notamment le médicament, le mode d'administration, la quantité, la durée et la fréquence d'administration.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-transfusion-de-produits-sanguins.html">CDA - FR Transfusion de produits sanguins</a></td><td><div><p>Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet d'indiquer s'il a eu ou pas&nbsp;transfusion de produit sanguin.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-transfusion-de-produits-sanguins.html">CDA - FR Transfusion de produits sanguins</a></td><td><div><p>Entrée FR-Transfusion-de-produits-sanguins: Cette entrée permet d'indiquer s'il a eu ou pas transfusion de produit sanguin.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-transport-du-patient.html">CDA - FR Transport du patient</a></td><td><div><p>Entrée FR-Transport-du-patient: IHE-PCC - Transport. Cette entrée de type act permet de décrire le transport d'un patient/usager lors d'un déplacement (entrée ou sortie d'hôpital, ...)</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-transport-du-professionnel.html">CDA - FR Transport du professionnel</a></td><td><div><p>Entrée FR-Transport-du-professionnel: Cette entrée de type act permet de décrire le transport d'un professionnel lors d’un déplacement.</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-type-document-attache.html">CDA - FR Type document attache</a></td><td><div><p>Entrée FR-Type-document-attache: Élément de type Simple Observations (1.3.6.1.4.1.19376.1.5.3.1.4.13) définissant le type de document attaché.</p>
-</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-vaccin-recommande.html">CDA - FR Vaccin recommande</a></td><td><div><p>Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique).&nbsp;
+</div></td></tr><tr><td><a href="StructureDefinition-fr-cda-vaccin-recommande.html">CDA - FR Vaccin recommande</a></td><td><div><p>Entrée FR-Vaccin-recommande: IHE-PCC - Immunization recommendation. L'entrée 'Vaccin recommandé' est une entrée de type 'substanceAdministration' qui permet de décrire une vaccination prévue ou proposée. Une vaccination proposée est une proposition qui est utilisée dans la prise de décisions (elle peut apparaître comme une contribution ou un résultat provenant de l'aide à la décision clinique). 
 Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée 'Immunization' (1.3.6.1.4.1.19376.1.5.3.1.4.12).</p>
 </div></td></tr><tr><td><a href="StructureDefinition-fr-cda-vaccination.html">CDA - FR Vaccination</a></td><td><div><p>Entrée FR-Vaccination: IHE-PCC - Immunizations. L'entrée Vaccination est une entrée de type 'substanceAdministration' pour décrire l'administration d'un vaccin. Elle permet également de décrire pourquoi un vaccin n'a pas été réalisé. Cette entrée hérite de la structuration, des contraintes et des vocabulaires de l'entrée Traitement (1.3.6.1.4.1.19376.1.5.3.1.4.7) sauf mentions précisées ci-après.</p>
 </div></td></tr></table>
@@ -597,24 +597,24 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
 
 
 </div>
-        </div>    <!-- /inner-wrapper -->
-      </div>    <!-- /row -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script src="assets/js/window-hash.js" type="text/javascript"> </script>
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
-  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
-    <div class="container">    <!-- container -->
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
       <div style="background-color:var(--footer-nav-bg-color)">
         <table style="width:100%">
           <tbody>
             <tr>
-              <td style="text-align:left">&nbsp;
+              <td style="text-align:left">&#xA0;
 
                 <a href="corpsDocument.html">&lt;prev</a>
 
@@ -622,7 +622,7 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
               <td style="text-align:center">
                 <a href="#top">top</a>
               </td>
-              <td style="text-align:right">&nbsp;
+              <td style="text-align:right">&#xA0;
 
                 <a href="ressourcesFHIR-corps.html">next&gt;</a>
 
@@ -634,50 +634,50 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 9, 2026 14:42+0000">2026-06-09</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jun 15, 2026 15:31+0000">2026-06-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
-<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/document/core/history.html" target="_blank">Historique des versions </a>
- | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/interop-IG-document-core/issues/new" target="_blank">New Issue</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/document/core/history.html">Historique des versions </a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
 
-          
+          </span>
         </p>
-      </div>    <!-- /inner-wrapper -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-footer -->
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
-    <div class="container">    <!-- container -->
-    </div>    <!-- /container -->
-  </div>    <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
   
-    <!-- JS and analytics only. -->
-    <!-- Bootstrap core JavaScript
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
   ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
-  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
-  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
-  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-    <!-- Ajout ANS -->
+  <!-- Ajout ANS -->
   <script src="assets/js/app.js" type="text/javascript"> </script>
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
-    <!-- Fin ajout ANS -->
+  <!-- Fin ajout ANS -->
 
-  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
 
-    <!-- Analytics Below
+  <!-- Analytics Below
   ================================================== -->
 
 
-    <!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
-<footer role="contentinfo" class="footer footer-principal">
+<footer class="footer footer-principal" role="contentinfo">
   <div class="footer__region1">
     <div class="container">
       <div class="row">
@@ -685,17 +685,17 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
         <div class="col-md-6 col-lg-4 text-center text-md-left">
           <div class="logos">        
             <div class="logo logo--0">
-              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
                 
               </a>
             </div>
         
             <div class="logo logo--1">
-              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
                 
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
               </a>
             </div>
           </div>
@@ -705,7 +705,7 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
           <p class="footer__title">Agence du Numérique en Santé</p>
           <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
 
-            <!-- <div class="m-social">
+          <!-- <div class="m-social">
             <ul class="m-social__list">        
               <li class="m-social__item">
                 <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
@@ -747,11 +747,12 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
           <ul class="footer-list">
             <li class="footer-list__item footer-list__item--hasIcon">
               <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
               </li>
-                <!-- <li class="footer-list__item">
+              <!-- <li class="footer-list__item">
                 <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li> -->
+              </li>
+               -->
             </ul>
           </div>
 
@@ -759,7 +760,7 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
       </div>
     </div>
     
-      <!-- <div class="footer__region2">
+    <!-- <div class="footer__region2">
       <div class="container">
         <div class="footer-contentinfo">
           <ul class="footer-list footer-list--inline">
@@ -771,3 +772,4 @@ Une vaccination prévue dépend d'un plan accepté et à venir. Cette entrée h�
   </footer>
   </body>
 </html>
+

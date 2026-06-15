@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRImagingMedicationAministrationLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-09 | *Computable Name*: |
+| Draft as of 2026-06-15 | *Computable Name*: |
 
  
 Mapping des éléments du modele metier FRLMAdministrationProduitDeSante vers le profil CDA FRCDADICOMAdministrationProduitDeSante, puis vers le profil FHIR FRMedicationAdministrationDocument. 
@@ -26,7 +26,7 @@ Mapping des éléments du modele metier FRLMAdministrationProduitDeSante vers le
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Metier/CDA/FHIR : \"Administration de produit de sante en imagerie\"",
   "status" : "draft",
-  "date" : "2026-06-09T14:42:35+00:00",
+  "date" : "2026-06-15T15:31:33+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
