@@ -167,9 +167,7 @@ groups:
       - StructureDefinition/fr-lm-immunisations
       - StructureDefinition/fr-lm-reason-for-referral
       - StructureDefinition/fr-lm-course-of-encounter
-      - StructureDefinition/fr-lm-status-document
       - StructureDefinition/fr-lm-hospital-discharge-medications
-      - StructureDefinition/fr-lm-traitements-administres
       - StructureDefinition/fr-lm-alerts
       - StructureDefinition/fr-lm-admission-evaluation
       - StructureDefinition/fr-lm-encounter-information
@@ -229,7 +227,6 @@ groups:
       - StructureDefinition/fr-lm-technique-imagerie
       - StructureDefinition/fr-lm-prescription-item
       - StructureDefinition/fr-lm-quantity-exposure
-      - StructureDefinition/fr-lm-status-document-entry
       - StructureDefinition/fr-lm-transfusion-de-produits-sanguins
       - StructureDefinition/fr-lm-synthese-medicale-sejour
       - StructureDefinition/fr-lm-identification-de-micro-organismes-multiresistants

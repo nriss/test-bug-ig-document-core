@@ -45,4 +45,3 @@ Description: "Eléments métier du corps d'un document contenant les sections du
 * reasonForReferral 0..* FRLMReasonForReferral "Section Raison de la recommandation"
 * courseOfEncounter 0..* FRLMCourseOfEncounter "Section Résultats d'événements"
 * hospitalDischargeMedications 0..* FRLMHospitalDischargeMedications "Section Traitement à la sortie"
-* traitementsAdministres 0..* FRLMTraitementsAdministres "Section Traitements administrés"
