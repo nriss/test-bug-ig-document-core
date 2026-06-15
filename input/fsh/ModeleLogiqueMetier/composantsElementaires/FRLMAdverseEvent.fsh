@@ -13,3 +13,14 @@ Characteristics: #can-be-target
 * imputabiliteEffetIndesirable 0..1 FRLMImputabiliteEffetIndesirable "Imputabilité"
 * graviteEffetIndesirable 1..1 FRLMSeverityAdverseEvent "Gravité"
 * evolutionEffetIndesirable 0..1 FRLMEvolutionAdverseEvent "Evolution"
+
+
+
+
+* adverseEventType 1..1 CodeableConcept "Type d'effet indésirable"
+* value 1..1 CodeableConcept "Valeur de l'observation"
+* treatment 1..1 FRLMMedicationAdministration "Médicament, substance incriminée, posologie"
+* reaction 0..* FRLMCondition "Réaction observée"
+* causalityAssessment 0..1 FRLMImputabiliteEffetIndesirable "Causality assessment"
+* severity 1..1 FRLMSeverityAdverseEvent "Severity"
+* outcome 0..1 FRLMEvolutionAdverseEvent "Outcome"

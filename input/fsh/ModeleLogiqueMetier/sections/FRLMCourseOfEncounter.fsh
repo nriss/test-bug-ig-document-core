@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 * subSection 0..0
 * entry
-  * testResults 1..* FRLMObservation "Entrée Simple observation"
+  * testResults 1..* FRLMObservationResult "Entrée Simple observation"
   * patientTransfer 0..* FRLMPatientTransfer "Entrée Transfert du patient"
   * diagnosticSummary  0..* FRLMCondition "Entrée Problème"
   * procedures 0..* FRLMProcedure "Entrée Acte"

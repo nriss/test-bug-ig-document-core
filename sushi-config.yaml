@@ -234,7 +234,6 @@ groups:
       - StructureDefinition/fr-lm-modalite-entree
       - StructureDefinition/fr-lm-adverse-event-following-administration-blood-derivatives
       - StructureDefinition/fr-lm-adverse-event-during-hospitalization
-      - StructureDefinition/fr-lm-administration-blood-derivatives
       - StructureDefinition/fr-lm-transfusion-accidents
       - StructureDefinition/fr-lm-patient-transfer
       - StructureDefinition/fr-lm-recherche-de-micro-organismes
