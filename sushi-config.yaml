@@ -77,7 +77,7 @@ menu:
         FHIR: ressourcesFHIR-struc-gen.html
         Mapping CDA / FHIR: mappingCDA-FHIR-struc-gen.html
     Entête document:
-        Modèle logique métier: StructureDefinition-fr-lm-entete-document.html
+        Modèle logique métier: StructureDefinition-fr-lm-header-document.html
         CDA: ressourcesCDA-entete.html
         FHIR: ressourcesFHIR-entete.html
         Mapping Métier/CDA/FHIR: mappingCDA-FHIR-entete.html
@@ -104,22 +104,18 @@ groups:
   Modèles logiques métier de l'entête d'un document:
     name: Modèles logiques métier de l'entête d'un document
     resources:
-      - FRLMEnteteDocument	
+      - FRLMHeaderDocument	
       - FRLMPatient
       - FRLMHealthProfessional
       - FRLMOrganisation
       - FRLMInformant
-      - FRLMStructureConservation
-      - FRLMDestinatairePrevu
-      - FRLMResponsable
-      - FRLMValidateur
-      - FRLMOperateurSaisie
+      - FRLMIntendedRecipient
+      - FRLMLegalAuthentication
+      - FRLMAttester
+      - FRLMDataEnterer
       - FRLMParticipant
-      - FRLMPrescription
-      - FRLMEvenement
-      - FRLMDocumentDeReference
-      - FRLMConsentement
-      - FRLMPriseEncharge
+      - FRLMOrder
+      - FRLMConsent
       - FRLMLocation
       - FRLMRelatedPerson
       - FRLMHumanName

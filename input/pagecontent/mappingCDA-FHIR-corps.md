@@ -1,5 +1,5 @@
 Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier, du CDA et de FHIR.
-
+ 
 ### Mapping des sections entre : Modèle métier / CDA / FHIR
 {% sql {
 "query": "
@@ -18,7 +18,7 @@ WITH AllGroups AS (
   WHERE r.Type = 'ConceptMap' AND Description LIKE 'Mapping des éléments%'
   AND Description LIKE '%vers la section%'
 ),
-
+ 
 ClassifiedGroups AS (
   -- Classer chaque groupe en METIER / CDA / FHIR
   SELECT
@@ -31,15 +31,15 @@ ClassifiedGroups AS (
     grp_target,
     CASE
       WHEN grp_source LIKE '%fr-lm%' THEN 'METIER'
-      WHEN grp_source LIKE '%cda%' 
-        OR grp_target LIKE '%cda%' 
-        OR grp_source LIKE '%fr-cda%' 
+      WHEN grp_source LIKE '%cda%'
+        OR grp_target LIKE '%cda%'
+        OR grp_source LIKE '%fr-cda%'
         OR grp_target LIKE '%fr-cda%' THEN 'CDA'
       ELSE 'FHIR'
     END AS grp_type
   FROM AllGroups
 ),
-
+ 
 Elements AS (
   -- Extraire éléments + targets de chaque groupe classé
   SELECT
@@ -55,7 +55,7 @@ Elements AS (
   JOIN json_each(cg.group_json, '$.element') e
   JOIN json_each(e.value, '$.target') t
 ),
-
+ 
 MetierToCDA AS (
   SELECT
     cm_id,
@@ -68,7 +68,7 @@ MetierToCDA AS (
   FROM Elements
   WHERE grp_type = 'METIER'
 ),
-
+ 
 CDAtoFHIR AS (
   SELECT
     cm_id,
@@ -78,7 +78,7 @@ CDAtoFHIR AS (
   FROM Elements
   WHERE grp_type = 'CDA'
 ),
-
+ 
 FinalMapping AS (
   -- Join Metier->CDA with CDA->FHIR
   SELECT
@@ -94,43 +94,43 @@ FinalMapping AS (
     ON m.cm_id = cf.cm_id
     AND m.CDA = cf.CDA
 )
-
+ 
 SELECT
   CASE
     WHEN Metier NOT LIKE '%.%' THEN
       '**' || Metier || '**'
-
+ 
     WHEN (LENGTH(Metier) - LENGTH(REPLACE(Metier, '.', ''))) > 2 THEN
       -- position du 1er point
       substr(Metier, 1,
-        instr(Metier, '.') 
+        instr(Metier, '.')
         + instr(substr(Metier, instr(Metier, '.') + 1), '.')
       )
       || '\n' ||
       -- texte après le 2ème point
       substr(
         Metier,
-        instr(Metier, '.') 
+        instr(Metier, '.')
         + instr(substr(Metier, instr(Metier, '.') + 1), '.') + 1
       )
     ELSE Metier
 END AS Metier,
   CASE
-    WHEN CDA NOT LIKE '%@%' 
+    WHEN CDA NOT LIKE '%@%'
      AND CDA NOT LIKE '%.%' THEN
       '**' || CDA || '**'
-
+ 
     WHEN (LENGTH(CDA) - LENGTH(REPLACE(CDA, '.', ''))) > 2 THEN
       -- position du 1er point
       substr(CDA, 1,
-        instr(CDA, '.') 
+        instr(CDA, '.')
         + instr(substr(CDA, instr(CDA, '.') + 1), '.')
       )
       || '\n' ||
       -- texte après le 2ème point
       substr(
         CDA,
-        instr(CDA, '.') 
+        instr(CDA, '.')
         + instr(substr(CDA, instr(CDA, '.') + 1), '.') + 1
       )
     ELSE CDA
@@ -154,8 +154,8 @@ ORDER BY
   { "title": "FHIR", "type": "markdown", "source": "FHIR" }
 ]
 } %}
-
-
+ 
+ 
 ### Mapping des entrées entre : Modèle métier / CDA / FHIR
 {% sql {
 "query": "
@@ -173,7 +173,7 @@ WITH AllGroups AS (
   JOIN json_each(r.json, '$.group') g
   WHERE r.Type = 'ConceptMap' AND Description LIKE 'Mapping des éléments%'
 ),
-
+ 
 ClassifiedGroups AS (
   -- Classer chaque groupe en METIER / CDA / FHIR
   SELECT
@@ -186,15 +186,15 @@ ClassifiedGroups AS (
     grp_target,
     CASE
       WHEN grp_source LIKE '%fr-lm%' THEN 'METIER'
-      WHEN grp_source LIKE '%cda%' 
-        OR grp_target LIKE '%cda%' 
-        OR grp_source LIKE '%fr-cda%' 
+      WHEN grp_source LIKE '%cda%'
+        OR grp_target LIKE '%cda%'
+        OR grp_source LIKE '%fr-cda%'
         OR grp_target LIKE '%fr-cda%' THEN 'CDA'
       ELSE 'FHIR'
     END AS grp_type
   FROM AllGroups
 ),
-
+ 
 Elements AS (
   -- Extraire éléments + targets de chaque groupe classé
   SELECT
@@ -210,7 +210,7 @@ Elements AS (
   JOIN json_each(cg.group_json, '$.element') e
   JOIN json_each(e.value, '$.target') t
 ),
-
+ 
 MetierToCDA AS (
   SELECT
     cm_id,
@@ -223,7 +223,7 @@ MetierToCDA AS (
   FROM Elements
   WHERE grp_type = 'METIER'
 ),
-
+ 
 CDAtoFHIR AS (
   SELECT
     cm_id,
@@ -233,7 +233,7 @@ CDAtoFHIR AS (
   FROM Elements
   WHERE grp_type = 'CDA'
 ),
-
+ 
 FinalMapping AS (
   -- Join Metier->CDA with CDA->FHIR
   SELECT
@@ -249,43 +249,43 @@ FinalMapping AS (
     ON m.cm_id = cf.cm_id
     AND m.CDA = cf.CDA
 )
-
+ 
 SELECT
   CASE
     WHEN Metier NOT LIKE '%.%' THEN
       '**' || Metier || '**'
-
+ 
     WHEN (LENGTH(Metier) - LENGTH(REPLACE(Metier, '.', ''))) > 2 THEN
       -- position du 1er point
       substr(Metier, 1,
-        instr(Metier, '.') 
+        instr(Metier, '.')
         + instr(substr(Metier, instr(Metier, '.') + 1), '.')
       )
       || '\n' ||
       -- texte après le 2ème point
       substr(
         Metier,
-        instr(Metier, '.') 
+        instr(Metier, '.')
         + instr(substr(Metier, instr(Metier, '.') + 1), '.') + 1
       )
     ELSE Metier
 END AS Metier,
   CASE
-    WHEN CDA NOT LIKE '%@%' 
+    WHEN CDA NOT LIKE '%@%'
      AND CDA NOT LIKE '%.%' THEN
       '**' || CDA || '**'
-
+ 
     WHEN (LENGTH(CDA) - LENGTH(REPLACE(CDA, '.', ''))) > 2 THEN
       -- position du 1er point
       substr(CDA, 1,
-        instr(CDA, '.') 
+        instr(CDA, '.')
         + instr(substr(CDA, instr(CDA, '.') + 1), '.')
       )
       || '\n' ||
       -- texte après le 2ème point
       substr(
         CDA,
-        instr(CDA, '.') 
+        instr(CDA, '.')
         + instr(substr(CDA, instr(CDA, '.') + 1), '.') + 1
       )
     ELSE CDA

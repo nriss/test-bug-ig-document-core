@@ -1,6 +1,6 @@
 Logical: FRLMParticipant	
 Id: fr-lm-participant	
-Title: "Modèle logique métier - FR LM Participant"		
+Title: "Logical model - FR LM Participant"		
 Description: "Personne/Structure impliquée dans les évènements décrits par le document qui n'a pas été mentionné ailleurs." 	
 Characteristics: #can-be-target	
 

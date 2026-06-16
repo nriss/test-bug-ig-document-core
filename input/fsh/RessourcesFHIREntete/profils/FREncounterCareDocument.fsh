@@ -18,7 +18,6 @@ Description: "Ce profil représente l'association du document à une prise en ch
 * participant contains responsibleParty 0..1
 * participant[responsibleParty] ^short = "Responsable de la prise en charge"
 * participant[responsibleParty].type ^short = "Type de participation"
-* participant[responsibleParty].type = $TRE_A13-HL7ParticipationType#DIS "Responsable de la sortie"
 * participant[responsibleParty].individual 1..1
 * participant[responsibleParty].individual ^short = "Entité responsable de la prise en charge"
 * participant[responsibleParty].individual only Reference(FRPractitionerRoleDocument)

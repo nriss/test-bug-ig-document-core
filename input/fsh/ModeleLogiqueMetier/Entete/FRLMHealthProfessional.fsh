@@ -2,22 +2,15 @@ Logical: FRLMHealthProfessional
 Id: fr-lm-health-professional
 Title: "Logical model - FR LM Health Professional"			
 Description: "Une personne (professionnel ou patient ou autre)" 
-Characteristics: #can-be-target 			 			 		
-* personne 0..1 Base "Personne"		 		
-  * identifiantPersonne 0..1 Identifier "Identifiant de la personne.
-- obligatoire pour les professionnels et les patients."		
-  * roleFonctionnel 0..1 CodeableConcept "Rôle fonctionnel"
-  * dateExecution  1..1 dateTime "Date de l’exécution"			
-  * professionRole 0..1 CodeableConcept "
-- Profession pour les professionnels.
-- Rôle pour les non professionnels."	
-  * lien  0..1 CodeableConcept "Lien de la personne avec le patient/usager"
-  * adresse 0..* Address "Adresse géopostale"
-  * coordonneesTelecom 0..* ContactPoint "Coordonnées télécom"
-  * IdentitePersonne 0..1 Base "Identité de la personne"	
-    * nomPersonne 1..* Base "Nom de la personne"	
-    * prenomPersonne 0..* string "Prénom de la personne"	
-    * civilite 0..1 CodeableConcept "Civilité"
-    * titre 0..1 CodeableConcept "Titre"
-  * structure 0..1 FRLMOrganisation "Structure" 
-  
+Characteristics: #can-be-target 
+			 			 		
+* identifier 0..1 Identifier "Identifiant."
+* name 0..1 FRLMHumanName "Nom du professionnel de santé."
+* address 0..* Address "Adresses géopostales du professionnel de santé."
+* telecom 0..* ContactPoint "Coordonnées télécom du professionnel de santé."
+* professionalRole 0..* Base "Rôle professionnel"
+  * role 0..* CodeableConcept "Rôle du professionnel de santé."
+  * organisation 0..1 FRLMOrganisation "Organisation à laquelle le professionnel de santé est rattaché pour exercer ce rôle."
+  * specialty 0..* CodeableConcept "Spécialité d'un professionnel de santé qui décrit le rôle fonctionnel qu'il exerce au sein de l'organisation."
+
+
