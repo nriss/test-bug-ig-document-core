@@ -8,4 +8,4 @@ Characteristics: #can-be-target
 * subSection 0..0
 * titleSection 1..1 
 * entry
-  * assessments 0..* FRLMAssessments "Groupe de questionnaires d'évalutation"
+  * assessment 0..* FRLMObservationAssessment "résultat d'une évaluation du statut fonctionnel"

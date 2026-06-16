@@ -2,7 +2,7 @@ Logical: FRLMAttachment
 Id: fr-lm-attachment
 Parent: FRLMEntry
 Title: "Logical model - FR LM Attachment"
-Description: """Entrée Document attaché"""
+Description: """Document attaché"""
 Characteristics: #can-be-target
 
 * contentType 0..1 CodeableConcept "Type MIME de la piece jointe, avec encodage de caracteres, etc."

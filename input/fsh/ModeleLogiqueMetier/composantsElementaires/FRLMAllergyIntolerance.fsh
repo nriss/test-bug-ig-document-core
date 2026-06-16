@@ -2,7 +2,7 @@ Logical: FRLMAllergyIntolerance
 Id: fr-lm-allergy-intolerance	
 Parent: FRLMEntry
 Title: "Logical model - FR LM Allergy Intolerance"
-Description: """Entrée Allergie ou Hypersensibilité"""
+Description: """Allergie ou Hypersensibilité"""
 Characteristics: #can-be-target
 
 * type 1..1 CodeableConcept "Allergie / hypersensibilité non allergique / intolérance / idiosyncrasie"

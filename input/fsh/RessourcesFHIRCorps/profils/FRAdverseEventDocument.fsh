@@ -37,9 +37,9 @@ Description: "FRAdverseEventDocument permet de décrire un effet indésirable pr
 * suspectEntity.causality.assessment from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-imputabilite-cisis (required)
 * suspectEntity.causality.assessment ^short = "Niveau d'imputabilité"
 
-* seriousness 1.. MS
-* seriousness from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis (required)
-* seriousness ^short = "Gravité de l'effet indésirable"
+* severity 1.. MS
+* severity from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-gravite-cisis (required)
+* severity ^short = "Gravité de l'effet indésirable"
 
 * outcome MS
 * outcome from https://smt.esante.gouv.fr/fhir/ValueSet/jdv-evolution-cisis (required)

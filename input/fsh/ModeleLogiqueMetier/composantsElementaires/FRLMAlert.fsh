@@ -2,7 +2,7 @@ Logical: FRLMAlert
 Id: fr-lm-alert
 Parent: FRLMEntry
 Title: "Logical model - FR LM Alert"
-Description: """Entrée points de vigilances"""
+Description: """Points de vigilances"""
 Characteristics: #can-be-target
 
 * header.status 1..1

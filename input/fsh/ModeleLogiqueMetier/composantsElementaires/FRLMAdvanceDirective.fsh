@@ -2,7 +2,7 @@ Logical: FRLMAdvanceDirective
 Id: fr-lm-advance-directive
 Parent: FRLMEntry
 Title: "Logical model - FR LM Advance Directive"
-Description: """Entree Directive anticipee"""
+Description: """Directive anticipée"""
 Characteristics: #can-be-target
 
 * header.status 1..1
