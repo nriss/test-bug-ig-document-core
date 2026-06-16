@@ -9,14 +9,14 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-care-plan | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-04 | *Computable Name*:FRLMCarePlan |
+| Draft as of 2026-06-16 | *Computable Name*:FRLMCarePlan |
 
  
 Entrée Plan de soins 
 
 **Utilisations:**
 
-* Utilise ce/t/te Modèle logique: [Logical model - FR LM CarePlans](StructureDefinition-fr-lm-care-plans.md) and [Logical model - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md)
+* Utilise ce/t/te Modèle logique: [Logical model - FR LM CarePlans](StructureDefinition-fr-lm-care-plans.md), [Logical model - FR LM Encounter](StructureDefinition-fr-lm-encounter.md) and [Logical model - FR LM Recommendation](StructureDefinition-fr-lm-recommendation.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-lm-care-plan)
 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-care-plan.csv)
   "name" : "FRLMCarePlan",
   "title" : "Logical model - FR LM Care Plan",
   "status" : "draft",
-  "date" : "2026-06-04T15:31:02+00:00",
+  "date" : "2026-06-16T14:27:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

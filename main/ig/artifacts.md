@@ -11,36 +11,27 @@ This page provides a list of the FHIR artifacts defined as part of this implemen
 
 | | |
 | :--- | :--- |
+| [Logical model - FR LM Attester](StructureDefinition-fr-lm-attester.md) | Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N’est pas utilisé dans un document d’expression personnelle du patient/usager et un document produit par un système. |
+| [Logical model - FR LM Consent](StructureDefinition-fr-lm-consent.md) | Permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. |
+| [Logical model - FR LM Data Enterer](StructureDefinition-fr-lm-data-enterer.md) | Opérateur de saisie de la totalité ou d’une partie du contenu du document. |
+| [Logical model - FR LM Header Document](StructureDefinition-fr-lm-header-document.md) | Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). |
 | [Logical model - FR LM Health Professional](StructureDefinition-fr-lm-health-professional.md) | Une personne (professionnel ou patient ou autre) |
 | [Logical model - FR LM Human Name](StructureDefinition-fr-lm-human-name.md) | Modele logique metier - FR LM Human Name |
 | [Logical model - FR LM Informant](StructureDefinition-fr-lm-informant.md) | Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d’urgence, aidant, aidé. |
-| [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) | Lieu |
-| [Logical model - FR LM Organisation](StructureDefinition-fr-lm-organisation.md) | Une structure (organisation) pour les professionnels de santé. |
-| [Logical model - FR LM Patient](StructureDefinition-fr-lm-patient.md) | Patient/Usager concerné par le document. |
-| [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) | Related Person |
-| [Modèle logique métier - FR LM Consentement](StructureDefinition-fr-lm-consentement.md) | Permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. |
-| [Modèle logique métier - FR LM Destinataire prévu](StructureDefinition-fr-lm-destinataire-prevu.md) | Personne déclarée comme destinataire prévu du document.* Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s). Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l’envoyer à d’autres destinataires.
+| [Logical model - FR LM Intended Recipient](StructureDefinition-fr-lm-intended-recipient.md) | Personne déclarée comme destinataire prévu du document.* Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s). Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l’envoyer à d’autres destinataires.
  |
-| [Modèle logique métier - FR LM Document de référence](StructureDefinition-fr-lm-document-reference.md) | Référence un document existant (à remplacer ou transformé). |
-| [Modèle logique métier - FR LM En-tête document](StructureDefinition-fr-lm-entete-document.md) | Eléments de l’entête d’un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc…). |
-| [Modèle logique métier - FR LM Opérateur de saisie](StructureDefinition-fr-lm-operateur-saisie.md) | Opérateur de saisie de la totalité ou d’une partie du contenu du document. |
-| [Modèle logique métier - FR LM Participant](StructureDefinition-fr-lm-participant.md) | Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. |
-| [Modèle logique métier - FR LM Prescription](StructureDefinition-fr-lm-prescription.md) | Association à une prescription à l’origine de l’acte dont résulte le document. |
-| [Modèle logique métier - FR LM Prise en charge](StructureDefinition-fr-lm-prise-en-charge.md) | Association du document à une prise en charge du patient/usager par un professionnel ou par une structure.* Exemples : 
-* Dans une structure hospitalière, cette prise en charge est une hospitalisation complète ou partielle, des actes et soins externes, une consultation, etc.
-* Dans un cabinet, cette prise en charge est une consultation ou des actes et soins.
- 
-* Pour un document d’expression personnelle du patient ou pour un document élaboré sans la présence du patient (ex : synthèse médicale) ou pour un document produit via un SNR, la prise en charge n’a pas de signification. Dans ce cas, on ne renseignera que les données obligatoires : date de prise en charge (avec nulllFlavor possible) et secteur d’activité.
- |
-| [Modèle logique métier - FR LM Responsable](StructureDefinition-fr-lm-responsable.md) | Représente le responsable du document, qui est :* soit le professionnel qui prend la responsabilité du document produit par un lui-même ou un autre professionnel.
+| [Logical model - FR LM Legal Authentication](StructureDefinition-fr-lm-legal-authentication.md) | Représente le responsable du document, qui est :* soit le professionnel qui prend la responsabilité du document produit par un lui-même ou un autre professionnel.
 * soit le professionnel qui prend la responsabilité du document produit par un système de structure (ES, …).
 * soit le patient/usager responsable du document d’expression personnelle
 * soit le SNR responsable du document produit via ce SNR.
 * Soit le Dossier Pharmaceutique (DP) responsable des documents qu’il produit
  |
-| [Modèle logique métier - FR LM Structure conservation](StructureDefinition-fr-lm-structure-conservation.md) | Structure chargée de la conservation du document, c’est-à-dire de garder physiquement le document qui lui est confié tout en garantissant son cycle de vie. |
-| [Modèle logique métier - FR LM Validateur](StructureDefinition-fr-lm-validateur.md) | Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N’est pas utilisé dans un document d’expression personnelle du patient/usager et un document produit par un système. |
-| [Modèle logique métier - FR LM Évènement](StructureDefinition-fr-lm-evenement.md) | Évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l’évènement principal avec obligatoirement une date de début et un exécutant. |
+| [Logical model - FR LM Location](StructureDefinition-fr-lm-location.md) | Lieu |
+| [Logical model - FR LM Order](StructureDefinition-fr-lm-order.md) | Association to an order that is the origin of the act resulting in the document. |
+| [Logical model - FR LM Organisation](StructureDefinition-fr-lm-organisation.md) | Une structure (organisation) pour les professionnels de santé. |
+| [Logical model - FR LM Participant](StructureDefinition-fr-lm-participant.md) | Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. |
+| [Logical model - FR LM Patient](StructureDefinition-fr-lm-patient.md) | Patient/Usager concerné par le document. |
+| [Logical model - FR LM Related Person](StructureDefinition-fr-lm-related-person.md) | Related Person |
 
 ### Modèles logiques métier des sections d'un document 
 

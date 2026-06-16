@@ -10,7 +10,7 @@
   <name value="FRDocumentCore"/>
   <title value="ANS IG document core"/>
   <status value="draft"/>
-  <date value="2026-06-04T15:31:02+00:00"/>
+  <date value="2026-06-16T14:27:29+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -35,7 +35,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.1.0"/>
+    <version value="7.2.0"/>
   </dependsOn>
   <dependsOn id="hl7_cda_uv_core">
     <uri value="http://hl7.org/cda/stds/core/ImplementationGuide/hl7.cda.uv.core"/>
@@ -3858,6 +3858,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-attester"/>
+      </reference>
+      <name value="Logical model - FR LM Attester"/>
+      <description value="Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N'est pas utilisé dans un document d'expression personnelle du patient/usager et un document produit par un système."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-body-structure"/>
       </reference>
       <name value="Logical model - FR LM Body Structure"/>
@@ -3942,6 +3954,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-consent"/>
+      </reference>
+      <name value="Logical model - FR LM Consent"/>
+      <description value="Permet de documenter qu'un consentement éclairé a été obtenu et d'indiquer quel type de consentement a été fourni."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-corps-document"/>
       </reference>
       <name value="Logical model - FR LM Corps document"/>
@@ -3960,6 +3984,18 @@
       <description value="Section Résultats d'événements"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des sections d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-data-enterer"/>
+      </reference>
+      <name value="Logical model - FR LM Data Enterer"/>
+      <description value="Opérateur de saisie de la totalité ou d'une partie du contenu du document."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -4157,6 +4193,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-header-document"/>
+      </reference>
+      <name value="Logical model - FR LM Header Document"/>
+      <description value="Eléments de l'entête d'un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc...)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-health-professional"/>
       </reference>
       <name value="Logical model - FR LM Health Professional"/>
@@ -4281,6 +4329,30 @@
       </reference>
       <name value="Logical model - FR LM Informant"/>
       <description value="Informant (personne ayant fourni des informations utiles à la production du document : professionnel, structure, patient/usager, autre), personne de confiance, personne à prévenir en cas d'urgence, aidant, aidé."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-intended-recipient"/>
+      </reference>
+      <name value="Logical model - FR LM Intended Recipient"/>
+      <description value="Personne déclarée comme destinataire prévu du document.&#xA;- Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s).&#xA; Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l'envoyer à d'autres destinataires."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-legal-authentication"/>
+      </reference>
+      <name value="Logical model - FR LM Legal Authentication"/>
+      <description value="Représente le responsable du document, qui est : &#xA; - soit le professionnel qui prend la responsabilité du document produit par un lui-même ou un autre professionnel. &#xA; - soit le professionnel qui prend la responsabilité du document produit par un système de structure (ES, …). &#xA; - soit le patient/usager responsable du document d'expression personnelle &#xA; - soit le SNR responsable du document produit via ce SNR. &#xA; - Soit le Dossier Pharmaceutique (DP) responsable des documents qu'il produit"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier de l'entête d'un document"/>
     </resource>
@@ -4528,6 +4600,18 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-lm-order"/>
+      </reference>
+      <name value="Logical model - FR LM Order"/>
+      <description value="Association to an order that is the origin of the act resulting in the document."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-lm-order-information"/>
       </reference>
       <name value="Logical model - FR LM Order Information"/>
@@ -4544,6 +4628,18 @@
       </reference>
       <name value="Logical model - FR LM Organisation"/>
       <description value="Une structure (organisation) pour les professionnels de santé."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-lm-participant"/>
+      </reference>
+      <name value="Logical model - FR LM Participant"/>
+      <description value="Personne/Structure impliquée dans les évènements décrits par le document qui n'a pas été mentionné ailleurs."/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier de l'entête d'un document"/>
     </resource>
@@ -6771,54 +6867,6 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-consentement"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Consentement"/>
-      <description value="Permet de documenter qu'un consentement éclairé a été obtenu et d'indiquer quel type de consentement a été fourni."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-destinataire-prevu"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Destinataire prévu"/>
-      <description value="Personne déclarée comme destinataire prévu du document.&#xA;- Attention : Cet élément ne contient que le(s) destinataire(s) initialement prévu(s) à la création du document. Rien ne permet par la suite, de certifier que le document a réellement été envoyé à ce(s) destinataire(s).&#xA; Par ailleurs, il ne faut pas créer de nouvelle version du document si on souhaite l'envoyer à d'autres destinataires."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-document-reference"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Document de référence"/>
-      <description value="Référence un document existant (à remplacer ou transformé)."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-entete-document"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM En-tête document"/>
-      <description value="Eléments de l'entête d'un document contenant les informations générales et nécessaires à la gestion du document (identification et type du document, patient/usager, auteur, évènement documenté, etc...)."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-isolat-microbiologique"/>
       </reference>
       <name value="Modèle logique métier - FR LM Isolat microbiologique"/>
@@ -6843,108 +6891,12 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/fr-lm-operateur-saisie"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Opérateur de saisie"/>
-      <description value="Opérateur de saisie de la totalité ou d'une partie du contenu du document."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-participant"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Participant"/>
-      <description value="Personne/Structure impliquée dans les évènements décrits par le document qui n'a pas été mentionné ailleurs."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-prescription"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Prescription"/>
-      <description value="Association à une prescription à l’origine de l’acte dont résulte le document."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-prise-en-charge"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Prise en charge"/>
-      <description value="Association du document à une prise en charge du patient/usager par un professionnel ou par une structure.&#xA; - Exemples :&#xA;   - Dans une structure hospitalière, cette prise en charge est une hospitalisation complète ou partielle, des actes et soins externes, une consultation, etc.&#xA;   - Dans un cabinet, cette prise en charge est une consultation ou des actes et soins.&#xA; - Pour un document d'expression personnelle du patient ou pour un document élaboré sans la présence du patient (ex : synthèse médicale) ou pour un document produit via un SNR, la prise en charge n'a pas de signification. Dans ce cas, on ne renseignera que les données obligatoires : date de prise en charge (avec nulllFlavor possible) et secteur d'activité."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-responsable"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Responsable"/>
-      <description value="Représente le responsable du document, qui est : &#xA; - soit le professionnel qui prend la responsabilité du document produit par un lui-même ou un autre professionnel. &#xA; - soit le professionnel qui prend la responsabilité du document produit par un système de structure (ES, …). &#xA; - soit le patient/usager responsable du document d'expression personnelle &#xA; - soit le SNR responsable du document produit via ce SNR. &#xA; - Soit le Dossier Pharmaceutique (DP) responsable des documents qu'il produit"/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/fr-lm-resultat-examens-biologie-element-clinique-pertinent"/>
       </reference>
       <name value="Modèle logique métier - FR LM Résultat d'examens de biologie / élement clinique pertinent"/>
       <description value="Résultat d'examens de biologie / élement clinique pertinent"/>
       <exampleBoolean value="false"/>
       <groupingId value="Modèles logiques métier des composants communs"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-structure-conservation"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Structure conservation"/>
-      <description value="Structure chargée de la conservation du document, c'est-à-dire de garder physiquement le document qui lui est confié tout en garantissant son cycle de vie."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-validateur"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Validateur"/>
-      <description value="Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N'est pas utilisé dans un document d'expression personnelle du patient/usager et un document produit par un système."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-lm-evenement"/>
-      </reference>
-      <name value="Modèle logique métier - FR LM Évènement"/>
-      <description value="Évènement (acte, traitement, diagnostic, etc…) décrit dans le document. Il y a au minimum une occurrence de cet élément pour décrire l'évènement principal avec obligatoirement une date de début et un exécutant."/>
-      <exampleBoolean value="false"/>
-      <groupingId value="Modèles logiques métier de l'entête d'un document"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

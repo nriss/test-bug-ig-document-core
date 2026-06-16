@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-supporting-information | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-04 | *Computable Name*:FRLMSupportingInformation |
+| Draft as of 2026-06-16 | *Computable Name*:FRLMSupportingInformation |
 
  
 Section Informations Cliniques 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-supporting-inf
   "name" : "FRLMSupportingInformation",
   "title" : "Logical model - FR LM Supporting Information",
   "status" : "draft",
-  "date" : "2026-06-04T15:31:02+00:00",
+  "date" : "2026-06-16T14:27:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-hors-amm | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-04 | *Computable Name*:FRCDAHorsAMM |
+| Draft as of 2026-06-16 | *Computable Name*:FRCDAHorsAMM |
 
  
 Entrée FR-Hors-AMM: IHE-PCC - Simple-Observation. Cette observation permet d’indiquer si le traitement auquel elle est associée est hors AMM. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-hors-amm.csv)
   "name" : "FRCDAHorsAMM",
   "title" : "CDA - FR Hors AMM",
   "status" : "draft",
-  "date" : "2026-06-04T15:31:02+00:00",
+  "date" : "2026-06-16T14:27:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

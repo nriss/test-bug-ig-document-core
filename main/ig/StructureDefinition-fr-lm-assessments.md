@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-assessments | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-04 | *Computable Name*:FRLMAssessments |
+| Draft as of 2026-06-16 | *Computable Name*:FRLMAssessments |
 
  
 Entrée Groupe de questionnaires d’évalutation 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-assessments.cs
   "name" : "FRLMAssessments",
   "title" : "Logical model - FR LM Assessments",
   "status" : "draft",
-  "date" : "2026-06-04T15:31:02+00:00",
+  "date" : "2026-06-16T14:27:29+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

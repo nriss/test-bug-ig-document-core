@@ -20,7 +20,6 @@
   <sch:pattern>
     <sch:title>f:Encounter/f:participant</sch:title>
     <sch:rule context="f:Encounter/f:participant">
-      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:individual) &gt;= 1">individual: minimum cardinality of 'individual' is 1</sch:assert>
       <sch:assert test="count(f:individual) &gt;= 1">individual: minimum cardinality of 'individual' is 1</sch:assert>
     </sch:rule>
