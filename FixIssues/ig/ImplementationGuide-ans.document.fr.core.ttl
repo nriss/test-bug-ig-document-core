@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRDocumentCore"] ; # 
   fhir:title [ fhir:v "ANS IG document core"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-16T12:30:34+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-16T13:53:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -14443,7 +14443,7 @@
              fhir:l fhir:mappingCDA-FHIR-corps.html
            ] ;
            fhir:title [ fhir:v "Mapping Métier/CDA/FHIR" ] ;
-           fhir:generation [ fhir:v "markdown" ]
+           fhir:generation [ fhir:v "html" ]
          ] )
        ] [
          fhir:extension ( [

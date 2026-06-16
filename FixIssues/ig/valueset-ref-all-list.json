@@ -1266,8 +1266,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.346"],
     "uses" : {
     },
-    "StructureDefinition-fr-medication-dispense-document.html" : "MedicationDispense - FR Medication Dispense Document",
-    "ValueSet-fr-vs-location-body-structure-document.html" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord"
+    "ValueSet-fr-vs-location-body-structure-document.html" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord",
+    "StructureDefinition-fr-medication-dispense-document.html" : "MedicationDispense - FR Medication Dispense Document"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -1301,9 +1301,9 @@
     "StructureDefinition-fr-observation-vital-signs-document.html" : "Observation - FR Observation Vital Signs Document",
     "StructureDefinition-fr-observation-pregnancy-history-document.html" : "Observation - FR Observation Pregnancy History Document",
     "StructureDefinition-fr-observation-pregnancy-document.html" : "Observation - FR Observation Pregnancy Document",
+    "ValueSet-fr-vs-location-body-structure-document.html" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord",
     "StructureDefinition-fr-observation-contra-indications-document.html" : "Observation - FR Observation Contra Indications Document",
     "StructureDefinition-fr-observation-transfusion-accidents-document.html" : "Observation - FR Observation Transfusion Accidents Document",
-    "ValueSet-fr-vs-location-body-structure-document.html" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord",
     "StructureDefinition-fr-observation-antenatal-testing-surveillance-battery-document.html" : "Observation - FR Observation Antenatal Testing And Surveillance Battery Document",
     "StructureDefinition-fr-observation-work-related-accident-document.html" : "Observation - FR Observation Work Related Accident Document",
     "StructureDefinition-fr-observation-survey-pannel-document.html" : "Observation - FR Observation Survey Pannel Document",
@@ -3041,10 +3041,10 @@
     "sources" : ["2.16.840.1.113883.4.642.3.65"],
     "uses" : {
     },
+    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-practitioner-document.html" : "FR Practitioner Document",
     "StructureDefinition-fr-patient-ins-document.html" : "FR Patient INS Document",
     "StructureDefinition-fr-related-person-document.html" : "FR RelatedPerson Document",
-    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-patient-document.html" : "FR Patient Document",
     "StructureDefinition-fr-human-name-document.html" : "FR Human Name Document"
   },
@@ -6547,9 +6547,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.718"],
     "uses" : {
     },
+    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-cda-name.html" : "CDA - Name",
     "StructureDefinition-fr-related-person-document.html" : "FR RelatedPerson Document",
-    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-human-name-document.html" : "FR Human Name Document"
   },
   {
@@ -6564,9 +6564,9 @@
     "sources" : ["1.2.250.1.213.1.1.5.719"],
     "uses" : {
     },
+    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-cda-name.html" : "CDA - Name",
     "StructureDefinition-fr-related-person-document.html" : "FR RelatedPerson Document",
-    "StructureDefinition-fr-lm-human-name.html" : "Logical model - FR LM Human Name",
     "StructureDefinition-fr-human-name-document.html" : "FR Human Name Document"
   },
   {
@@ -6586,9 +6586,9 @@
     "StructureDefinition-fr-cda-performer-corps.html" : "CDA - FR Performer corps",
     "StructureDefinition-fr-cda-participant-entete.html" : "CDA - participant",
     "StructureDefinition-fr-cda-laboratoire-executant.html" : "CDA - FR Laboratoire executant",
-    "StructureDefinition-fr-lm-participant.html" : "Modèle logique métier - FR LM Participant",
     "StructureDefinition-fr-practitionerRole-document.html" : "FR PractitionerRole Document",
     "StructureDefinition-fr-cda-author.html" : "CDA - author",
+    "StructureDefinition-fr-lm-participant.html" : "Modèle logique métier - FR LM Participant",
     "StructureDefinition-fr-composition-document.html" : "FR Composition Document"
   },
   {
@@ -6998,8 +6998,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.172"],
     "uses" : {
     },
-    "StructureDefinition-fr-cda-probleme.html" : "CDA - FR Probleme",
     "StructureDefinition-fr-lm-condition.html" : "Logical model - FR LM Condition",
+    "StructureDefinition-fr-cda-probleme.html" : "CDA - FR Probleme",
     "StructureDefinition-fr-condition-document.html" : "Condition - FR Condition Document",
     "StructureDefinition-fr-family-member-history-document.html" : "FamilyMemberHistory - FR Family Member History Document",
     "StructureDefinition-fr-cda-antecedent-familial-observe.html" : "CDA - FR Antecedent familial observe"
@@ -7016,8 +7016,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.765"],
     "uses" : {
     },
-    "StructureDefinition-fr-lm-medication-dispense.html" : "Logical model - FR LM Medication Dispense",
     "StructureDefinition-fr-medication-dispense-document.html" : "MedicationDispense - FR Medication Dispense Document",
+    "StructureDefinition-fr-lm-medication-dispense.html" : "Logical model - FR LM Medication Dispense",
     "StructureDefinition-fr-cda-traitement-dispense.html" : "CDA - FR Traitement dispense"
   },
   {
@@ -7154,8 +7154,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.129"],
     "uses" : {
     },
-    "StructureDefinition-fr-cda-criticite.html" : "CDA - FR Criticite",
-    "StructureDefinition-fr-lm-allergy-intolerance.html" : "Logical model - FR LM Allergy Intolerance"
+    "StructureDefinition-fr-lm-allergy-intolerance.html" : "Logical model - FR LM Allergy Intolerance",
+    "StructureDefinition-fr-cda-criticite.html" : "CDA - FR Criticite"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-allergyintolerance-clinical-cisis",
@@ -7247,13 +7247,13 @@
     "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
     "StructureDefinition-fr-cda-modalite-entree.html" : "CDA - FR Modalite entree",
     "StructureDefinition-fr-cda-dicom-observation.html" : "CDA - FR DICOM Observation",
+    "StructureDefinition-fr-lm-procedure.html" : "Logical model- FR LM Procedure",
     "StructureDefinition-fr-cda-evenement.html" : "CDA - FR Evenement",
     "StructureDefinition-fr-cda-modalite-sortie.html" : "CDA - FR Modalite sortie",
     "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
     "StructureDefinition-fr-cda-dispositif-medical.html" : "CDA - FR Dispositif medical",
     "StructureDefinition-fr-cda-liste-des-problemes.html" : "CDA - FR Liste des problemes",
     "StructureDefinition-fr-cda-liste-des-allergies-et-hypersensibilites.html" : "CDA - FR Liste des allergies et hypersensibilites",
-    "StructureDefinition-fr-lm-procedure.html" : "Logical model- FR LM Procedure",
     "StructureDefinition-fr-cda-batterie-examens-de-biologie-medicale.html" : "CDA - FR Batterie examens de biologie medicale",
     "StructureDefinition-fr-cda-rang-de-la-vaccination.html" : "CDA - FR Rang de la vaccination",
     "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee",
@@ -7274,9 +7274,9 @@
     "sources" : ["2.16.840.1.113883.1.11.16621"],
     "uses" : {
     },
+    "StructureDefinition-fr-lm-prescription-item.html" : "Logical model - FR LM Medication Prescription",
     "StructureDefinition-fr-cda-autorisation-substitution.html" : "CDA - FR Autorisation Substitution",
-    "StructureDefinition-fr-medication-request-document.html" : "MedicationRequest - FR Medication Request Document",
-    "StructureDefinition-fr-lm-prescription-item.html" : "Logical model - FR LM Medication Prescription"
+    "StructureDefinition-fr-medication-request-document.html" : "MedicationRequest - FR Medication Request Document"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-hl7-v3-ActSubstanceAdministrationCode-cisis",
@@ -7304,9 +7304,9 @@
     "sources" : ["2.16.840.1.113883.1.11.19709"],
     "uses" : {
     },
+    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination",
     "StructureDefinition-fr-immunization-document.html" : "Immunization - FR Immunization Document",
     "StructureDefinition-fr-immunization-type-extension.html" : "FR Immunization Type Extension",
-    "ValueSet-fr-valueset-type-vaccination.html" : "ValueSet - FR ValueSet Type Vaccination",
     "StructureDefinition-fr-cda-vaccin-recommande.html" : "CDA - FR Vaccin recommande"
   },
   {
@@ -7356,6 +7356,7 @@
     "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
     "StructureDefinition-fr-cda-resultat.html" : "CDA - FR Resultat",
     "StructureDefinition-fr-observation-vital-signs-document.html" : "Observation - FR Observation Vital Signs Document",
+    "StructureDefinition-fr-lm-observation-vital-sign.html" : "Logical model - FR LM Observation Vital Sign",
     "StructureDefinition-fr-observation-administration-blood-derivatives-document.html" : "Observation - FR Observation Administration Blood Derivatives Document",
     "StructureDefinition-fr-observation-pregnancy-document.html" : "Observation - FR Observation Pregnancy Document",
     "StructureDefinition-fr-observation-laboratory-report-results-document.html" : "Observation - FR Observation Laboratory Report Results Document",
@@ -7368,7 +7369,6 @@
     "StructureDefinition-fr-cda-signe-vital-observe.html" : "CDA - FR Signe vital observe",
     "StructureDefinition-fr-cda-demande-d-examen-ou-de-suivi.html" : "CDA - FR Demande d examen ou de suivi",
     "StructureDefinition-fr-cda-resultat-examens-de-biologie-element-clinique-pertinent.html" : "CDA - FR Resultat examens de biologie element clinique pertinent",
-    "StructureDefinition-fr-lm-observation-vital-sign.html" : "Logical model - FR LM Observation Vital Sign",
     "StructureDefinition-fr-cda-simple-observation.html" : "CDA - FR Simple Observation",
     "StructureDefinition-fr-observation-microorganism-detection-document.html" : "Observation - FR Observation Microorganism Detection Document",
     "StructureDefinition-fr-observation-multiresistant-microorganism-document.html" : "Observation - FR Observation Multiresistant Microorganisms Identification Document"
@@ -7597,11 +7597,11 @@
     "sources" : ["1.2.250.1.213.1.1.5.618"],
     "uses" : {
     },
-    "StructureDefinition-fr-lm-imaging-study.html" : "Logical model - FR LM Imaging Study",
     "StructureDefinition-fr-imaging-study-document.html" : "ImagingStudy - FR Imaging study Document",
     "StructureDefinition-fr-cda-dicom-technique-imagerie.html" : "CDA - FR DICOM Technique imagerie",
+    "StructureDefinition-fr-lm-series.html" : "Logical model - FR LM Series",
     "StructureDefinition-fr-cda-dicom-serie-imagerie.html" : "CDA - FR DICOM Serie imagerie",
-    "StructureDefinition-fr-lm-series.html" : "Logical model - FR LM Series"
+    "StructureDefinition-fr-lm-imaging-study.html" : "Logical model - FR LM Imaging Study"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-modalite-entree-cisis",
@@ -7681,13 +7681,13 @@
     "uses" : {
     },
     "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
-    "StructureDefinition-fr-lm-body-structure.html" : "Logical model - FR LM Body Structure",
     "StructureDefinition-fr-imaging-study-document.html" : "ImagingStudy - FR Imaging study Document",
     "StructureDefinition-fr-cda-prelevement.html" : "CDA - FR Prelevement",
     "StructureDefinition-fr-cda-dicom-observation.html" : "CDA - FR DICOM Observation",
     "StructureDefinition-fr-cda-dicom-technique-imagerie.html" : "CDA - FR DICOM Technique imagerie",
     "StructureDefinition-fr-cda-dicom-observation-subordonnee.html" : "CDA - FR DICOM Observation subordonnee",
     "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee",
+    "StructureDefinition-fr-lm-body-structure.html" : "Logical model - FR LM Body Structure",
     "StructureDefinition-fr-body-structure-document.html" : "BodyStructure - FR Body Structure Document"
   },
   {
@@ -7750,9 +7750,9 @@
     "uses" : {
     },
     "StructureDefinition-fr-cda-dicom-quantite.html" : "CDA - FR DICOM Quantite",
+    "StructureDefinition-fr-lm-quantity-exposure.html" : "Logical model - FR LM Quantity Exposure",
     "StructureDefinition-fr-observation-radiation-exposure-document.html" : "Observation - FR Observation Radiation Exposure Document",
-    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee",
-    "StructureDefinition-fr-lm-quantity-exposure.html" : "Logical model - FR LM Quantity Exposure"
+    "StructureDefinition-fr-cda-dicom-quantite-subordonnee.html" : "CDA - FR DICOM Quantite subordonnee"
   },
   {
     "url" : "https://smt.esante.gouv.fr/fhir/ValueSet/jdv-resultat-type-cisis",
@@ -7876,8 +7876,8 @@
     "sources" : ["1.2.250.1.213.1.1.5.689"],
     "uses" : {
     },
-    "StructureDefinition-fr-lm-sop-instance.html" : "Logical model - FR LM SOP Instance",
     "StructureDefinition-fr-imaging-study-document.html" : "ImagingStudy - FR Imaging study Document",
+    "StructureDefinition-fr-lm-sop-instance.html" : "Logical model - FR LM SOP Instance",
     "StructureDefinition-fr-cda-dicom-sop-instance-observation.html" : "CDA - FR DICOM SOP instance observation",
     "StructureDefinition-fr-cda-dicom-sop-instance-observation-subordonnee.html" : "CDA - FR DICOM SOP instance observation subordonnee"
   },

@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-effet-indesir
   "name" : "FRCDAEffetIndesirable",
   "title" : "CDA - FR Effet indesirable",
   "status" : "draft",
-  "date" : "2026-06-16T12:30:34+00:00",
+  "date" : "2026-06-16T13:53:28+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
