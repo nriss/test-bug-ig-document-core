@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMTraitementSubordonne vers la sous-
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : Traitement subordonné",
   "status" : "draft",
-  "date" : "2026-06-16T13:53:28+00:00",
+  "date" : "2026-06-16T14:51:07+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
