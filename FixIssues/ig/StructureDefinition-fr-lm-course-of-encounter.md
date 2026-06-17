@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
   "name" : "FRLMCourseOfEncounter",
   "title" : "Logical model - FR LM Course of encounter",
   "status" : "draft",
-  "date" : "2026-06-17T15:07:59+00:00",
+  "date" : "2026-06-17T15:48:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

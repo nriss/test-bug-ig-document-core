@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-en-rapport-av
   "name" : "FRCDAEnRapportAvecLaPrevention",
   "title" : "CDA - FR En rapport avec la prevention",
   "status" : "draft",
-  "date" : "2026-06-17T15:07:59+00:00",
+  "date" : "2026-06-17T15:48:42+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
