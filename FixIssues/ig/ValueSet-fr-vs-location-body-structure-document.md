@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-location-body-structure-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRValueSetLocationBodyStructureDocument |
+| Draft as of 2026-06-17 | *Computable Name*:FRValueSetLocationBodyStructureDocument |
 
  
 Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie d’abord. Inclut : 
@@ -20,14 +20,6 @@ Codes SNOMED CT autorisés pour décrire une localisation anatomique ou une voie
  **References** 
 
 * [BodyStructure - FR Body Structure Document](StructureDefinition-fr-body-structure-document.md)
-
-###  Recherche en live sur le SMT 
-
-Indiquer un mot clé puis taper sur "enter" :
-
-```
-Requête sur le SMT
-```
 
 ### Définition logique (CLD)
 
@@ -61,7 +53,7 @@ Requête sur le SMT
   "name" : "FRValueSetLocationBodyStructureDocument",
   "title" : "ValueSet – FR ValueSet Localisation anatomique et voie d'abord",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-references-externes | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDAReferencesExternes |
+| Draft as of 2026-06-17 | *Computable Name*:FRCDAReferencesExternes |
 
  
 Entrée FR-References-externes: IHE-PCC - External-References. Cette entrée de type act permet de relier un élément à un (ou des) document(s) externe(s) par l’intermédiaire d’une adresse URL. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-references-ex
   "name" : "FRCDAReferencesExternes",
   "title" : "CDA - FR References externes",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

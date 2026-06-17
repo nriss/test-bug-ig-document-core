@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionPatientEducationLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*: |
+| Draft as of 2026-06-17 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMEducationPatient vers la section CDA FRCDAEducationDuPatient, puis vers la section FHIR FRCompositionDocument.section:patientEducation. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMEducationPatient vers la section C
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Education du patient\"",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

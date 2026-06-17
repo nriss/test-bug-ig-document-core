@@ -9,15 +9,11 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-sequence-extension | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRMedicationAdministrationSequenceExtension |
+| Draft as of 2026-06-17 | *Computable Name*:FRMedicationAdministrationSequenceExtension |
 
 Extension permettant d’indiquer l’ordre d’une prise dans le cadre d’un schéma de traitement comportant des dosages progressifs ou fractionnés dans le contexte de MedicationAdministration. La valeur est un entier (integer) représentant le numéro de séquence de l’administration.
 
 **Context of Use**
-
-This extension may be used on the following element(s):
-
-* Element ID MedicationAdministration
 
 **Usage info**
 
@@ -50,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-medication-admini
   "name" : "FRMedicationAdministrationSequenceExtension",
   "title" : "FR Medication Administration Sequence Extension",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

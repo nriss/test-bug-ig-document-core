@@ -44,18 +44,30 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"6.228"}
     h3,h4,h5,h6{--heading-prefix:"6.228"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> 
+  </a>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/> 
+  </a>
+</div>
+
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
+
+  <div id="ig-search">
+ </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
@@ -230,6 +242,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div style="counter-reset: section 4" class="col-12">
   <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
@@ -298,7 +311,7 @@
         
           Draft
           
-            as of 2026-06-16
+            as of 2026-06-17
           
         
       </td>
@@ -317,108 +330,15 @@
   <div id="tabs">
     <ul>
       <li>
-        <a href="#tabs-diff">Differential Elements Table</a>
+        <a href="#tabs-key">Key Elements Table</a>
       </li>
       <li>
-        <a href="#tabs-key">Key Elements Table</a>
+        <a href="#tabs-diff">Differential Elements Table</a>
       </li>
       <li>
         <a href="#tabs-snap">Snapshot Elements Table</a>
       </li>
     </ul>
-    <a name="tabs-diff"> </a>
-    <div id="tabs-diff">
-      <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p><table class="dict" data-fhir="generated"><tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD">  </a><span style="color: grey">0</span><b>. AD</b><a href="#diff_AD" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td>Conteneur logique</td><td><a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-ClinicalDocument.html">ClinicalDocument (CDA Class)</a></td></tr><tr><td style="white-space: nowrap">Format XML</td><td>Dans le format XML, cette propriété a l'espace de noms (namespace) <code>urn:hl7-org:v3</code>.</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.use">  </a><span style="color: grey">2</span><b>. AD.use</b><a href="#diff_AD.use" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code d'usage de l'adresse
-Une à plusieurs des valeurs suivantes, séparées par un espace :
-'H' pour domicile
-'HP' pour domicile principal
-'HV' pour domicile de vacances
-'WP' pour lieu de travail
-'TMP' pour adresse temporaire</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item">  </a><span style="color: grey">4</span><b>. AD.item</b><a href="#diff_AD.item" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-<tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>Cet élément introduit un ensemble de slices sur <code>AD.item</code>. Les slices sontNon ordonné et Open, et peut être différencié en utilisant les discriminateurs suivants :<ul></ul><li><span style="color:DarkGray">type @ $this</span></li></td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine">  </a><span style="color: grey">6</span><b>. AD.item:notStreetAddressLine</b><a href="#diff_AD.item:notStreetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Nom de la slice</a></td><td>notStreetAddressLine</td></tr><tr><td style="white-space: nowrap">Court</td><td>Structure formée des composants élémentaires de l'adresse géopostale</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.country">  </a><span style="color: grey">8</span><b>. AD.item:notStreetAddressLine.country</b><a href="#diff_AD.item:notStreetAddressLine.country" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Nom du pays destinataire :
-
-En MAJUSCULES et en toutes lettres, de préférence dans la langue du pays d'expédition ou dans une langue reconnue au niveau mondial.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.state">  </a><span style="color: grey">10</span><b>. AD.item:notStreetAddressLine.state</b><a href="#diff_AD.item:notStreetAddressLine.state" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Division territoriale :
-
-Pour les adresses internationales, c'est une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, …</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.county">  </a><span style="color: grey">12</span><b>. AD.item:notStreetAddressLine.county</b><a href="#diff_AD.item:notStreetAddressLine.county" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code Officiel Géographique (COG) :
-
-Code Officiel Géographique (COG) de la commune (ou du pays pour le lieu de naissance).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.city">  </a><span style="color: grey">14</span><b>. AD.item:notStreetAddressLine.city</b><a href="#diff_AD.item:notStreetAddressLine.city" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Localité ou libellé du bureau CEDEX :
-
-- Localité : Une zone d'habitation et en général une commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas ou le libellé postal diffère du libellé INSEE, généralement pour lever les ambiguïtés. Par exception, la localité de destination est dans certains cas un lieu dit si celui-ci est le siège d'un bureau distributeur.
-- Libellé bureau CEDEX : Un libellé du bureau distributeur CEDEX correspondant généralement au libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.postalCode">  </a><span style="color: grey">16</span><b>. AD.item:notStreetAddressLine.postalCode</b><a href="#diff_AD.item:notStreetAddressLine.postalCode" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code postal ou code CEDEX :
-
-- Code postal : code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.
-- Code CEDEX : acronyme de Courrier d'Entreprise à Distribution EXceptionnelle, une modalité d'acheminement du courrier associées à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique. Le code postal spécifique CEDEX est un code attribué aux organismes recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné au lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.houseNumber">  </a><span style="color: grey">18</span><b>. AD.item:notStreetAddressLine.houseNumber</b><a href="#diff_AD.item:notStreetAddressLine.houseNumber" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Numéro dans la voie</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.houseNumberNumeric">  </a><span style="color: grey">20</span><b>. AD.item:notStreetAddressLine.houseNumberNumeric</b><a href="#diff_AD.item:notStreetAddressLine.houseNumberNumeric" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Extension du numéro dans la voie :
-
-bis, ter, quater, ...ou une lettre A, B, C, D, ... lorsque ce caractère complète une numérotation de voirie.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.streetName">  </a><span style="color: grey">22</span><b>. AD.item:notStreetAddressLine.streetName</b><a href="#diff_AD.item:notStreetAddressLine.streetName" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Nom de la voie :
-
-Appellation donnée par les municipalités. Ce nom figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.streetNameType">  </a><span style="color: grey">24</span><b>. AD.item:notStreetAddressLine.streetNameType</b><a href="#diff_AD.item:notStreetAddressLine.streetNameType" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Type de voie :
-
-Valeur du type de voie : rue, avenue, boulevard,... 
-Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut streetName. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.additionalLocator">  </a><span style="color: grey">26</span><b>. AD.item:notStreetAddressLine.additionalLocator</b><a href="#diff_AD.item:notStreetAddressLine.additionalLocator" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Valeur du point de remise où le destinataire prend possession de son courrier.
-
-Ce lieu est constitué des éléments suivants :
-Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel ;
-Accès au local : indication de couloir, d'étage ou de niveau ;
-Boite aux lettres : Numéro voire dénomination éventuellement CIDEX ;
-Accès à la boite : si nécessaire : identification du couloir d'accès, de la batterie de boites s'il en existe plusieurs ;
-Code acheminement interne : codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.unitID">  </a><span style="color: grey">28</span><b>. AD.item:notStreetAddressLine.unitID</b><a href="#diff_AD.item:notStreetAddressLine.unitID" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Complément de l'adresse au point de remise : 
-
-Constitué des éléments suivants :
-- Accès au bâtiment identifié par un numéro, une lettre, une porte, une combinaison alphanumérique ; exemple : Entrée A1, 
-- Bâtiment : Les bâtiments sont désignés par leur type (bâtiment, immeuble, tour, ...) éventuellement des mentions d'orientation (Est, Ouest..) une dénomination littérale ou une numérotation ; exemple : Tour Delta, 
-- Ensemble immobilier : Ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès ; exemple : résidence des fleurs.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.postBox">  </a><span style="color: grey">30</span><b>. AD.item:notStreetAddressLine.postBox</b><a href="#diff_AD.item:notStreetAddressLine.postBox" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Mention de distribution :
-
-C'est-à-dire une mention d'identification d'un service proposé par l'opérateur postal à un client destinataire (boite postale, etc.).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.precinct">  </a><span style="color: grey">32</span><b>. AD.item:notStreetAddressLine.precinct</b><a href="#diff_AD.item:notStreetAddressLine.precinct" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Lieu-dit :
-
-Lieu qui porte un nom rappelant une particularité topographique ou historique et qui souvent constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:streetAddressLine">  </a><span style="color: grey">34</span><b>. AD.item:streetAddressLine</b><a href="#diff_AD.item:streetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Nom de la slice</a></td><td>streetAddressLine</td></tr><tr><td style="white-space: nowrap">Court</td><td>Structure formée des lignes obtenues par assemblage des composants élémentaires de l'adresse géopostale.
-Les équivalences avec les éléments XML contenant les composants élémentaires sont indiquées pour chaque ligne (ex: postalCode+city).</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:streetAddressLine.streetAddressLine">  </a><span style="color: grey">36</span><b>. AD.item:streetAddressLine.streetAddressLine</b><a href="#diff_AD.item:streetAddressLine.streetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Ligne d'adresse : 
-
-Première ligne : regroupe les données d'identification du destinataire, 
-Deuxième ligne : Point de remise (additionalLocator), 
-Troisième ligne : Complément du point de remise (unitID), 
-Quatrième ligne : regroupe le numéro, l'extension, le type et le nom de la voie (houseNumber + HouseNumberNumeric + streetNameType + streetName), 
-Cinquième ligne : regroupe la mention de distribution (BP, poste restante) et le libellé de la localité dans le cas où celle-ci est différente du libellé cedex, lieu-dit ou hameau (postBox + precinct + city), 
-Sixième ligne : Regroupe le code postal et la localité de destination ou le code cedex et le libellé du bureau cedex (postalCode + city), 
-Septième ligne : regroupe la division territoriale et le nom du pays (state + country)</td></tr>
-
-</table>
-    </div>
     <a name="tabs-key"> </a>
     <div id="tabs-key">
       <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p><table class="dict" data-fhir="generated"><tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_AD">  </a><span style="color: grey">0</span><b>. AD</b><a href="#key_AD" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Définition</td><td><p>Mailing and home or office addresses. A sequence of address parts, such as street or post office Box, city, postal code, country, etc.</p>
@@ -2205,6 +2125,99 @@ Septième ligne : regroupe la division territoriale et le nom du pays (state + c
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_AD.useablePeriod">  </a><span style="color: grey">1154</span><b>. AD.useablePeriod</b><a href="#key_AD.useablePeriod" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Définition</td><td><p style="font-size: 11px">A General Timing Specification (GTS) specifying the periods of time during which the address can be used. This is used to specify different addresses for different times of the week or year.</p>
 </td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..*</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td>Choix de : <a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-IVL-TS.html">http://hl7.org/cda/stds/core/StructureDefinition/IVL-TS</a>, <a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-EIVL-TS.html">http://hl7.org/cda/stds/core/StructureDefinition/EIVL-TS</a>, <a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-PIVL-TS.html">http://hl7.org/cda/stds/core/StructureDefinition/PIVL-TS</a>, <a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-SXPR-TS.html">http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS</a></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/datatypes.html">Type par défaut</a></td><td>http://hl7.org/cda/stds/core/StructureDefinition/SXPR-TS</td></tr><tr><td style="white-space: nowrap">Format XML</td><td>Le type de cette propriété est déterminé en utilisant le <code>xsi:type</code>attribute.</td></tr><tr><td style="white-space: nowrap">Étiquette</td><td>Useable Period</td></tr>
+
+</table>
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p><table class="dict" data-fhir="generated"><tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD">  </a><span style="color: grey">0</span><b>. AD</b><a href="#diff_AD" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td>Conteneur logique</td><td><a href="http://hl7.org/cda/stds/core/2.0.1-sd/StructureDefinition-ClinicalDocument.html">ClinicalDocument (CDA Class)</a></td></tr><tr><td style="white-space: nowrap">Format XML</td><td>Dans le format XML, cette propriété a l'espace de noms (namespace) <code>urn:hl7-org:v3</code>.</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.use">  </a><span style="color: grey">2</span><b>. AD.use</b><a href="#diff_AD.use" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code d'usage de l'adresse
+Une à plusieurs des valeurs suivantes, séparées par un espace :
+'H' pour domicile
+'HP' pour domicile principal
+'HV' pour domicile de vacances
+'WP' pour lieu de travail
+'TMP' pour adresse temporaire</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item">  </a><span style="color: grey">4</span><b>. AD.item</b><a href="#diff_AD.item" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+<tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>Cet élément introduit un ensemble de slices sur <code>AD.item</code>. Les slices sontNon ordonné et Open, et peut être différencié en utilisant les discriminateurs suivants :<ul></ul><li><span style="color:DarkGray">type @ $this</span></li></td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine">  </a><span style="color: grey">6</span><b>. AD.item:notStreetAddressLine</b><a href="#diff_AD.item:notStreetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Nom de la slice</a></td><td>notStreetAddressLine</td></tr><tr><td style="white-space: nowrap">Court</td><td>Structure formée des composants élémentaires de l'adresse géopostale</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.country">  </a><span style="color: grey">8</span><b>. AD.item:notStreetAddressLine.country</b><a href="#diff_AD.item:notStreetAddressLine.country" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Nom du pays destinataire :
+
+En MAJUSCULES et en toutes lettres, de préférence dans la langue du pays d'expédition ou dans une langue reconnue au niveau mondial.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.state">  </a><span style="color: grey">10</span><b>. AD.item:notStreetAddressLine.state</b><a href="#diff_AD.item:notStreetAddressLine.state" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Division territoriale :
+
+Pour les adresses internationales, c'est une subdivision administrative d'un pays. Dans le cas d'une adresse étrangère, il peut être nécessaire d'identifier dans l'adresse l'état fédéré, la région, le canton, …</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.county">  </a><span style="color: grey">12</span><b>. AD.item:notStreetAddressLine.county</b><a href="#diff_AD.item:notStreetAddressLine.county" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code Officiel Géographique (COG) :
+
+Code Officiel Géographique (COG) de la commune (ou du pays pour le lieu de naissance).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.city">  </a><span style="color: grey">14</span><b>. AD.item:notStreetAddressLine.city</b><a href="#diff_AD.item:notStreetAddressLine.city" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Localité ou libellé du bureau CEDEX :
+
+- Localité : Une zone d'habitation et en général une commune d'implantation du destinataire. Elle est identifiée par son libellé INSEE sauf dans quelques cas ou le libellé postal diffère du libellé INSEE, généralement pour lever les ambiguïtés. Par exception, la localité de destination est dans certains cas un lieu dit si celui-ci est le siège d'un bureau distributeur.
+- Libellé bureau CEDEX : Un libellé du bureau distributeur CEDEX correspondant généralement au libellé du bureau distributeur c'est-à-dire (dans la très grande majorité des cas) le libellé de la commune siège du bureau CEDEX.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.postalCode">  </a><span style="color: grey">16</span><b>. AD.item:notStreetAddressLine.postalCode</b><a href="#diff_AD.item:notStreetAddressLine.postalCode" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Code postal ou code CEDEX :
+
+- Code postal : code à 5 chiffres servant à l'acheminement et/ou à la distribution des envois. Il identifie un bureau distributeur dans la chaîne de traitement du courrier.
+- Code CEDEX : acronyme de Courrier d'Entreprise à Distribution EXceptionnelle, une modalité d'acheminement du courrier associées à des services particuliers de distribution offerts aux entreprises caractérisées par un adressage spécifique. Le code postal spécifique CEDEX est un code attribué aux organismes recevant un fort trafic. Il identifie un client ou un ensemble de clients. Il est positionné au lieu et place du code postal général dans le cas des adresses CEDEX. Ainsi un code peut être associé à un client (code individuel) ou partagé entre plusieurs clients (code collectif).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.houseNumber">  </a><span style="color: grey">18</span><b>. AD.item:notStreetAddressLine.houseNumber</b><a href="#diff_AD.item:notStreetAddressLine.houseNumber" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Numéro dans la voie</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.houseNumberNumeric">  </a><span style="color: grey">20</span><b>. AD.item:notStreetAddressLine.houseNumberNumeric</b><a href="#diff_AD.item:notStreetAddressLine.houseNumberNumeric" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Extension du numéro dans la voie :
+
+bis, ter, quater, ...ou une lettre A, B, C, D, ... lorsque ce caractère complète une numérotation de voirie.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.streetName">  </a><span style="color: grey">22</span><b>. AD.item:notStreetAddressLine.streetName</b><a href="#diff_AD.item:notStreetAddressLine.streetName" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Nom de la voie :
+
+Appellation donnée par les municipalités. Ce nom figure in extenso ou en abrégé sur les plaques aux différents angles de chaque rue.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.streetNameType">  </a><span style="color: grey">24</span><b>. AD.item:notStreetAddressLine.streetNameType</b><a href="#diff_AD.item:notStreetAddressLine.streetNameType" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Type de voie :
+
+Valeur du type de voie : rue, avenue, boulevard,... 
+Attribut obsolète et non conforme à la norme postale en vigueur qui définit cette information comme faisant partie de l'attribut streetName. Il apparait dans la classe Adresse uniquement parce que des systèmes existants l'utilisent encore.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.additionalLocator">  </a><span style="color: grey">26</span><b>. AD.item:notStreetAddressLine.additionalLocator</b><a href="#diff_AD.item:notStreetAddressLine.additionalLocator" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Valeur du point de remise où le destinataire prend possession de son courrier.
+
+Ce lieu est constitué des éléments suivants :
+Local ou logement : Numéro ou désignation d'appartement, logement, pièce, bureau, local commercial ou industriel ;
+Accès au local : indication de couloir, d'étage ou de niveau ;
+Boite aux lettres : Numéro voire dénomination éventuellement CIDEX ;
+Accès à la boite : si nécessaire : identification du couloir d'accès, de la batterie de boites s'il en existe plusieurs ;
+Code acheminement interne : codification identifiant le découpage au sein de l'entreprise en vue du traitement de courrier par les services dédiés internes à l'entreprise.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.unitID">  </a><span style="color: grey">28</span><b>. AD.item:notStreetAddressLine.unitID</b><a href="#diff_AD.item:notStreetAddressLine.unitID" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Complément de l'adresse au point de remise : 
+
+Constitué des éléments suivants :
+- Accès au bâtiment identifié par un numéro, une lettre, une porte, une combinaison alphanumérique ; exemple : Entrée A1, 
+- Bâtiment : Les bâtiments sont désignés par leur type (bâtiment, immeuble, tour, ...) éventuellement des mentions d'orientation (Est, Ouest..) une dénomination littérale ou une numérotation ; exemple : Tour Delta, 
+- Ensemble immobilier : Ensemble d'habitations reliées à la voie publique par un ou plusieurs points d'accès ; exemple : résidence des fleurs.</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.postBox">  </a><span style="color: grey">30</span><b>. AD.item:notStreetAddressLine.postBox</b><a href="#diff_AD.item:notStreetAddressLine.postBox" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Mention de distribution :
+
+C'est-à-dire une mention d'identification d'un service proposé par l'opérateur postal à un client destinataire (boite postale, etc.).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:notStreetAddressLine.precinct">  </a><span style="color: grey">32</span><b>. AD.item:notStreetAddressLine.precinct</b><a href="#diff_AD.item:notStreetAddressLine.precinct" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Lieu-dit :
+
+Lieu qui porte un nom rappelant une particularité topographique ou historique et qui souvent constitue un écart d'une commune (un écart est une petite agglomération distincte du centre de la commune à laquelle elle appartient).</td></tr><tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Doit être pris en charge (Must Support)</a></td><td>true</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:streetAddressLine">  </a><span style="color: grey">34</span><b>. AD.item:streetAddressLine</b><a href="#diff_AD.item:streetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Nom de la slice</a></td><td>streetAddressLine</td></tr><tr><td style="white-space: nowrap">Court</td><td>Structure formée des lignes obtenues par assemblage des composants élémentaires de l'adresse géopostale.
+Les équivalences avec les éléments XML contenant les composants élémentaires sont indiquées pour chaque ligne (ex: postalCode+city).</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Contrôle</a></td><td>0..1</td></tr>
+
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_AD.item:streetAddressLine.streetAddressLine">  </a><span style="color: grey">36</span><b>. AD.item:streetAddressLine.streetAddressLine</b><a href="#diff_AD.item:streetAddressLine.streetAddressLine" title="link to here" class="self-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path></svg></a></span></td></tr><tr><td style="white-space: nowrap">Court</td><td>Ligne d'adresse : 
+
+Première ligne : regroupe les données d'identification du destinataire, 
+Deuxième ligne : Point de remise (additionalLocator), 
+Troisième ligne : Complément du point de remise (unitID), 
+Quatrième ligne : regroupe le numéro, l'extension, le type et le nom de la voie (houseNumber + HouseNumberNumeric + streetNameType + streetName), 
+Cinquième ligne : regroupe la mention de distribution (BP, poste restante) et le libellé de la localité dans le cas où celle-ci est différente du libellé cedex, lieu-dit ou hameau (postBox + precinct + city), 
+Sixième ligne : Regroupe le code postal et la localité de destination ou le code cedex et le libellé du bureau cedex (postalCode + city), 
+Septième ligne : regroupe la division territoriale et le nom du pays (state + country)</td></tr>
 
 </table>
     </div>
@@ -4006,180 +4019,181 @@ Septième ligne : regroupe la division territoriale et le nom du pays (state + c
 
 </div>
 
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script type="text/javascript" src="assets/js/tabs.js"> </script>
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-<a name="bottom"> </a>
-<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-<div class="container">  <!-- container -->
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
-<div style="background-color:var(--footer-nav-bg-color)">
-  <table style="width:100%">
-    <tbody>
-      <tr>
-        <td style="text-align:left">&#xA0;
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
 
-          <a href="StructureDefinition-cisis-addr.html">&lt;prev</a>
+                <a href="StructureDefinition-cisis-addr.html">&lt;prev</a>
 
-        </td>
-        <td style="text-align:center">
-          <a href="#top">top</a>
-        </td>
-        <td style="text-align:right">&#xA0;
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
 
-          <a href="StructureDefinition-cisis-addr-mappings.html">next&gt;</a>
+                <a href="StructureDefinition-cisis-addr-mappings.html">next&gt;</a>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<div class="inner-wrapper">
-  <p>
-    IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 16, 2026 14:51+0000">2026-06-16</span>
-    <br/>
-    <span style="color: var(--footer-highlight-text-color)"></span>
-      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 12:15+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/document/core/history.html">Historique des versions </a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" id="newissue" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
-    </span>
-  </p>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-footer -->
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
 
-<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-post-footer -->
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/respond.min.js"> </script>
-<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
 
-<!-- Ajout ANS -->
-<script src="assets/js/app.js" type="text/javascript"> </script>
-<script src="assets/js/vendor.js" type="text/javascript"> </script>
-<script type="text/javascript" src="assets/js/addOnto.js"> </script>
-<!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
 
-<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
 
 
-<!-- Analytics Below
-================================================== -->
-
-
-<!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
 <footer class="footer footer-principal" role="contentinfo">
-<div class="footer__region1">
-<div class="container">
-<div class="row">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
 
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <div class="logos">        
-      <div class="logo logo--0">
-        <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
-          
-        </a>
-      </div>
-  
-      <div class="logo logo--1">
-        <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
-        </a>
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <p class="footer__title">Agence du Numérique en Santé</p>
-    <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
 
-    <!-- <div class="m-social">
-      <ul class="m-social__list">        
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
-            </div>
-            <span class="sr-only">linkedin</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
-            </div>
-            <span class="sr-only">twitter</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
-            </div>
-            <span class="sr-only">youtube</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
-            </div>
-            <span class="sr-only">rss</span>
-          </a>
-        </li>
-      </ul>
+          </ul>
+        </div>
+      </div>
     </div> -->
-  </div>
-  
-  <div class="col-6 col-lg-4">
-    <ul class="footer-list">
-      <li class="footer-list__item footer-list__item--hasIcon">
-        <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-          <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
-        </li>
-        <!-- <li class="footer-list__item">
-          <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-        </li>
-         -->
-      </ul>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- <div class="footer__region2">
-<div class="container">
-  <div class="footer-contentinfo">
-    <ul class="footer-list footer-list--inline">
-
-    </ul>
-  </div>
-</div>
-</div> -->
-</footer>
-</body>
+  </footer>
+  </body>
 </html>
+

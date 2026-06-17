@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-participant | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRLMParticipant |
+| Draft as of 2026-06-17 | *Computable Name*:FRLMParticipant |
 
  
 Personne/Structure impliquée dans les évènements décrits par le document qui n’a pas été mentionné ailleurs. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-participant.cs
   "name" : "FRLMParticipant",
   "title" : "Modèle logique métier - FR LM Participant",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

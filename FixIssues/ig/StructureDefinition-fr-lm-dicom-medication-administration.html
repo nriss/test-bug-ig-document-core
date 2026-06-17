@@ -44,18 +44,30 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"6.79"}
     h3,h4,h5,h6{--heading-prefix:"6.79"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> 
+  </a>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/> 
+  </a>
+</div>
+
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
+
+  <div id="ig-search">
+ </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
@@ -230,6 +242,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">ANS IG document core - version de développement local (intégration continue v0.1.0-snapshot) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/document/core/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
   
@@ -299,7 +312,6 @@
 
   </h2>
 
-
   <table class="colsd">
 
     <tr>
@@ -309,7 +321,7 @@
       <span class="copy-text">0.1.0-snapshot<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-dicom-medication-administration|0.1.0-snapshot"/></span>
       </td>
     </tr>
- 
+
     <tr>
 
 
@@ -322,7 +334,7 @@
         
           Draft
           
-            as of 2026-06-16
+            as of 2026-06-17
           
         
       </td>
@@ -332,33 +344,10 @@
       <td><i>Computable Name</i>: <span style="font-family: monospace;">FRLMDICOMMedicationAdministration</span></td>
     </tr>
 
- <!--   
-    <tr>
-      <td colspan="3">
-        <i>As active of:</i> 
-      </td>
-      <td colspan="2">
-        <i>RevisionDate:</i> 2026-06-16T14:51:07+00:00
-      </td>      
-    </tr>
-
-    
-
-    <tr>
-      <td colspan="5">
-        <i>dd:</i> -
-      </td>
-    </tr>
-    -->
-    
-
-
-    
 
 
 
   </table>
-
 
 <p>
 <p>Entrée Administration de produit de santé</p>
@@ -387,10 +376,10 @@
   <div id="tabs">
     <ul>
       <li>
-        <a href="#tabs-diff">Differential Table</a>
+        <a href="#tabs-key">Key Elements Table</a>
       </li>
       <li>
-        <a href="#tabs-key">Key Elements Table</a>
+        <a href="#tabs-diff">Differential Table</a>
       </li>
       <li>
         <a href="#tabs-snap">Snapshot Table</a>
@@ -413,128 +402,6 @@
         <a href="#tabs-all">All</a>
       </li>
     </ul>
-    <a name="tabs-diff"> </a>
-    <div id="tabs-diff">
-      <div id="tbl-diff">
-        <p>This structure is derived from <a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a>
-        </p>
-        <div id="tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-lm-dicom-medication-administrationD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-lm-dicom-medication-administrationD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-lm-dicom-medication-administrationD'), document.getElementById('ppfr-lm-dicom-medication-administrationD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-lm-dicom-medication-administrationD">Bindings <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'binding',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="binding" checked="true" id="cbfr-lm-dicom-medication-administrationD-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'constraint',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="constraint" checked="true" id="cbfr-lm-dicom-medication-administrationD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'obligation',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="obligation" checked="true" id="cbfr-lm-dicom-medication-administrationD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration" title="Entrée Administration de produit de santé" data-no-external="true">fr-lm-dicom-medication-administration</a><a name="fr-lm-dicom-medication-administration"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM DICOM Medication Administration<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.voieAdministration" title="Voie d'administration" data-no-external="true">voieAdministration</a><a name="fr-lm-dicom-medication-administration.voieAdministration"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Voie d'administration<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">EDQM (0.4.0.127.0.16.1.1.2.1)</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.dose" title="Dose à administrer" data-no-external="true">dose</a><a name="fr-lm-dicom-medication-administration.dose"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dose à administrer</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.rythme" title="Rythme d'administration" data-no-external="true">rythme</a><a name="fr-lm-dicom-medication-administration.rythme"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rythme d'administration</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament" title="Médicament" data-no-external="true">medicament</a><a name="fr-lm-dicom-medication-administration.medicament"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Médicament</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ada" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit" title="Produit de santé" data-no-external="true">produit</a><a name="fr-lm-dicom-medication-administration.medicament.produit"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Produit de santé</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit" title="Code du produit" data-no-external="true">codeProduit</a><a name="fr-lm-dicom-medication-administration.medicament.produit.codeProduit"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code du produit<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">UCD (1.2.250.1.213.2.61) + code ATC</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adaaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification" title="Autre(s) codification(s)" data-no-external="true">autreCodification</a><a name="fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Autre(s) codification(s)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.nomMarque" title="Nom de marque du produit" data-no-external="true">nomMarque</a><a name="fr-lm-dicom-medication-administration.medicament.produit.nomMarque"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de marque du produit</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.numeroLot" title="Numéro de lot" data-no-external="true">numeroLot</a><a name="fr-lm-dicom-medication-administration.medicament.produit.numeroLot"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
-document.getElementById('cbfr-lm-dicom-medication-administrationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationD-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
-document.getElementById('cbfr-lm-dicom-medication-administrationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'constraint', document.getElementById('cbfr-lm-dicom-medication-administrationD-constraint').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
-document.getElementById('cbfr-lm-dicom-medication-administrationD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'obligation', document.getElementById('cbfr-lm-dicom-medication-administrationD-obligation').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
-</script></table>
-          <a name="tx"> </a>
-          <!--Terminology Bindings heading in the fragment -->
-          <h4>Bindings terminologiques (différentiel)</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Chemin</b>
-    </td>
-    <td>
-      <b>Statut</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>Jeu de valeurs (ValueSet)</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​voieAdministration</td>
-    <td>Base</td>
-    <td></td>
-    <td title="EDQM (0.4.0.127.0.16.1.1.2.1)"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit</td>
-    <td>Base</td>
-    <td></td>
-    <td title="UCD (1.2.250.1.213.2.61) + code ATC"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit.​autreCodification</td>
-    <td>Base</td>
-    <td></td>
-    <td title="ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-</table>
-
-        
-          
-          <!-- 218 is size of empty table -->
-          
-        </div>
-      </div>
-    </div>
     <a name="tabs-key"> </a>
     <div id="tabs-key">
       <div id="tbl-key">
@@ -709,7 +576,7 @@ La partie en majuscules indique le code pays (ISO-3166)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
 document.getElementById('cbfr-lm-dicom-medication-administrationK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-dicom-medication-administrationK'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationK-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationK'));
 document.getElementById('cbfr-lm-dicom-medication-administrationK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -815,6 +682,128 @@ filterDesc(document.getElementById('fr-lm-dicom-medication-administrationK'), 'o
   </tr>
 </table>
 
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <div id="tbl-diff">
+        <p>This structure is derived from <a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a>
+        </p>
+        <div id="tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-lm-dicom-medication-administrationD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-lm-dicom-medication-administrationD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-lm-dicom-medication-administrationD'), document.getElementById('ppfr-lm-dicom-medication-administrationD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-lm-dicom-medication-administrationD">Bindings <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'binding',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="binding" checked="true" id="cbfr-lm-dicom-medication-administrationD-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'constraint',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="constraint" checked="true" id="cbfr-lm-dicom-medication-administrationD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'obligation',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'))" size="1" name="obligation" checked="true" id="cbfr-lm-dicom-medication-administrationD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration" title="Entrée Administration de produit de santé" data-no-external="true">fr-lm-dicom-medication-administration</a><a name="fr-lm-dicom-medication-administration"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM DICOM Medication Administration<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.voieAdministration" title="Voie d'administration" data-no-external="true">voieAdministration</a><a name="fr-lm-dicom-medication-administration.voieAdministration"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Voie d'administration<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">EDQM (0.4.0.127.0.16.1.1.2.1)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.dose" title="Dose à administrer" data-no-external="true">dose</a><a name="fr-lm-dicom-medication-administration.dose"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dose à administrer</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.rythme" title="Rythme d'administration" data-no-external="true">rythme</a><a name="fr-lm-dicom-medication-administration.rythme"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rythme d'administration</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament" title="Médicament" data-no-external="true">medicament</a><a name="fr-lm-dicom-medication-administration.medicament"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Médicament</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ada" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit" title="Produit de santé" data-no-external="true">produit</a><a name="fr-lm-dicom-medication-administration.medicament.produit"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Produit de santé</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit" title="Code du produit" data-no-external="true">codeProduit</a><a name="fr-lm-dicom-medication-administration.medicament.produit.codeProduit"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code du produit<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">UCD (1.2.250.1.213.2.61) + code ATC</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adaaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification" title="Autre(s) codification(s)" data-no-external="true">autreCodification</a><a name="fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Autre(s) codification(s)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.nomMarque" title="Nom de marque du produit" data-no-external="true">nomMarque</a><a name="fr-lm-dicom-medication-administration.medicament.produit.nomMarque"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de marque du produit</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.numeroLot" title="Numéro de lot" data-no-external="true">numeroLot</a><a name="fr-lm-dicom-medication-administration.medicament.produit.numeroLot"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
+document.getElementById('cbfr-lm-dicom-medication-administrationD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationD-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
+document.getElementById('cbfr-lm-dicom-medication-administrationD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'constraint', document.getElementById('cbfr-lm-dicom-medication-administrationD-constraint').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
+document.getElementById('cbfr-lm-dicom-medication-administrationD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationD'), 'obligation', document.getElementById('cbfr-lm-dicom-medication-administrationD-obligation').checked, document.getElementById('ppfr-lm-dicom-medication-administrationD'));
+</script></table>
+          <a name="tx"> </a>
+          <!--Terminology Bindings heading in the fragment -->
+          <h4>Bindings terminologiques (différentiel)</h4>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Chemin</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>Jeu de valeurs (ValueSet)</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​voieAdministration</td>
+    <td>Base</td>
+    <td></td>
+    <td title="EDQM (0.4.0.127.0.16.1.1.2.1)"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit</td>
+    <td>Base</td>
+    <td></td>
+    <td title="UCD (1.2.250.1.213.2.61) + code ATC"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit.​autreCodification</td>
+    <td>Base</td>
+    <td></td>
+    <td title="ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+</table>
+
+        
+          
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -993,7 +982,7 @@ La partie en majuscules indique le code pays (ISO-3166)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
 document.getElementById('cbfr-lm-dicom-medication-administrationS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-dicom-medication-administrationS'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationS-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationS'));
 document.getElementById('cbfr-lm-dicom-medication-administrationS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1188,127 +1177,6 @@ Résumé
     </div>
     <a name="tabs-all"> </a>
     <div id="tabs-all">
-      <div id="all-tbl-diff">
-        <p>
-          <b>Differential View</b>
-        </p>
-        <p>This structure is derived from <a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a>
-        </p>
-        <div id="all-tbl-diff-inner">
-          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-lm-dicom-medication-administrationDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-lm-dicom-medication-administrationDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-lm-dicom-medication-administrationDA'), document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-lm-dicom-medication-administrationDA">Bindings <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'binding',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="binding" checked="true" id="cbfr-lm-dicom-medication-administrationDA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'constraint',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="constraint" checked="true" id="cbfr-lm-dicom-medication-administrationDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'obligation',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="obligation" checked="true" id="cbfr-lm-dicom-medication-administrationDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration" title="Entrée Administration de produit de santé" data-no-external="true">fr-lm-dicom-medication-administration</a><a name="a-fr-lm-dicom-medication-administration"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM DICOM Medication Administration<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.voieAdministration" title="Voie d'administration" data-no-external="true">voieAdministration</a><a name="a-fr-lm-dicom-medication-administration.voieAdministration"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Voie d'administration<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">EDQM (0.4.0.127.0.16.1.1.2.1)</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.dose" title="Dose à administrer" data-no-external="true">dose</a><a name="a-fr-lm-dicom-medication-administration.dose"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dose à administrer</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.rythme" title="Rythme d'administration" data-no-external="true">rythme</a><a name="a-fr-lm-dicom-medication-administration.rythme"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rythme d'administration</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament" title="Médicament" data-no-external="true">medicament</a><a name="a-fr-lm-dicom-medication-administration.medicament"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Médicament</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ada" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit" title="Produit de santé" data-no-external="true">produit</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Produit de santé</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit" title="Code du produit" data-no-external="true">codeProduit</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.codeProduit"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code du produit<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">UCD (1.2.250.1.213.2.61) + code ATC</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adaaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification" title="Autre(s) codification(s)" data-no-external="true">autreCodification</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Autre(s) codification(s)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)</span></td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.nomMarque" title="Nom de marque du produit" data-no-external="true">nomMarque</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.nomMarque"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de marque du produit</td></tr>
-<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.numeroLot" title="Numéro de lot" data-no-external="true">numeroLot</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.numeroLot"> </a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
-<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
-document.getElementById('cbfr-lm-dicom-medication-administrationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationDA-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
-document.getElementById('cbfr-lm-dicom-medication-administrationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'constraint', document.getElementById('cbfr-lm-dicom-medication-administrationDA-constraint').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
-document.getElementById('cbfr-lm-dicom-medication-administrationDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
-filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'obligation', document.getElementById('cbfr-lm-dicom-medication-administrationDA-obligation').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
-</script></table>
-          <!--Terminology Bindings heading in the fragment -->
-          <h4>Bindings terminologiques (différentiel)</h4>
-<table class="list" data-fhir="generated-heirarchy">
-  <tr>
-    <td>
-      <b>Chemin</b>
-    </td>
-    <td>
-      <b>Statut</b>
-    </td>
-    <td>
-      <b>Usage</b>
-    </td>
-    <td>
-      <b>Jeu de valeurs (ValueSet)</b>
-    </td>
-    <td>
-      <b>Version</b>
-    </td>
-    <td>
-      <b>Source</b>
-    </td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​voieAdministration</td>
-    <td>Base</td>
-    <td></td>
-    <td title="EDQM (0.4.0.127.0.16.1.1.2.1)"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit</td>
-    <td>Base</td>
-    <td></td>
-    <td title="UCD (1.2.250.1.213.2.61) + code ATC"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-  <tr>
-    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit.​autreCodification</td>
-    <td>Base</td>
-    <td></td>
-    <td title="ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)"></td>
-    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
-    <td>Unknown</td>
-  </tr>
-</table>
-
-        
-          
-          <!-- 218 is size of empty table -->
-          
-        </div>
-      </div>
       <div id="all-tbl-key">
         <p>
           <b>Key Elements View</b>
@@ -1484,7 +1352,7 @@ La partie en majuscules indique le code pays (ISO-3166)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
 document.getElementById('cbfr-lm-dicom-medication-administrationKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-dicom-medication-administrationKA'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationKA-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationKA'));
 document.getElementById('cbfr-lm-dicom-medication-administrationKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1590,6 +1458,127 @@ filterDesc(document.getElementById('fr-lm-dicom-medication-administrationKA'), '
   </tr>
 </table>
 
+          
+        </div>
+      </div>
+      <div id="all-tbl-diff">
+        <p>
+          <b>Differential View</b>
+        </p>
+        <p>This structure is derived from <a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a>
+        </p>
+        <div id="all-tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="fr-lm-dicom-medication-administrationDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('fr-lm-dicom-medication-administrationDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('fr-lm-dicom-medication-administrationDA'), document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppfr-lm-dicom-medication-administrationDA">Bindings <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'binding',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="binding" checked="true" id="cbfr-lm-dicom-medication-administrationDA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'constraint',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="constraint" checked="true" id="cbfr-lm-dicom-medication-administrationDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'obligation',event.target.checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'))" size="1" name="obligation" checked="true" id="cbfr-lm-dicom-medication-administrationDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration" title="Entrée Administration de produit de santé" data-no-external="true">fr-lm-dicom-medication-administration</a><a name="a-fr-lm-dicom-medication-administration"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-fr-lm-entry.html">FRLMEntry</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Logical model - FR LM DICOM Medication Administration<br/><br/>Éléments définis dans les ancêtres :<a href="StructureDefinition-fr-lm-entry.html" title="Métadonnées de base">header</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.voieAdministration" title="Voie d'administration" data-no-external="true">voieAdministration</a><a name="a-fr-lm-dicom-medication-administration.voieAdministration"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Voie d'administration<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">EDQM (0.4.0.127.0.16.1.1.2.1)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.dose" title="Dose à administrer" data-no-external="true">dose</a><a name="a-fr-lm-dicom-medication-administration.dose"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dose à administrer</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.rythme" title="Rythme d'administration" data-no-external="true">rythme</a><a name="a-fr-lm-dicom-medication-administration.rythme"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Range">Range</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rythme d'administration</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament" title="Médicament" data-no-external="true">medicament</a><a name="a-fr-lm-dicom-medication-administration.medicament"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Médicament</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ada" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit" title="Produit de santé" data-no-external="true">produit</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Produit de santé</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0011.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin-open.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit" title="Code du produit" data-no-external="true">codeProduit</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.codeProduit"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Code du produit<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">UCD (1.2.250.1.213.2.61) + code ATC</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adaaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification" title="Autre(s) codification(s)" data-no-external="true">autreCodification</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.codeProduit.autreCodification"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Autre(s) codification(s)<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Description du binding: </span><span title="null" class="binding">: </span><span title="null" class="binding">ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="adab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.nomMarque" title="Nom de marque du produit" data-no-external="true">nomMarque</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.nomMarque"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de marque du produit</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="adac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html#fr-lm-dicom-medication-administration.medicament.produit.numeroLot" title="Numéro de lot" data-no-external="true">numeroLot</a><a name="a-fr-lm-dicom-medication-administration.medicament.produit.numeroLot"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
+document.getElementById('cbfr-lm-dicom-medication-administrationDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationDA-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
+document.getElementById('cbfr-lm-dicom-medication-administrationDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'constraint', document.getElementById('cbfr-lm-dicom-medication-administrationDA-constraint').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
+document.getElementById('cbfr-lm-dicom-medication-administrationDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('fr-lm-dicom-medication-administrationDA'), 'obligation', document.getElementById('cbfr-lm-dicom-medication-administrationDA-obligation').checked, document.getElementById('ppfr-lm-dicom-medication-administrationDA'));
+</script></table>
+          <!--Terminology Bindings heading in the fragment -->
+          <h4>Bindings terminologiques (différentiel)</h4>
+<table class="list" data-fhir="generated-heirarchy">
+  <tr>
+    <td>
+      <b>Chemin</b>
+    </td>
+    <td>
+      <b>Statut</b>
+    </td>
+    <td>
+      <b>Usage</b>
+    </td>
+    <td>
+      <b>Jeu de valeurs (ValueSet)</b>
+    </td>
+    <td>
+      <b>Version</b>
+    </td>
+    <td>
+      <b>Source</b>
+    </td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​voieAdministration</td>
+    <td>Base</td>
+    <td></td>
+    <td title="EDQM (0.4.0.127.0.16.1.1.2.1)"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit</td>
+    <td>Base</td>
+    <td></td>
+    <td title="UCD (1.2.250.1.213.2.61) + code ATC"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+  <tr>
+    <td>fr-lm-dicom-medication-administration.​medicament.produit.codeProduit.​autreCodification</td>
+    <td>Base</td>
+    <td></td>
+    <td title="ATC (2.16.840.1.113883.6.73) or CIS (1.2.250.1.213.2.3.1) or MV (1.2.250.1.213.2.59)"></td>
+    <td title="La version n'est pas explicitement indiquée. Aucun Jeu de valeurs (Value Set) correspondant trouvé">Non précisé</td>
+    <td>Unknown</td>
+  </tr>
+</table>
+
+        
+          
+          <!-- 218 is size of empty table -->
           
         </div>
       </div>
@@ -1768,7 +1757,7 @@ La partie en majuscules indique le code pays (ISO-3166)</td></tr>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numéro de lot</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // e6b2dd4c-10bf-4ad5-8157-38db29c29cbb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 247840da-0770-4da3-a4fe-aabad57efb66
 document.getElementById('cbfr-lm-dicom-medication-administrationSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('fr-lm-dicom-medication-administrationSA'), 'binding', document.getElementById('cbfr-lm-dicom-medication-administrationSA-binding').checked, document.getElementById('ppfr-lm-dicom-medication-administrationSA'));
 document.getElementById('cbfr-lm-dicom-medication-administrationSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1971,180 +1960,181 @@ Résumé
 
 </div>
 
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-<script type="text/javascript" src="assets/js/tabs.js"> </script>
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-<a name="bottom"> </a>
-<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-<div class="container">  <!-- container -->
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
-<div style="background-color:var(--footer-nav-bg-color)">
-  <table style="width:100%">
-    <tbody>
-      <tr>
-        <td style="text-align:left">&#xA0;
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
 
-          <a href="StructureDefinition-fr-lm-device-use.profile.ttl.html">&lt;prev</a>
+                <a href="StructureDefinition-fr-lm-device-use.profile.ttl.html">&lt;prev</a>
 
-        </td>
-        <td style="text-align:center">
-          <a href="#top">top</a>
-        </td>
-        <td style="text-align:right">&#xA0;
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
 
-          <a href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html">next&gt;</a>
+                <a href="StructureDefinition-fr-lm-dicom-medication-administration-definitions.html">next&gt;</a>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<div class="inner-wrapper">
-  <p>
-    IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 16, 2026 14:51+0000">2026-06-16</span>
-    <br/>
-    <span style="color: var(--footer-highlight-text-color)"></span>
-      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 12:15+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/document/core/history.html">Historique des versions </a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" id="newissue" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
-    </span>
-  </p>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-footer -->
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
 
-<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-post-footer -->
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/respond.min.js"> </script>
-<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
 
-<!-- Ajout ANS -->
-<script src="assets/js/app.js" type="text/javascript"> </script>
-<script src="assets/js/vendor.js" type="text/javascript"> </script>
-<script type="text/javascript" src="assets/js/addOnto.js"> </script>
-<!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
 
-<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
 
 
-<!-- Analytics Below
-================================================== -->
-
-
-<!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
 <footer class="footer footer-principal" role="contentinfo">
-<div class="footer__region1">
-<div class="container">
-<div class="row">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
 
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <div class="logos">        
-      <div class="logo logo--0">
-        <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
-          
-        </a>
-      </div>
-  
-      <div class="logo logo--1">
-        <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
-        </a>
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <p class="footer__title">Agence du Numérique en Santé</p>
-    <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
 
-    <!-- <div class="m-social">
-      <ul class="m-social__list">        
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
-            </div>
-            <span class="sr-only">linkedin</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
-            </div>
-            <span class="sr-only">twitter</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
-            </div>
-            <span class="sr-only">youtube</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
-            </div>
-            <span class="sr-only">rss</span>
-          </a>
-        </li>
-      </ul>
+          </ul>
+        </div>
+      </div>
     </div> -->
-  </div>
-  
-  <div class="col-6 col-lg-4">
-    <ul class="footer-list">
-      <li class="footer-list__item footer-list__item--hasIcon">
-        <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-          <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
-        </li>
-        <!-- <li class="footer-list__item">
-          <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-        </li>
-         -->
-      </ul>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- <div class="footer__region2">
-<div class="container">
-  <div class="footer-contentinfo">
-    <ul class="footer-list footer-list--inline">
-
-    </ul>
-  </div>
-</div>
-</div> -->
-</footer>
-</body>
+  </footer>
+  </body>
 </html>
+

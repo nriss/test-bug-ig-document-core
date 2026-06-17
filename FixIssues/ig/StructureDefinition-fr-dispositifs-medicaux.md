@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-dispositifs-medicaux | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDASectionDispositifsMedicaux |
+| Draft as of 2026-06-17 | *Computable Name*:FRCDASectionDispositifsMedicaux |
 
  
 IHE-PCC - Medical Devices SectionCette section ‘Dispositifs médicaux’ contient une description des dispositifs médicaux implantés (EES, DF, prothèses) chez le malade sous forme codée. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-dispositifs-medic
   "name" : "FRCDASectionDispositifsMedicaux",
   "title" : "CDA - FR Dispositifs medicaux",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

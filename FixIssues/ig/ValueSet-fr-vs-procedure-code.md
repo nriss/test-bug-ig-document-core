@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-procedure-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRValueSetProcedureCodeDocument |
+| Draft as of 2026-06-17 | *Computable Name*:FRValueSetProcedureCodeDocument |
 
  
 Codes autorisés pour indiquer un acte. Inclut : 
@@ -22,14 +22,6 @@ Si aucun code approprié n’est disponible, l’acte peut être décrit en text
  **References** 
 
 * [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
-
-###  Recherche en live sur le SMT 
-
-Indiquer un mot clé puis taper sur "enter" :
-
-```
-Requête sur le SMT
-```
 
 ### Définition logique (CLD)
 
@@ -63,7 +55,7 @@ Requête sur le SMT
   "name" : "FRValueSetProcedureCodeDocument",
   "title" : "ValueSet – FR ValueSet Codes d’actes",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

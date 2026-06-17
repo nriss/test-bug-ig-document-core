@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-section-resultats | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDASectionResultats |
+| Draft as of 2026-06-17 | *Computable Name*:FRCDASectionResultats |
 
  
 Cette section regroupe les rÃ©sultats d’examens (biologie polyvalente, imagerie, cytologie, pathologie, gÃ©nÃ©tique humaine…) 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-section-resul
   "name" : "FRCDASectionResultats",
   "title" : "CDA - FR Resultats",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

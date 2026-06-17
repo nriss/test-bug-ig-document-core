@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-type-vaccination | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRValueSetTypeVaccination |
+| Draft as of 2026-06-17 | *Computable Name*:FRValueSetTypeVaccination |
 
  
 Jeu de valeurs regroupant les codes de type de vaccination 
@@ -17,14 +17,6 @@ Jeu de valeurs regroupant les codes de type de vaccination
  **References** 
 
 * [CDA - FR Vaccination](StructureDefinition-fr-cda-vaccination.md)
-
-###  Recherche en live sur le SMT 
-
-Indiquer un mot clé puis taper sur "enter" :
-
-```
-Requête sur le SMT
-```
 
 ### Définition logique (CLD)
 
@@ -58,7 +50,7 @@ Requête sur le SMT
   "name" : "FRValueSetTypeVaccination",
   "title" : "ValueSet - FR ValueSet Type Vaccination",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

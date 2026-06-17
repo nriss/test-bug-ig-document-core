@@ -40,18 +40,30 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"0"}
     h3,h4,h5,h6{--heading-prefix:"0.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
-<div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
+<div id="family-nav" style="display: flex; flex-direction: column;">
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> 
+  </a>
+  <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/cda" style="scale: 0.5;">
+    <img height="50" style="display: block; width: 100%;" alt="Visit the CDA website" src="assets/images/cda-logo-www.png"/> 
+  </a>
+</div>
+
   <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
     <a id="hl7-logo" no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
   </div>
+
+  <div id="ig-search">
+ </div>
+
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">ANS IG document core</span>
@@ -224,6 +236,7 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -241,178 +254,179 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
  → FRObservationLaboratoryReportResultsDocument" href="ConceptMap-FRLaboratoryResultClinicalElementLMCDAFHIR.html"> 6.507 Mapping FRLMResultatExamensBiologieElementCliniquePertinent → Profile: FRCDAResultatExamensDeBiologieElementCliniquePertinent
  → FRObservationLaboratoryReportResultsDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument" href="ConceptMap-FRDiagnosticReportLMCDAFHIR.html"> 6.508 Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument" href="ConceptMap-FRResultsLMCDAFHIR.html"> 6.509 Mapping FRLMResultatsEntry → FRCDAResultats → FRDiagnosticReportDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument" href="ConceptMap-FRLaboratoryResultsLMCDAFHIR.html"> 6.510 Mapping FRLMResultatsExamensBiologieMedicale → FRCDAResultatExamensDeBiologie → FRObservationLaboratoryReportResultsDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument" href="ConceptMap-FRImagingSeriesLMCDAFHIR.html"> 6.511 Mapping FRLMSerieImagerie → FRCDADICOMSerieImagerie → FRImagingStudyDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument" href="ConceptMap-FRObservationVitalSignsPanelLMCDAFHIR.html"> 6.512 Mapping FRLMSigneVital → FRCDASignesVitaux → FRObservationVitalSignsPanelDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument" href="ConceptMap-FRObservationVitalSignsLMCDAFHIR.html"> 6.513 Mapping FRLMSigneVitalObserve → FRCDASigneVitalObserve → FRObservationVitalSignsDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMSujetNonHumain -&gt; FRCDASujetNonHumain -&gt; FRObservationLaboratoryReportResultsDocument" href="ConceptMap-FRNonHumanSubjectLMCDAFHIR.html"> 6.514 Mapping FRLMSujetNonHumain -&gt; FRCDASujetNonHumain -&gt; FRObservationLaboratoryReportResultsDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMSyntheseMedicaleSejour → FRCDASyntheseMedicaleSejour → FRObservationMedicalSummaryDocument" href="ConceptMap-FRObservationMedicalSummaryLMCDAFHIR.html"> 6.515 Mapping FRLMSyntheseMedicaleSejour → FRCDASyntheseMedicaleSejour → FRObservationMedicalSummaryDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument" href="ConceptMap-FRImagingProcedureLMCDAFHIR.html"> 6.516 Mapping FRLMTechniqueImagerie → FRCDADICOMTechniqueImagerie → FRProcedureImagingDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument" href="ConceptMap-FRMedicationAdministrationLMCDAFHIR.html"> 6.517 Mapping FRLMTraitement → FRCDATraitement → FRMedicationAdministrationDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument" href="ConceptMap-FRMedicationStatementLMCDAFHIR.html"> 6.518 Mapping FRLMTraitement → FRCDATraitement → FRMedicationStatementDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument" href="ConceptMap-FRMedicationDispenseLMCDAFHIR.html"> 6.519 Mapping FRLMTraitementDispense → FRCDATraitementDispense → FRMedicationDispenseDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument" href="ConceptMap-FRMedicationRequestLMCDAFHIR.html"> 6.520 Mapping FRLMTraitementPrescrit → FRCDATraitementPrescrit → FRMedicationRequestDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument" href="ConceptMap-FRMedicationsCombinaisonRequestLMCDAFHIR.html"> 6.521 Mapping FRLMTraitementPrescritSubordonne → FRCDATraitementPrescritSubordonne → FRMedicationsCombinaisonDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument" href="ConceptMap-FRMedicationsCombinaisonLMCDAFHIR.html"> 6.522 Mapping FRLMTraitementSubordonne → FRCDATraitementSubordonne → FRMedicationsCombinaisonDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMTransfusionDeProduitsSanguins → FRCDATransfusionDeProduitsSanguins → FRObservationBloodProductTransfusionDocument" href="ConceptMap-FRObservationBloodProductTransfusionLMCDAFHIR.html"> 6.523 Mapping FRLMTransfusionDeProduitsSanguins → FRCDATransfusionDeProduitsSanguins → FRObservationBloodProductTransfusionDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument" href="ConceptMap-FRImmunizationLMCDAFHIR.html"> 6.524 Mapping FRLMVaccination → FRCDAVaccination → FRImmunizationDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument" href="ConceptMap-FRImmunizationRecommendationLMCDAFHIR.html"> 6.525 Mapping FRLMVaccinRecommande → FRCDAVaccinRecommande → FRImmunizationRecommendationDocument</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations" href="ConceptMap-FRImagingQuantityLMCDAFHIR.html"> 6.526 Mapping Métier/CDA/FHIR : Quantité d'exposition aux radiations</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CDA - FR Dispositifs medicaux" href="StructureDefinition-fr-dispositifs-medicaux.html"> 6.527 CDA - FR Dispositifs medicaux</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CDA - FR resultats" href="StructureDefinition-fr-cda-resultats.html"> 6.528 CDA - FR resultats</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="CDA - FR Traitement subordonne" href="StructureDefinition-fr-cda-traitement-subordonne.html"> 6.529 CDA - FR Traitement subordonne</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model  - FR LM Patient History" href="StructureDefinition-fr-lm-patient-history.html"> 6.530 Logical model  - FR LM Patient History</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model  - FR LM Travel History" href="StructureDefinition-fr-lm-section-travel-history.html"> 6.531 Logical model  - FR LM Travel History</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model - FR LM Alert" href="StructureDefinition-fr-lm-alert.html"> 6.532 Logical model - FR LM Alert</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model - FR LM Endpoint" href="StructureDefinition-fr-lm-endpoint.html"> 6.533 Logical model - FR LM Endpoint</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model - FR LM Observation Result" href="StructureDefinition-fr-lm-observation-result.html"> 6.534 Logical model - FR LM Observation Result</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Logical model - FR LM Patient Story" href="StructureDefinition-fr-lm-patient-story.html"> 6.535 Logical model - FR LM Patient Story</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Actor Extension" href="StructureDefinition-fr-actor-extension.html"> 6.536 FR Actor Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Author Time Extension" href="StructureDefinition-fr-author-time-extension.html"> 6.537 FR Author Time Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Comparison Studies Extension" href="StructureDefinition-fr-comparison-studies-extension.html"> 6.538 FR Comparison Studies Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Family Member History Body Site Extension" href="StructureDefinition-fr-family-member-history-body-site-extension.html"> 6.539 FR Family Member History Body Site Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Imaging Procedure Extension" href="StructureDefinition-fr-imaging-procedure-extension.html"> 6.540 FR Imaging Procedure Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Immunization Type Extension" href="StructureDefinition-fr-immunization-type-extension.html"> 6.541 FR Immunization Type Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Interpretation Extension" href="StructureDefinition-fr-interpretation-extension.html"> 6.542 FR Interpretation Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Medication Administration Sequence Extension" href="StructureDefinition-fr-medication-administration-sequence-extension.html"> 6.543 FR Medication Administration Sequence Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Method Extension" href="StructureDefinition-fr-method-extension.html"> 6.544 FR Method Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Not Covered Extension" href="StructureDefinition-fr-not-covered-extension.html"> 6.545 FR Not Covered Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Number of Frames Extension" href="StructureDefinition-fr-number-of-frames-extension.html"> 6.546 FR Number of Frames Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Patient History Extension" href="StructureDefinition-fr-patient-history-extension.html"> 6.547 FR Patient History Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Performer Event Extension" href="StructureDefinition-fr-performer-event-extension.html"> 6.548 FR Performer Event Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Procedure Difficulty Extension" href="StructureDefinition-fr-procedure-difficulty-extension.html"> 6.549 FR Procedure Difficulty Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Procedure Priority Extension" href="StructureDefinition-fr-procedure-priority-extension.html"> 6.550 FR Procedure Priority Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR Status Reason Extension" href="StructureDefinition-fr-status-reason-extension.html"> 6.551 FR Status Reason Extension</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR ValueSet Encounter Class" href="ValueSet-fr-vs-encounter-class.html"> 6.552 FR ValueSet Encounter Class</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="FR ValueSet Participation Type" href="ValueSet-fr-doc-vs-participation-type.html"> 6.553 FR ValueSet Participation Type</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Fr ValueSet RolePriseCharge" href="ValueSet-fr-doc-vs-role-prise-charge.html"> 6.554 Fr ValueSet RolePriseCharge</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Actor Type Document" href="ValueSet-fr-vs-actor-type-document.html"> 6.555 ValueSet - FR ValueSet Actor Type Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Allergy Intolerance Type Document" href="ValueSet-fr-vs-allergy-intolerance-type-document.html"> 6.556 ValueSet - FR ValueSet Allergy Intolerance Type Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Code Traitement" href="ValueSet-fr-valueset-code-traitement.html"> 6.557 ValueSet - FR ValueSet Code Traitement</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet EDQM Document" href="ValueSet-fr-vs-edqm-document.html"> 6.558 ValueSet - FR ValueSet EDQM Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Medication Translation Document" href="ValueSet-fr-vs-medication-translation-document.html"> 6.559 ValueSet - FR ValueSet Medication Translation Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Reference externe" href="ValueSet-fr-valueset-reference-externe.html"> 6.560 ValueSet - FR ValueSet Reference externe</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet StatusCode" href="ValueSet-fr-valueset-status-code.html"> 6.561 ValueSet - FR ValueSet StatusCode</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Statut du problème" href="ValueSet-fr-valueset-statut-du-probleme.html"> 6.562 ValueSet - FR ValueSet Statut du problème</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet - FR ValueSet Type Vaccination" href="ValueSet-fr-valueset-type-vaccination.html"> 6.563 ValueSet - FR ValueSet Type Vaccination</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Allergy Code Document" href="ValueSet-fr-vs-allergy-code.html"> 6.564 ValueSet – FR ValueSet Allergy Code Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Allergy Substance Document" href="ValueSet-fr-vs-allergy-substance.html"> 6.565 ValueSet – FR ValueSet Allergy Substance Document</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Codes d’actes" href="ValueSet-fr-vs-procedure-code.html"> 6.566 ValueSet – FR ValueSet Codes d’actes</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Codes vaccins CIS (BDPM)" href="ValueSet-fr-vs-vaccine-code-cis.html"> 6.567 ValueSet – FR ValueSet Codes vaccins CIS (BDPM)</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Localisation anatomique et voie d'abord" href="ValueSet-fr-vs-location-body-structure-document.html"> 6.568 ValueSet – FR ValueSet Localisation anatomique et voie d'abord</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="ValueSet – FR ValueSet Type d'évaluation" href="ValueSet-fr-vs-evaluation-type.html"> 6.569 ValueSet – FR ValueSet Type d'évaluation</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="BIO-CR-BIO_2024.01_Microbiologie_V1" href="Binary-BIO-CR-BIO-2024.01-Microbiologie-V1.html"> 6.570 BIO-CR-BIO_2024.01_Microbiologie_V1</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="eDISP-MED-2024.01" href="Binary-eDISP-MED-2024.01.html"> 6.571 eDISP-MED-2024.01</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="eP-MED-DM_2024.01_PosoNonStruct" href="Binary-eP-MED-DM-2024.01-PosoNonStruct.html"> 6.572 eP-MED-DM_2024.01_PosoNonStruct</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="eP-MED-DM_2024.01_PosoStruct" href="Binary-eP-MED-DM-2024.01-PosoStruct.html"> 6.573 eP-MED-DM_2024.01_PosoStruct</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Example - AllergyIntolerance avec Data Absent Reason" href="AllergyIntolerance-example-allergy-intolerance-data-absent-reason.html"> 6.574 Example - AllergyIntolerance avec Data Absent Reason</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="Example - Procedure avec Data Absent Reason" href="Procedure-example-procedure-data-absent-reason.html"> 6.575 Example - Procedure avec Data Absent Reason</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="IPS-FR" href="Binary-IPS-FR-2024.01.html"> 6.576 IPS-FR</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="LDL-SES_2022.01" href="Binary-LDL-SES-2022.01.html"> 6.577 LDL-SES_2022.01</a></td></tr><tr style="border:0px;padding:0px;vertical-align:top;background-color:inherit;" id="!'ÿ"><td style="vertical-align:top;text-align:var(--ig-left,left);background-color:inherit;padding:0px 4px 0px 4px;white-space:nowrap;background-image:url(tbl_bck0.png)" class="hierarchy"><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_spacer.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_blank.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="tbl_vjoin_end.png"/><img style="background-color:inherit" alt="." class="hierarchy" src="icon_page.gif"/><a title="" href="Binary-BIO-CR-BIO-2024.01-glycemie-mole.html"> 6.578 </a></td></tr></tbody></table></div>
 </div>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /row -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-content -->
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
 
-<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
 <script type="text/javascript" src="assets/js/window-hash.js"> </script>
-<a name="bottom"> </a>
-<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-<div class="container">  <!-- container -->
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
 
-<div style="background-color:var(--footer-nav-bg-color)">
-  <table style="width:100%">
-    <tbody>
-      <tr>
-        <td style="text-align:left">&#xA0;
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
 
-          <span style="visibility:hidden">&lt;prev</span>
+                <span style="visibility:hidden">&lt;prev</span>
 
-        </td>
-        <td style="text-align:center">
-          <a href="#top">top</a>
-        </td>
-        <td style="text-align:right">&#xA0;
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
 
-          <a href="index.html">next&gt;</a>
+                <a href="index.html">next&gt;</a>
 
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-<div class="inner-wrapper">
-  <p>
-    IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 16, 2026 14:51+0000">2026-06-16</span>
-    <br/>
-    <span style="color: var(--footer-highlight-text-color)"></span>
-      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 12:15+0000">2026-06-17</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
 <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/document/core/history.html">Historique des versions </a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" id="newissue" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
-    </span>
-  </p>
-</div>  <!-- /inner-wrapper -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-footer -->
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/interop-IG-document-core/issues/new">New Issue</a>
 
-<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-<div class="container">  <!-- container -->
-</div>  <!-- /container -->
-</div>  <!-- /segment-post-footer -->
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
 
-<!-- JS and analytics only. -->
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-<script type="text/javascript" src="assets/js/respond.min.js"> </script>
-<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
 
-<!-- Ajout ANS -->
-<script src="assets/js/app.js" type="text/javascript"> </script>
-<script src="assets/js/vendor.js" type="text/javascript"> </script>
-<script type="text/javascript" src="assets/js/addOnto.js"> </script>
-<!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
 
-<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
 
 
-<!-- Analytics Below
-================================================== -->
-
-
-<!-- AJOUT ANS -->
+  <!-- AJOUT ANS -->
 
 <footer class="footer footer-principal" role="contentinfo">
-<div class="footer__region1">
-<div class="container">
-<div class="row">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
 
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <div class="logos">        
-      <div class="logo logo--0">
-        <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
-          
-        </a>
-      </div>
-  
-      <div class="logo logo--1">
-        <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
-          
-          <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
-        </a>
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
-  
-  <div class="col-md-6 col-lg-4 text-center text-md-left">
-    <p class="footer__title">Agence du Numérique en Santé</p>
-    <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
 
-    <!-- <div class="m-social">
-      <ul class="m-social__list">        
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
-            </div>
-            <span class="sr-only">linkedin</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
-            </div>
-            <span class="sr-only">twitter</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
-            </div>
-            <span class="sr-only">youtube</span>
-          </a>
-        </li>
-        <li class="m-social__item">
-          <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
-            <div class="m-social__icon">
-              <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
-            </div>
-            <span class="sr-only">rss</span>
-          </a>
-        </li>
-      </ul>
+          </ul>
+        </div>
+      </div>
     </div> -->
-  </div>
-  
-  <div class="col-6 col-lg-4">
-    <ul class="footer-list">
-      <li class="footer-list__item footer-list__item--hasIcon">
-        <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-          <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
-        </li>
-        <!-- <li class="footer-list__item">
-          <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-        </li>
-         -->
-      </ul>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- <div class="footer__region2">
-<div class="container">
-  <div class="footer-contentinfo">
-    <ul class="footer-list footer-list--inline">
-
-    </ul>
-  </div>
-</div>
-</div> -->
-</footer>
-</body>
+  </footer>
+  </body>
 </html>
+

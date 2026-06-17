@@ -6,9 +6,9 @@
 
 ## Mapping Métier/CDA/FHIR
 
-Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier, du CDA et de FHIR.
+ Liste des ConceptMap détaillant le mapping entre les éléments du modèle métier, du CDA et de FHIR. 
 
-###  Mapping des sections entre : Modèle métier / CDA / FHIR 
+### Mapping des sections entre : Modèle métier / CDA / FHIR
 
 Error processing SQL: [SQLITE_ERROR] SQL error or missing database (near ";": syntax error)
 

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-valueset-status-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRValueSetStatusCode |
+| Draft as of 2026-06-17 | *Computable Name*:FRValueSetStatusCode |
 
  
 Jeu de valeurs permet d’indique le niveau de complétude des résultats d’un examen (complet, partiel ou abandonné). 
@@ -22,14 +22,6 @@ Jeu de valeurs permet d’indique le niveau de complétude des résultats d’un
 
 * [CDA - FR Isolat microbiologique](StructureDefinition-fr-cda-isolat-microbiologique.md)
 * [CDA - FR Resultats examens de biologie medicale](StructureDefinition-fr-cda-resultats-examens-de-biologie-medicale.md)
-
-###  Recherche en live sur le SMT 
-
-Indiquer un mot clé puis taper sur "enter" :
-
-```
-Requête sur le SMT
-```
 
 ### Définition logique (CLD)
 
@@ -65,7 +57,7 @@ No Expansion for this valueset (Unknown Code System)
   "name" : "FRValueSetStatusCode",
   "title" : "ValueSet - FR ValueSet StatusCode",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

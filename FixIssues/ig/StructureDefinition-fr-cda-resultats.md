@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDAResultats |
+| Draft as of 2026-06-17 | *Computable Name*:FRCDAResultats |
 
  
 Entrée FR-resultats: L’entrée ‘FR-Resultats’ est une entrée de type ‘organizer’ regroupant les types des résultats classés par type d’examens (BIO, IMG, etc…). 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats.csv
   "name" : "FRCDAResultats",
   "title" : "CDA - FR resultats",
   "status" : "draft",
-  "date" : "2026-06-16T14:51:07+00:00",
+  "date" : "2026-06-17T12:15:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
