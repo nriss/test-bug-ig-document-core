@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-conclusion.csv
   "name" : "FRLMConclusion",
   "title" : "Logical model - FR LM Conclusion",
   "status" : "draft",
-  "date" : "2026-06-17T13:49:22+00:00",
+  "date" : "2026-06-17T15:07:59+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
