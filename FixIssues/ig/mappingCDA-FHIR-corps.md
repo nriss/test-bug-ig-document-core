@@ -290,11 +290,11 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMAdministrationProduitDeSante.voieAdministration | FRCDADICOMAdministrationProduitDeSante.routeCode | FRMedicationAdministrationDocument.dosage.route |
 | FRLMAdministrationProduitDeSante.dose | FRCDADICOMAdministrationProduitDeSante.doseQuantity | FRMedicationAdministrationDocument.dosage.dose |
 | FRLMAdministrationProduitDeSante.rythme | FRCDADICOMAdministrationProduitDeSante.rateQuantity | FRMedicationAdministrationDocument.dosage.rate[x] |
-| FRLMAdministrationProduitDeSante.medicament.produit | FRCDADICOMAdministrationProduitDeSante.consumable. manufacturedProduct.manufacturedMaterial |  |
-| FRLMAdministrationProduitDeSante.medicament. produit.codeProduit | FRCDADICOMAdministrationProduitDeSante.consumable. manufacturedProduct.manufacturedMaterial.code |  |
-| FRLMAdministrationProduitDeSante.medicament. produit.codeProduit.autreCodification | FRCDADICOMAdministrationProduitDeSante.consumable. manufacturedProduct.manufacturedMaterial.code.translation |  |
-| FRLMAdministrationProduitDeSante.medicament. produit.nomMarque | FRCDADICOMAdministrationProduitDeSante.consumable. manufacturedProduct.manufacturedMaterial.name |  |
-| FRLMAdministrationProduitDeSante.medicament. produit.numeroLot | FRCDADICOMAdministrationProduitDeSante.consumable. manufacturedProduct.manufacturedMaterial.lotNumberText |  |
+| FRLMAdministrationProduitDeSante.medicament.produit | FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial |  |
+| FRLMAdministrationProduitDeSante.medicament.produit.codeProduit | FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.code |  |
+| FRLMAdministrationProduitDeSante.medicament.produit.codeProduit.autreCodification | FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.code.translation |  |
+| FRLMAdministrationProduitDeSante.medicament.produit.nomMarque | FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.name |  |
+| FRLMAdministrationProduitDeSante.medicament.produit.numeroLot | FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.lotNumberText |  |
 | **FRLMCommentaireER** | **FRCDACommentaireER** | **Annotation** |
 | FRLMCommentaireER.codeCommentaireER | FRCDACommentaireER.code |  |
 | FRLMCommentaireER.texteCommentaireER | FRCDACommentaireER.text | Annotation.text |
@@ -325,25 +325,25 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMParticipantCorps.participantRole.typeParticipant | FRCDAParticipant.code | FRActorExtension.extension[typeCode].value[x] |
 | FRLMParticipantCorps.participantRole.adresses | FRCDAParticipant.participantRole.addr | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.address |
 | FRLMParticipantCorps.participantRole.coordonneesTelecom | FRCDAParticipant.participantRole.telecom | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.telecom |
-| FRLMParticipantCorps.participantRole. identiteParticipant.nom | FRCDAParticipant.participantRole. playingEntity.name | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.name |
-| FRLMParticipantCorps.participantRole. identiteParticipant.ProfessionSpecialite | FRCDAParticipant.participantRole. playingEntity.code | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.practitioner.qualification |
-| FRLMParticipantCorps.participantRole. identiteParticipant.description | FRCDAParticipant.participantRole. playingEntity.desc |  |
+| FRLMParticipantCorps.participantRole.identiteParticipant.nom | FRCDAParticipant.participantRole.playingEntity.name | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.name |
+| FRLMParticipantCorps.participantRole.identiteParticipant.ProfessionSpecialite | FRCDAParticipant.participantRole.playingEntity.code | FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.practitioner.qualification |
+| FRLMParticipantCorps.participantRole.identiteParticipant.description | FRCDAParticipant.participantRole.playingEntity.desc |  |
 | FRLMParticipantCorps.participantRole.Organisation | FRCDAParticipant.participantRole.scopingEntity | FRActorExtension.extension[actor].value[x]:FROrganizationDocument |
-| FRLMParticipantCorps.participantRole. Organisation.identifiant | FRCDAParticipant.participantRole. scopingEntity.id | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.identifier |
-| FRLMParticipantCorps.participantRole. Organisation.code | FRCDAParticipant.participantRole. scopingEntity.code | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.type |
-| FRLMParticipantCorps.participantRole. Organisation.description | FRCDAParticipant.participantRole. scopingEntity.desc | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.extension:description |
+| FRLMParticipantCorps.participantRole.Organisation.identifiant | FRCDAParticipant.participantRole.scopingEntity.id | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.identifier |
+| FRLMParticipantCorps.participantRole.Organisation.code | FRCDAParticipant.participantRole.scopingEntity.code | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.type |
+| FRLMParticipantCorps.participantRole.Organisation.description | FRCDAParticipant.participantRole.scopingEntity.desc | FRActorExtension.extension[actor].value[x]:FROrganizationDocument.extension:description |
 | FRLMParticipantCorps.participantRole.dispositifAutomatique | FRCDAParticipant.participantRole.playingDevice | FRActorExtension.extension[actor].value[x]:Device |
-| FRLMParticipantCorps.participantRole.categorie | FRCDAParticipant.participantRole. playingDevice.code | FRActorExtension.extension[actor].value[x]:Device.type |
-| FRLMParticipantCorps.participantRole.nomModele | FRCDAParticipant.participantRole. playingDevice.manufacturerModelName | FRActorExtension.extension[actor].value[x]:Device.manufacturer |
-| FRLMParticipantCorps.participantRole.nomLogiciel | FRCDAParticipant.participantRole. playingDevice.softwareName | FRActorExtension.extension[actor].value[x]:Device.deviceName.name |
+| FRLMParticipantCorps.participantRole.categorie | FRCDAParticipant.participantRole.playingDevice.code | FRActorExtension.extension[actor].value[x]:Device.type |
+| FRLMParticipantCorps.participantRole.nomModele | FRCDAParticipant.participantRole.playingDevice.manufacturerModelName | FRActorExtension.extension[actor].value[x]:Device.manufacturer |
+| FRLMParticipantCorps.participantRole.nomLogiciel | FRCDAParticipant.participantRole.playingDevice.softwareName | FRActorExtension.extension[actor].value[x]:Device.deviceName.name |
 | **FRLMPatientSujetNonHumain** | **FRCDAPatientAvecSujetNonHumain** | FRObservationLaboratoryReportResultsDocument.specimen |
-| FRLMPatientSujetNonHumain.sujet | FRCDAPatientAvecSujetNonHumain.subject. relatedSubject.code | FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance |
-| FRLMPatientSujetNonHumain.sujet | FRCDAPatientAvecSujetNonHumain.subject. relatedSubject.code | Substance.code |
-| FRLMPatientSujetNonHumain.adresse | FRCDAPatientAvecSujetNonHumain.subject. relatedSubject.addr |  |
+| FRLMPatientSujetNonHumain.sujet | FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.code | FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance |
+| FRLMPatientSujetNonHumain.sujet | FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.code | Substance.code |
+| FRLMPatientSujetNonHumain.adresse | FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.addr |  |
 | **FRLMSujetNonHumain** | **FRCDASujetNonHumain** | FRObservationLaboratoryReportResultsDocument.specimen |
-| FRLMSujetNonHumain.sujet | FRCDASujetNonHumain.subject. relatedSubject.code | FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance |
-| FRLMSujetNonHumain.sujet | FRCDASujetNonHumain.subject. relatedSubject.code | Substance.code |
-| FRLMSujetNonHumain.adresse | FRCDASujetNonHumain.subject. relatedSubject.addr |  |
+| FRLMSujetNonHumain.sujet | FRCDASujetNonHumain.subject.relatedSubject.code | FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance |
+| FRLMSujetNonHumain.sujet | FRCDASujetNonHumain.subject.relatedSubject.code | Substance.code |
+| FRLMSujetNonHumain.adresse | FRCDASujetNonHumain.subject.relatedSubject.addr |  |
 | **FRLMAccidentsTransfusionnels** | **FRCDAAccidentsTransfusionnels** | **FRObservationTransfusionAccidentsDocument** |
 | FRLMAccidentsTransfusionnels.identifiant | FRCDAAccidentsTransfusionnels.id | FRObservationTransfusionAccidentsDocument.identifier |
 | FRLMAccidentsTransfusionnels.code | FRCDAAccidentsTransfusionnels.code | FRObservationTransfusionAccidentsDocument.code |
@@ -534,12 +534,12 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMDirectiveAnticipee.statut | FRCDADirectiveAnticipee.statusCode | FRAdvanceDirectiveDocument.status |
 | FRLMDirectiveAnticipee.date | FRCDADirectiveAnticipee.effectiveTime | FRAdvanceDirectiveDocument.dateTime |
 | FRLMDirectiveAnticipee.valeurDirectiveIdentifiee | FRCDADirectiveAnticipee.valueBoolean | FRAdvanceDirectiveDocument.provision.type |
-| FRLMDirectiveAnticipee.reference | FRCDADirectiveAnticipee.reference. externalDocument.text.reference | FRAdvanceDirectiveDocument.sourceReference |
+| FRLMDirectiveAnticipee.reference | FRCDADirectiveAnticipee.reference.externalDocument.text.reference | FRAdvanceDirectiveDocument.sourceReference |
 | FRLMDirectiveAnticipee.documentEncapsule | FRCDADirectiveAnticipee.entryRelationship | FRAdvanceDirectiveDocument.sourceAttachment |
 | FRLMDirectiveAnticipee.documentEncapsule.observationMedia | FRCDADirectiveAnticipee.entryRelationship.observationMedia | FRAdvanceDirectiveDocument.sourceAttachment |
-| FRLMDirectiveAnticipee.documentEncapsule. observationMedia.identifiant | FRCDADirectiveAnticipee.entryRelationship. observationMedia.id | FRAdvanceDirectiveDocument.sourceAttachment.id |
-| FRLMDirectiveAnticipee.documentEncapsule. observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship. observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.data |
-| FRLMDirectiveAnticipee.documentEncapsule. observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship. observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.url |
+| FRLMDirectiveAnticipee.documentEncapsule.observationMedia.identifiant | FRCDADirectiveAnticipee.entryRelationship.observationMedia.id | FRAdvanceDirectiveDocument.sourceAttachment.id |
+| FRLMDirectiveAnticipee.documentEncapsule.observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship.observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.data |
+| FRLMDirectiveAnticipee.documentEncapsule.observationMedia.documentEncapsuleEncode | FRCDADirectiveAnticipee.entryRelationship.observationMedia.value | FRAdvanceDirectiveDocument.sourceAttachment.url |
 | **FRLMDirectivesAnticipees** | **FRCDADirectivesAnticipees** | FRCompositionDocument.section:advanceDirective |
 | FRLMDirectivesAnticipees.codeSection | FRCDADirectivesAnticipees.code | FRCompositionDocument.section:advanceDirective.code |
 | FRLMDirectivesAnticipees.titreSection | FRCDADirectivesAnticipees.title | FRCompositionDocument.section:advanceDirective.title |
@@ -568,8 +568,8 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMDocumentAttache.date | FRCDADocumentAttache.effectiveTime | FRDocumentReferenceDocument.date |
 | FRLMDocumentAttache.typeDocumentAttache | FRCDADocumentAttache.component:frTypeDocumentAttache | FRDocumentReferenceDocument.type |
 | FRLMDocumentAttache.documentAttache | FRCDADocumentAttache.component.observationMedia | FRDocumentReferenceDocument.content.attachment |
-| FRLMDocumentAttache.documentAttache. observationMedia.identifiant | FRCDADocumentAttache.component. observationMedia.id | FRDocumentReferenceDocument.content.attachment.id |
-| FRLMDocumentAttache.documentAttache. observationMedia.documentAttacheEncode | FRCDADocumentAttache.component. observationMedia.value | FRDocumentReferenceDocument.content.attachment.data |
+| FRLMDocumentAttache.documentAttache.observationMedia.identifiant | FRCDADocumentAttache.component.observationMedia.id | FRDocumentReferenceDocument.content.attachment.id |
+| FRLMDocumentAttache.documentAttache.observationMedia.documentAttacheEncode | FRCDADocumentAttache.component.observationMedia.value | FRDocumentReferenceDocument.content.attachment.data |
 | **FRLMDocumentsAjoutes** | **FRCDADocumentsAjoutes** | FRCompositionDocument.section:addedDocuments |
 | FRLMDocumentsAjoutes.codeSection | FRCDADocumentsAjoutes.code | FRCompositionDocument.section:addedDocuments.code |
 | FRLMDocumentsAjoutes.titreSection | FRCDADocumentsAjoutes.title | FRCompositionDocument.section:addedDocuments.title |
@@ -640,7 +640,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMExamenImagerie.description | FRCDADICOMExamenImagerie.text | FRImagingStudyDocument.description |
 | FRLMExamenImagerie.dateActe | FRCDADICOMExamenImagerie.effectiveTime | FRImagingStudyDocument.started |
 | FRLMExamenImagerie.serieImagerie | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie | FRImagingStudyDocument.series |
-| FRLMExamenImagerie.objectifsReferences | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie. entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference | FRImagingStudyDocument.reasonCode |
+| FRLMExamenImagerie.objectifsReferences | FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference | FRImagingStudyDocument.reasonCode |
 | **FRLMExpositionRadiations** | **FRCDADICOMExpositionAuxRadiations** | FRCompositionDocument.section:exposureRadiation |
 | FRLMExpositionRadiations.codeSection | FRCDADICOMExpositionAuxRadiations.code | FRCompositionDocument.section:exposureRadiation.code |
 | FRLMExpositionRadiations.titreSection | FRCDADICOMExpositionAuxRadiations.title | FRCompositionDocument.section:exposureRadiation.title |
@@ -671,8 +671,8 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMHabitusModeDeVieEntree.identifiant | FRCDAHabitusModeDeVie.id | FRObservationSocialHistoryDocument.identifier |
 | FRLMHabitusModeDeVieEntree.code | FRCDAHabitusModeDeVie.code | FRObservationSocialHistoryDocument.code |
 | FRLMHabitusModeDeVieEntree.code.precision | FRCDAHabitusModeDeVie.code.qualifier | FRObservationSocialHistoryDocument.component |
-| FRLMHabitusModeDeVieEntree.code. precision.name | FRCDAHabitusModeDeVie.code. qualifier.name | FRObservationSocialHistoryDocument.component.code |
-| FRLMHabitusModeDeVieEntree.code. precision.value | FRCDAHabitusModeDeVie.code. qualifier.value | FRObservationSocialHistoryDocument.component.value |
+| FRLMHabitusModeDeVieEntree.code.precision.name | FRCDAHabitusModeDeVie.code.qualifier.name | FRObservationSocialHistoryDocument.component.code |
+| FRLMHabitusModeDeVieEntree.code.precision.value | FRCDAHabitusModeDeVie.code.qualifier.value | FRObservationSocialHistoryDocument.component.value |
 | FRLMHabitusModeDeVieEntree.description | FRCDAHabitusModeDeVie.text | FRObservationSocialHistoryDocument.note |
 | FRLMHabitusModeDeVieEntree.statut | FRCDAHabitusModeDeVie.statusCode | FRObservationSocialHistoryDocument.status |
 | FRLMHabitusModeDeVieEntree.horodatage | FRCDAHabitusModeDeVie.effectiveTime | FRObservationSocialHistoryDocument.effectiveDateTime |
@@ -727,9 +727,9 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMIsolatMicrobiologique.choice:PatientSujetNonHumain | FRCDAIsolatMicrobiologique.subject | FRObservationLaboratoryReportResultsDocument.subject |
 | FRLMIsolatMicrobiologique.isolatMicrobiologique | FRCDAIsolatMicrobiologique.specimen | FRObservationLaboratoryReportResultsDocument.specimen |
 | FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat | FRCDAIsolatMicrobiologique.specimen.specimenRole |  |
-| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.identifiant | FRCDAIsolatMicrobiologique.specimen. specimenRole.id |  |
-| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.agent | FRCDAIsolatMicrobiologique.specimen. specimenRole.specimenPlayingEntity |  |
-| FRLMIsolatMicrobiologique.isolatMicrobiologique. isolat.agent.code | FRCDAIsolatMicrobiologique.specimen. specimenRole.specimenPlayingEntity.code |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.identifiant | FRCDAIsolatMicrobiologique.specimen.specimenRole.id |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.agent | FRCDAIsolatMicrobiologique.specimen.specimenRole.specimenPlayingEntity |  |
+| FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.agent.code | FRCDAIsolatMicrobiologique.specimen.specimenRole.specimenPlayingEntity.code |  |
 | FRLMIsolatMicrobiologique.laboratoireExecutant | FRCDAIsolatMicrobiologique.performer | FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant |
 | FRLMIsolatMicrobiologique.auteur | FRCDAIsolatMicrobiologique.author | FRObservationLaboratoryReportResultsDocument.performer.extension:author |
 | FRLMIsolatMicrobiologique.valideur | FRCDAIsolatMicrobiologique.participant | FRObservationLaboratoryReportResultsDocument.performer.extension:dispositifAuto |
@@ -803,8 +803,8 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMProbleme.certitude | FRCDAProbleme.entryRelationship:frCertitude | FRConditionDocument.verificationStatus |
 | FRLMProbleme.statutClinique | FRCDAProbleme.entryRelationship:frStatutCliniqueDuPatient | FRConditionDocument.stage.summary |
 | FRLMProbleme.reference | FRCDAProbleme.reference | FRConditionDocument.evidence.detail |
-| FRLMProbleme.reference. externalDocument.identifiant | FRCDAProbleme.reference. externalDocument.id | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier |
-| FRLMProbleme.reference. externalDocument.text.reference | FRCDAProbleme.reference. externalDocument.text.reference | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url |
+| FRLMProbleme.reference.externalDocument.identifiant | FRCDAProbleme.reference.externalDocument.id | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier |
+| FRLMProbleme.reference.externalDocument.text.reference | FRCDAProbleme.reference.externalDocument.text.reference | FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url |
 | FRLMProbleme.commentaire | FRCDAProbleme.entryRelationship:frCommentaireER | FRConditionDocument.note |
 | **FRLMProblemesActifs** | **FRCDAProblemesActifs** | FRCompositionDocument.section:activeProblems |
 | FRLMProblemesActifs.codeSection | FRCDAProblemesActifs.code | FRCompositionDocument.section:activeProblems.code |
@@ -813,11 +813,11 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMProblemesActifs.entree.problemes | FRCDAProblemesActifs.entry:FRCDAListeDesProblemes | FRCompositionDocument.section:activeProblems.entry:FRConditionDocument |
 | **FRLMProduitSante** | **FRCDAProduitDeSante** | **FRMedicationDocument** |
 | FRLMProduitSante.medicament | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial |  |
-| FRLMProduitSante.medicament.code | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.code | FRMedicationDocument.code |
-| FRLMProduitSante.medicament. code.autreCodification | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.code.translation | FRMedicationDocument.code.coding |
-| FRLMProduitSante.nomProduit | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.name | FRMedicationDocument.extension:ihe-ext-medication-productname |
-| FRLMProduitSante.formeGalenique | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.pharm:formCode | FRMedicationDocument.form |
-| FRLMProduitSante.numeroLot | FRCDAProduitDeSante.manufacturedProduct. manufacturedMaterial.lotNumberText | FRMedicationDocument.batch.lotNumber |
+| FRLMProduitSante.medicament.code | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.code | FRMedicationDocument.code |
+| FRLMProduitSante.medicament.code.autreCodification | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.code.translation | FRMedicationDocument.code.coding |
+| FRLMProduitSante.nomProduit | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.name | FRMedicationDocument.extension:ihe-ext-medication-productname |
+| FRLMProduitSante.formeGalenique | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.pharm:formCode | FRMedicationDocument.form |
+| FRLMProduitSante.numeroLot | FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.lotNumberText | FRMedicationDocument.batch.lotNumber |
 | FRLMProduitSante.dateExpiration | FRCDAProduitDeSante.pharm:expirationTime | FRMedicationDocument.batch.expirationDate |
 | FRLMProduitSante.conditionnement | FRCDAProduitDeSante.pharm:asContent | FRMedicationDocument.extension:ihe-ext-medication-characteristic |
 | FRLMProduitSante.equivalentGenerique | FRCDAProduitDeSante.pharm:asSpecializedKind | FRMedicationDocument.extension:ihe-ext-medication-classification |
@@ -856,7 +856,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMReferenceItemPlanTraitement.auteur | FRCDAReferenceItemPlanTraitement.author | FRCarePlanDocument.author |
 | FRLMReferenceItemPlanTraitement.traitementPrescrit | FRCDAReferenceItemPlanTraitement.entryRelationship:frItemPlanTraitement | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
 | FRLMReferenceItemPlanTraitement.reference | FRCDAReferenceItemPlanTraitement.reference | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument |
-| FRLMReferenceItemPlanTraitement.reference. externalDocument.identifiant | FRCDAReferenceItemPlanTraitement.reference. externalDocument.id | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier |
+| FRLMReferenceItemPlanTraitement.reference.externalDocument.identifiant | FRCDAReferenceItemPlanTraitement.reference.externalDocument.id | FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier |
 | **FRLMResultatExamensBiologieElementCliniquePertinent** | **FRCDAResultatExamensDeBiologieElementCliniquePertinent** |  |
 | FRLMResultatExamensBiologieElementCliniquePertinent.identifiant | FRCDAResultatExamensDeBiologieElementCliniquePertinent.id | FRObservationLaboratoryReportResultsDocument.identifier |
 | FRLMResultatExamensBiologieElementCliniquePertinent.codeAnalyseObservation | FRCDAResultatExamensDeBiologieElementCliniquePertinent.code | FRObservationLaboratoryReportResultsDocument.code |
@@ -972,11 +972,11 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMSerieImagerie.date | FRCDADICOMSerieImagerie.effectiveTime | FRImagingStudyDocument.series.started |
 | FRLMSerieImagerie.instanceSOP | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation | FRImagingStudyDocument.series.instance |
 | FRLMSerieImagerie.referenceWado | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text | FRImagingStudyDocument.series.endpoint |
-| FRLMSerieImagerie.referenceWado.iHEInvokeImage | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation. text.reference | FRImagingStudyDocument.series.endpoint.address |
-| FRLMSerieImagerie.referenceWado.iHEInvokeImage | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation. text.reference | FRImagingStudyDocument.series.endpoint.connectionType |
-| FRLMSerieImagerie.referenceWado.reference | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation. text.reference | FRImagingStudyDocument.series.endpoint.address |
-| FRLMSerieImagerie.referenceWado.reference | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation. text.reference | FRImagingStudyDocument.series.endpoint.connectionType |
-| FRLMSerieImagerie.referenceWado.typeMedia | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation. text.mediaType | FRImagingStudyDocument.series.endpoint.payloadMimeType |
+| FRLMSerieImagerie.referenceWado.iHEInvokeImage | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference | FRImagingStudyDocument.series.endpoint.address |
+| FRLMSerieImagerie.referenceWado.iHEInvokeImage | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference | FRImagingStudyDocument.series.endpoint.connectionType |
+| FRLMSerieImagerie.referenceWado.reference | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference | FRImagingStudyDocument.series.endpoint.address |
+| FRLMSerieImagerie.referenceWado.reference | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference | FRImagingStudyDocument.series.endpoint.connectionType |
+| FRLMSerieImagerie.referenceWado.typeMedia | FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.mediaType | FRImagingStudyDocument.series.endpoint.payloadMimeType |
 | **FRLMTechniqueImagerie** | **FRCDADICOMTechniqueImagerie** | **FRProcedureImagingDocument** |
 | FRLMTechniqueImagerie.identifiant | FRCDADICOMTechniqueImagerie.id | FRProcedureImagingDocument.identifier |
 | FRLMTechniqueImagerie.codeActe | FRCDADICOMTechniqueImagerie.code | FRProcedureImagingDocument.code |
@@ -1148,7 +1148,7 @@ Liste des ConceptMap détaillant le mapping entre les éléments du modèle mét
 | FRLMQuantiteExposition.valeur | FRCDADICOMQuantite.value | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.component.valueQuantity |
 | FRLMQuantiteExposition.lateralite | FRCDADICOMQuantite.targetSiteCode | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite |
 | FRLMQuantiteExposition.lateralite.topographique | FRCDADICOMQuantite.targetSiteCode.qualifier | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique |
-| FRLMQuantiteExposition.lateralite. topographique.valeur | FRCDADICOMQuantite.targetSiteCode. qualifier.value | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique.locationQualifier |
+| FRLMQuantiteExposition.lateralite.topographique.valeur | FRCDADICOMQuantite.targetSiteCode.qualifier.value | FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique.locationQualifier |
 | **FRLMResultatsExamens** | **FRCDAResultatsExamens** | FRCompositionDocument.section:Results |
 | **FRLMResultatsExamensNonCode** | **FRCDAResultatsExamensNonCode** | FRCompositionDocument.section:Results |
 | FRLMResultatsExamens.codeSection | FRCDAResultatsExamens.code | FRCompositionDocument.section:Results.code |

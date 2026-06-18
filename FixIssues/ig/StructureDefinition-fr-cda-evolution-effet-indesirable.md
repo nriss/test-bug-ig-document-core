@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-evolution-effet-indesirable | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRCDAEvolutionEffetIndesirable |
+| Draft as of 2026-06-18 | *Computable Name*:FRCDAEvolutionEffetIndesirable |
 
  
 Entrée FR-Evolution-effet-indesirable: Cette entrée permet de préciser l’évolution d’un effet indésirable à un médicament. Il est utilisé exclusivement dans un lien entryRelationship grâce auquel il est lié à l’élément qu’il qualifie. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-evolution-eff
   "name" : "FRCDAEvolutionEffetIndesirable",
   "title" : "CDA - FR Evolution effet indesirable",
   "status" : "draft",
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

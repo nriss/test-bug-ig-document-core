@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-transfusion-de-produits-sanguins | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRLMTransfusionDeProduitsSanguins |
+| Draft as of 2026-06-18 | *Computable Name*:FRLMTransfusionDeProduitsSanguins |
 
  
 Transfusion de produits sanguins 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-transfusion-de
   "name" : "FRLMTransfusionDeProduitsSanguins",
   "title" : "Logical model - FR LM Transfusion de produits sanguins",
   "status" : "draft",
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

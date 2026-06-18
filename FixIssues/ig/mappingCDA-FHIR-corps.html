@@ -1068,24 +1068,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.rateQuantity</p>
 </div></td><td><div><p>FRMedicationAdministrationDocument.dosage.rate[x]</p>
 </div></td></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.produit</p>
-</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.
-manufacturedProduct.manufacturedMaterial</p>
-</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.
-produit.codeProduit</p>
-</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.
-manufacturedProduct.manufacturedMaterial.code</p>
-</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.
-produit.codeProduit.autreCodification</p>
-</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.
-manufacturedProduct.manufacturedMaterial.code.translation</p>
-</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.
-produit.nomMarque</p>
-</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.
-manufacturedProduct.manufacturedMaterial.name</p>
-</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.
-produit.numeroLot</p>
-</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.
-manufacturedProduct.manufacturedMaterial.lotNumberText</p>
+</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial</p>
+</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.produit.codeProduit</p>
+</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.code</p>
+</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.produit.codeProduit.autreCodification</p>
+</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.code.translation</p>
+</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.produit.nomMarque</p>
+</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.name</p>
+</div></td><td /></tr><tr><td><div><p>FRLMAdministrationProduitDeSante.medicament.produit.numeroLot</p>
+</div></td><td><div><p>FRCDADICOMAdministrationProduitDeSante.consumable.manufacturedProduct.manufacturedMaterial.lotNumberText</p>
 </div></td><td /></tr><tr><td><div><p><strong>FRLMCommentaireER</strong></p>
 </div></td><td><div><p><strong>FRCDACommentaireER</strong></p>
 </div></td><td><div><p><strong>Annotation</strong></p>
@@ -1166,81 +1157,60 @@ manufacturedProduct.manufacturedMaterial.lotNumberText</p>
 </div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.coordonneesTelecom</p>
 </div></td><td><div><p>FRCDAParticipant.participantRole.telecom</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.telecom</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-identiteParticipant.nom</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingEntity.name</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.identiteParticipant.nom</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingEntity.name</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.name</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-identiteParticipant.ProfessionSpecialite</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingEntity.code</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.identiteParticipant.ProfessionSpecialite</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingEntity.code</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FRPractitionerRoleDocument.practitioner.qualification</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-identiteParticipant.description</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingEntity.desc</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.identiteParticipant.description</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingEntity.desc</p>
 </div></td><td /></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.Organisation</p>
 </div></td><td><div><p>FRCDAParticipant.participantRole.scopingEntity</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FROrganizationDocument</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-Organisation.identifiant</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-scopingEntity.id</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.Organisation.identifiant</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.scopingEntity.id</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FROrganizationDocument.identifier</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-Organisation.code</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-scopingEntity.code</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.Organisation.code</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.scopingEntity.code</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FROrganizationDocument.type</p>
-</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.
-Organisation.description</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-scopingEntity.desc</p>
+</div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.Organisation.description</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.scopingEntity.desc</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:FROrganizationDocument.extension:description</p>
 </div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.dispositifAutomatique</p>
 </div></td><td><div><p>FRCDAParticipant.participantRole.playingDevice</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:Device</p>
 </div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.categorie</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingDevice.code</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingDevice.code</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:Device.type</p>
 </div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.nomModele</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingDevice.manufacturerModelName</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingDevice.manufacturerModelName</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:Device.manufacturer</p>
 </div></td></tr><tr><td><div><p>FRLMParticipantCorps.participantRole.nomLogiciel</p>
-</div></td><td><div><p>FRCDAParticipant.participantRole.
-playingDevice.softwareName</p>
+</div></td><td><div><p>FRCDAParticipant.participantRole.playingDevice.softwareName</p>
 </div></td><td><div><p>FRActorExtension.extension[actor].value[x]:Device.deviceName.name</p>
 </div></td></tr><tr><td><div><p><strong>FRLMPatientSujetNonHumain</strong></p>
 </div></td><td><div><p><strong>FRCDAPatientAvecSujetNonHumain</strong></p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.specimen</p>
 </div></td></tr><tr><td><div><p>FRLMPatientSujetNonHumain.sujet</p>
-</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.
-relatedSubject.code</p>
+</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.code</p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance</p>
 </div></td></tr><tr><td><div><p>FRLMPatientSujetNonHumain.sujet</p>
-</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.
-relatedSubject.code</p>
+</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.code</p>
 </div></td><td><div><p>Substance.code</p>
 </div></td></tr><tr><td><div><p>FRLMPatientSujetNonHumain.adresse</p>
-</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.
-relatedSubject.addr</p>
+</div></td><td><div><p>FRCDAPatientAvecSujetNonHumain.subject.relatedSubject.addr</p>
 </div></td><td /></tr><tr><td><div><p><strong>FRLMSujetNonHumain</strong></p>
 </div></td><td><div><p><strong>FRCDASujetNonHumain</strong></p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.specimen</p>
 </div></td></tr><tr><td><div><p>FRLMSujetNonHumain.sujet</p>
-</div></td><td><div><p>FRCDASujetNonHumain.subject.
-relatedSubject.code</p>
+</div></td><td><div><p>FRCDASujetNonHumain.subject.relatedSubject.code</p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.specimen.subject:Substance</p>
 </div></td></tr><tr><td><div><p>FRLMSujetNonHumain.sujet</p>
-</div></td><td><div><p>FRCDASujetNonHumain.subject.
-relatedSubject.code</p>
+</div></td><td><div><p>FRCDASujetNonHumain.subject.relatedSubject.code</p>
 </div></td><td><div><p>Substance.code</p>
 </div></td></tr><tr><td><div><p>FRLMSujetNonHumain.adresse</p>
-</div></td><td><div><p>FRCDASujetNonHumain.subject.
-relatedSubject.addr</p>
+</div></td><td><div><p>FRCDASujetNonHumain.subject.relatedSubject.addr</p>
 </div></td><td /></tr><tr><td><div><p><strong>FRLMAccidentsTransfusionnels</strong></p>
 </div></td><td><div><p><strong>FRCDAAccidentsTransfusionnels</strong></p>
 </div></td><td><div><p><strong>FRObservationTransfusionAccidentsDocument</strong></p>
@@ -1791,8 +1761,7 @@ relatedSubject.addr</p>
 </div></td><td><div><p>FRCDADirectiveAnticipee.valueBoolean</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.provision.type</p>
 </div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.reference</p>
-</div></td><td><div><p>FRCDADirectiveAnticipee.reference.
-externalDocument.text.reference</p>
+</div></td><td><div><p>FRCDADirectiveAnticipee.reference.externalDocument.text.reference</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.sourceReference</p>
 </div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule</p>
 </div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship</p>
@@ -1800,20 +1769,14 @@ externalDocument.text.reference</p>
 </div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.observationMedia</p>
 </div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.observationMedia</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.sourceAttachment</p>
-</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.
-observationMedia.identifiant</p>
-</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.
-observationMedia.id</p>
+</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.observationMedia.identifiant</p>
+</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.observationMedia.id</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.sourceAttachment.id</p>
-</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.
-observationMedia.documentEncapsuleEncode</p>
-</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.
-observationMedia.value</p>
+</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.observationMedia.documentEncapsuleEncode</p>
+</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.observationMedia.value</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.sourceAttachment.data</p>
-</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.
-observationMedia.documentEncapsuleEncode</p>
-</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.
-observationMedia.value</p>
+</div></td></tr><tr><td><div><p>FRLMDirectiveAnticipee.documentEncapsule.observationMedia.documentEncapsuleEncode</p>
+</div></td><td><div><p>FRCDADirectiveAnticipee.entryRelationship.observationMedia.value</p>
 </div></td><td><div><p>FRAdvanceDirectiveDocument.sourceAttachment.url</p>
 </div></td></tr><tr><td><div><p><strong>FRLMDirectivesAnticipees</strong></p>
 </div></td><td><div><p><strong>FRCDADirectivesAnticipees</strong></p>
@@ -1898,15 +1861,11 @@ observationMedia.value</p>
 </div></td></tr><tr><td><div><p>FRLMDocumentAttache.documentAttache</p>
 </div></td><td><div><p>FRCDADocumentAttache.component.observationMedia</p>
 </div></td><td><div><p>FRDocumentReferenceDocument.content.attachment</p>
-</div></td></tr><tr><td><div><p>FRLMDocumentAttache.documentAttache.
-observationMedia.identifiant</p>
-</div></td><td><div><p>FRCDADocumentAttache.component.
-observationMedia.id</p>
+</div></td></tr><tr><td><div><p>FRLMDocumentAttache.documentAttache.observationMedia.identifiant</p>
+</div></td><td><div><p>FRCDADocumentAttache.component.observationMedia.id</p>
 </div></td><td><div><p>FRDocumentReferenceDocument.content.attachment.id</p>
-</div></td></tr><tr><td><div><p>FRLMDocumentAttache.documentAttache.
-observationMedia.documentAttacheEncode</p>
-</div></td><td><div><p>FRCDADocumentAttache.component.
-observationMedia.value</p>
+</div></td></tr><tr><td><div><p>FRLMDocumentAttache.documentAttache.observationMedia.documentAttacheEncode</p>
+</div></td><td><div><p>FRCDADocumentAttache.component.observationMedia.value</p>
 </div></td><td><div><p>FRDocumentReferenceDocument.content.attachment.data</p>
 </div></td></tr><tr><td><div><p><strong>FRLMDocumentsAjoutes</strong></p>
 </div></td><td><div><p><strong>FRCDADocumentsAjoutes</strong></p>
@@ -2113,8 +2072,7 @@ observationMedia.value</p>
 </div></td><td><div><p>FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie</p>
 </div></td><td><div><p>FRImagingStudyDocument.series</p>
 </div></td></tr><tr><td><div><p>FRLMExamenImagerie.objectifsReferences</p>
-</div></td><td><div><p>FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.
-entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference</p>
+</div></td><td><div><p>FRCDADICOMExamenImagerie.entryRelationship:frDICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjectifsDeReference</p>
 </div></td><td><div><p>FRImagingStudyDocument.reasonCode</p>
 </div></td></tr><tr><td><div><p><strong>FRLMExpositionRadiations</strong></p>
 </div></td><td><div><p><strong>FRCDADICOMExpositionAuxRadiations</strong></p>
@@ -2205,15 +2163,11 @@ entryRelationship:frDICOMSOPInstanceObservation.entryRelationship:frDICOMObjecti
 </div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.code.precision</p>
 </div></td><td><div><p>FRCDAHabitusModeDeVie.code.qualifier</p>
 </div></td><td><div><p>FRObservationSocialHistoryDocument.component</p>
-</div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.code.
-precision.name</p>
-</div></td><td><div><p>FRCDAHabitusModeDeVie.code.
-qualifier.name</p>
+</div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.code.precision.name</p>
+</div></td><td><div><p>FRCDAHabitusModeDeVie.code.qualifier.name</p>
 </div></td><td><div><p>FRObservationSocialHistoryDocument.component.code</p>
-</div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.code.
-precision.value</p>
-</div></td><td><div><p>FRCDAHabitusModeDeVie.code.
-qualifier.value</p>
+</div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.code.precision.value</p>
+</div></td><td><div><p>FRCDAHabitusModeDeVie.code.qualifier.value</p>
 </div></td><td><div><p>FRObservationSocialHistoryDocument.component.value</p>
 </div></td></tr><tr><td><div><p>FRLMHabitusModeDeVieEntree.description</p>
 </div></td><td><div><p>FRCDAHabitusModeDeVie.text</p>
@@ -2373,18 +2327,12 @@ qualifier.value</p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.specimen</p>
 </div></td></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat</p>
 </div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.specimenRole</p>
-</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.
-isolat.identifiant</p>
-</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.
-specimenRole.id</p>
-</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.
-isolat.agent</p>
-</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.
-specimenRole.specimenPlayingEntity</p>
-</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.
-isolat.agent.code</p>
-</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.
-specimenRole.specimenPlayingEntity.code</p>
+</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.identifiant</p>
+</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.specimenRole.id</p>
+</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.agent</p>
+</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.specimenRole.specimenPlayingEntity</p>
+</div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.isolatMicrobiologique.isolat.agent.code</p>
+</div></td><td><div><p>FRCDAIsolatMicrobiologique.specimen.specimenRole.specimenPlayingEntity.code</p>
 </div></td><td /></tr><tr><td><div><p>FRLMIsolatMicrobiologique.laboratoireExecutant</p>
 </div></td><td><div><p>FRCDAIsolatMicrobiologique.performer</p>
 </div></td><td><div><p>FRObservationLaboratoryReportResultsDocument.performer.extension:laboratoireExecutant</p>
@@ -2603,15 +2551,11 @@ specimenRole.specimenPlayingEntity.code</p>
 </div></td></tr><tr><td><div><p>FRLMProbleme.reference</p>
 </div></td><td><div><p>FRCDAProbleme.reference</p>
 </div></td><td><div><p>FRConditionDocument.evidence.detail</p>
-</div></td></tr><tr><td><div><p>FRLMProbleme.reference.
-externalDocument.identifiant</p>
-</div></td><td><div><p>FRCDAProbleme.reference.
-externalDocument.id</p>
+</div></td></tr><tr><td><div><p>FRLMProbleme.reference.externalDocument.identifiant</p>
+</div></td><td><div><p>FRCDAProbleme.reference.externalDocument.id</p>
 </div></td><td><div><p>FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.identifier</p>
-</div></td></tr><tr><td><div><p>FRLMProbleme.reference.
-externalDocument.text.reference</p>
-</div></td><td><div><p>FRCDAProbleme.reference.
-externalDocument.text.reference</p>
+</div></td></tr><tr><td><div><p>FRLMProbleme.reference.externalDocument.text.reference</p>
+</div></td><td><div><p>FRCDAProbleme.reference.externalDocument.text.reference</p>
 </div></td><td><div><p>FRConditionDocument.evidence.detail:FRDocumentReferenceDocument.content.attachment.url</p>
 </div></td></tr><tr><td><div><p>FRLMProbleme.commentaire</p>
 </div></td><td><div><p>FRCDAProbleme.entryRelationship:frCommentaireER</p>
@@ -2637,25 +2581,19 @@ externalDocument.text.reference</p>
 </div></td></tr><tr><td><div><p>FRLMProduitSante.medicament</p>
 </div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial</p>
 </div></td><td /></tr><tr><td><div><p>FRLMProduitSante.medicament.code</p>
-</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.
-manufacturedMaterial.code</p>
+</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.code</p>
 </div></td><td><div><p>FRMedicationDocument.code</p>
-</div></td></tr><tr><td><div><p>FRLMProduitSante.medicament.
-code.autreCodification</p>
-</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.
-manufacturedMaterial.code.translation</p>
+</div></td></tr><tr><td><div><p>FRLMProduitSante.medicament.code.autreCodification</p>
+</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.code.translation</p>
 </div></td><td><div><p>FRMedicationDocument.code.coding</p>
 </div></td></tr><tr><td><div><p>FRLMProduitSante.nomProduit</p>
-</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.
-manufacturedMaterial.name</p>
+</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.name</p>
 </div></td><td><div><p>FRMedicationDocument.extension:ihe-ext-medication-productname</p>
 </div></td></tr><tr><td><div><p>FRLMProduitSante.formeGalenique</p>
-</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.
-manufacturedMaterial.pharm:formCode</p>
+</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.pharm:formCode</p>
 </div></td><td><div><p>FRMedicationDocument.form</p>
 </div></td></tr><tr><td><div><p>FRLMProduitSante.numeroLot</p>
-</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.
-manufacturedMaterial.lotNumberText</p>
+</div></td><td><div><p>FRCDAProduitDeSante.manufacturedProduct.manufacturedMaterial.lotNumberText</p>
 </div></td><td><div><p>FRMedicationDocument.batch.lotNumber</p>
 </div></td></tr><tr><td><div><p>FRLMProduitSante.dateExpiration</p>
 </div></td><td><div><p>FRCDAProduitDeSante.pharm:expirationTime</p>
@@ -2770,10 +2708,8 @@ manufacturedMaterial.lotNumberText</p>
 </div></td></tr><tr><td><div><p>FRLMReferenceItemPlanTraitement.reference</p>
 </div></td><td><div><p>FRCDAReferenceItemPlanTraitement.reference</p>
 </div></td><td><div><p>FRCarePlanDocument.activity.reference:FRMedicationRequestDocument</p>
-</div></td></tr><tr><td><div><p>FRLMReferenceItemPlanTraitement.reference.
-externalDocument.identifiant</p>
-</div></td><td><div><p>FRCDAReferenceItemPlanTraitement.reference.
-externalDocument.id</p>
+</div></td></tr><tr><td><div><p>FRLMReferenceItemPlanTraitement.reference.externalDocument.identifiant</p>
+</div></td><td><div><p>FRCDAReferenceItemPlanTraitement.reference.externalDocument.id</p>
 </div></td><td><div><p>FRCarePlanDocument.activity.reference:FRMedicationRequestDocument.identifier</p>
 </div></td></tr><tr><td><div><p><strong>FRLMResultatExamensBiologieElementCliniquePertinent</strong></p>
 </div></td><td><div><p><strong>FRCDAResultatExamensDeBiologieElementCliniquePertinent</strong></p>
@@ -3114,24 +3050,19 @@ externalDocument.id</p>
 </div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint</p>
 </div></td></tr><tr><td><div><p>FRLMSerieImagerie.referenceWado.iHEInvokeImage</p>
-</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.
-text.reference</p>
+</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint.address</p>
 </div></td></tr><tr><td><div><p>FRLMSerieImagerie.referenceWado.iHEInvokeImage</p>
-</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.
-text.reference</p>
+</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint.connectionType</p>
 </div></td></tr><tr><td><div><p>FRLMSerieImagerie.referenceWado.reference</p>
-</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.
-text.reference</p>
+</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint.address</p>
 </div></td></tr><tr><td><div><p>FRLMSerieImagerie.referenceWado.reference</p>
-</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.
-text.reference</p>
+</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.reference</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint.connectionType</p>
 </div></td></tr><tr><td><div><p>FRLMSerieImagerie.referenceWado.typeMedia</p>
-</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.
-text.mediaType</p>
+</div></td><td><div><p>FRCDADICOMSerieImagerie.entryRelationship:frDICOMSOPInstanceObservation.text.mediaType</p>
 </div></td><td><div><p>FRImagingStudyDocument.series.endpoint.payloadMimeType</p>
 </div></td></tr><tr><td><div><p><strong>FRLMTechniqueImagerie</strong></p>
 </div></td><td><div><p><strong>FRCDADICOMTechniqueImagerie</strong></p>
@@ -3623,10 +3554,8 @@ text.mediaType</p>
 </div></td></tr><tr><td><div><p>FRLMQuantiteExposition.lateralite.topographique</p>
 </div></td><td><div><p>FRCDADICOMQuantite.targetSiteCode.qualifier</p>
 </div></td><td><div><p>FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique</p>
-</div></td></tr><tr><td><div><p>FRLMQuantiteExposition.lateralite.
-topographique.valeur</p>
-</div></td><td><div><p>FRCDADICOMQuantite.targetSiteCode.
-qualifier.value</p>
+</div></td></tr><tr><td><div><p>FRLMQuantiteExposition.lateralite.topographique.valeur</p>
+</div></td><td><div><p>FRCDADICOMQuantite.targetSiteCode.qualifier.value</p>
 </div></td><td><div><p>FRCompositionDocument.section:radiationExposure.FRObservationRadiationExposureDocument.bodySite.extension:precisionTopographique.locationQualifier</p>
 </div></td></tr><tr><td><div><p><strong>FRLMResultatsExamens</strong></p>
 </div></td><td><div><p><strong>FRCDAResultatsExamens</strong></p>
@@ -3928,7 +3857,7 @@ qualifier.value</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 15:48+0000">2026-06-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2026 10:03+0000">2026-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |

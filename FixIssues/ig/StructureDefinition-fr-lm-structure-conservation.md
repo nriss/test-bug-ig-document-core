@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-structure-conservation | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRLMStructureConservation |
+| Draft as of 2026-06-18 | *Computable Name*:FRLMStructureConservation |
 
  
 Structure chargée de la conservation du document, c’est-à-dire de garder physiquement le document qui lui est confié tout en garantissant son cycle de vie. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-structure-cons
   "name" : "FRLMStructureConservation",
   "title" : "Modèle logique métier - FR LM Structure conservation",
   "status" : "draft",
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

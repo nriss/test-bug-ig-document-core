@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-validateur | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRLMValidateur |
+| Draft as of 2026-06-18 | *Computable Name*:FRLMValidateur |
 
  
 Professionnel attestant la validité des informations portées dans le document sans pour autant en prendre la responsabilité. N’est pas utilisé dans un document d’expression personnelle du patient/usager et un document produit par un système. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-validateur.csv
   "name" : "FRLMValidateur",
   "title" : "Modèle logique métier - FR LM Validateur",
   "status" : "draft",
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

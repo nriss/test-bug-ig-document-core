@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/mappingOperateurSaisieCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:Mapping Métier/CDA/FHIR : "Opérateur de saisie" |
+| Draft as of 2026-06-18 | *Computable Name*:Mapping Métier/CDA/FHIR : "Opérateur de saisie" |
 
  
 Ce ConceptMap présente deux groupes de mapping : 
@@ -31,7 +31,7 @@ Ce ConceptMap présente deux groupes de mapping :
   "title" : "Mapping Métier/CDA/FHIR : \"Opérateur de saisie\"",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-contra-indications-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRObservationContraIndicationsImagingDocument |
+| Draft as of 2026-06-18 | *Computable Name*:FRObservationContraIndicationsImagingDocument |
 
  
 FRObservationContraIndicationsDocument permet d’apporter des informations relatives aux contre-indications médicales du patient dans le cadre d’un examen d’imagerie. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-contr
   "name" : "FRObservationContraIndicationsImagingDocument",
   "title" : "Observation - FR Observation Contra Indications Document",
   "status" : "draft",
-  "date" : "2026-06-17T15:48:42+00:00",
+  "date" : "2026-06-18T10:03:06+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

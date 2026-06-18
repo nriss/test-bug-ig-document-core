@@ -274,7 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="mapping-entre-les-éléments-de-lentête--modèle-métier--cda--fhir">Mapping entre les éléments de l’entête : Modèle métier / CDA / FHIR</h3>
 
 <!-- Solution 1 -->
-<!-- <table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="ConceptMap-mappingAuteurCDAFHIR.html">Mapping Métier/CDA/FHIR : &quot;Auteur&quot;</a></td><td><div><p>Ce ConceptMap présente deux groupes de mapping :</p>
+<!-- <table class="table-query"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="ConceptMap-mappingAuteurCDAFHIR.html">Mapping Métier/CDA/FHIR : &quot;Auteur&quot;</a></td><td><div><p>Ce ConceptMap présente deux groupes de mapping :</p>
 <ul>
 <li>Mapping 1 : entre le modèle métier &quot;Auteur&quot; et l'élément CDA &quot;author&quot;</li>
 <li>Mapping 2 : entre l'élément CDA &quot;author&quot; et l'élément FHIR &quot;Composition.author&quot;</li>
@@ -372,10 +372,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li>Mapping 3 : entre l'élément CDA &quot;clinicalDocument&quot; et le profil FHIR &quot;FrCompositionDocument&quot;</li>
 </ul>
 </div></td></tr></table>
-
+ 
 ### Éléments de 2ᵉ niveau
-
-<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="ConceptMap-mappingPersonneStructureAssignedEntityFHIR.html">Mapping Métier/CDA/FHIR : &quot;Personne / Structure (AssignedEntity)&quot;</a></td><td><div><p>Ce ConceptMap de l'élément PersonneStructure présente deux groupes de mapping :</p>
+ 
+<table class="table-query"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="ConceptMap-mappingPersonneStructureAssignedEntityFHIR.html">Mapping Métier/CDA/FHIR : &quot;Personne / Structure (AssignedEntity)&quot;</a></td><td><div><p>Ce ConceptMap de l'élément PersonneStructure présente deux groupes de mapping :</p>
 <ul>
 <li>Mapping 1 : entre le modèle métier &quot;PersonneStructure&quot; et l'élément CDA &quot;assignedEntity&quot;</li>
 <li>Mapping 2 : entre l'élément CDA &quot;assignedEntity&quot; et le profil FHIR &quot;FrPractitionerRoleDocument&quot;</li>
@@ -400,7 +400,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
  -->
 
 <!--solution 2 -->
-<table class="lines"><tr><td style="background-color: #eeeeee">Modèle métier</td><td style="background-color: #eeeeee">CDA</td><td style="background-color: #eeeeee">FHIR</td></tr><tr><td><div><p><strong>FRLMEnteteDocument</strong></p>
+<table class="table-query"><tr><td style="background-color: #eeeeee">Modèle métier</td><td style="background-color: #eeeeee">CDA</td><td style="background-color: #eeeeee">FHIR</td></tr><tr><td><div><p><strong>FRLMEnteteDocument</strong></p>
 </div></td><td><div><p><strong>ClinicalDocument</strong></p>
 </div></td><td /></tr><tr><td><div><p>FRLMEnteteDocument.identifiantUniqueDocument</p>
 </div></td><td><div><p>ClinicalDocument.id</p>
@@ -430,8 +430,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div></td><td><div><p>ClinicalDocument.versionNumber</p>
 </div></td><td><div><p>Composition.extension:R5-Composition-version</p>
 </div></td></tr><tr><td><div><p>FRLMEnteteDocument.StatutDocument</p>
-</div></td><td><div><p>ClinicalDocument.documentationOf.
-serviceEvent.lab:statusCode</p>
+</div></td><td><div><p>ClinicalDocument.documentationOf.serviceEvent.lab:statusCode</p>
 </div></td><td><div><p>Composition.status</p>
 </div></td></tr><tr><td><div><p>FRLMEnteteDocument.patient</p>
 </div></td><td><div><p>ClinicalDocument.recordTarget</p>
@@ -544,15 +543,12 @@ serviceEvent.lab:statusCode</p>
 </div></td><td><div><p>documentationOf.serviceEvent.performer@typeCode=&quot;PRF&quot;</p>
 </div></td><td><div><p>Composition.event.extension:perfomer.PractitionerRole</p>
 </div></td></tr><tr><td><div><p>FRLMEvenement.executantEvenement.roleFonctionnel</p>
-</div></td><td><div><p>documentationOf.serviceEvent.
-performer.functionCode</p>
+</div></td><td><div><p>documentationOf.serviceEvent.performer.functionCode</p>
 </div></td><td><div><p>Composition.event.extension:perfomer.PractitionerRole.code</p>
 </div></td></tr><tr><td><div><p>FRLMEvenement.executantEvenement.dateHeureParticipation</p>
-</div></td><td><div><p>documentationOf.serviceEvent.
-performer.time</p>
+</div></td><td><div><p>documentationOf.serviceEvent.performer.time</p>
 </div></td><td /></tr><tr><td><div><p>FRLMEvenement.executantEvenement.executant</p>
-</div></td><td><div><p>documentationOf.serviceEvent.
-performer.assignedEntity</p>
+</div></td><td><div><p>documentationOf.serviceEvent.performer.assignedEntity</p>
 </div></td><td><div><p>Composition.event.extension:perfomer.PractitionerRole.Practitioner</p>
 </div></td></tr><tr><td><div><p><strong>FRLMInformateur</strong></p>
 </div></td><td><div><p><strong>informant</strong></p>
@@ -599,139 +595,90 @@ performer.assignedEntity</p>
 </div></td><td><div><p>recordTarget.patientRole.telecom</p>
 </div></td><td><div><p>Patient.telecom</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name</p>
 </div></td><td><div><p>Patient.name</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.nom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.family</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.nom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.family</p>
 </div></td><td><div><p>Patient.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.nom.nomNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.family@qualifier='BR'</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.nom.nomNaissance</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.family@qualifier='BR'</p>
 </div></td><td><div><p>Patient.name:officialname.family</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.nom.nomUtilise</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.family@qualifier='CL'</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.nom.nomUtilise</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.family@qualifier='CL'</p>
 </div></td><td><div><p>Patient.name:usualname.family</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given</p>
 </div></td><td><div><p>Patient.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given</p>
 </div></td><td><div><p>Patient.name:officialname.birth-list-given-name</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom.listePrenoms</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom.listePrenoms</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given</p>
 </div></td><td><div><p>Patient.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom.listePrenoms</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom.listePrenoms</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given</p>
 </div></td><td><div><p>Patient.name:officialname.birth-list-given-name</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom.premierPrenom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given@qualifier='BR'</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom.premierPrenom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given@qualifier='BR'</p>
 </div></td><td><div><p>Patient.name:officialname.given</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-nomsPrenomsPatient.prenom.prenomUtilise</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.name.given@qualifier='CL'</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.nomsPrenomsPatient.prenom.prenomUtilise</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.name.given@qualifier='CL'</p>
 </div></td><td><div><p>Patient.name:usualname.given</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.sexe</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.administrativeGenderCode</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.administrativeGenderCode</p>
 </div></td><td><div><p>Patient.gender</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.dateNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.birthTime</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.birthTime</p>
 </div></td><td><div><p>Patient.birthDate</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.indicateurDeces</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.sdtc:deceasedInd</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.sdtc:deceasedInd</p>
 </div></td><td><div><p>Patient.deceasedBoolean</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.dateDeces</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.sdtc:deceasedTime</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.sdtc:deceasedTime</p>
 </div></td><td><div><p>Patient.deceasedDateTime</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.grossesseMultiple</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.sdtc:multipleBirthInd</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.sdtc:multipleBirthInd</p>
 </div></td><td><div><p>Patient.multipleBirthBoolean</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.numeroOrdreNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.sdtc:multipleBirthOrderNumber</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.sdtc:multipleBirthOrderNumber</p>
 </div></td><td><div><p>Patient.multipleBirthInteger</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian</p>
 </div></td><td><div><p>Patient.contact.relationship:Role='GUARD'</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.adresse</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.addr</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.adresse</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.addr</p>
 </div></td><td><div><p>Patient.contact.address</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.coordonneesTelecom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.telecom</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.coordonneesTelecom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.telecom</p>
 </div></td><td><div><p>Patient.contact.telecom</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianPerson.name</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianPerson.name</p>
 </div></td><td><div><p>Patient.contact.name</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient.nom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianPerson.family</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient.nom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianPerson.family</p>
 </div></td><td><div><p>Patient.contact.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient.prenom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianPerson.given</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.personneRepresentantPatient.nomsPrenomsRepresentantPatient.prenom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianPerson.given</p>
 </div></td><td><div><p>Patient.contact.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.structureRepresentantPatient</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianOrganization</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.structureRepresentantPatient</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianOrganization</p>
 </div></td><td><div><p>Patient.contact.organization</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.structureRepresentantPatient.identifiant</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianOrganization.id</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.structureRepresentantPatient.identifiant</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianOrganization.id</p>
 </div></td><td><div><p>Patient.contact.organization.identifier</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-representantPatient.structureRepresentantPatient.nom</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.guardian.guardianOrganization.name</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.representantPatient.structureRepresentantPatient.nom</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.guardian.guardianOrganization.name</p>
 </div></td><td><div><p>Patient.contact.organization.name</p>
 </div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.lieuNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.birthPlace</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.birthPlace</p>
 </div></td><td><div><p>Patient.extension:birthPlace</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-lieuNaissance.nomLieuNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.birthPlace.place.name</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.lieuNaissance.nomLieuNaissance</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.birthPlace.place.name</p>
 </div></td><td><div><p>Patient.extension:birthPlace.value[FRCoreAddressProfile].text</p>
-</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-lieuNaissance.adresseLieuNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.birthPlace.place.addr</p>
-</div></td><td /></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.
-lieuNaissance.adresseLieuNaissance.codeOfficielGeographiqueLieuNaissance</p>
-</div></td><td><div><p>recordTarget.patientRole.
-patient.birthPlace.place.addr.county</p>
+</div></td></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.lieuNaissance.adresseLieuNaissance</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.birthPlace.place.addr</p>
+</div></td><td /></tr><tr><td><div><p>FRLMPatientUsager.personnePhysique.lieuNaissance.adresseLieuNaissance.codeOfficielGeographiqueLieuNaissance</p>
+</div></td><td><div><p>recordTarget.patientRole.patient.birthPlace.place.addr.county</p>
 </div></td><td /></tr><tr><td><div><p><strong>FRLMPersonneStructure</strong></p>
 </div></td><td><div><p><strong>assignedEntity</strong></p>
 </div></td><td><div><p><strong>PractitionerRole</strong></p>
@@ -749,25 +696,17 @@ patient.birthPlace.place.addr.county</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.telecom</p>
 </div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne</p>
 </div></td><td><div><p>assignedEntity.assignedPerson</p>
-</div></td><td /></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.nomPersonne</p>
-</div></td><td><div><p>assignedEntity.assignedPerson.
-name.family</p>
+</div></td><td /></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.nomPersonne</p>
+</div></td><td><div><p>assignedEntity.assignedPerson.name.family</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.prenomPersonne</p>
-</div></td><td><div><p>assignedEntity.assignedPerson.
-name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.prenomPersonne</p>
+</div></td><td><div><p>assignedEntity.assignedPerson.name.given</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.civilite</p>
-</div></td><td><div><p>assignedEntity.assignedPerson.
-name.prefix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.civilite</p>
+</div></td><td><div><p>assignedEntity.assignedPerson.name.prefix</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.prefix</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.titre</p>
-</div></td><td><div><p>assignedEntity.assignedPerson.
-name.suffix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.titre</p>
+</div></td><td><div><p>assignedEntity.assignedPerson.name.suffix</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.suffix</p>
 </div></td></tr><tr><td><div><p>FRLMPersonneStructure.structure</p>
 </div></td><td><div><p>assignedEntity.representedOrganization</p>
@@ -804,25 +743,17 @@ name.suffix</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.telecom</p>
 </div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.IdentitePersonne</p>
 </div></td><td><div><p>assignedAuthor.assignedPerson</p>
-</div></td><td /></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.
-IdentitePersonne.nomPersonne</p>
-</div></td><td><div><p>assignedAuthor.assignedPerson.
-name.family</p>
+</div></td><td /></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.IdentitePersonne.nomPersonne</p>
+</div></td><td><div><p>assignedAuthor.assignedPerson.name.family</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.
-IdentitePersonne.prenomPersonne</p>
-</div></td><td><div><p>assignedAuthor.assignedPerson.
-name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.IdentitePersonne.prenomPersonne</p>
+</div></td><td><div><p>assignedAuthor.assignedPerson.name.given</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.
-IdentitePersonne.civilite</p>
-</div></td><td><div><p>assignedAuthor.assignedPerson.
-name.prefix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.IdentitePersonne.civilite</p>
+</div></td><td><div><p>assignedAuthor.assignedPerson.name.prefix</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.prefix</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.
-IdentitePersonne.titre</p>
-</div></td><td><div><p>assignedAuthor.assignedPerson.
-name.suffix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.personne.IdentitePersonne.titre</p>
+</div></td><td><div><p>assignedAuthor.assignedPerson.name.suffix</p>
 </div></td><td><div><p>PractitionerRole.Practitioner.name.suffix</p>
 </div></td></tr><tr><td><div><p>FRLMPersonneStructureAuteur.structure</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization</p>
@@ -874,45 +805,29 @@ name.suffix</p>
 </div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne</p>
 </div></td><td><div><p>relatedEntity.relatedPerson</p>
 </div></td><td><div><p>RelatedPerson.name</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.nomPersonne</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.family</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.nomPersonne</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.family</p>
 </div></td><td><div><p>Patient.contact.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.nomPersonne</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.family</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.nomPersonne</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.family</p>
 </div></td><td><div><p>RelatedPerson.name.family</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.prenomPersonne</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.prenomPersonne</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.given</p>
 </div></td><td><div><p>Patient.contact.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.prenomPersonne</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.given</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.prenomPersonne</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.given</p>
 </div></td><td><div><p>RelatedPerson.name.given</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.civilite</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.prefix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.civilite</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.prefix</p>
 </div></td><td><div><p>Patient.contact.name.prefix</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.civilite</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.prefix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.civilite</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.prefix</p>
 </div></td><td><div><p>RelatedPerson.name.prefix</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.titre</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.suffix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.titre</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.suffix</p>
 </div></td><td><div><p>Patient.contact.name.suffix</p>
-</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.
-IdentitePersonne.titre</p>
-</div></td><td><div><p>relatedEntity.relatedPerson.
-name.suffix</p>
+</div></td></tr><tr><td><div><p>FRLMPersonneStructure.personne.IdentitePersonne.titre</p>
+</div></td><td><div><p>relatedEntity.relatedPerson.name.suffix</p>
 </div></td><td><div><p>RelatedPerson.name.suffix</p>
 </div></td></tr><tr><td><div><p><strong>FRLMPrescription</strong></p>
 </div></td><td><div><p><strong>inFulfillmentOf</strong></p>
@@ -939,8 +854,7 @@ name.suffix</p>
 </div></td><td><div><p>componentOf.encompassingEncounter.dischargeDispositionCode</p>
 </div></td><td><div><p>Encounter.hospitalization.dischargeDisposition</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.responsablePriseEnCharge</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-responsibleParty.assignedEntity</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.responsibleParty.assignedEntity</p>
 </div></td><td><div><p>Encounter.participant.type=&quot;DIS&quot;.individual</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.personneImpliqueePriseEnCharge</p>
 </div></td><td><div><p>componentOf.encompassingEncounter.encounterParticipant</p>
@@ -949,38 +863,27 @@ responsibleParty.assignedEntity</p>
 </div></td><td><div><p>componentOf.encompassingEncounter.encounterParticipant@typeCode</p>
 </div></td><td><div><p>Encounter.participant.type</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.personneImpliqueePriseEnCharge.dateDebutFinParticipation</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-encounterParticipant.time</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.encounterParticipant.time</p>
 </div></td><td><div><p>Encounter.participant.period</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.personneImpliqueePriseEnCharge.professionnelImplique</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-encounterParticipant.assignedEntity</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.encounterParticipant.assignedEntity</p>
 </div></td><td><div><p>Encounter.participant.individual</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge</p>
 </div></td><td><div><p>componentOf.encompassingEncounter.location</p>
 </div></td><td><div><p>Encounter.location</p>
 </div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.structure</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-location.healthcareFacility</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.location.healthcareFacility</p>
 </div></td><td><div><p>Encounter.location.Location</p>
-</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.
-structure.secteurActivite</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-location.healthcareFacility.code</p>
+</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.structure.secteurActivite</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.location.healthcareFacility.code</p>
 </div></td><td><div><p>Encounter.location.Location.type</p>
-</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.
-structure.secteurActivite.categorieEtablissement</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-location.healthcareFacility.code.translation</p>
-</div></td><td /></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.
-structure.nomStructure</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-location.healthcareFacility.location.name</p>
+</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.structure.secteurActivite.categorieEtablissement</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.location.healthcareFacility.code.translation</p>
+</div></td><td /></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.structure.nomStructure</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.location.healthcareFacility.location.name</p>
 </div></td><td><div><p>Encounter.location.Location.name</p>
-</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.
-structure.adresse</p>
-</div></td><td><div><p>componentOf.encompassingEncounter.
-location.healthcareFacility.location.addr</p>
+</div></td></tr><tr><td><div><p>FRLMPriseEncharge.lieuPriseEnCharge.structure.adresse</p>
+</div></td><td><div><p>componentOf.encompassingEncounter.location.healthcareFacility.location.addr</p>
 </div></td><td><div><p>Encounter.location.Location.address</p>
 </div></td></tr><tr><td><div><p><strong>FRLMResponsable</strong></p>
 </div></td><td><div><p><strong>legalAuthenticator</strong></p>
@@ -998,20 +901,16 @@ location.healthcareFacility.location.addr</p>
 </div></td><td><div><p>custodian.assignedCustodian</p>
 </div></td><td><div><p>Composition.custodian.organization</p>
 </div></td></tr><tr><td><div><p>FRLMStructureConservation.structure.identifiantStructure</p>
-</div></td><td><div><p>custodian.assignedCustodian.
-representedCustodianOrganization.id</p>
+</div></td><td><div><p>custodian.assignedCustodian.representedCustodianOrganization.id</p>
 </div></td><td><div><p>Composition.custodian.organization.identifier</p>
 </div></td></tr><tr><td><div><p>FRLMStructureConservation.structure.nomStructure</p>
-</div></td><td><div><p>custodian.assignedCustodian.
-representedCustodianOrganization.name</p>
+</div></td><td><div><p>custodian.assignedCustodian.representedCustodianOrganization.name</p>
 </div></td><td><div><p>Composition.custodian.organization.name</p>
 </div></td></tr><tr><td><div><p>FRLMStructureConservation.structure.adresse</p>
-</div></td><td><div><p>custodian.assignedCustodian.
-representedCustodianOrganization.addr</p>
+</div></td><td><div><p>custodian.assignedCustodian.representedCustodianOrganization.addr</p>
 </div></td><td><div><p>Composition.custodian.organization.address</p>
 </div></td></tr><tr><td><div><p>FRLMStructureConservation.structure.coordonneesTelecom</p>
-</div></td><td><div><p>custodian.assignedCustodian.
-representedCustodianOrganization.telecom</p>
+</div></td><td><div><p>custodian.assignedCustodian.representedCustodianOrganization.telecom</p>
 </div></td><td><div><p>Composition.custodian.organization.telecom</p>
 </div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur</p>
 </div></td><td><div><p><strong>assignedAuthor</strong></p>
@@ -1024,31 +923,25 @@ representedCustodianOrganization.telecom</p>
 </div></td><td><div><p>Device.type</p>
 </div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.systeme</p>
 </div></td><td><div><p>assignedAuthor.assignedAuthoringDevice</p>
-</div></td><td /></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-systeme.nomModeleSysteme</p>
+</div></td><td /></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.systeme.nomModeleSysteme</p>
 </div></td><td><div><p>assignedAuthor.assignedAuthoringDevice.manufacturerModelName</p>
 </div></td><td><div><p>Device.deviceName.name</p>
-</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-systeme.nomSysteme</p>
+</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.systeme.nomSysteme</p>
 </div></td><td><div><p>assignedAuthor.assignedAuthoringDevice.softwareName</p>
 </div></td><td><div><p>Device.deviceName.type</p>
 </div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.structure</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization</p>
 </div></td><td><div><p>Device.owner.organization</p>
-</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-structure.identifiantStructure</p>
+</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.structure.identifiantStructure</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization.id</p>
 </div></td><td><div><p>Device.owner.organization.identifier</p>
-</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-structure.nomStructure</p>
+</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.structure.nomStructure</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization.name</p>
 </div></td><td><div><p>Device.owner.organization.name</p>
-</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-structure.adresse</p>
+</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.structure.adresse</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization.addr</p>
 </div></td><td><div><p>Device.owner.organization.address</p>
-</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.
-structure.coordonneesTelecom</p>
+</div></td></tr><tr><td><div><p>FRLMSysteme.identificationAuteur.structure.coordonneesTelecom</p>
 </div></td><td><div><p>assignedAuthor.representedOrganization.telecom</p>
 </div></td><td /></tr><tr><td><div><p><strong>FRLMValidateur</strong></p>
 </div></td><td><div><p><strong>authenticator</strong></p>
@@ -1060,7 +953,6 @@ structure.coordonneesTelecom</p>
 </div></td><td><div><p>authenticator.assignedEntity</p>
 </div></td><td><div><p>Composition.attester.party.PractitionerRole</p>
 </div></td></tr></table>
-
 
 
 
@@ -1102,7 +994,7 @@ structure.coordonneesTelecom</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 17, 2026 15:48+0000">2026-06-17</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  Package ans.document.fr.core#0.1.0-snapshot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jun 18, 2026 10:03+0000">2026-06-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
