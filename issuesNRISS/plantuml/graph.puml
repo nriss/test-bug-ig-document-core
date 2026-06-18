@@ -5421,6 +5421,7 @@ package IG #DDDDDD{
              ImagingStudy.started => [None..None]
              ImagingStudy.basedOn => [None..None]
              ImagingStudy.basedOn:serviceRequestAccessionNumber => [0..*]
+             ImagingStudy.numberOfSeries => [None..None]
              ImagingStudy.procedureReference => [None..None]
              ImagingStudy.reasonCode => [None..None]
              ImagingStudy.series => [1..1]

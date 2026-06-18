@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-microorganism-detection-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRObservationMicroorganismDetectionDocument |
+| Draft as of 2026-06-18 | *Computable Name*:FRObservationMicroorganismDetectionDocument |
 
  
 FRObservationMicroorganismDetectionDocument permet d’indiquer si une recherche de micro-organismes multirésistants ou émergents a été effectuée ou pas. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-micro
   "name" : "FRObservationMicroorganismDetectionDocument",
   "title" : "Observation - FR Observation Microorganism Detection Document",
   "status" : "draft",
-  "date" : "2026-06-17T08:17:10+00:00",
+  "date" : "2026-06-18T14:12:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

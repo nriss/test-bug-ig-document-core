@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-course-of-encounter | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRLMCourseOfEncounter |
+| Draft as of 2026-06-18 | *Computable Name*:FRLMCourseOfEncounter |
 
  
 Section Résultats d’événements 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-course-of-enco
   "name" : "FRLMCourseOfEncounter",
   "title" : "Logical model - FR LM Course of encounter",
   "status" : "draft",
-  "date" : "2026-06-17T08:17:10+00:00",
+  "date" : "2026-06-18T14:12:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

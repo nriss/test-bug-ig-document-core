@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-observation-administration-blood-derivatives-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRObservationAdministrationBloodDerivativesDocument |
+| Draft as of 2026-06-18 | *Computable Name*:FRObservationAdministrationBloodDerivativesDocument |
 
  
 FRObservationAdministrationBloodDerivativesDocument est un profil utilisé pour indiquer s’il y a eu ou pas une administration de dérivés du sang. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-observation-admin
   "name" : "FRObservationAdministrationBloodDerivativesDocument",
   "title" : "Observation - FR Observation Administration Blood Derivatives Document",
   "status" : "draft",
-  "date" : "2026-06-17T08:17:10+00:00",
+  "date" : "2026-06-18T14:12:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

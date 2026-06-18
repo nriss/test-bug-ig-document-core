@@ -202,7 +202,7 @@
       "url": "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-difficulty-extension",
       "title": "FR Procedure Difficulty Extension",
       "types": [
-        "Reference"
+        "CodeableConcept"
       ]
     },
     {

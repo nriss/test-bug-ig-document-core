@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*:FRProcedureDocument |
+| Draft as of 2026-06-18 | *Computable Name*:FRProcedureDocument |
 
  
 FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou réalisé. 
@@ -17,6 +17,7 @@ FRProcedureDocument est un profil utilisé pour décrire un acte planifié ou r�
 **Utilisations:**
 
 * Dérivé de ce Profil: [Procedure - FR Procedure Imaging Document](StructureDefinition-fr-procedure-imaging-document.md)
+* Référence ce Profil: [Procedure - FR Procedure Document](StructureDefinition-fr-procedure-document.md)
 * Exemples pour ce/t/te Profil: [Procedure/example-procedure-data-absent-reason](Procedure-example-procedure-data-absent-reason.md)
 
 Vous pouvez également vérifier [les usages dans le FHIR IG Statistics](https://packages2.fhir.org/xig/ans.document.fr.core|current/StructureDefinition/fr-procedure-document)
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
   "name" : "FRProcedureDocument",
   "title" : "Procedure - FR Procedure Document",
   "status" : "draft",
-  "date" : "2026-06-17T08:17:10+00:00",
+  "date" : "2026-06-18T14:12:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -158,11 +159,12 @@ Other representations of profile: [CSV](StructureDefinition-fr-procedure-documen
     {
       "id" : "Procedure.partOf",
       "path" : "Procedure.partOf",
-      "short" : "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie).",
+      "short" : "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l’acte (ex. produit administré lors d’un acte d’imagerie).",
       "type" : [{
         "code" : "Reference",
         "targetProfile" : ["http://hl7.org/fhir/StructureDefinition/Observation",
-        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document"]
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-medication-administration-document",
+        "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-procedure-document"]
       }],
       "mustSupport" : true
     },

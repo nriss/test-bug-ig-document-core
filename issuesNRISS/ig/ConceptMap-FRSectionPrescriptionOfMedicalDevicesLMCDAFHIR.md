@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ConceptMap/FRSectionPrescriptionOfMedicalDevicesLMCDAFHIR | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-17 | *Computable Name*: |
+| Draft as of 2026-06-18 | *Computable Name*: |
 
  
 Mapping des éléments du modèle métier FRLMPrescriptionDispositifsMedicaux vers la section CDA FRCDAPrescriptionDispositifsMedicaux, puis vers la section FHIR FRCompositionDocument.section:medicalDevicePrescription. 
@@ -26,7 +26,7 @@ Mapping des éléments du modèle métier FRLMPrescriptionDispositifsMedicaux ve
   "version" : "0.1.0-snapshot",
   "title" : "Mapping Métier/CDA/FHIR : \"Prescription de dispositifs médicaux\"",
   "status" : "draft",
-  "date" : "2026-06-17T08:17:10+00:00",
+  "date" : "2026-06-18T14:12:01+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
