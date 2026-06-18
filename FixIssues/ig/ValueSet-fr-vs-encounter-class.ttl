@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fr-vs-encounter-class"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-vs-encounter-class</b></p><a name=\"fr-vs-encounter-class\"> </a><a name=\"hcfr-vs-encounter-class\"> </a><ul><li>Include tous les codes définis dans <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code><span title=\"La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé\"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0-snapshot"] ; # 
+  fhir:name [ fhir:v "FRValueSetEncounterClass"] ; # 
+  fhir:title [ fhir:v "FR ValueSet Encounter Class"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-06-18T14:01:22+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode.\n - Ce ValueSet peut être étendu ultérieurement avec des codes spécifiques définis par les différents volets pour répondre à des besoins métier particuliers."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "FRANCE" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/ValueSet/v3-ActEncounterCode>
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

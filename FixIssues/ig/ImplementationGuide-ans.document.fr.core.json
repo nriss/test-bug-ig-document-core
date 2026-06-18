@@ -1,17 +1,16 @@
 {
   "resourceType" : "ImplementationGuide",
   "id" : "ans.document.fr.core",
-  "language" : "en",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ans.document.fr.core</b></p><a name=\"ans.document.fr.core\"> </a><a name=\"hcans.document.fr.core\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>FRDocumentCore</h2><p>The official URL for this implementation guide is: </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.document.fr.core</b></p><a name=\"ans.document.fr.core\"> </a><a name=\"hcans.document.fr.core\"> </a><h2>FRDocumentCore</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core</pre></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/document/core/ImplementationGuide/ans.document.fr.core",
   "version" : "0.1.0-snapshot",
   "name" : "FRDocumentCore",
   "title" : "ANS IG document core",
   "status" : "draft",
-  "date" : "2026-06-18T13:10:23+00:00",
+  "date" : "2026-06-18T14:01:22+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -387,39 +386,6 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "wantGen-ttl"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueString" : "wantGen-ttl-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
       "valueCode" : "hl7.fhir.uv.tools.r4#0.9.0"
     },
@@ -717,39 +683,6 @@
       {
         "url" : "value",
         "valueString" : "true"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "i18n-default-lang"
-      },
-      {
-        "url" : "value",
-        "valueString" : "en"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "wantGen-ttl"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
-      }],
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-    },
-    {
-      "extension" : [{
-        "url" : "code",
-        "valueCode" : "wantGen-ttl-html"
-      },
-      {
-        "url" : "value",
-        "valueString" : "false"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     }],
@@ -8439,10 +8372,6 @@
     {
       "code" : "path-pages",
       "value" : "template/config"
-    },
-    {
-      "code" : "path-pages",
-      "value" : "input/assets"
     },
     {
       "code" : "path-pages",

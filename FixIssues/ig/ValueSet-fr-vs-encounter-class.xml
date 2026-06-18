@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="fr-vs-encounter-class"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fr-vs-encounter-class</b></p><a name="fr-vs-encounter-class"> </a><a name="hcfr-vs-encounter-class"> </a><ul><li>Include all codes defined in <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs fr-vs-encounter-class</b></p><a name="fr-vs-encounter-class"> </a><a name="hcfr-vs-encounter-class"> </a><ul><li>Include tous les codes définis dans <code>http://terminology.hl7.org/ValueSet/v3-ActEncounterCode</code><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>
   </text>
   <url value="https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class"/>
   <version value="0.1.0-snapshot"/>
@@ -11,7 +11,7 @@
   <title value="FR ValueSet Encounter Class"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-06-18T13:10:23+00:00"/>
+  <date value="2026-06-18T14:01:22+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
