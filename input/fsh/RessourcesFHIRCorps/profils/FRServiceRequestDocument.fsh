@@ -19,17 +19,11 @@ Description: "FRServiceRequestDocument profil permet de porter des demandes d'ex
 * identifier[accessionNumber] ^short = "Accession Number de la demande d’examen d’imagerie"
 
 * intent MS
-* intent ^short = 
-"""
-Si la demande fait partie d'un plan de soins : 'INT = order'
-Si la demande est une proposition : 'PRP = proposal'
-Si la demande est un objectif à atteindre : 'GOL = plan'
-"""
+* intent ^short = "Intention de la demande : order, plan ou proposal"
+* obeys fr-invariant-intent
 * code 1..1 MS
-* code ^short = "Type de la demande"
-* code.coding ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
-//Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20
-//* code.concept = https://smt.esante.gouv.fr/fhir/CodeSystem/terminologie-cisis#GEN-092.04.20 "Autre demande d’examen ou de suivi"
+* code ^short = "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
+//* code = $terminologie-cisis#GEN-092.04.20 "Autre demande d’examen ou de suivi"
 * occurrence[x] 1..1 MS
 * occurrence[x] ^short = "Date prévisionnelle de l'examen, du suivi, de l'objectif"
 * orderDetail 0..1 MS
@@ -66,11 +60,14 @@ Si la demande est un objectif à atteindre : 'GOL = plan'
     justificationDemande 1..1 MS
 
 // Slice 1 : Finalité de l’examen
-* note[finaliteExamen].text 1..1
 * note[finaliteExamen].text ^short = "Finalité de l’examen"
 * note[finaliteExamen] ^short = "Finalité de l’examen demandé"
 
 // Slice 2 : Justification de la demande
-* note[justificationDemande].text 1..1
 * note[justificationDemande].text ^short = "Justification de la demande d'examen"
 * note[justificationDemande] ^short = "Justification de la demande d’examen"
+
+Invariant: fr-invariant-intent
+Description: "L'intention doit être order, plan ou proposal."
+Expression: "intent = 'order' or intent = 'plan' or intent = 'proposal'"
+Severity: #error

@@ -11,9 +11,8 @@ Description: "FRProcedureDocument est un profil utilisé pour décrire un acte p
 * identifier ^short = "Identifiant"
 
 * partOf MS
-* partOf ^short = "Observation de score ou administration de médicament associée à l'acte (ex. : produit administré lors d'un acte d'imagerie)."
-* partOf only Reference(Observation or FRMedicationAdministrationDocument)
-
+* partOf ^short = "Événement associé : score (Cormack ou ASA), administration de médicament ou procédure associée à l’acte (ex. produit administré lors d’un acte d’imagerie)."
+* partOf only Reference(Observation or FRMedicationAdministrationDocument or FRProcedureDocument)
 * status MS
 * status ^short = "Statut de l'acte"
 
@@ -83,17 +82,17 @@ Pour les actes chirurgicaux inconnus, utiliser jdv-absent-or-unknown-procedure-c
 * recorder.extension[author].extension[type].valueCode = #AUT
 * recorder.extension[author].extension[actor].valueReference only Reference(FRPractitionerRoleDocument)
 
-//Réference interne à un DM (REFR)
+//Réference à un DM
 * usedReference MS
-* usedReference ^short = "Réference interne à un DM"
+* usedReference ^short = "Réference à un DM"
 * usedReference only Reference(Device)
 
-// Circonstances ayant décidé de l'acte à créer (COMP)
+// Rencontre associée à l'acte
 * encounter MS
-* encounter ^short = "Circonstances ayant décidé de l'acte"
+* encounter ^short = "Rencontre associée à l'acte"
 * encounter only Reference(FREncounterDocument)
 
-// Difficulté Observation / Scores Observation
+// Difficulté de l'acte
 * extension contains
     FRProcedureDifficultyExtension named difficulte 0..1 MS
-* extension[difficulte] ^short = "Référence vers une Observation représentant la difficulté"
+* extension[difficulte] ^short = "Difficulté de l'acte"

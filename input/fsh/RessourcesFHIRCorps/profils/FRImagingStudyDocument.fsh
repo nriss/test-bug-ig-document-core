@@ -26,6 +26,9 @@ L’examen est composé d'une ou de plusieurs séries d’images médicales."
 * basedOn[serviceRequestAccessionNumber] only Reference(FRServiceRequestDocument)
 * basedOn[serviceRequestAccessionNumber] ^short = "Référence à la demande d'examen contenant l'Accession Number"
 
+* numberOfSeries MS
+* numberOfSeries ^short = "Nombre de séries"
+
 * started MS
 * started ^short = "Date de l'acte"
 
