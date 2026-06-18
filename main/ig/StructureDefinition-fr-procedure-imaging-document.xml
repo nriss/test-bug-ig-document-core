@@ -28,7 +28,7 @@
   <name value="FRProcedureImagingDocument"/>
   <title value="Procedure - FR Procedure Imaging Document"/>
   <status value="draft"/>
-  <date value="2026-06-16T14:27:29+00:00"/>
+  <date value="2026-06-18T14:40:49+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -553,7 +553,7 @@
     <element id="Procedure.extension:difficulte">
       <path value="Procedure.extension"/>
       <sliceName value="difficulte"/>
-      <short value="Référence vers une Observation représentant la difficulté"/>
+      <short value="Difficulté de l'acte"/>
       <definition value="Extension permettant d'indiquer la difficulté perçue ou mesurée d'un acte."/>
       <min value="0"/>
       <max value="1"/>
@@ -1095,7 +1095,7 @@
     </element>
     <element id="Procedure.encounter">
       <path value="Procedure.encounter"/>
-      <short value="Circonstances ayant décidé de l'acte"/>
+      <short value="Rencontre associée à l'acte"/>
       <definition value="The Encounter during which this Procedure was created or performed or to which the creation of this record is tightly associated."/>
       <comment value="This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter."/>
       <min value="0"/>
@@ -6886,7 +6886,7 @@
     </element>
     <element id="Procedure.usedReference">
       <path value="Procedure.usedReference"/>
-      <short value="Réference interne à un DM"/>
+      <short value="Réference à un DM"/>
       <definition value="Identifies medications, devices and any other substance used as part of the procedure."/>
       <comment value="For devices actually implanted or removed, use Procedure.device."/>
       <requirements value="Used for tracking contamination, etc."/>

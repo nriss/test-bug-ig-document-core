@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRServiceRequestDocument |
+| Draft as of 2026-06-18 | *Computable Name*:FRServiceRequestDocument |
 
  
 FRServiceRequestDocument profil permet de porter des demandes d’examens (analyses biologiques, évaluations, étude d’imagerie, etc…) ou de suivis particuliers à programmer dans le cadre d’un plan de soins. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-service-request-d
   "name" : "FRServiceRequestDocument",
   "title" : "ServiceRequest - FR Service Request Document",
   "status" : "draft",
-  "date" : "2026-06-16T14:27:29+00:00",
+  "date" : "2026-06-18T14:40:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -92,7 +92,14 @@ Other representations of profile: [CSV](StructureDefinition-fr-service-request-d
   "differential" : {
     "element" : [{
       "id" : "ServiceRequest",
-      "path" : "ServiceRequest"
+      "path" : "ServiceRequest",
+      "constraint" : [{
+        "key" : "fr-invariant-intent",
+        "severity" : "error",
+        "human" : "L'intention doit être order, plan ou proposal.",
+        "expression" : "intent = 'order' or intent = 'plan' or intent = 'proposal'",
+        "source" : "https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-service-request-document"
+      }]
     },
     {
       "id" : "ServiceRequest.extension",
@@ -159,7 +166,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-service-request-d
     {
       "id" : "ServiceRequest.intent",
       "path" : "ServiceRequest.intent",
-      "short" : "Si la demande fait partie d'un plan de soins : 'INT = order'\nSi la demande est une proposition : 'PRP = proposal'\nSi la demande est un objectif à atteindre : 'GOL = plan'",
+      "short" : "Intention de la demande : order, plan ou proposal",
       "mustSupport" : true
     },
     {
@@ -171,14 +178,9 @@ Other representations of profile: [CSV](StructureDefinition-fr-service-request-d
     {
       "id" : "ServiceRequest.code",
       "path" : "ServiceRequest.code",
-      "short" : "Type de la demande",
+      "short" : "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'",
       "min" : 1,
       "mustSupport" : true
-    },
-    {
-      "id" : "ServiceRequest.code.coding",
-      "path" : "ServiceRequest.code.coding",
-      "short" : "Type de la demande : Si aucun code n'est trouvé dans des terminologies existantes, utiliser le code : GEN-092.04.20 'Autre demande d’examen ou de suivi'"
     },
     {
       "id" : "ServiceRequest.orderDetail",

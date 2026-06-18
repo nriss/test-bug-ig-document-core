@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-resultats-examens-non-code | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDASectionResultatsExamensNonCode |
+| Draft as of 2026-06-18 | *Computable Name*:FRCDASectionResultatsExamensNonCode |
 
  
 IHE-PCC - Results. Résultats d’examens sous forme narrative non codée. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-resultats-exa
   "name" : "FRCDASectionResultatsExamensNonCode",
   "title" : "CDA - FR Resultats examens non code",
   "status" : "draft",
-  "date" : "2026-06-16T14:27:29+00:00",
+  "date" : "2026-06-18T14:40:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

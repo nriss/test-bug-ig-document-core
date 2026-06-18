@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-historique-medical | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDASectionDICOMHistoriqueMedical |
+| Draft as of 2026-06-18 | *Computable Name*:FRCDASectionDICOMHistoriqueMedical |
 
  
 DICOM Part 20 - Medical (General) History Section 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-histori
   "name" : "FRCDASectionDICOMHistoriqueMedical",
   "title" : "CDA - FR DICOM Historique medical",
   "status" : "draft",
-  "date" : "2026-06-16T14:27:29+00:00",
+  "date" : "2026-06-18T14:40:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-cadres-a-afficher | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRCDADICOMCadresAAfficher |
+| Draft as of 2026-06-18 | *Computable Name*:FRCDADICOMCadresAAfficher |
 
  
 Entrée FR-DICOM-Cadres-a-afficher: DICOM Part 20 - Cadres à afficher pour les images référencées 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-cadres-
   "name" : "FRCDADICOMCadresAAfficher",
   "title" : "CDA - FR DICOM Cadres à afficher",
   "status" : "draft",
-  "date" : "2026-06-16T14:27:29+00:00",
+  "date" : "2026-06-18T14:40:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

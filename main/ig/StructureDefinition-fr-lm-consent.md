@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-consent | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-16 | *Computable Name*:FRLMConsent |
+| Draft as of 2026-06-18 | *Computable Name*:FRLMConsent |
 
  
 Permet de documenter qu’un consentement éclairé a été obtenu et d’indiquer quel type de consentement a été fourni. 
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-consent.csv), 
   "name" : "FRLMConsent",
   "title" : "Logical model - FR LM Consent",
   "status" : "draft",
-  "date" : "2026-06-16T14:27:29+00:00",
+  "date" : "2026-06-18T14:40:49+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

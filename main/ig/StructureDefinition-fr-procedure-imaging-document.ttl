@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "FRProcedureImagingDocument"] ; # 
   fhir:title [ fhir:v "Procedure - FR Procedure Imaging Document"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-16T14:27:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-18T14:40:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -717,7 +717,7 @@
        fhir:id [ fhir:v "Procedure.extension:difficulte" ] ;
        fhir:path [ fhir:v "Procedure.extension" ] ;
        fhir:sliceName [ fhir:v "difficulte" ] ;
-       fhir:short [ fhir:v "Référence vers une Observation représentant la difficulté" ] ;
+       fhir:short [ fhir:v "Difficulté de l'acte" ] ;
        fhir:definition [ fhir:v "Extension permettant d'indiquer la difficulté perçue ou mesurée d'un acte." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
@@ -1383,7 +1383,7 @@
      ] [
        fhir:id [ fhir:v "Procedure.encounter" ] ;
        fhir:path [ fhir:v "Procedure.encounter" ] ;
-       fhir:short [ fhir:v "Circonstances ayant décidé de l'acte" ] ;
+       fhir:short [ fhir:v "Rencontre associée à l'acte" ] ;
        fhir:definition [ fhir:v "The Encounter during which this Procedure was created or performed or to which the creation of this record is tightly associated." ] ;
        fhir:comment [ fhir:v "This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
@@ -9207,7 +9207,7 @@
      ] [
        fhir:id [ fhir:v "Procedure.usedReference" ] ;
        fhir:path [ fhir:v "Procedure.usedReference" ] ;
-       fhir:short [ fhir:v "Réference interne à un DM" ] ;
+       fhir:short [ fhir:v "Réference à un DM" ] ;
        fhir:definition [ fhir:v "Identifies medications, devices and any other substance used as part of the procedure." ] ;
        fhir:comment [ fhir:v "For devices actually implanted or removed, use Procedure.device." ] ;
        fhir:requirements [ fhir:v "Used for tracking contamination, etc." ] ;
