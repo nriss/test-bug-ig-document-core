@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-directive-anticipee | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRCDADirectiveAnticipee |
+| Draft as of 2026-06-22 | *Computable Name*:FRCDADirectiveAnticipee |
 
  
 Entrée FR-Directive-anticipee: IHE-PCC - Advance-Directive-Observation. Cette entrée permet d’indiquer si les directives anticipées du patient. Article L1111-11 du Code de la Santé Publique : « Toute personne majeure peut rédiger des directives anticipées pour le cas où elle serait un jour hors d’état d’exprimer sa volonté. Ces directives anticipées expriment la volonté de la personne relative à sa fin de vie en ce qui concerne les conditions de la poursuite, de la limitation, de l’arrêt ou du refus de traitement ou d’acte médicaux.». 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-directive-ant
   "name" : "FRCDADirectiveAnticipee",
   "title" : "CDA - FR Directive anticipee",
   "status" : "draft",
-  "date" : "2026-06-18T14:01:22+00:00",
+  "date" : "2026-06-22T08:03:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-doc-vs-role-prise-charge | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRValueSetRolePriseCharge |
+| Draft as of 2026-06-22 | *Computable Name*:FRValueSetRolePriseCharge |
 
  
 Pour les professions 41 (Assistant de service social) et 99 (Acteur caractérisé par son rôle). 
@@ -54,7 +54,7 @@ Pour les professions 41 (Assistant de service social) et 99 (Acteur caractéris�
   "title" : "Fr ValueSet RolePriseCharge",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-18T14:01:22+00:00",
+  "date" : "2026-06-22T08:03:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

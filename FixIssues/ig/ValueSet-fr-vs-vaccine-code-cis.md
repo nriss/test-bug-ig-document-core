@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-vaccine-code-cis | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRValueSetVaccineCodeCISDocument |
+| Draft as of 2026-06-22 | *Computable Name*:FRValueSetVaccineCodeCISDocument |
 
  
 Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identifier les vaccins par leur code CIS. 
@@ -51,7 +51,7 @@ Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identif
   "name" : "FRValueSetVaccineCodeCISDocument",
   "title" : "ValueSet – FR ValueSet Codes vaccins CIS (BDPM)",
   "status" : "draft",
-  "date" : "2026-06-18T14:01:22+00:00",
+  "date" : "2026-06-22T08:03:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

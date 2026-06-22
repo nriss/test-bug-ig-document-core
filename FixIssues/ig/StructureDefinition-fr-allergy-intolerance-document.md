@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-allergy-intolerance-document | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRAllergyIntoleranceDocument |
+| Draft as of 2026-06-22 | *Computable Name*:FRAllergyIntoleranceDocument |
 
  
 FRAllergyIntoleranceDocument est un profil utilisé pourdécrire une allergie ou une hypersensibilité non allergique ou une intolérance ou une idiosyncrasie. 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-allergy-intoleran
   "name" : "FRAllergyIntoleranceDocument",
   "title" : "AllergyIntolerance - FR Allergy and intolerance Document",
   "status" : "draft",
-  "date" : "2026-06-18T14:01:22+00:00",
+  "date" : "2026-06-22T08:03:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

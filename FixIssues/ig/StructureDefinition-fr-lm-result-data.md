@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-result-data | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRLMResultData |
+| Draft as of 2026-06-22 | *Computable Name*:FRLMResultData |
 
  
 Section Compte rendu de biologie de 1er niveau 
@@ -49,7 +49,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-result-data.cs
   "name" : "FRLMResultData",
   "title" : "Logical model - FR LM Compte rendu de biologie de 1er niveau",
   "status" : "draft",
-  "date" : "2026-06-18T14:01:22+00:00",
+  "date" : "2026-06-22T08:03:44+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
