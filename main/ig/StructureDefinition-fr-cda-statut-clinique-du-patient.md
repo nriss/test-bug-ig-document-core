@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-statut-clinique-du-patient | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRCDAStatutCliniqueDuPatient |
+| Draft as of 2026-06-22 | *Computable Name*:FRCDAStatutCliniqueDuPatient |
 
  
 Entrée FR-Statut-clinique-du-patient: IHE-PCC - Health-Status-Observation. L’entrée Statut clinique du patient permet de donner une évaluation de l’état clinique du patient. L’entrée Statut clinique du patient est un élément observation qui est inséré dans un autre élément à l’aide d’un lien entryRelationship. 
@@ -66,7 +66,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-statut-cliniq
   "name" : "FRCDAStatutCliniqueDuPatient",
   "title" : "CDA - FR Statut clinique du patient",
   "status" : "draft",
-  "date" : "2026-06-18T14:40:49+00:00",
+  "date" : "2026-06-22T09:35:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-exposition-aux-radiations | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRCDASectionDICOMExpositionAuxRadiations |
+| Draft as of 2026-06-22 | *Computable Name*:FRCDASectionDICOMExpositionAuxRadiations |
 
  
 DICOM Part 20 - Radiation Exposure and Protection Information  
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-exposit
   "name" : "FRCDASectionDICOMExpositionAuxRadiations",
   "title" : "CDA - FR DICOM Exposition aux radiations",
   "status" : "draft",
-  "date" : "2026-06-18T14:40:49+00:00",
+  "date" : "2026-06-22T09:35:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

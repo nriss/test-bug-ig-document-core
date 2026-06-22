@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/ValueSet/fr-vs-encounter-class | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRValueSetEncounterClass |
+| Draft as of 2026-06-22 | *Computable Name*:FRValueSetEncounterClass |
 
  
 ValueSet pour les types de rencontre basé sur HL7 v3 ActEncounterCode. 
@@ -55,7 +55,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "FR ValueSet Encounter Class",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-18T14:40:49+00:00",
+  "date" : "2026-06-22T09:35:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

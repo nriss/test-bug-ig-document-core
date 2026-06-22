@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-lm-patient-sujet-non-humain | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRLMPatientSujetNonHumain |
+| Draft as of 2026-06-22 | *Computable Name*:FRLMPatientSujetNonHumain |
 
  
 Patient avec sujet non humain 
@@ -41,7 +41,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-lm-patient-sujet-
   "name" : "FRLMPatientSujetNonHumain",
   "title" : "Logical model - FR LM Patient avec sujet non humain",
   "status" : "draft",
-  "date" : "2026-06-18T14:40:49+00:00",
+  "date" : "2026-06-22T09:35:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

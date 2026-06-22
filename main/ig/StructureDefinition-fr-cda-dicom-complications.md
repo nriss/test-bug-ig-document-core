@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://interop.esante.gouv.fr/ig/document/core/StructureDefinition/fr-cda-dicom-complications | *Version*:0.1.0-snapshot |
-| Draft as of 2026-06-18 | *Computable Name*:FRCDASectionDICOMComplications |
+| Draft as of 2026-06-22 | *Computable Name*:FRCDASectionDICOMComplications |
 
  
 DICOM Part 20 - Complications 
@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-dicom-complic
   "name" : "FRCDASectionDICOMComplications",
   "title" : "CDA - FR DICOM Complications",
   "status" : "draft",
-  "date" : "2026-06-18T14:40:49+00:00",
+  "date" : "2026-06-22T09:35:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
