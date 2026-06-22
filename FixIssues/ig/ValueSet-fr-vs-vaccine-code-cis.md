@@ -51,7 +51,7 @@ Codes issus de la Base de Données Publique des Médicaments (BDPM) pour identif
   "name" : "FRValueSetVaccineCodeCISDocument",
   "title" : "ValueSet – FR ValueSet Codes vaccins CIS (BDPM)",
   "status" : "draft",
-  "date" : "2026-06-22T09:23:37+00:00",
+  "date" : "2026-06-22T09:32:03+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
