@@ -68,7 +68,7 @@ Other representations of profile: [CSV](StructureDefinition-fr-cda-gravite-effet
   "name" : "FRCDAGraviteEffetIndesirable",
   "title" : "CDA - FR Gravite effet indesirable",
   "status" : "draft",
-  "date" : "2026-06-22T08:03:44+00:00",
+  "date" : "2026-06-22T08:16:05+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
