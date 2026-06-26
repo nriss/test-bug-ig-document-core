@@ -7,7 +7,7 @@ Characteristics: #can-be-target
 
 * codeActe 1..1 CodeableConcept "Code de l'acte d'imagerie"
   * ^binding.description = "jdv-code-document-imagerie-cisis (1.2.250.1.213.1.1.5.687)"
-* description 0..1 Narrative "Partie narrative de l'observation"
+* description 0..1 markdown "Partie narrative de l'observation"
 * modaliteAcquisition 1..* CodeableConcept "Modalité d’acquisition"
   * ^binding.description = "jdv-modalite-acquisition-cisis (1.2.250.1.213.1.1.5.618)"
 * lateralite 0..1 CodeableConcept "Latéralité et topographie" 
