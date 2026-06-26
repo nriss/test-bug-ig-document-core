@@ -30,8 +30,7 @@ dependencies:
   hl7.cda.uv.core: 2.0.1-sd
   ans.fr.terminologies: latest
   hl7.fhir.fr.core: 2.1.0
-  hl7.fhir.extensions.r5: 4.0.1
-  hl7.fhir.uv.extensions.r4: 5.2.0
+  hl7.fhir.uv.xver-r5.r4: latest
   ans.fhir.fr.annuaire: 1.1.0
   hl7.fhir.uv.fhir-clinical-document: latest
   ihe.pharm.mpd: 1.0.0-comment-2 
