@@ -23,3 +23,4 @@ jobs:
           generate_testscript: "false"
           generate_plantuml: "false"
           container_mode: "true"
+          ig-publisher-version: "2.1.2"
