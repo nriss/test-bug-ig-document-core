@@ -27,7 +27,7 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
   path-expansion-params: '../../expansion-params.json'
 
 dependencies:
-  hl7.cda.uv.core: 2.0.1-sd
+  hl7.cda.uv.core: 2.0.3-sd
   ans.fr.terminologies: latest
   hl7.fhir.fr.core: 2.1.0
   hl7.fhir.uv.xver-r5.r4: latest
