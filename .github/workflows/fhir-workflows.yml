@@ -27,4 +27,4 @@ jobs:
           # NPE sur extension sans URL lors de la génération des artifacts de traduction
           # (activée par i18n-default-lang/i18n-lang du template2 pour les IGs CDA).
           # Voir : https://github.com/hapifhir/org.hl7.fhir.core LanguageUtils.java:703
-          ig-publisher-version: "2.1.2"
+          # ig-publisher-version: "2.1.2"
