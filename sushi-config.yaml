@@ -19,6 +19,11 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
   excludettl: 'true'
   generate-turtle: 'false'
   generate-json: 'false'
+  i18n-default-lang: fr
+  i18n-lang:
+    - en
+  translation-sources:
+    - input/translations/en
 
 dependencies:
   hl7.cda.uv.core: 2.0.1-sd
@@ -66,7 +71,9 @@ pages:
         securite.md:
             title: Sécurité
         downloads.md:
-            title: Téléchargements et usages      
+            title: Téléchargements et usages
+    translationinfo.md:
+        title: Informations sur la traduction
 
 menu:
     Accueil: index.html
