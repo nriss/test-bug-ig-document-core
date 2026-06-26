@@ -1,4 +1,4 @@
-name: Workflow Sushi Tests gitHubpages
+name: Workflow CI-build (GitHub pages)
 on:
   workflow_call:
   push:
@@ -7,17 +7,19 @@ on:
 jobs:
   run-sushi-tests_gitHubPages:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/ansforge/fhir-ig-builder:latest
     steps:
       - uses: actions/checkout@v3
-        with:      
+        with:
           path: igSource
       - uses: ansforge/IG-workflows@main
-        with:      
+        with:
           repo_ig: "./igSource"
-          ig-publisher-version : "2.1.2"
           github_page: "true"
           github_page_token: ${{ secrets.GITHUB_TOKEN }}
           bake: "false"
           validator_cli: "false"
           generate_testscript: "false"
-          generate_plantuml : "true"
+          generate_plantuml: "false"
+          container_mode: "true"
